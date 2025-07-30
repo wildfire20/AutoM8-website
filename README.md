@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AutoM8 Company Website
 
 A modern, responsive website for AutoM8 - a South African tech company providing digital solutions for schools and businesses.
