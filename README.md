@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AutoM8 Company Website
 
 A modern, responsive website for AutoM8 - a South African tech company providing digital solutions for schools and businesses.
@@ -11,43 +10,39 @@ A modern, responsive website for AutoM8 - a South African tech company providing
 - **SEO Friendly**: Semantic HTML structure and meta tags for better search rankings
 - **Interactive Elements**: Contact forms, pricing calculators, and smooth scrolling
 - **Accessibility**: WCAG compliant with proper contrast ratios and keyboard navigation
+- **Express.js Server**: Ready for deployment on platforms like Railway, Vercel, or Heroku
 
 ## 📁 Project Structure
 
 ```
 AutoM8-website/
-├── index.html              # Homepage
-├── services.html           # Services page
-├── pricing.html            # Pricing plans page
-├── portfolio.html          # Portfolio/work examples
-├── about.html              # Company information
-├── contact.html            # Contact form and information
-├── styles/
-│   └── main.css           # Main stylesheet
-├── scripts/
-│   └── main.js            # JavaScript functionality
-└── README.md              # This file
+├── server.js               # Express.js server
+├── package.json            # Node.js dependencies and scripts
+├── railway.toml            # Railway deployment configuration
+├── .gitignore              # Git ignore file
+├── public/                 # Static website files
+│   ├── index.html          # Homepage
+│   ├── services.html       # Services page
+│   ├── pricing.html        # Pricing plans page
+│   ├── portfolio.html      # Portfolio/work examples
+│   ├── about.html          # Company information
+│   ├── contact.html        # Contact form and information
+│   ├── styles/
+│   │   └── main.css        # Main stylesheet
+│   └── scripts/
+│       └── main.js         # JavaScript functionality
+└── README.md               # This file
 ```
 
-## 🎨 Design Features
+## 🛠️ Technology Stack
 
-### Color Palette
-- Primary Blue: #2563eb
-- Secondary Purple: #7c3aed
-- Background: #ffffff
-- Text: #1e293b
-- Accent: #64748b
-
-### Typography
-- Font Family: Inter (Google Fonts)
-- Weights: 300, 400, 500, 600, 700
-
-### Components
-- Navigation bar with mobile hamburger menu
-- Hero sections with gradients
-- Feature cards with hover effects
-- Pricing tables with highlighting
-- Contact forms with validation
+- **HTML5**: Semantic markup structure
+- **CSS3**: Modern styling with Flexbox and Grid
+- **JavaScript (ES6+)**: Interactive functionality
+- **Node.js**: Server runtime
+- **Express.js**: Web application framework
+- **Font Awesome**: Icons
+- **Google Fonts**: Typography
 - Footer with company information
 
 ## 📱 Responsive Breakpoints
@@ -66,42 +61,71 @@ AutoM8-website/
 
 ## 🚀 Getting Started
 
-1. **Clone or download** the project files
-2. **Open** `index.html` in your web browser
-3. **Navigate** through the different pages using the menu
+### Local Development
 
-### For Development:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/wildfire20/AutoM8-website.git
+   cd AutoM8-website
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm start
+   ```
+
+4. **Open your browser** and navigate to `http://localhost:3000`
+
+### Alternative Development (Static Files)
+If you prefer to work with static files:
 1. Use a local server (e.g., Live Server extension in VS Code)
-2. Open the project folder in your code editor
-3. Start the local server and navigate to `localhost:PORT`
+2. Open the `public` folder in your code editor
+3. Start the local server and navigate to the served URL
+
+## 🌐 Deployment
+
+### Railway Deployment
+1. **Connect your GitHub repository** to Railway
+2. **Configure environment variables** (if needed)
+3. **Deploy**: Railway will automatically detect the Express.js app and deploy it
+
+### Other Platforms
+- **Vercel**: Supports Node.js applications
+- **Heroku**: Classic platform for web applications
+- **Netlify**: Great for static sites (serve from `public` folder)
 
 ## 📄 Pages Overview
 
-### Homepage (`index.html`)
+### Homepage (`public/index.html`)
 - Hero section with main value proposition
 - Feature overview cards
 - Call-to-action sections
 - Company highlights
 
-### Services (`services.html`)
+### Services (`public/services.html`)
 - Detailed service offerings
 - Feature lists for each service
 - Development process overview
 - Service-specific CTAs
 
-### Pricing (`pricing.html`)
+### Pricing (`public/pricing.html`)
 - Three-tier pricing structure (Base, Pro, Premium)
 - Feature comparison table
 - FAQ section
 - Custom solution information
 
-### Portfolio (`portfolio.html`)
+### Portfolio (`public/portfolio.html`)
 - Project showcases
 - Client testimonials
 - Technology stack display
 - Success metrics
 
-### About (`about.html`)
+### About (`public/about.html`)
 - Company mission and values
 - Team information
 - Company story and background
