@@ -118,6 +118,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Handle plan selection from URL parameters (for contact page)
+    if (window.location.pathname.includes('contact.html')) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const plan = urlParams.get('plan');
+        const price = urlParams.get('price');
+        
+        if (plan && price) {
+            const planField = document.getElementById('selectedPlan');
+            const planSection = document.getElementById('planSelection');
+            const serviceField = document.getElementById('service');
+            
+            if (planField && planSection) {
+                planField.value = `${plan} Plan - R${price} per student per month`;
+                planSection.style.display = 'block';
+                
+                // Auto-select school management system
+                if (serviceField) {
+                    serviceField.value = 'school-management';
+                }
+                
+                // Pre-fill message
+                const messageField = document.getElementById('message');
+                if (messageField && !messageField.value) {
+                    messageField.value = `Hi! I'm interested in the ${plan} plan at R${price} per student per month. Please provide more information about getting started.`;
+                }
+            }
+        }
+    }
+
     // Pricing calculator (if needed)
     const pricingInputs = document.querySelectorAll('.pricing-input');
     if (pricingInputs.length > 0) {
@@ -423,3 +452,35 @@ window.AutoM8 = {
     toggleDarkMode,
     isValidEmail
 };
+
+// Plan Selection Function
+function choosePlan(planName, price) {
+    // Show a confirmation dialog
+    const message = `You've selected the ${planName} plan at R${price} per student per month.\n\nWould you like to get started with ${planName}?`;
+    
+    if (confirm(message)) {
+        // Create a form with plan details and redirect to contact page
+        const form = document.createElement('form');
+        form.method = 'GET';
+        form.action = 'contact.html';
+        
+        // Add plan details as URL parameters
+        const planInput = document.createElement('input');
+        planInput.type = 'hidden';
+        planInput.name = 'plan';
+        planInput.value = planName;
+        
+        const priceInput = document.createElement('input');
+        priceInput.type = 'hidden';
+        priceInput.name = 'price';
+        priceInput.value = price;
+        
+        form.appendChild(planInput);
+        form.appendChild(priceInput);
+        document.body.appendChild(form);
+        form.submit();
+    }
+}
+
+// Make choosePlan globally available
+window.choosePlan = choosePlan;
