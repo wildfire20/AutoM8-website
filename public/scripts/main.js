@@ -101,20 +101,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // Simulate form submission
-            const submitButton = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
+            // Prepare email content
+            const subject = `AutoM8 Contact Form: ${data.service ? data.service : 'General Inquiry'}`;
+            let emailBody = `New contact form submission from AutoM8 website:\n\n`;
+            emailBody += `Name: ${data.name}\n`;
+            emailBody += `Email: ${data.email}\n`;
+            emailBody += `Phone: ${data.phone || 'Not provided'}\n`;
+            emailBody += `Organization: ${data.organization || 'Not provided'}\n`;
+            emailBody += `Service Interest: ${data.service || 'Not specified'}\n`;
+            if (data.selectedPlan) {
+                emailBody += `Selected Plan: ${data.selectedPlan}\n`;
+            }
+            emailBody += `\nMessage:\n${data.message}\n\n`;
+            emailBody += `Submitted on: ${new Date().toLocaleString()}\n`;
 
-            // Simulate API call
+            // Create mailto link
+            const mailtoLink = `mailto:autom8streamlining@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+
+            // Show success message
+            showNotification('Opening your email client to send the message...', 'success');
+            
+            // Reset form after a delay
             setTimeout(() => {
-                showNotification('Thank you for your message! We\'ll get back to you within 4 hours.', 'success');
                 contactForm.reset();
-                submitButton.textContent = originalText;
-                submitButton.disabled = false;
-            }, 1500);
+                // Hide plan selection if it was shown
+                const planSection = document.getElementById('planSelection');
+                if (planSection) {
+                    planSection.style.display = 'none';
+                }
+            }, 2000);
         });
     }
 
@@ -484,3 +502,27 @@ function choosePlan(planName, price) {
 
 // Make choosePlan globally available
 window.choosePlan = choosePlan;
+
+// Email Composer Function
+function openEmailComposer() {
+    const subject = 'Inquiry about AutoM8 Services';
+    const body = `Hello AutoM8 Team,
+
+I'm interested in learning more about your services. 
+
+Please provide me with information about:
+- 
+- 
+- 
+
+Best regards,
+[Your Name]
+[Your Organization]
+[Your Contact Information]`;
+
+    const mailtoLink = `mailto:autom8streamlining@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+}
+
+// Make email composer globally available
+window.openEmailComposer = openEmailComposer;
