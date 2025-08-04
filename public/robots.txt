@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Sitemap: https://auto-m8.co.za/sitemap.xml
+
+# Disallow admin areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow search engines to crawl all pages
+Crawl-delay: 1
