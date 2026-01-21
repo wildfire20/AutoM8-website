@@ -4,100 +4,278 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
-    <title>Services | School Management Systems & Business Automation | AutoM8 South Africa</title>
-    <meta name="description" content="Explore AutoM8's comprehensive services: school management systems, business automation, custom web development, and AI solutions. Serving South African schools and businesses with affordable technology.">
-    <meta name="keywords" content="school management system services, business automation South Africa, web development, AI solutions, student management software, educational technology">
+    <title>Services | Enterprise Business Automation & Custom Software | AutoM8 South Africa</title>
+    <meta name="description" content="AutoM8 delivers high-end business automation, custom operational software, web platforms, and education technology. Enterprise-grade solutions for South African businesses.">
+    <meta name="keywords" content="business automation, custom software development, enterprise solutions, web platforms, education technology, South Africa">
     <meta name="author" content="AutoM8">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://auto-m8.co.za/services">
     
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://auto-m8.co.za/services">
-    <meta property="og:title" content="Services | School Management Systems & Business Automation | AutoM8">
-    <meta property="og:description" content="Transform your organization with AutoM8's services: school management systems, business automation, and custom development solutions across South Africa.">
+    <meta property="og:title" content="Services | Enterprise Business Automation & Custom Software | AutoM8">
+    <meta property="og:description" content="High-end business automation and custom software development for enterprises across South Africa.">
     <meta property="og:image" content="https://auto-m8.co.za/og-image.jpg">
     <meta property="og:site_name" content="AutoM8">
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://auto-m8.co.za/services">
-    <meta property="twitter:title" content="Services | School Management Systems & Business Automation | AutoM8">
-    <meta property="twitter:description" content="Transform your organization with AutoM8's services: school management systems, business automation, and custom development solutions.">
-    <meta property="twitter:image" content="https://auto-m8.co.za/og-image.jpg">
-    
-    <!-- Additional Meta Tags -->
-    <meta name="theme-color" content="#003B73">
+    <meta name="theme-color" content="#0f0f23">
     <meta name="geo.region" content="ZA">
     <meta name="geo.country" content="South Africa">
     
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/theme.css">
     
-    <!-- Structured Data - Service Page -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Services - AutoM8",
-      "description": "Comprehensive services including school management systems, business automation, and custom development solutions.",
-      "url": "https://auto-m8.co.za/services",
-      "mainEntity": {
-        "@type": "ItemList",
-        "itemListElement": [
-          {
-            "@type": "Service",
-            "name": "School Management System",
-            "description": "Complete digital solution for schools with student tracking, grading, attendance, and analytics",
-            "provider": {
-              "@type": "Organization",
-              "name": "AutoM8"
+    <style>
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--border-hover);
+            box-shadow: var(--shadow-card-hover);
+        }
+
+        .service-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(124, 58, 237, 0.2));
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon i {
+            font-size: 2rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .service-card > p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features li {
+            padding: 0.5rem 0;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-features li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .service-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-light);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .service-cta:hover {
+            color: var(--text-primary);
+            gap: 12px;
+        }
+
+        .process-section {
+            background: var(--bg-secondary);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(79, 70, 229, 0.3), transparent);
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: white;
+            margin: 0 auto 1.5rem;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .process-step h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .process-step p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .capabilities-section {
+            background: var(--bg-primary);
+        }
+
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .capability-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .capability-card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-4px);
+        }
+
+        .capability-card i {
+            font-size: 2.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .capability-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .capability-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
-          },
-          {
-            "@type": "Service", 
-            "name": "Business Process Automation",
-            "description": "Streamline operations with intelligent automation solutions tailored for South African businesses",
-            "provider": {
-              "@type": "Organization",
-              "name": "AutoM8"
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
             }
-          },
-          {
-            "@type": "Service",
-            "name": "Custom Web Development", 
-            "description": "Bespoke web applications and mobile solutions designed for your specific business needs",
-            "provider": {
-              "@type": "Organization",
-              "name": "AutoM8"
+            .process-steps::before {
+                display: none;
             }
-          }
-        ]
-      }
-    }
-    </script>
+            .capabilities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            .capabilities-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <h1>AutoM8</h1>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
@@ -125,186 +303,272 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="page-hero">
         <div class="container">
-            <h1 class="page-title fade-in">🚀 What We Offer</h1>
-            <p class="page-subtitle fade-in">Comprehensive digital solutions tailored for your success</p>
+            <h1 class="page-title fade-in">Enterprise-Grade Solutions</h1>
+            <p class="page-subtitle fade-in">We build powerful digital systems that transform how businesses operate, compete, and grow.</p>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services">
+    <section class="services-section" style="background: var(--bg-primary);">
         <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">
+                    <i class="fas fa-layer-group"></i>
+                    Core Services
+                </span>
+                <h2 class="section-title">What We Build</h2>
+                <p class="section-subtitle">From custom operational software to full-scale web platforms, we deliver solutions that drive real business results.</p>
+            </div>
             <div class="services-grid">
-                <!-- School Management Systems -->
-                <div class="service-card slide-up">
+                <div class="service-card fade-in">
                     <div class="service-icon">
-                        <i class="fas fa-school"></i>
+                        <i class="fas fa-server"></i>
                     </div>
-                    <h3>School Management Systems</h3>
-                    <p>Handle student records, assignments, grading, announcements, and cloud storage — all in one secure platform.</p>
+                    <h3>Custom Operational Software</h3>
+                    <p>Streamline your internal processes with tailor-made solutions designed for your exact workflow and scale.</p>
                     <ul class="service-features">
-                        <li>Student record management</li>
-                        <li>Assignment distribution & collection</li>
-                        <li>Automated grading system</li>
-                        <li>Parent-teacher communication</li>
-                        <li>Secure cloud storage</li>
+                        <li>Inventory & Stock Management</li>
+                        <li>Fleet Tracking & Logistics</li>
+                        <li>HR & Staffing Platforms</li>
+                        <li>Custom Business Dashboards</li>
+                        <li>Automated Reporting Systems</li>
                     </ul>
-                    <a href="contact.html" class="service-cta">Get Started</a>
+                    <a href="contact.html" class="service-cta">
+                        Start Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <!-- Custom Web & Mobile Apps -->
-                <div class="service-card slide-up">
+                <div class="service-card fade-in">
                     <div class="service-icon">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-globe"></i>
                     </div>
-                    <h3>Custom Web & Mobile Apps</h3>
-                    <p>From idea to launch, we build digital tools tailored to your unique needs.</p>
+                    <h3>Specialized Web Platforms</h3>
+                    <p>Customer-facing digital experiences that drive revenue, engagement, and business growth.</p>
                     <ul class="service-features">
-                        <li>Responsive web applications</li>
-                        <li>Mobile app development</li>
-                        <li>Custom database design</li>
-                        <li>User experience optimization</li>
-                        <li>Cross-platform compatibility</li>
+                        <li>Business Directories & Marketplaces</li>
+                        <li>E-commerce Solutions</li>
+                        <li>Booking & Reservation Engines</li>
+                        <li>Membership & Subscription Portals</li>
+                        <li>Client Portals & Dashboards</li>
                     </ul>
-                    <a href="contact.html" class="service-cta">Discuss Your Project</a>
+                    <a href="contact.html" class="service-cta">
+                        Start Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <!-- Business Process Automation -->
-                <div class="service-card slide-up">
+                <div class="service-card fade-in">
                     <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>Business Process Automation</h3>
-                    <p>We streamline workflows, automate data entry, and improve productivity.</p>
+                    <h3>School & Education Tech</h3>
+                    <p>Comprehensive digital transformation for educational institutions of all sizes.</p>
                     <ul class="service-features">
-                        <li>Workflow automation</li>
-                        <li>Data entry automation</li>
-                        <li>Report generation</li>
-                        <li>Integration with existing systems</li>
-                        <li>Performance analytics</li>
+                        <li>Learning Management Systems</li>
+                        <li>Attendance & Grade Tracking</li>
+                        <li>Report Card Generation</li>
+                        <li>Parent Communication Portals</li>
+                        <li>Student Information Systems</li>
                     </ul>
-                    <a href="contact.html" class="service-cta">Automate Now</a>
+                    <a href="contact.html" class="service-cta">
+                        Start Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <!-- AI Assistants & Chatbots -->
-                <div class="service-card slide-up">
+                <div class="service-card fade-in">
                     <div class="service-icon">
                         <i class="fas fa-robot"></i>
                     </div>
-                    <h3>AI Assistants & Chatbots</h3>
-                    <p>AI tools that handle FAQs, support, learning, or anything you want automated.</p>
+                    <h3>AI & Automation Solutions</h3>
+                    <p>Intelligent systems that automate repetitive tasks and provide smart business insights.</p>
                     <ul class="service-features">
-                        <li>24/7 customer support bots</li>
-                        <li>Educational AI tutors</li>
-                        <li>FAQ automation</li>
-                        <li>Natural language processing</li>
-                        <li>Multi-platform integration</li>
+                        <li>Custom AI Chatbots</li>
+                        <li>Document Processing Automation</li>
+                        <li>Predictive Analytics</li>
+                        <li>Workflow Automation</li>
+                        <li>Data Integration Pipelines</li>
                     </ul>
-                    <a href="contact.html" class="service-cta">Build Your Bot</a>
+                    <a href="contact.html" class="service-cta">
+                        Start Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <!-- Cloud Hosting & Storage -->
-                <div class="service-card slide-up">
+                <div class="service-card fade-in">
                     <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Cloud Hosting & Storage (AWS-powered)</h3>
-                    <p>Reliable, scalable cloud solutions for your apps, files, and systems.</p>
+                    <h3>Fraud Prevention Systems</h3>
+                    <p>Protect your business with custom-built monitoring and fraud detection solutions.</p>
                     <ul class="service-features">
-                        <li>AWS cloud infrastructure</li>
-                        <li>Automatic backups</li>
-                        <li>Scalable storage solutions</li>
-                        <li>99.9% uptime guarantee</li>
-                        <li>Advanced security protocols</li>
+                        <li>Stock Variance Tracking</li>
+                        <li>Transaction Monitoring</li>
+                        <li>Employee Activity Logging</li>
+                        <li>Real-time Alert Systems</li>
+                        <li>Audit Trail Generation</li>
                     </ul>
-                    <a href="contact.html" class="service-cta">Go Cloud</a>
+                    <a href="contact.html" class="service-cta">
+                        Start Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <!-- Additional Service -->
-                <div class="service-card slide-up">
+                <div class="service-card fade-in">
                     <div class="service-icon">
                         <i class="fas fa-headset"></i>
                     </div>
                     <h3>Ongoing Support & Maintenance</h3>
-                    <p>Continuous support to keep your systems running smoothly and up-to-date.</p>
+                    <p>Keep your systems running at peak performance with dedicated technical support.</p>
                     <ul class="service-features">
-                        <li>24/7 technical support</li>
-                        <li>Regular system updates</li>
-                        <li>Performance monitoring</li>
-                        <li>Security maintenance</li>
-                        <li>Training and documentation</li>
+                        <li>24/7 System Monitoring</li>
+                        <li>Security Updates & Patches</li>
+                        <li>Performance Optimization</li>
+                        <li>Feature Enhancements</li>
+                        <li>Training & Documentation</li>
                     </ul>
-                    <a href="contact.html" class="service-cta">Get Support</a>
+                    <a href="contact.html" class="service-cta">
+                        Get Support <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="process">
+    <section class="process-section">
         <div class="container">
-            <h2 class="section-title">Our Development Process</h2>
+            <div class="section-header fade-in">
+                <span class="section-tag">
+                    <i class="fas fa-route"></i>
+                    Our Process
+                </span>
+                <h2 class="section-title">How We Deliver</h2>
+                <p class="section-subtitle">A proven methodology that ensures your project is delivered on time, on budget, and exceeds expectations.</p>
+            </div>
             <div class="process-steps">
-                <div class="process-step">
+                <div class="process-step fade-in">
                     <div class="step-number">1</div>
                     <h3>Discovery</h3>
-                    <p>We understand your needs and requirements</p>
+                    <p>Deep dive into your business, challenges, and goals to define the perfect solution.</p>
                 </div>
-                <div class="process-step">
+                <div class="process-step fade-in">
                     <div class="step-number">2</div>
                     <h3>Design</h3>
-                    <p>Create user-friendly designs and prototypes</p>
+                    <p>Create detailed specifications, wireframes, and prototypes for your approval.</p>
                 </div>
-                <div class="process-step">
+                <div class="process-step fade-in">
                     <div class="step-number">3</div>
                     <h3>Development</h3>
-                    <p>Build your solution with cutting-edge technology</p>
+                    <p>Build your solution with cutting-edge technology and regular progress updates.</p>
                 </div>
-                <div class="process-step">
+                <div class="process-step fade-in">
                     <div class="step-number">4</div>
-                    <h3>Deploy</h3>
-                    <p>Launch your solution and provide ongoing support</p>
+                    <h3>Deploy & Support</h3>
+                    <p>Launch your system with comprehensive training and ongoing technical support.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
+    <section class="capabilities-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">
+                    <i class="fas fa-cogs"></i>
+                    Technology Stack
+                </span>
+                <h2 class="section-title">Built on Enterprise Technology</h2>
+                <p class="section-subtitle">We use industry-leading tools and platforms to build secure, scalable solutions.</p>
+            </div>
+            <div class="capabilities-grid">
+                <div class="capability-card fade-in">
+                    <i class="fab fa-aws"></i>
+                    <h4>AWS Cloud</h4>
+                    <p>Enterprise hosting</p>
+                </div>
+                <div class="capability-card fade-in">
+                    <i class="fab fa-react"></i>
+                    <h4>React</h4>
+                    <p>Modern frontends</p>
+                </div>
+                <div class="capability-card fade-in">
+                    <i class="fab fa-node-js"></i>
+                    <h4>Node.js</h4>
+                    <p>Scalable backends</p>
+                </div>
+                <div class="capability-card fade-in">
+                    <i class="fas fa-database"></i>
+                    <h4>PostgreSQL</h4>
+                    <p>Reliable databases</p>
+                </div>
+                <div class="capability-card fade-in">
+                    <i class="fab fa-python"></i>
+                    <h4>Python</h4>
+                    <p>AI & automation</p>
+                </div>
+                <div class="capability-card fade-in">
+                    <i class="fas fa-brain"></i>
+                    <h4>Machine Learning</h4>
+                    <p>Smart analytics</p>
+                </div>
+                <div class="capability-card fade-in">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Mobile Apps</h4>
+                    <p>iOS & Android</p>
+                </div>
+                <div class="capability-card fade-in">
+                    <i class="fas fa-lock"></i>
+                    <h4>Security</h4>
+                    <p>Enterprise-grade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Transform Your Operations?</h2>
-                <p>Let's discuss how AutoM8 can create the perfect solution for your needs</p>
+                <p>Book a free system audit and discover how AutoM8 can build the perfect solution for your business.</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
-                    <a href="pricing.html" class="btn btn-outline">View Pricing</a>
+                    <a href="contact.html" class="btn btn-white">
+                        <i class="fas fa-calendar-alt"></i>
+                        Schedule Consultation
+                    </a>
+                    <a href="portfolio.html" class="btn btn-outline-white">
+                        <i class="fas fa-briefcase"></i>
+                        View Our Work
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-brand">
                     <h3>AutoM8</h3>
-                    <p>Digital solutions that automate success for schools and businesses across South Africa.</p>
+                    <p>Building enterprise-grade digital solutions that power businesses across South Africa.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Custom Software</a></li>
+                        <li><a href="services.html">Web Platforms</a></li>
+                        <li><a href="services.html">Education Tech</a></li>
+                        <li><a href="services.html">AI Solutions</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
                     <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> autom8streamlining@gmail.com</p>
+                    <p><i class="fas fa-envelope"></i> info@auto-m8.co.za</p>
                     <p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p>
                 </div>
             </div>
@@ -314,6 +578,25 @@
         </div>
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>

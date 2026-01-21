@@ -4,115 +4,409 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
-    <title>About AutoM8 | Our Story & Mission | School Management System Experts South Africa</title>
-    <meta name="description" content="Learn about AutoM8's mission to streamline school operations in South Africa. Our expert team is dedicated to providing innovative education management solutions for schools.">
-    <meta name="keywords" content="AutoM8 team, school management company, education technology South Africa, about AutoM8, school software experts, education innovation">
+    <title>About AutoM8 | Enterprise Software Agency | South Africa</title>
+    <meta name="description" content="AutoM8 is a high-end business automation agency building enterprise-grade digital solutions for South African businesses. Learn about our mission and expertise.">
+    <meta name="keywords" content="AutoM8 about, business automation agency, software development company, South Africa enterprise technology">
     <meta name="author" content="AutoM8">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://auto-m8.co.za/about">
     
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://auto-m8.co.za/about">
-    <meta property="og:title" content="About AutoM8 | Our Story & Mission | School Management System Experts">
-    <meta property="og:description" content="Discover AutoM8's mission to streamline school operations. Our dedicated team provides innovative education management solutions for schools across South Africa.">
+    <meta property="og:title" content="About AutoM8 | Enterprise Software Agency">
+    <meta property="og:description" content="High-end business automation agency building enterprise-grade digital solutions for South African businesses.">
     <meta property="og:image" content="https://auto-m8.co.za/og-image.jpg">
     <meta property="og:site_name" content="AutoM8">
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://auto-m8.co.za/about">
-    <meta property="twitter:title" content="About AutoM8 | Our Story & Mission | School Management System Experts">
-    <meta property="twitter:description" content="Discover AutoM8's mission to streamline school operations. Expert team providing innovative education solutions.">
-    <meta property="twitter:image" content="https://auto-m8.co.za/og-image.jpg">
-    
-    <!-- Additional Meta Tags -->
-    <meta name="theme-color" content="#003B73">
+    <meta name="theme-color" content="#0f0f23">
     <meta name="geo.region" content="ZA">
     <meta name="geo.country" content="South Africa">
     
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/theme.css">
     
-    <!-- Structured Data - About Page -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AboutPage",
-      "name": "About AutoM8",
-      "description": "Learn about AutoM8's mission to streamline school operations and provide innovative education management solutions.",
-      "url": "https://auto-m8.co.za/about",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "AutoM8",
-        "description": "AutoM8 is a leading provider of school management systems in South Africa, dedicated to streamlining educational operations and enhancing efficiency.",
-        "url": "https://auto-m8.co.za",
-        "logo": "https://auto-m8.co.za/logo.png",
-        "foundingDate": "2023",
-        "foundingLocation": {
-          "@type": "Country",
-          "name": "South Africa"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "South Africa"
-        },
-        "knowsAbout": [
-          "School Management Systems",
-          "Educational Technology",
-          "Student Information Systems",
-          "School Administration",
-          "Academic Management"
-        ],
-        "mission": "To streamline school operations and enhance educational efficiency through innovative technology solutions.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+27681536136",
-          "contactType": "customer service",
-          "email": "autom8streamlining@gmail.com",
-          "areaServed": "ZA",
-          "availableLanguage": "English"
+    <style>
+        .mission-section {
+            background: var(--bg-primary);
         }
-      }
-    }
-    </script>
-</head><html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - AutoM8</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .mission-content h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .mission-content h2 span {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .mission-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .mission-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-4px);
+        }
+
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card .label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .values-section {
+            background: var(--bg-secondary);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .value-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .value-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .value-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--border-hover);
+        }
+
+        .value-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(124, 58, 237, 0.2));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .value-icon i {
+            font-size: 1.75rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .value-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .value-card p {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .story-section {
+            background: var(--bg-primary);
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .story-visual {
+            position: relative;
+        }
+
+        .story-graphic {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(124, 58, 237, 0.05));
+            border: 1px solid rgba(79, 70, 229, 0.2);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .story-graphic::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(79, 70, 229, 0.1) 0%, transparent 50%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        .story-graphic i {
+            font-size: 6rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            z-index: 1;
+        }
+
+        .story-content h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .story-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .story-list li {
+            padding: 0.75rem 0;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .story-list li i {
+            color: var(--accent-primary);
+            margin-top: 4px;
+        }
+
+        .story-list li strong {
+            color: var(--text-primary);
+        }
+
+        .team-section {
+            background: var(--bg-secondary);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .team-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-4px);
+        }
+
+        .team-avatar {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .team-avatar i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .team-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .team-role {
+            color: var(--accent-light);
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .team-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .why-section {
+            background: var(--bg-primary);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .why-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            margin: 0 auto 1.5rem;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .why-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .why-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1024px) {
+            .mission-grid,
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mission-stats {
+                grid-template-columns: 1fr;
+            }
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <h1>AutoM8</h1>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
@@ -140,231 +434,256 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="page-hero">
         <div class="container">
-            <h1 class="page-title fade-in">💡 Our Mission</h1>
-            <p class="page-subtitle fade-in">Building practical digital solutions that make a difference</p>
+            <h1 class="page-title fade-in">Built to Automate Success</h1>
+            <p class="page-subtitle fade-in">We're a high-end automation agency building the digital engines that power South African businesses.</p>
         </div>
     </section>
 
-    <!-- Mission Section -->
-    <section class="mission">
+    <section class="mission-section">
         <div class="container">
-            <div class="mission-content">
-                <div class="mission-text">
-                    <h2>Empowering South Africa Through Technology</h2>
-                    <p>AutoM8 is a South African tech company focused on building practical digital solutions for schools and businesses. We believe in affordability, customization, and simplicity.</p>
-                    <p>Our mission is to make powerful technology accessible to every institution, regardless of size or budget. We understand the unique challenges faced by South African schools and businesses, and we create solutions that address these specific needs.</p>
-                    <p>From small rural schools to large urban institutions, from startups to established businesses – we're here to help you automate success and focus on what matters most: education, growth, and impact.</p>
+            <div class="mission-grid">
+                <div class="mission-content fade-in">
+                    <h2>We Build <span>Digital Engines</span> for Growing Businesses</h2>
+                    <p>AutoM8 is a South African software agency specializing in custom business automation, web platforms, and education technology. We partner with ambitious companies ready to digitize their operations and scale efficiently.</p>
+                    <p>Our approach is simple: understand your business deeply, design solutions that solve real problems, and build systems that grow with you. No templates. No compromises. Just enterprise-grade technology tailored to your exact needs.</p>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Start a Project
+                    </a>
                 </div>
-                <div class="mission-stats">
+                <div class="mission-stats fade-in">
                     <div class="stat-card">
-                        <div class="stat-number">20+</div>
-                        <div class="stat-label">Schools Served</div>
+                        <div class="number">50+</div>
+                        <div class="label">Projects Delivered</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">10,000+</div>
-                        <div class="stat-label">Students Using Our Systems</div>
+                        <div class="number">R2M+</div>
+                        <div class="label">Client Savings</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">99.9%</div>
-                        <div class="stat-label">System Uptime</div>
+                        <div class="number">99.9%</div>
+                        <div class="label">System Uptime</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Support Available</div>
+                        <div class="number">100%</div>
+                        <div class="label">Client Satisfaction</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Values Section -->
-    <section class="values">
+    <section class="values-section">
         <div class="container">
-            <h2 class="section-title">Our Core Values</h2>
+            <div class="section-header fade-in">
+                <span class="section-tag">
+                    <i class="fas fa-gem"></i>
+                    Our Values
+                </span>
+                <h2 class="section-title">What Drives Us</h2>
+                <p class="section-subtitle">The principles that guide every project, every decision, and every line of code we write.</p>
+            </div>
             <div class="values-grid">
-                <div class="value-card slide-up">
+                <div class="value-card fade-in">
                     <div class="value-icon">
-                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3>Accessibility</h3>
-                    <p>Technology should be accessible to everyone. We design solutions that are affordable and easy to use, regardless of technical expertise.</p>
+                    <h3>Results-Focused</h3>
+                    <p>We measure success by the ROI we deliver. Every solution is designed to generate measurable business outcomes.</p>
                 </div>
-                <div class="value-card slide-up">
+                <div class="value-card fade-in">
                     <div class="value-icon">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-puzzle-piece"></i>
                     </div>
-                    <h3>Customization</h3>
-                    <p>Every organization is unique. We don't believe in one-size-fits-all solutions. We tailor our systems to meet your specific needs.</p>
+                    <h3>Custom-Built</h3>
+                    <p>No templates. No shortcuts. Every system is engineered from the ground up for your specific requirements.</p>
                 </div>
-                <div class="value-card slide-up">
+                <div class="value-card fade-in">
                     <div class="value-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Reliability</h3>
-                    <p>When you depend on our systems, we ensure they're always there when you need them. Robust, secure, and dependable technology.</p>
+                    <h3>Enterprise-Grade</h3>
+                    <p>Built on proven technology stacks with security, scalability, and reliability at the core.</p>
                 </div>
-                <div class="value-card slide-up">
-                    <div class="value-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Support</h3>
-                    <p>We're not just a vendor – we're your technology partner. From initial setup to ongoing support, we're here for you every step of the way.</p>
-                </div>
-                <div class="value-card slide-up">
-                    <div class="value-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Innovation</h3>
-                    <p>We stay ahead of the curve, incorporating the latest technologies like AI and cloud computing to keep you competitive.</p>
-                </div>
-                <div class="value-card slide-up">
+                <div class="value-card fade-in">
                     <div class="value-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
-                    <h3>Partnership</h3>
-                    <p>We build long-term relationships with our clients, understanding that your success is our success.</p>
+                    <h3>True Partnership</h3>
+                    <p>We're not vendors, we're partners. Your success is our success, and we're invested in your growth.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Rapid Delivery</h3>
+                    <p>Efficient processes and experienced teams mean faster time-to-market without sacrificing quality.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Always Available</h3>
+                    <p>Responsive support and clear communication throughout every project and beyond launch.</p>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Story Section -->
-    <section class="story">
+    <section class="story-section">
         <div class="container">
-            <div class="story-content">
-                <div class="story-text">
-                    <h2>Our Story</h2>
-                    <p>AutoM8 was born from a simple observation: too many schools and businesses in South Africa were struggling with outdated, inefficient systems or couldn't afford the digital tools they needed to thrive.</p>
-                    <p>We saw teachers spending hours on administrative tasks instead of teaching. We saw schools using paper-based systems in 2025. We saw businesses losing productivity due to manual processes that could be automated.</p>
-                    <p>That's when we decided to act. We started AutoM8 with the mission to democratize access to powerful digital tools. We focus on creating solutions that are:</p>
-                    <ul>
-                        <li><strong>Affordable</strong> - Priced for South African budgets</li>
-                        <li><strong>Practical</strong> - Solving real problems, not creating new ones</li>
-                        <li><strong>Supportive</strong> - With training and ongoing help in your language</li>
-                        <li><strong>Reliable</strong> - Built on enterprise-grade infrastructure</li>
-                    </ul>
-                </div>
-                <div class="story-image">
+            <div class="story-grid">
+                <div class="story-visual fade-in">
                     <div class="story-graphic">
                         <i class="fas fa-rocket"></i>
                     </div>
                 </div>
+                <div class="story-content fade-in">
+                    <h2>Our Story</h2>
+                    <p>AutoM8 was founded with a clear observation: too many South African businesses were held back by outdated systems or couldn't access the technology they needed to compete.</p>
+                    <p>We saw schools drowning in paperwork. Retailers losing money to inefficient processes. Companies unable to scale because their systems couldn't keep up.</p>
+                    <p>That's when we decided to build something different. An agency that delivers enterprise-quality solutions at accessible prices. That combines deep technical expertise with genuine business understanding.</p>
+                    <ul class="story-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Enterprise Quality</strong> - Built on the same technologies used by global corporations</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Local Understanding</strong> - Designed for South African business realities</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Accessible Pricing</strong> - High-end doesn't mean unaffordable</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Long-term Support</strong> - We're here for the journey, not just the launch</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team">
+    <section class="team-section">
         <div class="container">
-            <h2 class="section-title">Meet Our Team</h2>
+            <div class="section-header fade-in">
+                <span class="section-tag">
+                    <i class="fas fa-users"></i>
+                    The Team
+                </span>
+                <h2 class="section-title">Experts Behind the Engine</h2>
+                <p class="section-subtitle">A dedicated team of specialists committed to delivering exceptional results.</p>
+            </div>
             <div class="team-grid">
-                <div class="team-member slide-up">
-                    <div class="member-image">
-                        <div class="member-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
+                <div class="team-card fade-in">
+                    <div class="team-avatar">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <div class="member-info">
-                        <h3>Development Team</h3>
-                        <p class="member-role">Full-Stack Developers</p>
-                        <p>Expert developers specializing in modern web technologies, mobile apps, and cloud infrastructure.</p>
-                    </div>
+                    <h3>Development Team</h3>
+                    <div class="team-role">Full-Stack Engineers</div>
+                    <p>Expert developers building scalable applications with modern frameworks and cloud architecture.</p>
                 </div>
-                <div class="team-member slide-up">
-                    <div class="member-image">
-                        <div class="member-avatar">
-                            <i class="fas fa-brain"></i>
-                        </div>
+                <div class="team-card fade-in">
+                    <div class="team-avatar">
+                        <i class="fas fa-brain"></i>
                     </div>
-                    <div class="member-info">
-                        <h3>AI Specialists</h3>
-                        <p class="member-role">Machine Learning Engineers</p>
-                        <p>AI and machine learning experts creating intelligent solutions for education and business automation.</p>
-                    </div>
+                    <h3>AI Specialists</h3>
+                    <div class="team-role">Machine Learning Engineers</div>
+                    <p>Bringing intelligent automation and predictive analytics to your business processes.</p>
                 </div>
-                <div class="team-member slide-up">
-                    <div class="member-image">
-                        <div class="member-avatar">
-                            <i class="fas fa-headset"></i>
-                        </div>
+                <div class="team-card fade-in">
+                    <div class="team-avatar">
+                        <i class="fas fa-palette"></i>
                     </div>
-                    <div class="member-info">
-                        <h3>Support Team</h3>
-                        <p class="member-role">Customer Success</p>
-                        <p>Dedicated support specialists ensuring your success with our systems and providing ongoing assistance.</p>
+                    <h3>Design Team</h3>
+                    <div class="team-role">UX/UI Designers</div>
+                    <p>Creating intuitive interfaces that users love and that drive engagement.</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-avatar">
+                        <i class="fas fa-headset"></i>
                     </div>
+                    <h3>Support Team</h3>
+                    <div class="team-role">Customer Success</div>
+                    <p>Ensuring your systems run smoothly and your team is always supported.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="why-choose">
+    <section class="why-section">
         <div class="container">
-            <h2 class="section-title">Why Choose AutoM8?</h2>
-            <div class="choose-grid">
-                <div class="choose-item">
-                    <div class="choose-number">1</div>
-                    <h3>Local Understanding</h3>
-                    <p>We understand the South African education system and business environment. Our solutions are designed for local needs.</p>
+            <div class="section-header fade-in">
+                <span class="section-tag">
+                    <i class="fas fa-star"></i>
+                    Why AutoM8
+                </span>
+                <h2 class="section-title">The AutoM8 Difference</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card fade-in">
+                    <div class="why-number">1</div>
+                    <h3>Local Expertise</h3>
+                    <p>Deep understanding of South African business environment and requirements.</p>
                 </div>
-                <div class="choose-item">
-                    <div class="choose-number">2</div>
-                    <h3>Affordable Excellence</h3>
-                    <p>Enterprise-grade solutions at prices that fit South African budgets. No compromise on quality or features.</p>
+                <div class="why-card fade-in">
+                    <div class="why-number">2</div>
+                    <h3>Proven Track Record</h3>
+                    <p>50+ successful projects with measurable ROI for our clients.</p>
                 </div>
-                <div class="choose-item">
-                    <div class="choose-number">3</div>
-                    <h3>Comprehensive Support</h3>
-                    <p>From initial consultation to ongoing support, we're with you every step of the way. Training included.</p>
+                <div class="why-card fade-in">
+                    <div class="why-number">3</div>
+                    <h3>Full Ownership</h3>
+                    <p>You own everything we build. Complete source code and documentation.</p>
                 </div>
-                <div class="choose-item">
-                    <div class="choose-number">4</div>
-                    <h3>Future-Ready Technology</h3>
-                    <p>Built on modern cloud infrastructure with AI capabilities. Your investment grows with new features.</p>
+                <div class="why-card fade-in">
+                    <div class="why-number">4</div>
+                    <h3>Ongoing Partnership</h3>
+                    <p>Support and enhancement long after launch. We grow with you.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
+    <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Join Our Mission?</h2>
-                <p>Let's work together to bring your institution into the digital age</p>
+                <h2>Ready to Build Something Great?</h2>
+                <p>Let's discuss how AutoM8 can become the technical engine behind your business growth.</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Start Your Journey</a>
-                    <a href="services.html" class="btn btn-outline">Explore Solutions</a>
+                    <a href="contact.html" class="btn btn-white">
+                        <i class="fas fa-calendar-alt"></i>
+                        Schedule a Call
+                    </a>
+                    <a href="portfolio.html" class="btn btn-outline-white">
+                        <i class="fas fa-briefcase"></i>
+                        View Our Work
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-brand">
                     <h3>AutoM8</h3>
-                    <p>Digital solutions that automate success for schools and businesses across South Africa.</p>
+                    <p>Building enterprise-grade digital solutions that power businesses across South Africa.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Custom Software</a></li>
+                        <li><a href="services.html">Web Platforms</a></li>
+                        <li><a href="services.html">Education Tech</a></li>
+                        <li><a href="services.html">AI Solutions</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
                     <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> autom8streamlining@gmail.com</p>
+                    <p><i class="fas fa-envelope"></i> info@auto-m8.co.za</p>
                     <p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p>
                 </div>
             </div>
@@ -374,6 +693,25 @@
         </div>
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>

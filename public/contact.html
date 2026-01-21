@@ -4,93 +4,351 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
-    <title>Contact AutoM8 | Get Your School Management System Quote | South Africa</title>
-    <meta name="description" content="Contact AutoM8 for school management systems and business automation solutions. Get your free quote today. Call +27 68 153 6136 or email autom8streamlining@gmail.com">
-    <meta name="keywords" content="contact AutoM8, school management system quote, business automation contact, South Africa education technology, get started">
+    <title>Contact AutoM8 | Get Your Project Quote | South Africa</title>
+    <meta name="description" content="Contact AutoM8 for custom software, business automation, and digital solutions. Get a free consultation. Email info@auto-m8.co.za or call +27 68 153 6136.">
+    <meta name="keywords" content="contact AutoM8, custom software quote, business automation consultation, South Africa software agency">
     <meta name="author" content="AutoM8">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://auto-m8.co.za/contact">
     
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://auto-m8.co.za/contact">
-    <meta property="og:title" content="Contact AutoM8 | Get Your School Management System Quote">
-    <meta property="og:description" content="Ready to transform your school or business? Contact AutoM8 for affordable digital solutions across South Africa. Free consultation available.">
+    <meta property="og:title" content="Contact AutoM8 | Get Your Project Quote">
+    <meta property="og:description" content="Ready to transform your business? Contact AutoM8 for a free consultation on custom software and automation solutions.">
     <meta property="og:image" content="https://auto-m8.co.za/og-image.jpg">
     <meta property="og:site_name" content="AutoM8">
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://auto-m8.co.za/contact">
-    <meta property="twitter:title" content="Contact AutoM8 | Get Your School Management System Quote">
-    <meta property="twitter:description" content="Ready to transform your school or business? Contact AutoM8 for affordable digital solutions across South Africa.">
-    <meta property="twitter:image" content="https://auto-m8.co.za/og-image.jpg">
-    
-    <!-- Additional Meta Tags -->
-    <meta name="theme-color" content="#003B73">
+    <meta name="theme-color" content="#0f0f23">
     <meta name="geo.region" content="ZA">
     <meta name="geo.country" content="South Africa">
     
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/theme.css">
     
-    <!-- Structured Data - ContactPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "name": "Contact AutoM8",
-      "description": "Get in touch with AutoM8 for school management systems and business automation solutions across South Africa.",
-      "url": "https://auto-m8.co.za/contact",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "AutoM8",
-        "contactPoint": [
-          {
-            "@type": "ContactPoint",
-            "telephone": "+27681536136",
-            "contactType": "customer service",
-            "email": "autom8streamlining@gmail.com",
-            "availableLanguage": "English",
-            "hoursAvailable": {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday", 
-                "Thursday",
-                "Friday"
-              ],
-              "opens": "08:00",
-              "closes": "18:00"
+    <style>
+        .contact-section {
+            background: var(--bg-primary);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-form-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 3rem;
+        }
+
+        .contact-form-container h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form-container > p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            background: rgba(79, 70, 229, 0.05);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form-group select {
+            cursor: pointer;
+        }
+
+        .form-group select option {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .contact-info-container h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            border-color: var(--border-hover);
+            transform: translateX(8px);
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(124, 58, 237, 0.2));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-icon i {
+            font-size: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-details h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-details p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-details small {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .quick-actions h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.25rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .action-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn.whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+        }
+
+        .action-btn.whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+        }
+
+        .action-btn.email {
+            background: var(--gradient-primary);
+            color: white;
+        }
+
+        .action-btn.email:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .response-section {
+            background: var(--bg-secondary);
+        }
+
+        .response-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .response-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .response-card:hover {
+            border-color: var(--border-hover);
+        }
+
+        .response-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(124, 58, 237, 0.2));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.25rem;
+        }
+
+        .response-icon i {
+            font-size: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .response-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .response-card p {
+            color: var(--accent-light);
+            font-weight: 600;
+        }
+
+        .faq-section {
+            background: var(--bg-primary);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--border-hover);
+        }
+
+        .faq-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-item p {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        @media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
             }
-          }
-        ]
-      }
-    }
-    </script>
+            .response-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .response-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-form-container {
+                padding: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <h1>AutoM8</h1>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
@@ -118,64 +376,76 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="page-hero">
         <div class="container">
-            <h1 class="page-title fade-in">📞 Let's Build Together</h1>
-            <p class="page-subtitle fade-in">Ready to transform your institution? Get in touch with us today</p>
+            <h1 class="page-title fade-in">Let's Build Something Great</h1>
+            <p class="page-subtitle fade-in">Ready to transform your operations? Get in touch for a free consultation and project quote.</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact-section">
         <div class="container">
-            <div class="contact-content">
-                <!-- Contact Form -->
-                <div class="contact-form-section">
-                    <h2>Send us a Message</h2>
+            <div class="contact-grid">
+                <div class="contact-form-container fade-in">
+                    <h2>Send Us a Message</h2>
+                    <p>Tell us about your project and we'll get back to you within 24 hours.</p>
                     <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="John Smith">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@company.co.za">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+27 68 123 4567">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company/Organization</label>
+                                <input type="text" id="company" name="company" placeholder="Your Company Name">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="organization">School/Organization</label>
-                            <input type="text" id="organization" name="organization">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Interest</label>
+                            <label for="service">What do you need?</label>
                             <select id="service" name="service">
                                 <option value="">Select a service</option>
-                                <option value="school-management">School Management System</option>
-                                <option value="custom-development">Custom Web/Mobile App</option>
+                                <option value="custom-software">Custom Operational Software</option>
+                                <option value="web-platform">Web Platform / Directory</option>
+                                <option value="education">School Management System</option>
                                 <option value="automation">Business Process Automation</option>
-                                <option value="ai-chatbot">AI Assistant/Chatbot</option>
-                                <option value="cloud-hosting">Cloud Hosting & Storage</option>
+                                <option value="ai-solution">AI / Chatbot Solution</option>
+                                <option value="fraud-prevention">Fraud Prevention System</option>
                                 <option value="consultation">General Consultation</option>
                             </select>
                         </div>
-                        <div class="form-group" id="planSelection" style="display: none;">
-                            <label for="selectedPlan">Selected Plan</label>
-                            <input type="text" id="selectedPlan" name="selectedPlan" readonly>
+                        <div class="form-group">
+                            <label for="budget">Estimated Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="20k-50k">R20,000 - R50,000</option>
+                                <option value="50k-100k">R50,000 - R100,000</option>
+                                <option value="100k-200k">R100,000 - R200,000</option>
+                                <option value="200k+">R200,000+</option>
+                                <option value="not-sure">Not sure yet</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or requirements..."></textarea>
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project, challenges you're facing, and what you'd like to achieve..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
                     </form>
                 </div>
 
-                <!-- Contact Info -->
-                <div class="contact-info-section">
+                <div class="contact-info-container fade-in">
                     <h2>Get in Touch</h2>
                     <div class="contact-methods">
                         <div class="contact-method">
@@ -194,7 +464,7 @@
                             </div>
                             <div class="contact-details">
                                 <h3>Email</h3>
-                                <p>autom8streamlining@gmail.com</p>
+                                <p>info@auto-m8.co.za</p>
                                 <small>Detailed project discussions</small>
                             </div>
                         </div>
@@ -215,12 +485,11 @@
                             <div class="contact-details">
                                 <h3>Location</h3>
                                 <p>South Africa</p>
-                                <small>Serving nationwide</small>
+                                <small>Serving clients nationwide</small>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Quick Actions -->
                     <div class="quick-actions">
                         <h3>Quick Actions</h3>
                         <div class="action-buttons">
@@ -228,14 +497,10 @@
                                 <i class="fab fa-whatsapp"></i>
                                 Chat on WhatsApp
                             </a>
-                            <a href="#" onclick="openEmailComposer()" class="action-btn email">
+                            <a href="mailto:info@auto-m8.co.za" class="action-btn email">
                                 <i class="fas fa-envelope"></i>
                                 Send Email
                             </a>
-                            <a href="pricing.html" class="action-btn pricing">
-                                <i class="fas fa-calculator"></i>
-                                View Pricing
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -243,112 +508,125 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq">
+    <section class="response-section">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="section-header fade-in">
+                <span class="section-tag">
+                    <i class="fas fa-clock"></i>
+                    Response Times
+                </span>
+                <h2 class="section-title">We're Quick to Respond</h2>
+            </div>
+            <div class="response-grid">
+                <div class="response-card fade-in">
+                    <div class="response-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Within 1 hour</p>
+                </div>
+                <div class="response-card fade-in">
+                    <div class="response-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Within 4 hours</p>
+                </div>
+                <div class="response-card fade-in">
+                    <div class="response-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>Immediate</p>
+                </div>
+                <div class="response-card fade-in">
+                    <div class="response-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3>Consultation</h3>
+                    <p>Same day booking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">
+                    <i class="fas fa-question-circle"></i>
+                    FAQ
+                </span>
+                <h2 class="section-title">Common Questions</h2>
+            </div>
             <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>How long does implementation take?</h3>
-                    <p>Implementation typically takes 2-4 weeks depending on the complexity of your requirements. We provide a detailed timeline during our initial consultation.</p>
+                <div class="faq-item fade-in">
+                    <h3>How long does a typical project take?</h3>
+                    <p>Timelines vary by scope: simple tools take 2-4 weeks, full platforms 4-8 weeks, and enterprise solutions 8-16 weeks. We provide detailed timelines before starting.</p>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item fade-in">
                     <h3>Do you provide training?</h3>
-                    <p>Yes! We provide comprehensive training for all users, including administrators, teachers, and staff. Training is included in all our packages.</p>
+                    <p>Yes! Comprehensive training for all users is included in every project. We ensure your team is confident using the system before handover.</p>
                 </div>
-                <div class="faq-item">
-                    <h3>What kind of support do you offer?</h3>
-                    <p>We offer 24/7 support via email and WhatsApp, with phone support during business hours. Premium plans include priority support with faster response times.</p>
+                <div class="faq-item fade-in">
+                    <h3>What about ongoing support?</h3>
+                    <p>All projects include post-launch support (3-12 months). This covers bug fixes, minor adjustments, and technical assistance. Extended plans available.</p>
                 </div>
-                <div class="faq-item">
-                    <h3>Can you integrate with existing systems?</h3>
-                    <p>Absolutely! We specialize in integrating our solutions with existing systems, databases, and third-party applications to ensure seamless operations.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Is my data secure?</h3>
-                    <p>Yes, all data is hosted on secure AWS servers with encryption, regular backups, and industry-standard security protocols. We comply with data protection regulations.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Do you offer custom solutions?</h3>
-                    <p>Yes! While we have standard packages, we specialize in creating custom solutions tailored to your specific needs and requirements.</p>
+                <div class="faq-item fade-in">
+                    <h3>Can you integrate with our existing systems?</h3>
+                    <p>Absolutely. We specialize in integrating with existing databases, APIs, and third-party services to create seamless workflows.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Response Time -->
-    <section class="response-time">
-        <div class="container">
-            <div class="response-content">
-                <h2>Our Response Times</h2>
-                <div class="response-grid">
-                    <div class="response-item">
-                        <div class="response-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <h3>WhatsApp</h3>
-                        <p><strong>Within 1 hour</strong> during business hours</p>
-                    </div>
-                    <div class="response-item">
-                        <div class="response-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Email</h3>
-                        <p><strong>Within 4 hours</strong> for all inquiries</p>
-                    </div>
-                    <div class="response-item">
-                        <div class="response-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <h3>Phone</h3>
-                        <p><strong>Immediate</strong> during business hours</p>
-                    </div>
-                    <div class="response-item">
-                        <div class="response-icon">
-                            <i class="fas fa-calendar"></i>
-                        </div>
-                        <h3>Demo Booking</h3>
-                        <p><strong>Same day</strong> scheduling available</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
+    <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Get Started?</h2>
-                <p>Don't wait – let's start building your digital solution today</p>
+                <h2>Ready to Start Your Project?</h2>
+                <p>Don't wait. The sooner we start, the sooner you'll see results.</p>
                 <div class="cta-buttons">
-                    <a href="https://wa.me/27681536136" class="btn btn-primary" target="_blank">Chat on WhatsApp</a>
-                    <a href="services.html" class="btn btn-outline">Browse Services</a>
+                    <a href="https://wa.me/27681536136" class="btn btn-white" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat Now
+                    </a>
+                    <a href="portfolio.html" class="btn btn-outline-white">
+                        <i class="fas fa-briefcase"></i>
+                        View Our Work
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-brand">
                     <h3>AutoM8</h3>
-                    <p>Digital solutions that automate success for schools and businesses across South Africa.</p>
+                    <p>Building enterprise-grade digital solutions that power businesses across South Africa.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Custom Software</a></li>
+                        <li><a href="services.html">Web Platforms</a></li>
+                        <li><a href="services.html">Education Tech</a></li>
+                        <li><a href="services.html">AI Solutions</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
                     <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> autom8streamlining@gmail.com</p>
+                    <p><i class="fas fa-envelope"></i> info@auto-m8.co.za</p>
                     <p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p>
                 </div>
             </div>
@@ -358,6 +636,55 @@
         </div>
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        fadeElements.forEach(el => observer.observe(el));
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone') || 'Not provided';
+            const company = formData.get('company') || 'Not provided';
+            const service = formData.get('service') || 'Not specified';
+            const budget = formData.get('budget') || 'Not specified';
+            const message = formData.get('message');
+            
+            const whatsappMessage = `Hi AutoM8!
+
+*New Project Inquiry*
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Company: ${company}
+Service: ${service}
+Budget: ${budget}
+
+Message:
+${message}`;
+            
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            window.open(`https://wa.me/27681536136?text=${encodedMessage}`, '_blank');
+        });
+    </script>
 </body>
 </html>
