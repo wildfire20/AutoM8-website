@@ -36,13 +36,22 @@ AutoM8 is a company website for a South African digital solutions provider focus
 - SPA-like routing: unmatched routes serve index.html
 
 ## Recent Changes
-- 2026-01-21: Major landing page redesign - pivot from school systems to high-end business automation agency
-  - New dark premium theme with existing brand colors (#4f46e5, #7c3aed)
-  - Updated hero: "We Build the Digital Engines that Power Your Business"
-  - Added Featured Deployments section (Lephalale Connect, LPG Gas Stock Control, Harmony Institute LMS)
-  - Reorganized Services into 3 cards (Custom Operational Software, Specialized Web Platforms, School & Education Tech)
-  - Added Agency Partnerships section for B2B white-label services
-  - Updated contact email to info@auto-m8.co.za
-  - Added fade-in animations and floating card effects
-  - Mobile-responsive design with breakpoints at 1024px and 768px
+- 2026-01-21: Complete website redesign - all 6 pages updated with premium dark theme
+  - Created shared theme.css for consistent styling (dark background #0f0f23, indigo/violet gradients)
+  - **Services page**: 6 service cards, 4-step process, technology stack grid
+  - **Portfolio page**: 8 impressive case studies with stats
+    - Lephalale Connect (business directory)
+    - LPG Gas Stock Control (fraud prevention, R500K+ savings)
+    - Harmony Institute LMS (300+ students)
+    - TransLogix Fleet Tracker (45 vehicles)
+    - MedBook Appointment System (60% fewer no-shows)
+    - FreshFarm Direct (e-commerce, 2K+ orders/month)
+    - StaffSync HR System (200+ employees)
+    - ServiceBot AI Assistant (70% auto-resolved)
+  - **Pricing page**: Project-based pricing (R20K starter, R50K business, R150K+ enterprise)
+    - Education plans (R15-R35 per student/month)
+  - **About page**: Mission, values, team sections with agency positioning
+  - **Contact page**: Form with WhatsApp integration, response time cards
+  - Updated contact email to info@auto-m8.co.za throughout
+  - Fade-in animations, floating card effects, mobile-responsive (breakpoints at 1024px, 768px)
 - 2026-01-21: Configured for Replit environment (port 5000, bind to 0.0.0.0)
