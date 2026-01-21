@@ -4,33 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Portfolio | Enterprise Projects & Case Studies | AutoM8 South Africa</title>
-    <meta name="description" content="Explore AutoM8's portfolio of enterprise-grade digital solutions. View case studies from business automation, web platforms, and education technology projects.">
-    <meta name="keywords" content="AutoM8 portfolio, business automation projects, custom software case studies, South Africa enterprise solutions">
+    <title>Portfolio | Our Projects & Case Studies | AutoM8 South Africa</title>
+    <meta name="description" content="Explore AutoM8's portfolio of software projects. View case studies from business automation, web platforms, and education technology projects.">
     <meta name="author" content="AutoM8">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://auto-m8.co.za/portfolio">
+    <meta name="theme-color" content="#2563eb">
     
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://auto-m8.co.za/portfolio">
-    <meta property="og:title" content="Portfolio | Enterprise Projects & Case Studies | AutoM8">
-    <meta property="og:description" content="View our portfolio of successful enterprise digital solutions across South Africa.">
-    <meta property="og:image" content="https://auto-m8.co.za/og-image.jpg">
-    <meta property="og:site_name" content="AutoM8">
-    
-    <meta name="theme-color" content="#0f0f23">
-    <meta name="geo.region" content="ZA">
-    <meta name="geo.country" content="South Africa">
-    
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles/theme.css">
     
     <style>
@@ -43,109 +23,63 @@
         .portfolio-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 24px;
+            border-radius: 16px;
             overflow: hidden;
-            transition: all 0.4s ease;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-card);
         }
 
         .portfolio-card:hover {
-            transform: translateY(-8px);
-            border-color: var(--border-hover);
+            transform: translateY(-6px);
             box-shadow: var(--shadow-card-hover);
         }
 
-        .portfolio-card.featured {
-            grid-column: span 2;
-        }
-
-        .portfolio-card.featured .portfolio-inner {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
         .portfolio-image {
-            height: 280px;
-            background: linear-gradient(135deg, #1e1e4a 0%, #2a2a5a 100%);
+            height: 180px;
+            background: linear-gradient(135deg, var(--accent-light) 0%, #e0e7ff 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .portfolio-card.featured .portfolio-image {
-            height: 100%;
-            min-height: 400px;
-        }
-
-        .portfolio-image::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(45deg, rgba(79, 70, 229, 0.3) 0%, transparent 50%);
         }
 
         .portfolio-image i {
-            font-size: 5rem;
-            color: rgba(255, 255, 255, 0.15);
-            position: relative;
-            z-index: 1;
+            font-size: 4rem;
+            color: var(--accent-primary);
+            opacity: 0.5;
         }
 
         .portfolio-content {
-            padding: 2.5rem;
+            padding: 1.75rem;
         }
 
-        .portfolio-category {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(79, 70, 229, 0.2);
-            color: var(--accent-light);
-            padding: 6px 14px;
+        .portfolio-tag {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--accent-primary);
+            padding: 4px 12px;
             border-radius: 100px;
             font-size: 0.75rem;
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
 
         .portfolio-content h3 {
-            font-size: 1.75rem;
-            font-weight: 800;
+            font-size: 1.25rem;
+            font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 1rem;
-            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
         }
 
         .portfolio-content > p {
             color: var(--text-muted);
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
-
-        .portfolio-features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .feature-tag {
-            background: rgba(79, 70, 229, 0.1);
-            color: var(--text-secondary);
-            padding: 6px 12px;
-            border-radius: 8px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            border: 1px solid rgba(79, 70, 229, 0.2);
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
         }
 
         .portfolio-stats {
             display: flex;
             gap: 2rem;
-            padding-top: 1.5rem;
+            padding-top: 1rem;
             border-top: 1px solid var(--border-color);
         }
 
@@ -155,23 +89,48 @@
 
         .stat strong {
             display: block;
-            font-size: 1.75rem;
+            font-size: 1.25rem;
             font-weight: 800;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--accent-primary);
         }
 
         .stat span {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
-        .testimonials-section {
+        .results-section {
             background: var(--bg-secondary);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .result-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .result-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-primary);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-label {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .testimonials-section {
+            background: var(--bg-primary);
         }
 
         .testimonials-grid {
@@ -183,26 +142,22 @@
         .testimonial-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 20px;
-            padding: 2.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .testimonial-card:hover {
-            border-color: var(--border-hover);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-card);
         }
 
         .testimonial-quote {
             font-size: 2rem;
             color: var(--accent-primary);
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
 
         .testimonial-content p {
             color: var(--text-secondary);
             line-height: 1.8;
             font-style: italic;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.25rem;
         }
 
         .testimonial-author {
@@ -212,21 +167,23 @@
         }
 
         .author-avatar {
-            width: 48px;
-            height: 48px;
-            background: var(--gradient-primary);
+            width: 44px;
+            height: 44px;
+            background: var(--accent-primary);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             font-weight: 700;
+            font-size: 0.9rem;
         }
 
         .author-info strong {
             display: block;
             color: var(--text-primary);
             font-weight: 600;
+            font-size: 0.95rem;
         }
 
         .author-info span {
@@ -234,49 +191,9 @@
             color: var(--text-muted);
         }
 
-        .results-section {
-            background: var(--bg-primary);
-        }
-
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-        }
-
-        .result-card {
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .result-number {
-            font-size: 3.5rem;
-            font-weight: 900;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1;
-            margin-bottom: 0.5rem;
-        }
-
-        .result-label {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
         @media (max-width: 1024px) {
             .portfolio-grid {
                 grid-template-columns: 1fr;
-            }
-            .portfolio-card.featured {
-                grid-column: span 1;
-            }
-            .portfolio-card.featured .portfolio-inner {
-                grid-template-columns: 1fr;
-            }
-            .portfolio-card.featured .portfolio-image {
-                min-height: 280px;
             }
             .testimonials-grid {
                 grid-template-columns: 1fr;
@@ -287,10 +204,6 @@
         }
 
         @media (max-width: 768px) {
-            .portfolio-stats {
-                flex-wrap: wrap;
-                gap: 1.5rem;
-            }
             .results-grid {
                 grid-template-columns: 1fr;
             }
@@ -304,24 +217,12 @@
                 <h1>AutoM8</h1>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="services.html" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="pricing.html" class="nav-link">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -333,45 +234,30 @@
 
     <section class="page-hero">
         <div class="container">
-            <h1 class="page-title fade-in">Our Work Speaks for Itself</h1>
-            <p class="page-subtitle fade-in">Explore the digital solutions we've built for businesses across South Africa. Each project represents a partnership built on trust and delivered excellence.</p>
+            <h1 class="page-title fade-in">Our Work</h1>
+            <p class="page-subtitle fade-in">Explore the software solutions we've built for businesses across South Africa.</p>
         </div>
     </section>
 
-    <section class="portfolio-section" style="background: var(--bg-primary);">
+    <section style="background: var(--bg-primary);">
         <div class="container">
             <div class="portfolio-grid">
-                <div class="portfolio-card featured fade-in">
-                    <div class="portfolio-inner">
-                        <div class="portfolio-image">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="portfolio-content">
-                            <span class="portfolio-category">
-                                <i class="fas fa-star"></i> Featured Project
-                            </span>
-                            <h3>Lephalale Connect</h3>
-                            <p>A comprehensive local business directory platform serving the Lephalale region. Built with scalable architecture to handle growing listings, automated payment processing, and business owner dashboards.</p>
-                            <div class="portfolio-features">
-                                <span class="feature-tag">Business Directory</span>
-                                <span class="feature-tag">Payment Integration</span>
-                                <span class="feature-tag">Admin Dashboard</span>
-                                <span class="feature-tag">SEO Optimized</span>
-                                <span class="feature-tag">Mobile Responsive</span>
+                <div class="portfolio-card fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Web Platform</span>
+                        <h3>Lephalale Connect</h3>
+                        <p>A comprehensive local business directory platform serving the Lephalale region with automated payment processing and business owner dashboards.</p>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <strong>50+</strong>
+                                <span>Businesses</span>
                             </div>
-                            <div class="portfolio-stats">
-                                <div class="stat">
-                                    <strong>50+</strong>
-                                    <span>Businesses Listed</span>
-                                </div>
-                                <div class="stat">
-                                    <strong>10K+</strong>
-                                    <span>Monthly Visitors</span>
-                                </div>
-                                <div class="stat">
-                                    <strong>99.9%</strong>
-                                    <span>Uptime</span>
-                                </div>
+                            <div class="stat">
+                                <strong>10K+</strong>
+                                <span>Monthly Visitors</span>
                             </div>
                         </div>
                     </div>
@@ -382,15 +268,9 @@
                         <i class="fas fa-fire-alt"></i>
                     </div>
                     <div class="portfolio-content">
-                        <span class="portfolio-category">Fraud Prevention</span>
+                        <span class="portfolio-tag">Fraud Prevention</span>
                         <h3>LPG Gas Stock Control</h3>
-                        <p>Custom fraud-prevention software for energy retailers. Real-time tracking of KG variance, daily sales reconciliation, and automated alerts for discrepancies. Reduced stock losses by over 40%.</p>
-                        <div class="portfolio-features">
-                            <span class="feature-tag">Stock Tracking</span>
-                            <span class="feature-tag">Fraud Detection</span>
-                            <span class="feature-tag">Real-time Alerts</span>
-                            <span class="feature-tag">Reporting</span>
-                        </div>
+                        <p>Custom fraud-prevention software for energy retailers. Real-time tracking of KG variance with automated alerts for discrepancies.</p>
                         <div class="portfolio-stats">
                             <div class="stat">
                                 <strong>40%</strong>
@@ -409,15 +289,9 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="portfolio-content">
-                        <span class="portfolio-category">Education Tech</span>
+                        <span class="portfolio-tag">Education</span>
                         <h3>Harmony Institute LMS</h3>
-                        <p>Full school digitization including grade management, attendance tracking, parent communication, and cloud-based document storage. Serving 300+ students with seamless daily operations.</p>
-                        <div class="portfolio-features">
-                            <span class="feature-tag">Grade Management</span>
-                            <span class="feature-tag">Attendance</span>
-                            <span class="feature-tag">Parent Portal</span>
-                            <span class="feature-tag">Cloud Storage</span>
-                        </div>
+                        <p>Full school digitization including grade management, attendance tracking, parent communication, and cloud-based document storage.</p>
                         <div class="portfolio-stats">
                             <div class="stat">
                                 <strong>300+</strong>
@@ -436,15 +310,9 @@
                         <i class="fas fa-truck"></i>
                     </div>
                     <div class="portfolio-content">
-                        <span class="portfolio-category">Fleet Management</span>
+                        <span class="portfolio-tag">Fleet Management</span>
                         <h3>TransLogix Fleet Tracker</h3>
-                        <p>Complete fleet management solution for a logistics company. GPS tracking, fuel monitoring, driver performance analytics, and maintenance scheduling all in one platform.</p>
-                        <div class="portfolio-features">
-                            <span class="feature-tag">GPS Tracking</span>
-                            <span class="feature-tag">Fuel Monitoring</span>
-                            <span class="feature-tag">Driver Analytics</span>
-                            <span class="feature-tag">Maintenance Logs</span>
-                        </div>
+                        <p>Complete fleet management solution with GPS tracking, fuel monitoring, driver performance analytics, and maintenance scheduling.</p>
                         <div class="portfolio-stats">
                             <div class="stat">
                                 <strong>45</strong>
@@ -463,15 +331,9 @@
                         <i class="fas fa-calendar-check"></i>
                     </div>
                     <div class="portfolio-content">
-                        <span class="portfolio-category">Booking Platform</span>
-                        <h3>MedBook Appointment System</h3>
-                        <p>Online booking platform for a medical practice group. Patients can book appointments, receive SMS reminders, and complete pre-visit forms online. Reduced no-shows by 60%.</p>
-                        <div class="portfolio-features">
-                            <span class="feature-tag">Online Booking</span>
-                            <span class="feature-tag">SMS Reminders</span>
-                            <span class="feature-tag">Patient Forms</span>
-                            <span class="feature-tag">Multi-location</span>
-                        </div>
+                        <span class="portfolio-tag">Booking Platform</span>
+                        <h3>MedBook Appointments</h3>
+                        <p>Online booking platform for a medical practice group. Patients can book appointments, receive SMS reminders, and complete pre-visit forms.</p>
                         <div class="portfolio-stats">
                             <div class="stat">
                                 <strong>60%</strong>
@@ -490,15 +352,9 @@
                         <i class="fas fa-shopping-cart"></i>
                     </div>
                     <div class="portfolio-content">
-                        <span class="portfolio-category">E-Commerce</span>
+                        <span class="portfolio-tag">E-Commerce</span>
                         <h3>FreshFarm Direct</h3>
-                        <p>Farm-to-table e-commerce platform connecting local farmers with urban consumers. Subscription boxes, delivery scheduling, and farmer dashboards for inventory management.</p>
-                        <div class="portfolio-features">
-                            <span class="feature-tag">E-commerce</span>
-                            <span class="feature-tag">Subscriptions</span>
-                            <span class="feature-tag">Delivery Scheduling</span>
-                            <span class="feature-tag">Farmer Portal</span>
-                        </div>
+                        <p>Farm-to-table e-commerce platform connecting local farmers with urban consumers. Subscription boxes and delivery scheduling.</p>
                         <div class="portfolio-stats">
                             <div class="stat">
                                 <strong>15</strong>
@@ -517,15 +373,9 @@
                         <i class="fas fa-users-cog"></i>
                     </div>
                     <div class="portfolio-content">
-                        <span class="portfolio-category">HR Platform</span>
+                        <span class="portfolio-tag">HR Platform</span>
                         <h3>StaffSync HR System</h3>
-                        <p>Complete HR management platform for a retail chain. Employee onboarding, leave management, performance tracking, and payroll integration. Streamlined HR operations across 8 branches.</p>
-                        <div class="portfolio-features">
-                            <span class="feature-tag">Onboarding</span>
-                            <span class="feature-tag">Leave Management</span>
-                            <span class="feature-tag">Performance</span>
-                            <span class="feature-tag">Payroll</span>
-                        </div>
+                        <p>Complete HR management platform for a retail chain. Employee onboarding, leave management, performance tracking, and payroll integration.</p>
                         <div class="portfolio-stats">
                             <div class="stat">
                                 <strong>200+</strong>
@@ -544,15 +394,9 @@
                         <i class="fas fa-robot"></i>
                     </div>
                     <div class="portfolio-content">
-                        <span class="portfolio-category">AI Solution</span>
+                        <span class="portfolio-tag">AI Solution</span>
                         <h3>ServiceBot AI Assistant</h3>
-                        <p>AI-powered customer service chatbot for a telecommunications company. Handles 70% of customer queries automatically, escalates complex issues to human agents, available 24/7.</p>
-                        <div class="portfolio-features">
-                            <span class="feature-tag">AI Chatbot</span>
-                            <span class="feature-tag">NLP</span>
-                            <span class="feature-tag">24/7 Support</span>
-                            <span class="feature-tag">Smart Escalation</span>
-                        </div>
+                        <p>AI-powered customer service chatbot for a telecommunications company. Handles 70% of customer queries automatically, available 24/7.</p>
                         <div class="portfolio-stats">
                             <div class="stat">
                                 <strong>70%</strong>
@@ -574,10 +418,9 @@
             <div class="section-header fade-in">
                 <span class="section-tag">
                     <i class="fas fa-chart-line"></i>
-                    Impact
+                    Results
                 </span>
-                <h2 class="section-title">Results That Matter</h2>
-                <p class="section-subtitle">Our solutions deliver measurable business outcomes for every client.</p>
+                <h2 class="section-title">The Numbers Speak</h2>
             </div>
             <div class="results-grid">
                 <div class="result-card fade-in">
@@ -613,7 +456,7 @@
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-quote">"</div>
                     <div class="testimonial-content">
-                        <p>AutoM8 transformed how we manage our school. The system is intuitive, reliable, and our teachers love it. Student engagement has improved significantly.</p>
+                        <p>AutoM8 transformed how we manage our school. The system is intuitive and reliable. Student engagement has improved significantly.</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">SJ</div>
@@ -626,7 +469,7 @@
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-quote">"</div>
                     <div class="testimonial-content">
-                        <p>The stock control system has saved us hundreds of thousands in prevented losses. We can now track every kilogram in real-time. Game changer for our business.</p>
+                        <p>The stock control system has saved us hundreds of thousands in prevented losses. We can now track every kilogram in real-time.</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">TM</div>
@@ -639,7 +482,7 @@
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-quote">"</div>
                     <div class="testimonial-content">
-                        <p>From concept to launch in 6 weeks. The team understood our vision immediately and delivered beyond expectations. Our directory is now the go-to platform locally.</p>
+                        <p>From concept to launch in 6 weeks. The team understood our vision immediately and delivered beyond expectations.</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">LN</div>
@@ -657,15 +500,11 @@
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Be Our Next Success Story?</h2>
-                <p>Let's discuss your project and create something amazing together.</p>
+                <p>Let's discuss your project and build something great together.</p>
                 <div class="cta-buttons">
                     <a href="contact.html" class="btn btn-white">
                         <i class="fas fa-rocket"></i>
                         Start Your Project
-                    </a>
-                    <a href="services.html" class="btn btn-outline-white">
-                        <i class="fas fa-layer-group"></i>
-                        View Services
                     </a>
                 </div>
             </div>
@@ -677,15 +516,15 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3>AutoM8</h3>
-                    <p>Building enterprise-grade digital solutions that power businesses across South Africa.</p>
+                    <p>Building custom software solutions that power South African businesses.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
                         <li><a href="services.html">Custom Software</a></li>
-                        <li><a href="services.html">Web Platforms</a></li>
+                        <li><a href="services.html">Web Development</a></li>
                         <li><a href="services.html">Education Tech</a></li>
-                        <li><a href="services.html">AI Solutions</a></li>
+                        <li><a href="services.html">Business Automation</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -712,21 +551,14 @@
     <script>
         const mobileMenu = document.getElementById('mobile-menu');
         const navMenu = document.getElementById('nav-menu');
-
-        mobileMenu.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
+        mobileMenu.addEventListener('click', () => navMenu.classList.toggle('active'));
 
         const fadeElements = document.querySelectorAll('.fade-in');
-        
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('visible');
             });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
+        }, { threshold: 0.1 });
         fadeElements.forEach(el => observer.observe(el));
     </script>
 </body>
