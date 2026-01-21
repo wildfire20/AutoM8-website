@@ -1,0 +1,49 @@
+Goal: I want to perform a major renovation of my landing page (index.html). I am pivoting my business from "Just School Systems" to a "High-End Business Automation Agency."
+
+Design Rules (STRICT):
+
+Color Palette: You MUST strictly stick to my existing brand colors found in the CSS. Do not introduce random new colors. Use my primary color for buttons/highlights and my dark background for a "premium tech" feel.
+
+Vibe: Professional, High-Ticket, Enterprise Software. It should feel like a company that charges R20,000+, not a freelancer.
+
+Creative Freedom: You have creative freedom on the layout (grids, spacing, fonts), animations (fade-ins), and section arrangements, as long as it looks modern and fast.
+
+Content Changes (Implement These):
+
+1. Hero Section (Rewrite):
+
+Headline: "We Build the Digital Engines that Power Your Business."
+
+Sub-headline: "From Custom School Management Systems to Industrial Stock Control—AutoM8 digitizes your operations to save time and money."
+
+Buttons: Primary = "Get a System Audit", Secondary = "View Portfolio".
+
+2. New 'Featured Deployments' Section (Crucial):
+
+Create a grid showing my recent projects (use placeholders for images if needed, I will swap them):
+
+Project 1: "Lephalale Connect" – Description: "A scalable local business directory handling 50+ listings and automated payments."
+
+Project 2: "LPG Gas Stock Control" – Description: "Custom fraud-prevention software for energy retailers, tracking KG variance and daily sales."
+
+Project 3: "Harmony Institute LMS" – Description: "Full school digitization and grade management system."
+
+3. Services Section (The Expansion):
+
+Group my services into 3 clear cards:
+
+Custom Operational Software: (Inventory, Fleet Management, Staffing).
+
+Specialized Web Platforms: (Directories, E-commerce, Booking Engines).
+
+School & Education Tech: (LMS, Attendance, Report Cards).
+
+4. Agency Partner Section (New):
+
+Add a section near the bottom for B2B Partners: "Agency Partnerships: We act as the technical engine for marketing agencies. White-label our development to offer your clients full-stack solutions."
+
+5. Contact/Footer:
+
+Update email to: info@auto-m8.co.za
+
+Please refactor the code to be clean, mobile-responsive, and visually stunning.

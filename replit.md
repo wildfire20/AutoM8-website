@@ -36,4 +36,13 @@ AutoM8 is a company website for a South African digital solutions provider focus
 - SPA-like routing: unmatched routes serve index.html
 
 ## Recent Changes
+- 2026-01-21: Major landing page redesign - pivot from school systems to high-end business automation agency
+  - New dark premium theme with existing brand colors (#4f46e5, #7c3aed)
+  - Updated hero: "We Build the Digital Engines that Power Your Business"
+  - Added Featured Deployments section (Lephalale Connect, LPG Gas Stock Control, Harmony Institute LMS)
+  - Reorganized Services into 3 cards (Custom Operational Software, Specialized Web Platforms, School & Education Tech)
+  - Added Agency Partnerships section for B2B white-label services
+  - Updated contact email to info@auto-m8.co.za
+  - Added fade-in animations and floating card effects
+  - Mobile-responsive design with breakpoints at 1024px and 768px
 - 2026-01-21: Configured for Replit environment (port 5000, bind to 0.0.0.0)
