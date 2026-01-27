@@ -44,7 +44,7 @@ AutoM8 is a company website for a South African software development company foc
 - Clean, professional look similar to livex.co.za
 - Blue and white color scheme (NOT dark/techy design)
 - Business-friendly aesthetic
-- Contact email: info@auto-m8.co.za
+- Contact email: Autom8streamlining@gmail.com
 - WhatsApp: +27 68 153 6136
 
 ## Recent Changes
