@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept C — Soft Sky</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:#eef4fb;color:#1e2d50;}
+.label{position:fixed;top:10px;left:50%;transform:translateX(-50%);background:#1e2d50;color:white;padding:6px 16px;border-radius:100px;font-size:0.75rem;font-weight:700;z-index:999;letter-spacing:0.5px;}
+
+/* NAV */
+nav{background:rgba(238,244,251,0.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,148,220,0.15);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:100;}
+.nav-logo{font-size:1.2rem;font-weight:800;color:#1e2d50;letter-spacing:-0.5px;}
+.nav-links{display:flex;gap:2.5rem;list-style:none;}
+.nav-links a{font-size:0.9rem;color:#4a6080;text-decoration:none;font-weight:500;}
+.nav-cta{background:#2563eb;color:white;padding:9px 20px;border-radius:8px;font-size:0.88rem;font-weight:600;text-decoration:none;}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#eef4fb 0%,#dbeafe 100%);padding:90px 5% 70px;}
+.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;}
+.pill{display:inline-flex;align-items:center;gap:6px;background:white;border:1px solid #bfdbfe;color:#1d4ed8;padding:6px 14px;border-radius:100px;font-size:0.78rem;font-weight:600;margin-bottom:1.5rem;}
+.hero h1{font-size:3rem;font-weight:900;line-height:1.12;letter-spacing:-0.04em;color:#1e2d50;margin-bottom:1.25rem;}
+.hero h1 span{color:#2563eb;}
+.hero p{font-size:1rem;color:#4a6080;line-height:1.8;margin-bottom:2rem;}
+.buttons{display:flex;gap:0.75rem;align-items:center;}
+.btn-solid{background:#2563eb;color:white;padding:13px 26px;border-radius:10px;font-size:0.9rem;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;box-shadow:0 4px 20px rgba(37,99,235,0.3);}
+.btn-outline{background:white;color:#2563eb;border:1.5px solid #93c5fd;padding:12px 24px;border-radius:10px;font-size:0.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;}
+.hero-img{width:100%;filter:saturate(0.55) hue-rotate(190deg) brightness(1.08);drop-shadow(0 20px 40px rgba(37,99,235,0.15));}
+
+/* DIVIDER */
+.divider{background:white;padding:32px 5%;}
+.divider-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-around;align-items:center;}
+.divider-stat{text-align:center;}
+.divider-stat strong{display:block;font-size:2rem;font-weight:900;color:#2563eb;}
+.divider-stat span{font-size:0.85rem;color:#6b7280;}
+.divider-sep{width:1px;height:40px;background:#e5e7eb;}
+
+/* SECTION */
+.section{background:#eef4fb;padding:80px 5%;}
+.section-inner{max-width:1200px;margin:0 auto;}
+.section h2{font-size:2.2rem;font-weight:800;color:#1e2d50;letter-spacing:-0.03em;text-align:center;margin-bottom:0.5rem;}
+.section sub{display:block;text-align:center;color:#6b7280;font-size:0.95rem;margin-bottom:2.5rem;}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
+.card{background:white;border-radius:14px;padding:2rem;box-shadow:0 2px 12px rgba(37,99,235,0.06);border:1px solid #dbeafe;}
+.card i{font-size:1.5rem;color:#2563eb;margin-bottom:0.9rem;}
+.card h3{font-size:1.05rem;font-weight:700;color:#1e2d50;margin-bottom:0.4rem;}
+.card p{font-size:0.88rem;color:#6b7280;line-height:1.6;margin:0;}
+</style>
+</head>
+<body>
+<div class="label">C — Soft Sky</div>
+<nav>
+    <div class="nav-logo">AutoM8</div>
+    <ul class="nav-links">
+        <li><a href="#">Services</a></li><li><a href="#">Pricing</a></li><li><a href="#">Portfolio</a></li><li><a href="#">About</a></li>
+    </ul>
+    <a href="#" class="nav-cta">Get Started</a>
+</nav>
+<div class="hero">
+    <div class="hero-inner">
+        <div>
+            <div class="pill"><i class="fas fa-bolt"></i> South Africa's Custom Software Partner</div>
+            <h1>Your Business Deserves <span>Better Software</span></h1>
+            <p>We build custom systems, automations, and web platforms tailored to exactly how your business operates — not how generic software thinks it should.</p>
+            <div class="buttons">
+                <a href="#" class="btn-solid"><i class="fas fa-rocket"></i> Get Free Quote</a>
+                <a href="#" class="btn-outline"><i class="fas fa-play-circle"></i> View Work</a>
+            </div>
+        </div>
+        <div><img class="hero-img" src="../images/illustrations/illus-1.png" alt="Team"></div>
+    </div>
+</div>
+<div class="divider">
+    <div class="divider-inner">
+        <div class="divider-stat"><strong>50+</strong><span>Projects</span></div>
+        <div class="divider-sep"></div>
+        <div class="divider-stat"><strong>R2M+</strong><span>Client Savings</span></div>
+        <div class="divider-sep"></div>
+        <div class="divider-stat"><strong>99.9%</strong><span>Uptime</span></div>
+        <div class="divider-sep"></div>
+        <div class="divider-stat"><strong>100%</strong><span>Satisfaction</span></div>
+    </div>
+</div>
+<div class="section">
+    <div class="section-inner">
+        <h2>Everything Your Business Needs</h2>
+        <sub>From a single tool to a full platform — we build it, you own it.</sub>
+        <div class="cards">
+            <div class="card"><i class="fas fa-code"></i><h3>Custom Software</h3><p>Tailored systems for inventory, HR, stock control, and operations.</p></div>
+            <div class="card"><i class="fas fa-cogs"></i><h3>Business Automation</h3><p>Automate repetitive tasks and get hours back in your week.</p></div>
+            <div class="card"><i class="fas fa-graduation-cap"></i><h3>Education Tech</h3><p>School management systems with grades, attendance, and parent portals.</p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

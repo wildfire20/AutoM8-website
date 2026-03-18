@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept B — Synthesis Pro</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:white;color:#0f1e3c;}
+.label{position:fixed;top:10px;left:50%;transform:translateX(-50%);background:#0f1e3c;color:white;padding:6px 16px;border-radius:100px;font-size:0.75rem;font-weight:700;z-index:999;letter-spacing:0.5px;}
+
+/* NAV */
+nav{background:white;border-bottom:1px solid #e8edf5;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100;}
+.nav-logo{font-size:1.2rem;font-weight:800;color:#0f1e3c;letter-spacing:-0.5px;}
+.nav-links{display:flex;gap:2.5rem;list-style:none;}
+.nav-links a{font-size:0.9rem;color:#4a5568;text-decoration:none;font-weight:500;}
+.nav-links a:hover{color:#1a56db;}
+.nav-cta{background:#1a56db;color:white;padding:10px 22px;border-radius:8px;font-size:0.9rem;font-weight:600;text-decoration:none;}
+
+/* HERO */
+.hero{background:white;padding:100px 5% 80px;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:55% 45%;gap:4rem;align-items:center;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:#eff6ff;color:#1a56db;padding:6px 14px;border-radius:6px;font-size:0.8rem;font-weight:700;margin-bottom:1.5rem;text-transform:uppercase;letter-spacing:0.5px;}
+.hero h1{font-size:3.2rem;font-weight:900;color:#0f1e3c;line-height:1.1;letter-spacing:-0.04em;margin-bottom:1.25rem;}
+.hero h1 em{color:#1a56db;font-style:normal;border-bottom:3px solid #93c5fd;}
+.hero p{font-size:1.05rem;color:#4a5568;line-height:1.8;margin-bottom:2rem;}
+.btn-primary{background:#1a56db;color:white;padding:14px 28px;border-radius:8px;font-size:0.95rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;}
+.btn-secondary{color:#1a56db;padding:14px 28px;font-size:0.95rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;margin-left:0.5rem;}
+.btn-secondary:hover{text-decoration:underline;}
+.hero-img{width:100%;filter:saturate(0.65) hue-rotate(180deg) brightness(1.05);}
+
+/* TRUST BAR */
+.trust{background:#f7f9fc;border-top:1px solid #e8edf5;border-bottom:1px solid #e8edf5;padding:24px 5%;}
+.trust-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:3rem;}
+.trust-label{font-size:0.8rem;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;white-space:nowrap;}
+.trust-stats{display:flex;gap:3rem;}
+.trust-stat strong{display:block;font-size:1.5rem;font-weight:800;color:#0f1e3c;}
+.trust-stat span{font-size:0.8rem;color:#64748b;}
+
+/* SECTION */
+.section{background:white;padding:80px 5%;}
+.section-inner{max-width:1200px;margin:0 auto;}
+.section-tag{font-size:0.8rem;font-weight:700;color:#1a56db;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.75rem;}
+.section h2{font-size:2.2rem;font-weight:800;color:#0f1e3c;letter-spacing:-0.03em;margin-bottom:0.75rem;}
+.section p{color:#4a5568;font-size:1rem;margin-bottom:2.5rem;max-width:550px;}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.card{border:1px solid #e8edf5;border-radius:12px;padding:2rem;transition:box-shadow 0.2s;}
+.card:hover{box-shadow:0 8px 30px rgba(26,86,219,0.08);}
+.card-dot{width:40px;height:40px;background:#eff6ff;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;}
+.card-dot i{color:#1a56db;}
+.card h3{font-size:1rem;font-weight:700;color:#0f1e3c;margin-bottom:0.4rem;}
+.card p{font-size:0.88rem;color:#64748b;line-height:1.65;margin:0;}
+</style>
+</head>
+<body>
+<div class="label">B — Synthesis Pro</div>
+<nav>
+    <div class="nav-logo">AutoM8</div>
+    <ul class="nav-links">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <a href="#" class="nav-cta">Contact Us</a>
+</nav>
+<div class="hero">
+    <div>
+        <div class="hero-eyebrow"><i class="fas fa-map-marker-alt"></i> Based in South Africa</div>
+        <h1>Custom Software That <em>Actually Fits</em> Your Business</h1>
+        <p>We design and build automation tools, web platforms, and management systems for businesses that are ready to stop struggling with generic software.</p>
+        <a href="#" class="btn-primary"><i class="fas fa-arrow-right"></i> Start Your Project</a>
+        <a href="#" class="btn-secondary">View Portfolio →</a>
+    </div>
+    <div>
+        <img class="hero-img" src="../images/illustrations/illus-1.png" alt="Team">
+    </div>
+</div>
+<div class="trust">
+    <div class="trust-inner">
+        <div class="trust-label">Trusted by SA businesses</div>
+        <div class="trust-stats">
+            <div class="trust-stat"><strong>50+</strong><span>Projects delivered</span></div>
+            <div class="trust-stat"><strong>R2M+</strong><span>Client savings</span></div>
+            <div class="trust-stat"><strong>99.9%</strong><span>System uptime</span></div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="section-inner">
+        <div class="section-tag">What We Build</div>
+        <h2>Solutions For Every Business Challenge</h2>
+        <p>From a simple automation to a full enterprise platform — we scope, build, and support every project.</p>
+        <div class="cards">
+            <div class="card"><div class="card-dot"><i class="fas fa-code"></i></div><h3>Custom Software</h3><p>Inventory, stock control, HR, dashboards built for your exact workflow.</p></div>
+            <div class="card"><div class="card-dot"><i class="fas fa-robot"></i></div><h3>Business Automation</h3><p>Eliminate manual work. Save hours every week with smart automated workflows.</p></div>
+            <div class="card"><div class="card-dot"><i class="fas fa-graduation-cap"></i></div><h3>Education Tech</h3><p>Complete school management — grades, attendance, parent portals.</p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

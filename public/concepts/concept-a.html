@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept A — Apple Clean</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:#f5f7fa;color:#1d1d1f;}
+.label{position:fixed;top:10px;left:50%;transform:translateX(-50%);background:#1d1d1f;color:white;padding:6px 16px;border-radius:100px;font-size:0.75rem;font-weight:700;z-index:999;letter-spacing:0.5px;}
+
+/* NAV */
+nav{background:rgba(245,247,250,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,0.08);padding:0 5%;position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;height:56px;}
+.nav-logo{font-size:1.15rem;font-weight:800;color:#1d1d1f;letter-spacing:-0.5px;}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{font-size:0.85rem;color:#555;text-decoration:none;font-weight:500;transition:color 0.2s;}
+.nav-links a:hover{color:#0071e3;}
+.nav-cta{background:#0071e3;color:white;border:none;padding:8px 18px;border-radius:8px;font-size:0.85rem;font-weight:600;cursor:pointer;text-decoration:none;}
+
+/* HERO */
+.hero{background:#f5f7fa;padding:100px 5% 80px;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;max-width:1200px;margin:0 auto;}
+.hero-tag{font-size:0.8rem;font-weight:700;color:#0071e3;text-transform:uppercase;letter-spacing:1px;margin-bottom:1.2rem;}
+.hero h1{font-size:3.4rem;font-weight:900;line-height:1.1;letter-spacing:-0.04em;color:#1d1d1f;margin-bottom:1.25rem;}
+.hero h1 span{color:#0071e3;}
+.hero p{font-size:1.05rem;color:#6e6e73;line-height:1.75;margin-bottom:2rem;max-width:440px;}
+.btn-main{background:#0071e3;color:white;border:none;padding:14px 28px;border-radius:10px;font-size:0.95rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;}
+.btn-main:hover{background:#0077ed;transform:scale(1.02);}
+.btn-ghost{background:transparent;color:#0071e3;border:1.5px solid #0071e3;padding:13px 28px;border-radius:10px;font-size:0.95rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;margin-left:1rem;transition:all 0.2s;}
+.btn-ghost:hover{background:#eff6ff;}
+.hero-img{width:100%;filter:grayscale(15%) saturate(0.7) brightness(1.05);border-radius:20px;}
+
+/* SECTION */
+.section{background:white;padding:80px 5%;}
+.section-inner{max-width:1200px;margin:0 auto;}
+.section h2{font-size:2.4rem;font-weight:800;color:#1d1d1f;letter-spacing:-0.03em;text-align:center;margin-bottom:0.75rem;}
+.section p{text-align:center;color:#6e6e73;font-size:1rem;max-width:600px;margin:0 auto 3rem;}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.card{background:#f5f7fa;border-radius:16px;padding:2rem;text-align:center;}
+.card i{font-size:2rem;color:#0071e3;margin-bottom:1rem;}
+.card h3{font-size:1.1rem;font-weight:700;color:#1d1d1f;margin-bottom:0.5rem;}
+.card p{font-size:0.9rem;color:#6e6e73;line-height:1.6;margin:0;}
+</style>
+</head>
+<body>
+<div class="label">A — Apple Clean</div>
+<nav>
+    <div class="nav-logo">AutoM8</div>
+    <ul class="nav-links">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <a href="#" class="nav-cta">Get Started</a>
+</nav>
+<div class="hero">
+    <div>
+        <div class="hero-tag">South Africa's Software Partner</div>
+        <h1>Software That Works <span>For You</span></h1>
+        <p>Custom software, automation, and digital platforms built for South African businesses that want to grow faster and work smarter.</p>
+        <a href="#" class="btn-main"><i class="fas fa-rocket"></i> Get a Free Quote</a>
+        <a href="#" class="btn-ghost">See Our Work</a>
+    </div>
+    <div>
+        <img class="hero-img" src="../images/illustrations/illus-1.png" alt="Team">
+    </div>
+</div>
+<div class="section">
+    <div class="section-inner">
+        <h2>Built Around Your Business</h2>
+        <p>We don't sell templates. Every solution is designed from scratch to solve your specific challenges.</p>
+        <div class="cards">
+            <div class="card"><i class="fas fa-code"></i><h3>Custom Software</h3><p>Inventory, HR, dashboards — built exactly for your workflow.</p></div>
+            <div class="card"><i class="fas fa-robot"></i><h3>Automation</h3><p>Eliminate manual tasks and let systems do the repetitive work.</p></div>
+            <div class="card"><i class="fas fa-graduation-cap"></i><h3>Education Tech</h3><p>Complete school management systems for modern institutions.</p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

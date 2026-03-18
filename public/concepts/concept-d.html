@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept D — Bold Minimal</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:white;color:#111827;}
+.label{position:fixed;top:10px;left:50%;transform:translateX(-50%);background:#111827;color:white;padding:6px 16px;border-radius:100px;font-size:0.75rem;font-weight:700;z-index:999;letter-spacing:0.5px;}
+
+/* NAV */
+nav{background:white;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:64px;border-bottom:1px solid #f1f5f9;position:sticky;top:0;z-index:100;}
+.nav-logo{font-size:1.3rem;font-weight:900;color:#111827;letter-spacing:-0.8px;}
+.nav-links{display:flex;gap:2.5rem;list-style:none;}
+.nav-links a{font-size:0.88rem;color:#6b7280;text-decoration:none;font-weight:500;}
+.nav-links a:hover{color:#111827;}
+.nav-cta{font-size:0.88rem;font-weight:700;color:#2563eb;text-decoration:none;border-bottom:2px solid #2563eb;padding-bottom:1px;}
+
+/* HERO */
+.hero{background:white;padding:90px 5% 60px;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.hero-left{}
+.hero-micro{font-size:0.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#2563eb;margin-bottom:1.5rem;}
+.hero h1{font-size:4rem;font-weight:900;line-height:1.0;letter-spacing:-0.05em;color:#111827;margin-bottom:1.5rem;}
+.hero h1 .blue{color:#2563eb;}
+.hero h1 .line{display:block;}
+.hero p{font-size:1.05rem;color:#6b7280;line-height:1.8;margin-bottom:2.5rem;max-width:400px;}
+.btns{display:flex;align-items:center;gap:1.5rem;}
+.btn-main{background:#2563eb;color:white;padding:14px 30px;border-radius:8px;font-size:0.95rem;font-weight:700;text-decoration:none;letter-spacing:-0.01em;}
+.btn-link{color:#111827;font-size:0.9rem;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:6px;}
+.btn-link:hover{color:#2563eb;}
+.hero-img{width:100%;filter:grayscale(25%) saturate(0.6);border-radius:24px;}
+
+/* STRIP */
+.strip{background:#f8fafc;border-top:1px solid #f1f5f9;border-bottom:1px solid #f1f5f9;padding:28px 5%;}
+.strip-inner{max-width:1280px;margin:0 auto;display:flex;gap:3rem;align-items:center;}
+.strip-label{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#9ca3af;}
+.strip-stats{display:flex;gap:3rem;}
+.sstat strong{font-size:1.4rem;font-weight:900;color:#111827;display:block;}
+.sstat span{font-size:0.78rem;color:#6b7280;}
+
+/* SECTION */
+.section{background:white;padding:90px 5%;}
+.section-inner{max-width:1280px;margin:0 auto;}
+.tag{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#2563eb;margin-bottom:0.75rem;}
+.section h2{font-size:2.8rem;font-weight:900;color:#111827;letter-spacing:-0.04em;line-height:1.05;margin-bottom:3rem;max-width:500px;}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid #f1f5f9;border-radius:16px;overflow:hidden;}
+.card{padding:2.5rem;border-right:1px solid #f1f5f9;}
+.card:last-child{border-right:none;}
+.card-num{font-size:0.75rem;font-weight:800;color:#2563eb;letter-spacing:1px;margin-bottom:1rem;}
+.card h3{font-size:1.1rem;font-weight:700;color:#111827;margin-bottom:0.5rem;}
+.card p{font-size:0.88rem;color:#6b7280;line-height:1.65;margin:0;}
+</style>
+</head>
+<body>
+<div class="label">D — Bold Minimal (Stripe-inspired)</div>
+<nav>
+    <div class="nav-logo">AutoM8</div>
+    <ul class="nav-links">
+        <li><a href="#">Services</a></li><li><a href="#">Pricing</a></li><li><a href="#">Portfolio</a></li><li><a href="#">About</a></li>
+    </ul>
+    <a href="#" class="nav-cta">Get a quote →</a>
+</nav>
+<div class="hero">
+    <div class="hero-left">
+        <div class="hero-micro">Custom Software · South Africa</div>
+        <h1><span class="line">Software</span><span class="line blue">built for</span><span class="line">your business.</span></h1>
+        <p>We design and build custom software that solves real business problems — not generic solutions that almost fit.</p>
+        <div class="btns">
+            <a href="#" class="btn-main">Start a project</a>
+            <a href="#" class="btn-link">See our work <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <div>
+        <img class="hero-img" src="../images/illustrations/illus-1.png" alt="Team">
+    </div>
+</div>
+<div class="strip">
+    <div class="strip-inner">
+        <div class="strip-label">Trusted by SA businesses</div>
+        <div class="strip-stats">
+            <div class="sstat"><strong>50+</strong><span>Projects</span></div>
+            <div class="sstat"><strong>R2M+</strong><span>Savings</span></div>
+            <div class="sstat"><strong>99.9%</strong><span>Uptime</span></div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="section-inner">
+        <div class="tag">What We Build</div>
+        <h2>Solutions for every kind of business challenge.</h2>
+        <div class="cards">
+            <div class="card"><div class="card-num">01</div><h3>Custom Software</h3><p>Inventory, stock control, HR and operations platforms built exactly for your workflow.</p></div>
+            <div class="card"><div class="card-num">02</div><h3>Business Automation</h3><p>Stop doing manually what software can do automatically. Save hours every single week.</p></div>
+            <div class="card"><div class="card-num">03</div><h3>Education Technology</h3><p>Full school management — grades, attendance, parent portals, and reporting in one place.</p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
