@@ -3,508 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Services | Custom Software Development | AutoM8 South Africa</title>
-    <meta name="description" content="AutoM8 provides custom software development, web platforms, business automation, and education technology solutions for South African businesses.">
-    <meta name="author" content="AutoM8">
-    <meta name="theme-color" content="#2563eb">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="AutoM8 provides custom software development, business automation, web platforms, and education technology for South African businesses.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/theme.css">
-    
     <style>
         .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+            gap: 1.5rem;
         }
-
         .service-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 2rem;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-card);
-        }
-
-        .service-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-card-hover);
-            border-color: var(--accent-light);
-        }
-
-        .service-icon {
-            width: 64px;
-            height: 64px;
-            background: var(--accent-light);
+            background: var(--bg);
+            border: 1px solid var(--border);
             border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.25rem;
+            padding: 2rem;
+            transition: all 0.25s;
         }
-
-        .service-icon i {
-            font-size: 1.5rem;
-            color: var(--accent-primary);
+        .service-card:hover { transform: translateY(-4px); border-color: #d1d5db; box-shadow: var(--shadow-card-hover); }
+        .svc-num-tag {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--blue);
+            margin-bottom: 1rem;
         }
-
-        .service-card h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.75rem;
-        }
-
-        .service-card > p {
-            color: var(--text-muted);
-            margin-bottom: 1.25rem;
-            line-height: 1.7;
-        }
-
-        .service-features {
-            list-style: none;
-            margin-bottom: 1.25rem;
-        }
-
+        .service-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+        .service-card > p { color: var(--text-3); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.25rem; }
+        .service-features { list-style: none; margin-bottom: 1.25rem; }
         .service-features li {
             padding: 0.4rem 0;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
+            color: var(--text-2);
+            font-size: 0.875rem;
             display: flex;
             align-items: center;
             gap: 10px;
+            border-bottom: 1px solid var(--border-lt);
         }
-
-        .service-features li i {
-            color: var(--accent-primary);
-            font-size: 0.8rem;
-        }
-
+        .service-features li:last-child { border-bottom: none; }
+        .service-features li i { color: var(--blue); font-size: 0.7rem; }
         .service-cta {
-            color: var(--accent-primary);
-            text-decoration: none;
+            color: var(--text);
+            font-size: 0.875rem;
             font-weight: 600;
+            text-decoration: none;
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            transition: gap 0.3s ease;
         }
+        .service-cta:hover { color: var(--blue); }
 
-        .service-cta:hover {
-            gap: 10px;
-        }
-
-        .process-section {
-            background: var(--bg-secondary);
-        }
-
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-        }
-
+        .process-section { background: var(--bg-alt); border-top: 1px solid var(--border-lt); }
+        .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
         .process-step {
-            text-align: center;
+            padding: 2rem;
+            border-right: 1px solid var(--border);
         }
-
+        .process-step:last-child { border-right: none; }
         .step-number {
-            width: 56px;
-            height: 56px;
-            background: var(--accent-primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: white;
-            margin: 0 auto 1.25rem;
-            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            color: var(--blue);
+            margin-bottom: 1rem;
         }
+        .process-step h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; }
+        .process-step p { color: var(--text-3); font-size: 0.875rem; line-height: 1.6; }
 
-        .process-step h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .process-step p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        .tech-section {
-            background: var(--bg-primary);
-        }
-
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
-        }
-
+        .tech-section { background: var(--bg); border-top: 1px solid var(--border-lt); }
+        .tech-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
         .tech-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
+            background: var(--bg);
+            border: 1px solid var(--border);
             border-radius: 12px;
             padding: 1.5rem;
             text-align: center;
-            transition: all 0.3s ease;
+            transition: all 0.25s;
         }
-
-        .tech-card:hover {
-            border-color: var(--accent-light);
-            transform: translateY(-4px);
-        }
-
-        .tech-card i {
-            font-size: 2rem;
-            color: var(--accent-primary);
-            margin-bottom: 0.75rem;
-        }
-
-        .tech-card h4 {
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 0.25rem;
-        }
-
-        .tech-card p {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
+        .tech-card:hover { transform: translateY(-3px); border-color: #d1d5db; }
+        .tech-card i { font-size: 1.75rem; color: var(--blue); margin-bottom: 0.75rem; display: block; }
+        .tech-card h4 { font-size: 0.9rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
+        .tech-card p { font-size: 0.8rem; color: var(--text-3); }
 
         @media (max-width: 1024px) {
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .process-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .tech-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .services-grid { grid-template-columns: 1fr 1fr; }
+            .process-grid { grid-template-columns: 1fr 1fr; }
+            .tech-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-step { border-right: none; border-bottom: 1px solid var(--border); }
+            .process-step:last-child { border-bottom: none; }
         }
-
         @media (max-width: 768px) {
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            .process-grid {
-                grid-template-columns: 1fr;
-            }
-            .tech-grid {
-                grid-template-columns: 1fr;
-            }
+            .services-grid { grid-template-columns: 1fr; }
+            .process-grid { grid-template-columns: 1fr; }
+            .tech-grid { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h1>AutoM8</h1>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo"><h1>AutoM8</h1></div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+    </div>
+</nav>
+
+<section class="page-hero" style="text-align:left;">
+    <div class="container">
+        <div class="section-tag" style="margin-bottom:0.75rem;">What we build</div>
+        <h1 class="page-title fade-in">Software solutions<br>for every challenge.</h1>
+        <p class="page-subtitle fade-in" style="margin:0;">Custom software that fits exactly how your business operates — not the other way around.</p>
+    </div>
+</section>
+
+<section style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
+    <div class="container">
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="svc-num-tag">01 — Development</div>
+                <h3>Custom Software Development</h3>
+                <p>Streamline your operations with solutions designed exactly for your workflow.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-circle"></i> Inventory & Stock Management</li>
+                    <li><i class="fas fa-circle"></i> Fleet Tracking & Logistics</li>
+                    <li><i class="fas fa-circle"></i> HR & Staffing Platforms</li>
+                    <li><i class="fas fa-circle"></i> Custom Business Dashboards</li>
+                </ul>
+                <a href="contact.html" class="service-cta">Get started <i class="fas fa-arrow-right"></i></a>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link active">Services</a></li>
-                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="service-card fade-in">
+                <div class="svc-num-tag">02 — Web</div>
+                <h3>Web Development</h3>
+                <p>Customer-facing digital experiences that drive revenue and growth.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-circle"></i> Business Directories</li>
+                    <li><i class="fas fa-circle"></i> E-commerce Platforms</li>
+                    <li><i class="fas fa-circle"></i> Online Booking Systems</li>
+                    <li><i class="fas fa-circle"></i> Client Portals</li>
+                </ul>
+                <a href="contact.html" class="service-cta">Get started <i class="fas fa-arrow-right"></i></a>
             </div>
-        </div>
-    </nav>
-
-    <section class="page-hero">
-        <div class="container">
-            <h1 class="page-title fade-in">Our Services</h1>
-            <p class="page-subtitle fade-in">We build result-oriented software solutions tailored to your business requirements.</p>
-        </div>
-    </section>
-
-    <section style="background: var(--bg-primary);">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-tag">
-                    <i class="fas fa-cogs"></i>
-                    What We Do
-                </span>
-                <h2 class="section-title">Software Solutions For Your Business</h2>
-                <p class="section-subtitle">From custom software to web platforms, we deliver solutions that drive real business results.</p>
+            <div class="service-card fade-in">
+                <div class="svc-num-tag">03 — Education</div>
+                <h3>Education Technology</h3>
+                <p>Complete digital transformation for schools and institutions.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-circle"></i> Learning Management Systems</li>
+                    <li><i class="fas fa-circle"></i> Attendance & Grade Tracking</li>
+                    <li><i class="fas fa-circle"></i> Parent Communication Portals</li>
+                    <li><i class="fas fa-circle"></i> Report Card Generation</li>
+                </ul>
+                <a href="contact.html" class="service-cta">Get started <i class="fas fa-arrow-right"></i></a>
             </div>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Custom Software Development</h3>
-                    <p>Streamline your operations with tailor-made solutions designed for your exact workflow.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Inventory & Stock Management</li>
-                        <li><i class="fas fa-check"></i> Fleet Tracking & Logistics</li>
-                        <li><i class="fas fa-check"></i> HR & Staffing Platforms</li>
-                        <li><i class="fas fa-check"></i> Custom Business Dashboards</li>
-                    </ul>
-                    <a href="contact.html" class="service-cta">
-                        Get Started <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Customer-facing digital experiences that drive revenue and business growth.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Business Directories</li>
-                        <li><i class="fas fa-check"></i> E-commerce Solutions</li>
-                        <li><i class="fas fa-check"></i> Booking Systems</li>
-                        <li><i class="fas fa-check"></i> Client Portals</li>
-                    </ul>
-                    <a href="contact.html" class="service-cta">
-                        Get Started <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Education Technology</h3>
-                    <p>Complete digital transformation for educational institutions of all sizes.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Learning Management Systems</li>
-                        <li><i class="fas fa-check"></i> Attendance & Grade Tracking</li>
-                        <li><i class="fas fa-check"></i> Parent Communication Portals</li>
-                        <li><i class="fas fa-check"></i> Report Card Generation</li>
-                    </ul>
-                    <a href="contact.html" class="service-cta">
-                        Get Started <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>Business Automation</h3>
-                    <p>Intelligent systems that automate repetitive tasks and provide smart insights.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Workflow Automation</li>
-                        <li><i class="fas fa-check"></i> Document Processing</li>
-                        <li><i class="fas fa-check"></i> Data Integration</li>
-                        <li><i class="fas fa-check"></i> Custom Chatbots</li>
-                    </ul>
-                    <a href="contact.html" class="service-cta">
-                        Get Started <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Fraud Prevention Systems</h3>
-                    <p>Protect your business with custom monitoring and fraud detection solutions.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Stock Variance Tracking</li>
-                        <li><i class="fas fa-check"></i> Transaction Monitoring</li>
-                        <li><i class="fas fa-check"></i> Real-time Alerts</li>
-                        <li><i class="fas fa-check"></i> Audit Trail Generation</li>
-                    </ul>
-                    <a href="contact.html" class="service-cta">
-                        Get Started <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>Support & Maintenance</h3>
-                    <p>Keep your systems running at peak performance with dedicated support.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> System Monitoring</li>
-                        <li><i class="fas fa-check"></i> Security Updates</li>
-                        <li><i class="fas fa-check"></i> Performance Optimization</li>
-                        <li><i class="fas fa-check"></i> Training & Documentation</li>
-                    </ul>
-                    <a href="contact.html" class="service-cta">
-                        Get Started <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+            <div class="service-card fade-in">
+                <div class="svc-num-tag">04 — Automation</div>
+                <h3>Business Automation</h3>
+                <p>Intelligent systems that replace repetitive tasks and deliver insights.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-circle"></i> Workflow Automation</li>
+                    <li><i class="fas fa-circle"></i> Document Processing</li>
+                    <li><i class="fas fa-circle"></i> Data Integration</li>
+                    <li><i class="fas fa-circle"></i> Custom Chatbots</li>
+                </ul>
+                <a href="contact.html" class="service-cta">Get started <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card fade-in">
+                <div class="svc-num-tag">05 — Security</div>
+                <h3>Fraud Prevention Systems</h3>
+                <p>Custom monitoring and detection systems to protect your business.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-circle"></i> Stock Variance Tracking</li>
+                    <li><i class="fas fa-circle"></i> Transaction Monitoring</li>
+                    <li><i class="fas fa-circle"></i> Real-time Alerts</li>
+                    <li><i class="fas fa-circle"></i> Audit Trail Generation</li>
+                </ul>
+                <a href="contact.html" class="service-cta">Get started <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card fade-in">
+                <div class="svc-num-tag">06 — Support</div>
+                <h3>Support & Maintenance</h3>
+                <p>Keep your systems running at peak performance with dedicated support.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-circle"></i> System Monitoring</li>
+                    <li><i class="fas fa-circle"></i> Security Updates</li>
+                    <li><i class="fas fa-circle"></i> Performance Optimization</li>
+                    <li><i class="fas fa-circle"></i> Training & Documentation</li>
+                </ul>
+                <a href="contact.html" class="service-cta">Get started <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="process-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-tag">
-                    <i class="fas fa-route"></i>
-                    Our Process
-                </span>
-                <h2 class="section-title">How We Deliver</h2>
-                <p class="section-subtitle">A proven methodology that ensures your project is delivered on time and on budget.</p>
+<section class="process-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Our process</div>
+            <h2 class="section-title">A proven delivery methodology.</h2>
+            <p class="section-subtitle">Every project delivered on time, on budget, and to spec.</p>
+        </div>
+        <div class="process-grid fade-in">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <h3>Discovery</h3>
+                <p>Deep dive into your business challenges, goals, and current workflows.</p>
             </div>
-            <div class="process-grid">
-                <div class="process-step fade-in">
-                    <div class="step-number">01</div>
-                    <h3>Discovery</h3>
-                    <p>Deep dive into your business challenges and goals.</p>
-                </div>
-                <div class="process-step fade-in">
-                    <div class="step-number">02</div>
-                    <h3>Design</h3>
-                    <p>Create specifications and prototypes for your approval.</p>
-                </div>
-                <div class="process-step fade-in">
-                    <div class="step-number">03</div>
-                    <h3>Development</h3>
-                    <p>Build your solution with regular progress updates.</p>
-                </div>
-                <div class="process-step fade-in">
-                    <div class="step-number">04</div>
-                    <h3>Launch & Support</h3>
-                    <p>Deploy with training and ongoing technical support.</p>
-                </div>
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <h3>Design</h3>
+                <p>Create detailed specifications and wireframes for your approval.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <h3>Development</h3>
+                <p>Build your solution with regular demos and milestone reviews.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <h3>Launch & Support</h3>
+                <p>Deploy with full training and ongoing technical support.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="tech-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-tag">
-                    <i class="fas fa-laptop-code"></i>
-                    Technology
-                </span>
-                <h2 class="section-title">Built With Modern Technology</h2>
-                <p class="section-subtitle">We use industry-leading tools and platforms to build secure, scalable solutions.</p>
-            </div>
-            <div class="tech-grid">
-                <div class="tech-card fade-in">
-                    <i class="fab fa-react"></i>
-                    <h4>React</h4>
-                    <p>Modern frontends</p>
-                </div>
-                <div class="tech-card fade-in">
-                    <i class="fab fa-node-js"></i>
-                    <h4>Node.js</h4>
-                    <p>Scalable backends</p>
-                </div>
-                <div class="tech-card fade-in">
-                    <i class="fas fa-database"></i>
-                    <h4>PostgreSQL</h4>
-                    <p>Reliable databases</p>
-                </div>
-                <div class="tech-card fade-in">
-                    <i class="fab fa-python"></i>
-                    <h4>Python</h4>
-                    <p>AI & automation</p>
-                </div>
-                <div class="tech-card fade-in">
-                    <i class="fab fa-aws"></i>
-                    <h4>Cloud Hosting</h4>
-                    <p>Enterprise infrastructure</p>
-                </div>
-                <div class="tech-card fade-in">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h4>Mobile Apps</h4>
-                    <p>iOS & Android</p>
-                </div>
-                <div class="tech-card fade-in">
-                    <i class="fas fa-lock"></i>
-                    <h4>Security</h4>
-                    <p>Enterprise-grade</p>
-                </div>
-                <div class="tech-card fade-in">
-                    <i class="fas fa-chart-line"></i>
-                    <h4>Analytics</h4>
-                    <p>Custom dashboards</p>
-                </div>
+<section class="tech-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Technology</div>
+            <h2 class="section-title">Built with modern tools.</h2>
+            <p class="section-subtitle">Industry-leading platforms for secure, scalable, and maintainable software.</p>
+        </div>
+        <div class="tech-grid fade-in">
+            <div class="tech-card"><i class="fab fa-react"></i><h4>React</h4><p>Modern frontends</p></div>
+            <div class="tech-card"><i class="fab fa-node-js"></i><h4>Node.js</h4><p>Scalable backends</p></div>
+            <div class="tech-card"><i class="fas fa-database"></i><h4>PostgreSQL</h4><p>Reliable databases</p></div>
+            <div class="tech-card"><i class="fab fa-python"></i><h4>Python</h4><p>AI & automation</p></div>
+            <div class="tech-card"><i class="fab fa-aws"></i><h4>Cloud Hosting</h4><p>Enterprise infra</p></div>
+            <div class="tech-card"><i class="fas fa-mobile-alt"></i><h4>Mobile Apps</h4><p>iOS & Android</p></div>
+            <div class="tech-card"><i class="fas fa-lock"></i><h4>Security</h4><p>Enterprise-grade</p></div>
+            <div class="tech-card"><i class="fas fa-chart-line"></i><h4>Analytics</h4><p>Custom dashboards</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to get started?</h2>
+            <p>Tell us about your project and we'll come back with a clear proposal.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-white">Contact Us <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Get Started?</h2>
-                <p>Let's discuss your project and build something great together.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-white">
-                        <i class="fas fa-envelope"></i>
-                        Contact Us
-                    </a>
-                </div>
-            </div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand"><h3>AutoM8</h3><p>Building custom software solutions that power South African businesses.</p></div>
+            <div class="footer-section"><h4>Services</h4><ul><li><a href="services.html">Custom Software</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">Education Tech</a></li><li><a href="services.html">Business Automation</a></li></ul></div>
+            <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p><p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p></div>
         </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>AutoM8</h3>
-                    <p>Building custom software solutions that power South African businesses.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Custom Software</a></li>
-                        <li><a href="services.html">Web Development</a></li>
-                        <li><a href="services.html">Education Tech</a></li>
-                        <li><a href="services.html">Business Automation</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section footer-contact">
-                    <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p>
-                    <p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 AutoM8. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navMenu = document.getElementById('nav-menu');
-        mobileMenu.addEventListener('click', () => navMenu.classList.toggle('active'));
-
-        const fadeElements = document.querySelectorAll('.fade-in');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.1 });
-        fadeElements.forEach(el => observer.observe(el));
-    </script>
+        <div class="footer-bottom"><p>&copy; 2025 AutoM8. All rights reserved.</p></div>
+    </div>
+</footer>
+<script>
+const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');
+mm.addEventListener('click',()=>nm.classList.toggle('active'));
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>

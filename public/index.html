@@ -4,1000 +4,685 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoM8 | Custom Software Development & Business Automation | South Africa</title>
-    <meta name="description" content="AutoM8 builds custom software solutions for South African businesses. From business automation to web platforms and education technology, we help you grow.">
-    <meta name="author" content="AutoM8">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#2563eb">
+    <meta name="description" content="AutoM8 builds custom software solutions for South African businesses. Business automation, web platforms, and education technology.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/theme.css">
-
     <style>
         /* ── HERO ── */
         .hero {
-            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 60%, #3b82f6 100%);
-            padding: 130px 0 80px;
-            position: relative;
-            overflow: hidden;
+            padding: 130px 0 90px;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border-lt);
         }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -60px; right: -60px;
-            width: 400px; height: 400px;
-            background: rgba(255,255,255,0.05);
-            border-radius: 50%;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -80px; left: -80px;
-            width: 500px; height: 500px;
-            background: rgba(255,255,255,0.04);
-            border-radius: 50%;
-        }
-
-        .hero-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255,255,255,0.15);
-            border: 1px solid rgba(255,255,255,0.25);
-            color: white;
-            padding: 8px 18px;
-            border-radius: 100px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            backdrop-filter: blur(8px);
-        }
-
-        .hero-badge i { color: #fbbf24; }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            font-weight: 900;
-            color: white;
-            line-height: 1.15;
-            margin-bottom: 1.25rem;
-            letter-spacing: -0.03em;
-        }
-
-        .hero-content h1 span {
-            color: #fbbf24;
-        }
-
-        .hero-content p {
-            font-size: 1.1rem;
-            color: rgba(255,255,255,0.85);
-            margin-bottom: 2rem;
-            line-height: 1.8;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .btn-hero-primary {
-            background: white;
-            color: #1e40af;
-            border: none;
-            padding: 14px 28px;
-            border-radius: 10px;
-            font-weight: 700;
-            font-size: 1rem;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-        }
-
-        .btn-hero-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-        }
-
-        .btn-hero-outline {
-            background: transparent;
-            color: white;
-            border: 2px solid rgba(255,255,255,0.5);
-            padding: 14px 28px;
-            border-radius: 10px;
-            font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-hero-outline:hover {
-            background: rgba(255,255,255,0.15);
-            border-color: white;
-        }
-
-        .hero-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-img {
-            width: 100%;
-            max-width: 520px;
-            filter: drop-shadow(0 30px 50px rgba(0,0,0,0.25));
-            animation: heroFloat 5s ease-in-out infinite;
-        }
-
-        @keyframes heroFloat {
-            0%, 100% { transform: translateY(0); }
-            50%       { transform: translateY(-16px); }
-        }
-
-        .hero-stats {
-            display: flex;
-            gap: 2rem;
-            margin-top: 2.5rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .hero-stat strong {
-            display: block;
-            font-size: 1.75rem;
-            font-weight: 800;
-            color: #fbbf24;
-        }
-
-        .hero-stat span {
-            font-size: 0.85rem;
-            color: rgba(255,255,255,0.75);
-        }
-
-        /* ── PAIN POINT ── */
-        .pain-section {
-            background: #f0fdf4;
-            padding: 80px 0;
-        }
-
-        .pain-grid {
+        .hero-inner {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 28px;
         }
-
-        .pain-img {
-            width: 100%;
-            max-width: 480px;
-            animation: heroFloat 5.5s ease-in-out infinite;
-            animation-delay: 0.5s;
-        }
-
-        .pain-content .pain-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: #dcfce7;
-            color: #15803d;
-            padding: 6px 14px;
-            border-radius: 100px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            margin-bottom: 1.25rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .pain-content h2 {
-            font-size: 2.2rem;
+        .hero-micro {
+            font-size: 0.72rem;
             font-weight: 800;
-            color: var(--text-primary);
-            margin-bottom: 1.25rem;
-            line-height: 1.2;
-        }
-
-        .pain-content h2 span { color: #dc2626; }
-
-        .pain-content p {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            margin-bottom: 1.25rem;
-        }
-
-        .pain-list {
-            list-style: none;
-            margin-bottom: 2rem;
-        }
-
-        .pain-list li {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 0.5rem 0;
-            color: var(--text-secondary);
-        }
-
-        .pain-list li i {
-            color: #dc2626;
-            font-size: 0.9rem;
-        }
-
-        /* ── SERVICES ── */
-        .services-section {
-            background: white;
-            padding: 90px 0;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .service-card {
-            background: white;
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-card);
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 60px rgba(37,99,235,0.15);
-            border-color: #bfdbfe;
-        }
-
-        .service-card-img {
-            height: 200px;
-            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            padding: 1rem;
-        }
-
-        .service-card-img img {
-            width: 100%;
-            max-width: 220px;
-            height: 180px;
-            object-fit: contain;
-            transition: transform 0.4s ease;
-        }
-
-        .service-card:hover .service-card-img img {
-            transform: scale(1.06);
-        }
-
-        .service-card-body {
-            padding: 1.75rem;
-        }
-
-        .service-label {
-            display: inline-block;
-            background: #eff6ff;
-            color: #2563eb;
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 4px 12px;
-            border-radius: 100px;
-            margin-bottom: 0.75rem;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            color: var(--blue);
+            margin-bottom: 1.5rem;
         }
-
-        .service-card-body h3 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.6rem;
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1.0;
+            letter-spacing: -0.05em;
+            color: var(--text);
+            margin-bottom: 1.5rem;
         }
-
-        .service-card-body p {
-            color: var(--text-muted);
-            line-height: 1.7;
-            font-size: 0.95rem;
-            margin-bottom: 1.25rem;
+        .hero h1 .blue { color: var(--blue); }
+        .hero h1 .line { display: block; }
+        .hero-sub {
+            font-size: 1.05rem;
+            color: var(--text-3);
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            max-width: 420px;
         }
-
-        .service-link {
-            color: #2563eb;
+        .hero-actions { display: flex; align-items: center; gap: 1.5rem; }
+        .hero-link {
+            color: var(--text);
+            font-size: 0.9rem;
             font-weight: 600;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            font-size: 0.9rem;
-            transition: gap 0.3s;
+        }
+        .hero-link:hover { color: var(--blue); }
+        .hero-img {
+            width: 100%;
+            filter: grayscale(20%) saturate(0.65);
         }
 
-        .service-link:hover { gap: 10px; }
+        /* ── STATS STRIP ── */
+        .stats-strip {
+            background: var(--bg-alt);
+            padding: 0;
+            border-bottom: 1px solid var(--border-lt);
+        }
+        .stats-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 28px;
+            display: flex;
+            align-items: stretch;
+        }
+        .strip-item {
+            flex: 1;
+            padding: 28px 0;
+            text-align: center;
+            border-right: 1px solid var(--border-lt);
+        }
+        .strip-item:last-child { border-right: none; }
+        .strip-num {
+            font-size: 1.75rem;
+            font-weight: 900;
+            color: var(--text);
+            letter-spacing: -0.04em;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+        .strip-label { font-size: 0.8rem; color: var(--text-3); }
+
+        /* ── PAIN SECTION ── */
+        .pain-section {
+            background: var(--bg-alt);
+            padding: 90px 0;
+            border-bottom: 1px solid var(--border-lt);
+        }
+        .pain-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+        .pain-img { width: 100%; filter: grayscale(20%) saturate(0.65); }
+        .pain-micro {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--blue);
+            margin-bottom: 1rem;
+        }
+        .pain-section h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+            color: var(--text);
+            margin-bottom: 1.25rem;
+        }
+        .pain-section p { color: var(--text-3); line-height: 1.8; margin-bottom: 1.25rem; }
+        .pain-list { list-style: none; margin-bottom: 2rem; }
+        .pain-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0.4rem 0;
+            color: var(--text-2);
+            font-size: 0.95rem;
+        }
+        .pain-list li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--text-3);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        /* ── SERVICES ── */
+        .services-section { background: var(--bg); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .svc-card {
+            padding: 2.5rem;
+            border-right: 1px solid var(--border);
+            transition: background 0.2s;
+        }
+        .svc-card:last-child { border-right: none; }
+        .svc-card:hover { background: var(--bg-alt); }
+        .svc-num {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: var(--blue);
+            margin-bottom: 1.25rem;
+        }
+        .svc-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.6rem;
+            letter-spacing: -0.02em;
+        }
+        .svc-card p { color: var(--text-3); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.25rem; }
+        .svc-img { width: 100%; margin-bottom: 1.25rem; filter: grayscale(20%) saturate(0.65); border-radius: 10px; }
+        .svc-link {
+            color: var(--text);
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .svc-link:hover { color: var(--blue); }
 
         /* ── ABOUT ── */
-        .about-section {
-            background: #f8fafc;
-            padding: 90px 0;
-        }
-
+        .about-section { background: var(--bg-alt); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 5rem;
             align-items: center;
         }
-
-        .about-img {
-            width: 100%;
-            max-width: 480px;
-            animation: heroFloat 6s ease-in-out infinite;
-        }
-
-        .about-content .section-tag { margin-bottom: 1rem; display: inline-flex; }
-
-        .about-content h2 {
-            font-size: 2.2rem;
+        .about-img { width: 100%; filter: grayscale(20%) saturate(0.65); }
+        .about-micro {
+            font-size: 0.72rem;
             font-weight: 800;
-            color: var(--text-primary);
-            margin-bottom: 1.25rem;
-            line-height: 1.2;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--blue);
+            margin-bottom: 1rem;
         }
-
-        .about-content h2 span { color: #2563eb; }
-
-        .about-content p {
-            color: var(--text-secondary);
-            line-height: 1.8;
+        .about-section h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+            color: var(--text);
             margin-bottom: 1.25rem;
         }
-
-        .about-features {
+        .about-section p { color: var(--text-3); line-height: 1.8; margin-bottom: 1.25rem; }
+        .about-feats {
             list-style: none;
-            margin-bottom: 2rem;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 0.75rem;
+            gap: 0.6rem;
+            margin-bottom: 2rem;
         }
-
-        .about-features li {
+        .about-feats li {
+            font-size: 0.875rem;
+            color: var(--text-2);
             display: flex;
             align-items: center;
-            gap: 10px;
-            color: var(--text-secondary);
-            font-size: 0.95rem;
+            gap: 8px;
         }
-
-        .about-features li i { color: #2563eb; }
-
-        /* ── STATS ── */
-        .stats-section {
-            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-            padding: 70px 0;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-        }
-
-        .stat-card {
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 900;
-            color: #fbbf24;
-            line-height: 1;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            color: rgba(255,255,255,0.8);
-            font-size: 0.95rem;
-        }
+        .about-feats li i { color: var(--blue); font-size: 0.75rem; }
 
         /* ── PROCESS ── */
-        .process-section {
-            background: white;
-            padding: 90px 0;
-        }
-
-        .process-layout {
+        .process-section { background: var(--bg); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
+        .process-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 5rem;
             align-items: center;
         }
-
-        .process-img {
-            width: 100%;
-            max-width: 460px;
-            animation: heroFloat 4.5s ease-in-out infinite;
-            animation-delay: 1s;
-        }
-
-        .process-steps {
-            display: flex;
-            flex-direction: column;
-            gap: 1.75rem;
-        }
-
-        .process-step {
-            display: flex;
-            gap: 1.25rem;
-            align-items: flex-start;
-        }
-
-        .step-num {
-            width: 48px;
-            height: 48px;
-            background: linear-gradient(135deg, #2563eb, #3b82f6);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            font-weight: 800;
-            color: white;
+        .process-img { width: 100%; filter: grayscale(20%) saturate(0.65); }
+        .process-steps { display: flex; flex-direction: column; gap: 2rem; }
+        .p-step { display: flex; gap: 1.25rem; align-items: flex-start; }
+        .p-num {
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: var(--blue);
+            width: 28px;
             flex-shrink: 0;
-            box-shadow: 0 4px 14px rgba(37,99,235,0.35);
+            padding-top: 3px;
         }
-
-        .step-text h3 {
-            font-size: 1.1rem;
+        .p-step h3 {
+            font-size: 1rem;
             font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.3rem;
+            color: var(--text);
+            margin-bottom: 0.25rem;
         }
-
-        .step-text p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
+        .p-step p { color: var(--text-3); font-size: 0.9rem; line-height: 1.65; }
 
         /* ── PORTFOLIO ── */
-        .portfolio-section {
-            background: #f8fafc;
-            padding: 90px 0;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-        }
-
+        .portfolio-section { background: var(--bg-alt); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
+        .port-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
         .port-card {
-            background: white;
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
             overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-card);
+            transition: all 0.25s;
         }
-
-        .port-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-card-hover);
-        }
-
-        .port-header {
-            padding: 1.5rem;
-            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+        .port-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); border-color: #d1d5db; }
+        .port-top {
+            padding: 1.5rem 1.5rem 0;
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.75rem;
         }
-
         .port-icon {
-            width: 48px;
-            height: 48px;
-            background: #2563eb;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.25rem;
+            width: 40px; height: 40px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
         }
-
-        .port-tag {
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: #2563eb;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .port-body {
-            padding: 1.5rem;
-        }
-
-        .port-body h3 {
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.4rem;
-        }
-
-        .port-body p {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .port-stat {
-            font-size: 1.1rem;
-            font-weight: 800;
-            color: #2563eb;
-        }
+        .port-icon i { color: var(--blue); font-size: 1rem; }
+        .port-cat { font-size: 0.72rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--text-3); }
+        .port-body { padding: 1rem 1.5rem 1.5rem; }
+        .port-body h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; }
+        .port-body p { color: var(--text-3); font-size: 0.875rem; line-height: 1.65; margin-bottom: 1rem; }
+        .port-result { font-size: 1.1rem; font-weight: 800; color: var(--blue); letter-spacing: -0.02em; }
 
         /* ── CTA ── */
-        .cta-section {
-            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        .home-cta {
+            background: var(--text);
             padding: 90px 0;
             text-align: center;
         }
-
-        .cta-img {
-            width: 300px;
-            margin: 0 auto 2.5rem;
-            display: block;
-            animation: heroFloat 4s ease-in-out infinite;
-        }
-
-        .cta-section h2 {
-            font-size: 2.5rem;
+        .home-cta h2 {
+            font-size: 2.8rem;
             font-weight: 900;
-            color: white;
+            color: #fff;
+            letter-spacing: -0.04em;
+            line-height: 1.1;
             margin-bottom: 1rem;
         }
-
-        .cta-section p {
-            color: rgba(255,255,255,0.8);
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
+        .home-cta p { color: #9ca3af; font-size: 1.05rem; margin-bottom: 2.5rem; }
+        .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .cta-btn-primary {
+            background: var(--blue);
+            color: #fff;
+            padding: 13px 26px;
+            border-radius: 8px;
+            font-size: 0.925rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
         }
+        .cta-btn-primary:hover { background: var(--blue-dk); }
+        .cta-btn-ghost {
+            background: rgba(255,255,255,0.08);
+            color: #fff;
+            padding: 13px 26px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.15);
+            font-size: 0.925rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        .cta-btn-ghost:hover { background: rgba(255,255,255,0.14); }
 
         /* ── RESPONSIVE ── */
         @media (max-width: 1024px) {
-            .hero-container, .pain-grid, .about-grid, .process-layout {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            .hero-visual { order: -1; }
-            .hero-stats { justify-content: center; }
-            .hero-buttons { justify-content: center; }
-            .about-features { grid-template-columns: 1fr; text-align: left; }
-            .about-content .section-tag { margin-left: auto; margin-right: auto; }
+            .hero h1 { font-size: 3rem; }
+            .hero-inner, .pain-grid, .about-grid, .process-grid { grid-template-columns: 1fr; text-align: center; }
+            .hero-actions { justify-content: center; }
+            .about-feats { justify-items: center; }
+            .pain-list { text-align: left; }
             .services-grid { grid-template-columns: 1fr 1fr; }
-            .stats-grid { grid-template-columns: repeat(2, 1fr); }
-            .portfolio-grid { grid-template-columns: 1fr 1fr; }
-            .pain-grid { direction: ltr; }
-            .pain-content { text-align: left; }
-            .process-img { margin: 0 auto; }
+            .svc-card { border-right: none; border-bottom: 1px solid var(--border); }
+            .svc-card:last-child { border-bottom: none; }
+            .port-grid { grid-template-columns: 1fr 1fr; }
         }
-
         @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2.2rem; }
-            .services-grid, .portfolio-grid { grid-template-columns: 1fr; }
-            .stats-grid { grid-template-columns: repeat(2, 1fr); }
-            .about-features { grid-template-columns: 1fr; }
-            .hero-stats { flex-direction: column; gap: 1rem; }
+            .hero h1 { font-size: 2.4rem; }
+            .stats-strip-inner { flex-wrap: wrap; }
+            .strip-item { flex: 1 1 50%; border-right: none; border-bottom: 1px solid var(--border-lt); }
+            .services-grid { grid-template-columns: 1fr; }
+            .port-grid { grid-template-columns: 1fr; }
+            .home-cta h2 { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo"><h1>AutoM8</h1></div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo"><h1>AutoM8</h1></div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="mobile-menu">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <div class="fade-in">
+            <div class="hero-micro">Custom Software · South Africa</div>
+            <h1>
+                <span class="line">Software</span>
+                <span class="line blue">built for</span>
+                <span class="line">your business.</span>
+            </h1>
+            <p class="hero-sub">We design and build custom software that solves real business problems — not generic solutions that almost fit.</p>
+            <div class="hero-actions">
+                <a href="contact.html" class="btn btn-primary">Start a project</a>
+                <a href="portfolio.html" class="hero-link">See our work <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-    </nav>
+        <div class="fade-in">
+            <img class="hero-img" src="images/illustrations/illus-1.png" alt="Team working on software">
+        </div>
+    </div>
+</section>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-container">
-                <div class="hero-content fade-in">
-                    <div class="hero-badge">
-                        <i class="fas fa-star"></i>
-                        South Africa's Custom Software Partner
-                    </div>
-                    <h1>Software That Works <span>As Hard As You Do</span></h1>
-                    <p>We build custom software solutions, automation tools, and digital platforms that help South African businesses get more done and grow faster.</p>
-                    <div class="hero-buttons">
-                        <a href="contact.html" class="btn-hero-primary">
-                            <i class="fas fa-rocket"></i> Get a Free Quote
-                        </a>
-                        <a href="portfolio.html" class="btn-hero-outline">
-                            <i class="fas fa-briefcase"></i> See Our Work
-                        </a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <strong>50+</strong>
-                            <span>Projects Delivered</span>
-                        </div>
-                        <div class="hero-stat">
-                            <strong>R2M+</strong>
-                            <span>Client Savings</span>
-                        </div>
-                        <div class="hero-stat">
-                            <strong>100%</strong>
-                            <span>Satisfaction</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-visual fade-in">
-                    <img class="hero-img" src="images/illustrations/illus-1.png" alt="Team collaborating on software project">
-                </div>
+<!-- STATS STRIP -->
+<div class="stats-strip">
+    <div class="stats-strip-inner">
+        <div class="strip-item fade-in">
+            <div class="strip-num" data-target="50" data-suffix="+">50+</div>
+            <div class="strip-label">Projects delivered</div>
+        </div>
+        <div class="strip-item fade-in">
+            <div class="strip-num" data-prefix="R" data-target="2" data-suffix="M+">R2M+</div>
+            <div class="strip-label">Client savings generated</div>
+        </div>
+        <div class="strip-item fade-in">
+            <div class="strip-num" data-target="99.9" data-suffix="%" data-decimals="1">99.9%</div>
+            <div class="strip-label">System uptime</div>
+        </div>
+        <div class="strip-item fade-in">
+            <div class="strip-num" data-target="100" data-suffix="%">100%</div>
+            <div class="strip-label">Client satisfaction</div>
+        </div>
+    </div>
+</div>
+
+<!-- PAIN POINT -->
+<section class="pain-section">
+    <div class="container">
+        <div class="pain-grid">
+            <div class="fade-in" style="display:flex;justify-content:center;">
+                <img class="pain-img" src="images/illustrations/illus-3.png" alt="Overwhelmed by manual processes">
+            </div>
+            <div class="fade-in">
+                <div class="pain-micro">Sound familiar?</div>
+                <h2>Is your business drowning in manual work?</h2>
+                <p>Most South African businesses are held back by slow processes, spreadsheet chaos, and software that doesn't quite fit. AutoM8 fixes that.</p>
+                <ul class="pain-list">
+                    <li>Hours wasted on manual data entry every day</li>
+                    <li>No real-time visibility into stock, staff, or sales</li>
+                    <li>Generic software that doesn't fit your workflow</li>
+                    <li>Losses from fraud, errors, and missed opportunities</li>
+                    <li>Decisions made on outdated or unreliable data</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Let's fix this <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- PAIN POINT -->
-    <section class="pain-section">
-        <div class="container">
-            <div class="pain-grid">
-                <div style="display:flex;justify-content:center;">
-                    <img class="pain-img fade-in" src="images/illustrations/illus-3.png" alt="Overwhelmed business owner">
-                </div>
-                <div class="pain-content fade-in">
-                    <div class="pain-tag">
-                        <i class="fas fa-exclamation-circle"></i> Sound Familiar?
-                    </div>
-                    <h2>Is Your Business Drowning In <span>Manual Work?</span></h2>
-                    <p>Most South African businesses are held back by slow manual processes, spreadsheet chaos, and software that doesn't quite fit. AutoM8 fixes that.</p>
-                    <ul class="pain-list">
-                        <li><i class="fas fa-times-circle"></i> Hours wasted on manual data entry every day</li>
-                        <li><i class="fas fa-times-circle"></i> No real-time visibility into stock, staff, or sales</li>
-                        <li><i class="fas fa-times-circle"></i> Generic software that doesn't fit your workflow</li>
-                        <li><i class="fas fa-times-circle"></i> Losses from fraud, errors, and missed opportunities</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary">
-                        <i class="fas fa-lightbulb"></i> Let's Fix This Together
-                    </a>
-                </div>
+<!-- SERVICES -->
+<section class="services-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">What we build</div>
+            <h2 class="section-title">Solutions for every business challenge.</h2>
+            <p class="section-subtitle">Custom-built. Locally supported. Yours to own.</p>
+        </div>
+        <div class="services-grid fade-in">
+            <div class="svc-card">
+                <img class="svc-img" src="images/illustrations/illus-2.png" alt="Custom software">
+                <div class="svc-num">01 — Development</div>
+                <h3>Custom Software</h3>
+                <p>Inventory, stock control, HR, dashboards — built exactly for your workflow, not adapted from a template.</p>
+                <a href="services.html" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="svc-card">
+                <img class="svc-img" src="images/illustrations/illus-4.png" alt="Business automation">
+                <div class="svc-num">02 — Automation</div>
+                <h3>Business Automation</h3>
+                <p>Stop doing manually what software can do automatically. Save hours every week and eliminate human error.</p>
+                <a href="services.html" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="svc-card">
+                <img class="svc-img" src="images/illustrations/illus-5.png" alt="Education technology">
+                <div class="svc-num">03 — Education</div>
+                <h3>Education Technology</h3>
+                <p>Full school management — grades, attendance, parent portals, and reporting in one reliable platform.</p>
+                <a href="services.html" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- SERVICES -->
-    <section class="services-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-tag">
-                    <i class="fas fa-cogs"></i> What We Build
-                </span>
-                <h2 class="section-title">Solutions Designed For Your Business</h2>
-                <p class="section-subtitle">Every system we build is custom-made — no templates, no compromises.</p>
+<!-- ABOUT -->
+<section class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="fade-in" style="display:flex;justify-content:center;">
+                <img class="about-img" src="images/illustrations/illus-7.png" alt="Calm and in control">
             </div>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-card-img">
-                        <img src="images/illustrations/illus-2.png" alt="Custom software development">
-                    </div>
-                    <div class="service-card-body">
-                        <span class="service-label">Development</span>
-                        <h3>Custom Software</h3>
-                        <p>Inventory, stock control, HR platforms, and dashboards — built exactly for your workflow.</p>
-                        <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-card-img">
-                        <img src="images/illustrations/illus-4.png" alt="Business automation">
-                    </div>
-                    <div class="service-card-body">
-                        <span class="service-label">Automation</span>
-                        <h3>Business Automation</h3>
-                        <p>Eliminate repetitive tasks. Automate workflows, reports, and data — save hours every week.</p>
-                        <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-card-img">
-                        <img src="images/illustrations/illus-5.png" alt="Education technology">
-                    </div>
-                    <div class="service-card-body">
-                        <span class="service-label">Education</span>
-                        <h3>Education Technology</h3>
-                        <p>Complete school management — grades, attendance, parent portals, and reporting.</p>
-                        <a href="services.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+            <div class="fade-in">
+                <div class="about-micro">Why AutoM8</div>
+                <h2>We turn business chaos into calm, clear systems.</h2>
+                <p>AutoM8 is a South African software company built for businesses that are ready to stop firefighting and start growing. We scope, build, and support every project end-to-end.</p>
+                <p>From a single automation to a full enterprise platform — you own the code, always.</p>
+                <ul class="about-feats">
+                    <li><i class="fas fa-check"></i> Built for your business specifically</li>
+                    <li><i class="fas fa-check"></i> Delivered in weeks, not months</li>
+                    <li><i class="fas fa-check"></i> Secure, reliable infrastructure</li>
+                    <li><i class="fas fa-check"></i> Full training & ongoing support</li>
+                    <li><i class="fas fa-check"></i> You own the code, always</li>
+                    <li><i class="fas fa-check"></i> South African team, local knowledge</li>
+                </ul>
+                <a href="about.html" class="btn btn-primary">Meet the team <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ABOUT -->
-    <section class="about-section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="fade-in" style="display:flex;justify-content:center;">
-                    <img class="about-img" src="images/illustrations/illus-7.png" alt="Calm and in control with AutoM8">
-                </div>
-                <div class="about-content fade-in">
-                    <span class="section-tag">
-                        <i class="fas fa-handshake"></i> Why AutoM8
-                    </span>
-                    <h2>We Turn Business Chaos Into <span>Calm, Clear Systems</span></h2>
-                    <p>AutoM8 is a South African software company built for businesses that are ready to stop firefighting and start growing. We take your most painful workflows and make them effortless.</p>
-                    <p>From a single automation to a full enterprise platform — we scope, build, and support every project end-to-end.</p>
-                    <ul class="about-features">
-                        <li><i class="fas fa-check-circle"></i> Built specifically for your business</li>
-                        <li><i class="fas fa-check-circle"></i> Delivered in weeks, not months</li>
-                        <li><i class="fas fa-check-circle"></i> Secure and reliable infrastructure</li>
-                        <li><i class="fas fa-check-circle"></i> Full training & ongoing support</li>
-                        <li><i class="fas fa-check-circle"></i> You own the code, always</li>
-                        <li><i class="fas fa-check-circle"></i> South African team, local knowledge</li>
-                    </ul>
-                    <a href="about.html" class="btn btn-primary">
-                        Meet The Team <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- STATS -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card fade-in">
-                    <div class="stat-number" data-target="50" data-suffix="+">50+</div>
-                    <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-card fade-in">
-                    <div class="stat-number" data-prefix="R" data-target="2" data-suffix="M+">R2M+</div>
-                    <div class="stat-label">Client Savings Generated</div>
-                </div>
-                <div class="stat-card fade-in">
-                    <div class="stat-number" data-target="99.9" data-suffix="%" data-decimals="1">99.9%</div>
-                    <div class="stat-label">System Uptime</div>
-                </div>
-                <div class="stat-card fade-in">
-                    <div class="stat-number" data-target="100" data-suffix="%">100%</div>
-                    <div class="stat-label">Client Satisfaction</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="process-section">
-        <div class="container">
-            <div class="process-layout">
-                <div class="fade-in" style="display:flex;justify-content:center;">
-                    <img class="process-img" src="images/illustrations/illus-6.png" alt="Managing your project">
-                </div>
-                <div class="fade-in">
-                    <span class="section-tag">
-                        <i class="fas fa-route"></i> How It Works
-                    </span>
-                    <h2 class="section-title" style="text-align:left;margin-bottom:2rem;">From Idea to Live System in 4 Steps</h2>
-                    <div class="process-steps">
-                        <div class="process-step">
-                            <div class="step-num">01</div>
-                            <div class="step-text">
-                                <h3>Discovery Call</h3>
-                                <p>We listen to your challenges and goals. Free, no-obligation consultation.</p>
-                            </div>
-                        </div>
-                        <div class="process-step">
-                            <div class="step-num">02</div>
-                            <div class="step-text">
-                                <h3>Proposal & Quote</h3>
-                                <p>We provide a clear scope, timeline, and fixed price — no surprises.</p>
-                            </div>
-                        </div>
-                        <div class="process-step">
-                            <div class="step-num">03</div>
-                            <div class="step-text">
-                                <h3>Build & Review</h3>
-                                <p>We build your solution in milestones with regular demos for your feedback.</p>
-                            </div>
-                        </div>
-                        <div class="process-step">
-                            <div class="step-num">04</div>
-                            <div class="step-text">
-                                <h3>Launch & Support</h3>
-                                <p>We deploy, train your team, and provide ongoing technical support.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PORTFOLIO PREVIEW -->
-    <section class="portfolio-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-tag">
-                    <i class="fas fa-trophy"></i> Recent Work
-                </span>
-                <h2 class="section-title">Projects That Made a Real Difference</h2>
-                <p class="section-subtitle">Every project here solved a real problem and delivered measurable results.</p>
-            </div>
-            <div class="portfolio-grid">
-                <div class="port-card fade-in">
-                    <div class="port-header">
-                        <div class="port-icon"><i class="fas fa-fire-alt"></i></div>
+<!-- PROCESS -->
+<section class="process-section">
+    <div class="container">
+        <div class="process-grid">
+            <div class="fade-in">
+                <div class="section-tag">How it works</div>
+                <h2 class="section-title" style="text-align:left;margin-bottom:2.5rem;">From idea to live system in 4 steps.</h2>
+                <div class="process-steps">
+                    <div class="p-step">
+                        <div class="p-num">01</div>
                         <div>
-                            <div class="port-tag">Fraud Prevention</div>
+                            <h3>Discovery call</h3>
+                            <p>We listen to your challenges and goals. Free, no-obligation conversation.</p>
                         </div>
                     </div>
-                    <div class="port-body">
-                        <h3>LPG Gas Stock Control</h3>
-                        <p>Real-time KG variance tracking that eliminated stock fraud for an energy retailer.</p>
-                        <div class="port-stat">R500K+ saved annually</div>
-                    </div>
-                </div>
-                <div class="port-card fade-in">
-                    <div class="port-header">
-                        <div class="port-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="p-step">
+                        <div class="p-num">02</div>
                         <div>
-                            <div class="port-tag">Education</div>
+                            <h3>Proposal & quote</h3>
+                            <p>A clear scope, timeline, and fixed price — no surprises, no hidden costs.</p>
                         </div>
                     </div>
-                    <div class="port-body">
-                        <h3>Harmony Institute LMS</h3>
-                        <p>Full school management system replacing paper-based admin at a growing institution.</p>
-                        <div class="port-stat">300+ students managed</div>
-                    </div>
-                </div>
-                <div class="port-card fade-in">
-                    <div class="port-header">
-                        <div class="port-icon"><i class="fas fa-robot"></i></div>
+                    <div class="p-step">
+                        <div class="p-num">03</div>
                         <div>
-                            <div class="port-tag">AI Solution</div>
+                            <h3>Build & review</h3>
+                            <p>Built in milestones with regular demos so you're always in the loop.</p>
                         </div>
                     </div>
-                    <div class="port-body">
-                        <h3>ServiceBot AI Assistant</h3>
-                        <p>24/7 customer service chatbot that auto-resolves 70% of support queries.</p>
-                        <div class="port-stat">70% queries resolved automatically</div>
+                    <div class="p-step">
+                        <div class="p-num">04</div>
+                        <div>
+                            <h3>Launch & support</h3>
+                            <p>We deploy, train your team, and provide ongoing technical support.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div style="text-align:center;margin-top:2.5rem;">
-                <a href="portfolio.html" class="btn btn-outline fade-in">
-                    View All 8 Projects <i class="fas fa-arrow-right"></i>
-                </a>
+            <div class="fade-in" style="display:flex;justify-content:center;">
+                <img class="process-img" src="images/illustrations/illus-6.png" alt="Managing your project" style="width:100%;filter:grayscale(20%) saturate(0.65);">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- CTA -->
-    <section class="cta-section">
-        <div class="container">
-            <img class="cta-img fade-in" src="images/hero-illustration.png" alt="Get started with AutoM8">
-            <h2 class="fade-in">Ready to Transform Your Business?</h2>
-            <p class="fade-in">Book a free consultation. No pressure, just a conversation about your project.</p>
-            <div class="cta-buttons fade-in">
-                <a href="contact.html" class="btn-hero-primary" style="margin:0 auto;">
-                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                </a>
-                &nbsp;&nbsp;
-                <a href="mailto:Autom8streamlining@gmail.com" class="btn-hero-outline" style="margin:0 auto;">
-                    <i class="fas fa-envelope"></i> Send Email
-                </a>
+<!-- PORTFOLIO PREVIEW -->
+<section class="portfolio-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Recent work</div>
+            <h2 class="section-title">Projects that made a real difference.</h2>
+            <p class="section-subtitle">Every project solved a specific problem and delivered measurable results.</p>
+        </div>
+        <div class="port-grid">
+            <div class="port-card fade-in">
+                <div class="port-top">
+                    <div class="port-icon"><i class="fas fa-fire-alt"></i></div>
+                    <div class="port-cat">Fraud Prevention</div>
+                </div>
+                <div class="port-body">
+                    <h3>LPG Gas Stock Control</h3>
+                    <p>Real-time KG variance tracking that eliminated stock fraud for an energy retailer.</p>
+                    <div class="port-result">R500K+ saved annually</div>
+                </div>
+            </div>
+            <div class="port-card fade-in">
+                <div class="port-top">
+                    <div class="port-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="port-cat">Education</div>
+                </div>
+                <div class="port-body">
+                    <h3>Harmony Institute LMS</h3>
+                    <p>Full school management replacing paper-based admin at a growing institution.</p>
+                    <div class="port-result">300+ students managed</div>
+                </div>
+            </div>
+            <div class="port-card fade-in">
+                <div class="port-top">
+                    <div class="port-icon"><i class="fas fa-robot"></i></div>
+                    <div class="port-cat">AI Solution</div>
+                </div>
+                <div class="port-body">
+                    <h3>ServiceBot AI Assistant</h3>
+                    <p>24/7 customer service chatbot that auto-resolves the majority of support queries.</p>
+                    <div class="port-result">70% queries resolved automatically</div>
+                </div>
             </div>
         </div>
-    </section>
+        <div style="text-align:center;margin-top:2.5rem;" class="fade-in">
+            <a href="portfolio.html" class="hero-link" style="font-size:0.925rem;">
+                View all 8 case studies <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>AutoM8</h3>
-                    <p>Building custom software solutions that power South African businesses.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Custom Software</a></li>
-                        <li><a href="services.html">Web Development</a></li>
-                        <li><a href="services.html">Education Tech</a></li>
-                        <li><a href="services.html">Business Automation</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section footer-contact">
-                    <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p>
-                    <p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p>
-                </div>
+<!-- CTA -->
+<section class="home-cta">
+    <div class="container">
+        <h2 class="fade-in">Ready to transform<br>your business?</h2>
+        <p class="fade-in">Book a free consultation. No pressure — just a conversation about your project.</p>
+        <div class="cta-btns fade-in">
+            <a href="https://wa.me/27681536136" class="cta-btn-primary" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="contact.html" class="cta-btn-ghost">
+                <i class="fas fa-envelope"></i> Send a message
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>AutoM8</h3>
+                <p>Building custom software solutions that power South African businesses.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 AutoM8. All rights reserved.</p>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Custom Software</a></li>
+                    <li><a href="services.html">Web Development</a></li>
+                    <li><a href="services.html">Education Tech</a></li>
+                    <li><a href="services.html">Business Automation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p>
+                <p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom"><p>&copy; 2025 AutoM8. All rights reserved.</p></div>
+    </div>
+</footer>
 
-    <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navMenu = document.getElementById('nav-menu');
-        mobileMenu.addEventListener('click', () => navMenu.classList.toggle('active'));
+<script>
+const mobileMenu = document.getElementById('mobile-menu');
+const navMenu = document.getElementById('nav-menu');
+mobileMenu.addEventListener('click', () => navMenu.classList.toggle('active'));
 
-        /* Fade-in on scroll */
-        const fadeObserver = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+const fadeObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => fadeObs.observe(el));
 
-        /* Stat counter */
-        function animateCounter(el) {
-            if (el.dataset.counted) return;
-            el.dataset.counted = 'true';
-            const target   = parseFloat(el.dataset.target);
-            const suffix   = el.dataset.suffix  || '';
-            const prefix   = el.dataset.prefix  || '';
-            const decimals = parseInt(el.dataset.decimals || '0');
-            const duration = 1800;
-            const start    = performance.now();
-            function update(now) {
-                const progress = Math.min((now - start) / duration, 1);
-                const eased    = 1 - Math.pow(1 - progress, 3);
-                el.textContent = prefix + (target * eased).toFixed(decimals) + suffix;
-                if (progress < 1) requestAnimationFrame(update);
-            }
-            requestAnimationFrame(update);
+function animateNum(el) {
+    if (el.dataset.counted) return;
+    el.dataset.counted = '1';
+    const target = parseFloat(el.dataset.target);
+    const suffix = el.dataset.suffix || '';
+    const prefix = el.dataset.prefix || '';
+    const dec = parseInt(el.dataset.decimals || '0');
+    const dur = 1600, start = performance.now();
+    function tick(now) {
+        const t = Math.min((now - start) / dur, 1);
+        const v = 1 - Math.pow(1 - t, 3);
+        el.textContent = prefix + (target * v).toFixed(dec) + suffix;
+        if (t < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+}
+const statObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            const n = e.target.querySelector('[data-target]');
+            if (n) animateNum(n);
         }
-
-        const statObserver = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    const numEl = e.target.querySelector('.stat-number[data-target]');
-                    if (numEl) animateCounter(numEl);
-                }
-            });
-        }, { threshold: 0.5 });
-        document.querySelectorAll('.stat-card').forEach(c => statObserver.observe(c));
-    </script>
+    });
+}, { threshold: 0.5 });
+document.querySelectorAll('.strip-item').forEach(c => statObs.observe(c));
+</script>
 </body>
 </html>

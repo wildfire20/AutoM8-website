@@ -3,563 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Portfolio | Our Projects & Case Studies | AutoM8 South Africa</title>
-    <meta name="description" content="Explore AutoM8's portfolio of software projects. View case studies from business automation, web platforms, and education technology projects.">
-    <meta name="author" content="AutoM8">
-    <meta name="theme-color" content="#2563eb">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Explore AutoM8's portfolio of software projects. Case studies from business automation, web platforms, and education technology.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/theme.css">
-    
     <style>
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-
+        .portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
         .portfolio-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
             overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-card);
+            transition: all 0.25s;
         }
-
-        .portfolio-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-card-hover);
-        }
-
+        .portfolio-card:hover { transform: translateY(-4px); border-color: #d1d5db; box-shadow: var(--shadow-card-hover); }
         .portfolio-image {
-            height: 180px;
-            background: linear-gradient(135deg, var(--accent-light) 0%, #e0e7ff 100%);
+            height: 160px;
+            background: var(--bg-alt);
+            border-bottom: 1px solid var(--border-lt);
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .portfolio-image i {
-            font-size: 4rem;
-            color: var(--accent-primary);
-            opacity: 0.5;
-        }
-
-        .portfolio-content {
-            padding: 1.75rem;
-        }
-
-        .portfolio-tag {
-            display: inline-block;
-            background: var(--accent-light);
-            color: var(--accent-primary);
-            padding: 4px 12px;
-            border-radius: 100px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-        }
-
-        .portfolio-content h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.75rem;
-        }
-
-        .portfolio-content > p {
-            color: var(--text-muted);
-            line-height: 1.7;
-            margin-bottom: 1.25rem;
-        }
-
-        .portfolio-stats {
-            display: flex;
-            gap: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .stat {
-            text-align: center;
-        }
-
-        .stat strong {
-            display: block;
-            font-size: 1.25rem;
-            font-weight: 800;
-            color: var(--accent-primary);
-        }
-
-        .stat span {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .results-section {
-            background: var(--bg-secondary);
-        }
-
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-        }
-
-        .result-card {
-            text-align: center;
             padding: 1.5rem;
         }
-
-        .result-number {
-            font-size: 2.5rem;
+        .portfolio-image i { font-size: 3.5rem; color: var(--blue); opacity: 0.25; }
+        .portfolio-content { padding: 1.75rem; }
+        .portfolio-tag {
+            display: inline-block;
+            font-size: 0.7rem;
             font-weight: 800;
-            color: var(--accent-primary);
-            line-height: 1;
-            margin-bottom: 0.5rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--blue);
+            margin-bottom: 0.6rem;
         }
+        .portfolio-content h3 { font-size: 1.15rem; font-weight: 700; color: var(--text); letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+        .portfolio-content > p { color: var(--text-3); line-height: 1.7; font-size: 0.9rem; margin-bottom: 1.25rem; }
+        .portfolio-stats { display: flex; gap: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-lt); }
+        .stat strong { display: block; font-size: 1.2rem; font-weight: 900; color: var(--text); letter-spacing: -0.03em; }
+        .stat span { font-size: 0.72rem; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
 
-        .result-label {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
+        .results-section { background: var(--bg-alt); border-top: 1px solid var(--border-lt); border-bottom: 1px solid var(--border-lt); }
+        .results-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+        .result-card { padding: 2.5rem 2rem; text-align: center; border-right: 1px solid var(--border); }
+        .result-card:last-child { border-right: none; }
+        .result-number { font-size: 2.5rem; font-weight: 900; color: var(--text); letter-spacing: -0.04em; line-height: 1; margin-bottom: 0.4rem; }
+        .result-number span { color: var(--blue); }
+        .result-label { font-size: 0.8rem; color: var(--text-3); }
 
-        .testimonials-section {
-            background: var(--bg-primary);
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .testimonial-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 2rem;
-            box-shadow: var(--shadow-card);
-        }
-
-        .testimonial-quote {
-            font-size: 2rem;
-            color: var(--accent-primary);
-            margin-bottom: 0.75rem;
-        }
-
-        .testimonial-content p {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            font-style: italic;
-            margin-bottom: 1.25rem;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .author-avatar {
-            width: 44px;
-            height: 44px;
-            background: var(--accent-primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 700;
-            font-size: 0.9rem;
-        }
-
-        .author-info strong {
-            display: block;
-            color: var(--text-primary);
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-
-        .author-info span {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
+        .testimonials-section { background: var(--bg); border-bottom: 1px solid var(--border-lt); }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .testimonial-card { border: 1px solid var(--border); border-radius: 14px; padding: 2rem; transition: all 0.25s; }
+        .testimonial-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-card-hover); border-color: #d1d5db; }
+        .testimonial-quote { font-size: 1.5rem; color: var(--blue); margin-bottom: 0.75rem; font-family: Georgia, serif; }
+        .testimonial-content p { color: var(--text-2); line-height: 1.8; font-size: 0.9rem; margin-bottom: 1.25rem; }
+        .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+        .author-avatar { width: 40px; height: 40px; background: var(--text); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+        .author-info strong { display: block; color: var(--text); font-weight: 600; font-size: 0.9rem; }
+        .author-info span { font-size: 0.8rem; color: var(--text-3); }
 
         @media (max-width: 1024px) {
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-            .results-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .portfolio-grid { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .results-grid { grid-template-columns: 1fr 1fr; }
+            .result-card:nth-child(2) { border-right: none; }
+            .result-card:nth-child(3), .result-card:nth-child(4) { border-top: 1px solid var(--border); }
         }
-
-        @media (max-width: 768px) {
-            .results-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+        @media (max-width: 768px) { .results-grid { grid-template-columns: 1fr; } .result-card { border-right: none; border-bottom: 1px solid var(--border); } }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h1>AutoM8</h1>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo"><h1>AutoM8</h1></div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+    </div>
+</nav>
+
+<section class="page-hero" style="text-align:left;">
+    <div class="container">
+        <div class="section-tag" style="margin-bottom:0.75rem;">Case studies</div>
+        <h1 class="page-title fade-in">Projects that made<br>a real difference.</h1>
+        <p class="page-subtitle fade-in" style="margin:0;">Every project here solved a specific problem and delivered measurable, documented results.</p>
+    </div>
+</section>
+
+<section style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
+    <div class="container">
+        <div class="portfolio-grid">
+            <div class="portfolio-card fade-in">
+                <div class="portfolio-image"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="portfolio-content">
+                    <div class="portfolio-tag">Web Platform</div>
+                    <h3>Lephalale Connect</h3>
+                    <p>A comprehensive local business directory serving the Lephalale region with automated payment processing and business owner dashboards.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat"><strong>50+</strong><span>Businesses listed</span></div>
+                        <div class="stat"><strong>10K+</strong><span>Monthly visitors</span></div>
+                    </div>
+                </div>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="portfolio-card fade-in">
+                <div class="portfolio-image"><i class="fas fa-fire-alt"></i></div>
+                <div class="portfolio-content">
+                    <div class="portfolio-tag">Fraud Prevention</div>
+                    <h3>LPG Gas Stock Control</h3>
+                    <p>Custom fraud-prevention software for energy retailers. Real-time tracking of KG variance with automated alerts for discrepancies.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat"><strong>40%</strong><span>Loss reduction</span></div>
+                        <div class="stat"><strong>R500K+</strong><span>Saved annually</span></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <section class="page-hero">
-        <div class="container">
-            <h1 class="page-title fade-in">Our Work</h1>
-            <p class="page-subtitle fade-in">Explore the software solutions we've built for businesses across South Africa.</p>
-        </div>
-    </section>
-
-    <section style="background: var(--bg-primary);">
-        <div class="container">
-            <div class="portfolio-grid">
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">Web Platform</span>
-                        <h3>Lephalale Connect</h3>
-                        <p>A comprehensive local business directory platform serving the Lephalale region with automated payment processing and business owner dashboards.</p>
-                        <div class="portfolio-stats">
-                            <div class="stat">
-                                <strong>50+</strong>
-                                <span>Businesses</span>
-                            </div>
-                            <div class="stat">
-                                <strong>10K+</strong>
-                                <span>Monthly Visitors</span>
-                            </div>
-                        </div>
+            <div class="portfolio-card fade-in">
+                <div class="portfolio-image"><i class="fas fa-graduation-cap"></i></div>
+                <div class="portfolio-content">
+                    <div class="portfolio-tag">Education</div>
+                    <h3>Harmony Institute LMS</h3>
+                    <p>Full school digitization including grade management, attendance tracking, parent communication, and cloud-based document storage.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat"><strong>300+</strong><span>Students managed</span></div>
+                        <div class="stat"><strong>25</strong><span>Teachers onboarded</span></div>
                     </div>
                 </div>
-
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">
-                        <i class="fas fa-fire-alt"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">Fraud Prevention</span>
-                        <h3>LPG Gas Stock Control</h3>
-                        <p>Custom fraud-prevention software for energy retailers. Real-time tracking of KG variance with automated alerts for discrepancies.</p>
-                        <div class="portfolio-stats">
-                            <div class="stat">
-                                <strong>40%</strong>
-                                <span>Loss Reduction</span>
-                            </div>
-                            <div class="stat">
-                                <strong>R500K+</strong>
-                                <span>Saved Annually</span>
-                            </div>
-                        </div>
+            </div>
+            <div class="portfolio-card fade-in">
+                <div class="portfolio-image"><i class="fas fa-truck"></i></div>
+                <div class="portfolio-content">
+                    <div class="portfolio-tag">Fleet Management</div>
+                    <h3>TransLogix Fleet Tracker</h3>
+                    <p>Complete fleet management with GPS tracking, fuel monitoring, driver analytics, and maintenance scheduling.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat"><strong>45</strong><span>Vehicles tracked</span></div>
+                        <div class="stat"><strong>20%</strong><span>Fuel savings</span></div>
                     </div>
                 </div>
-
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">Education</span>
-                        <h3>Harmony Institute LMS</h3>
-                        <p>Full school digitization including grade management, attendance tracking, parent communication, and cloud-based document storage.</p>
-                        <div class="portfolio-stats">
-                            <div class="stat">
-                                <strong>300+</strong>
-                                <span>Students</span>
-                            </div>
-                            <div class="stat">
-                                <strong>25</strong>
-                                <span>Teachers</span>
-                            </div>
-                        </div>
+            </div>
+            <div class="portfolio-card fade-in">
+                <div class="portfolio-image"><i class="fas fa-calendar-check"></i></div>
+                <div class="portfolio-content">
+                    <div class="portfolio-tag">Booking Platform</div>
+                    <h3>MedBook Appointments</h3>
+                    <p>Online booking platform for a medical practice group with SMS reminders and pre-visit forms for patients.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat"><strong>60%</strong><span>Fewer no-shows</span></div>
+                        <div class="stat"><strong>3</strong><span>Locations served</span></div>
                     </div>
                 </div>
-
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">Fleet Management</span>
-                        <h3>TransLogix Fleet Tracker</h3>
-                        <p>Complete fleet management solution with GPS tracking, fuel monitoring, driver performance analytics, and maintenance scheduling.</p>
-                        <div class="portfolio-stats">
-                            <div class="stat">
-                                <strong>45</strong>
-                                <span>Vehicles</span>
-                            </div>
-                            <div class="stat">
-                                <strong>20%</strong>
-                                <span>Fuel Savings</span>
-                            </div>
-                        </div>
+            </div>
+            <div class="portfolio-card fade-in">
+                <div class="portfolio-image"><i class="fas fa-shopping-cart"></i></div>
+                <div class="portfolio-content">
+                    <div class="portfolio-tag">E-Commerce</div>
+                    <h3>FreshFarm Direct</h3>
+                    <p>Farm-to-table e-commerce connecting local farmers with urban consumers, with subscription boxes and delivery scheduling.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat"><strong>15</strong><span>Partner farms</span></div>
+                        <div class="stat"><strong>2K+</strong><span>Orders per month</span></div>
                     </div>
                 </div>
-
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">
-                        <i class="fas fa-calendar-check"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">Booking Platform</span>
-                        <h3>MedBook Appointments</h3>
-                        <p>Online booking platform for a medical practice group. Patients can book appointments, receive SMS reminders, and complete pre-visit forms.</p>
-                        <div class="portfolio-stats">
-                            <div class="stat">
-                                <strong>60%</strong>
-                                <span>Fewer No-shows</span>
-                            </div>
-                            <div class="stat">
-                                <strong>3</strong>
-                                <span>Locations</span>
-                            </div>
-                        </div>
+            </div>
+            <div class="portfolio-card fade-in">
+                <div class="portfolio-image"><i class="fas fa-users-cog"></i></div>
+                <div class="portfolio-content">
+                    <div class="portfolio-tag">HR Platform</div>
+                    <h3>StaffSync HR System</h3>
+                    <p>Complete HR management for a retail chain — onboarding, leave management, performance tracking, and payroll integration.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat"><strong>200+</strong><span>Employees managed</span></div>
+                        <div class="stat"><strong>8</strong><span>Branches covered</span></div>
                     </div>
                 </div>
-
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">E-Commerce</span>
-                        <h3>FreshFarm Direct</h3>
-                        <p>Farm-to-table e-commerce platform connecting local farmers with urban consumers. Subscription boxes and delivery scheduling.</p>
-                        <div class="portfolio-stats">
-                            <div class="stat">
-                                <strong>15</strong>
-                                <span>Partner Farms</span>
-                            </div>
-                            <div class="stat">
-                                <strong>2K+</strong>
-                                <span>Orders/Month</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">HR Platform</span>
-                        <h3>StaffSync HR System</h3>
-                        <p>Complete HR management platform for a retail chain. Employee onboarding, leave management, performance tracking, and payroll integration.</p>
-                        <div class="portfolio-stats">
-                            <div class="stat">
-                                <strong>200+</strong>
-                                <span>Employees</span>
-                            </div>
-                            <div class="stat">
-                                <strong>8</strong>
-                                <span>Branches</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-card fade-in">
-                    <div class="portfolio-image">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-tag">AI Solution</span>
-                        <h3>ServiceBot AI Assistant</h3>
-                        <p>AI-powered customer service chatbot for a telecommunications company. Handles 70% of customer queries automatically, available 24/7.</p>
-                        <div class="portfolio-stats">
-                            <div class="stat">
-                                <strong>70%</strong>
-                                <span>Auto-resolved</span>
-                            </div>
-                            <div class="stat">
-                                <strong>24/7</strong>
-                                <span>Availability</span>
-                            </div>
-                        </div>
+            </div>
+            <div class="portfolio-card fade-in">
+                <div class="portfolio-image"><i class="fas fa-robot"></i></div>
+                <div class="portfolio-content">
+                    <div class="portfolio-tag">AI Solution</div>
+                    <h3>ServiceBot AI Assistant</h3>
+                    <p>AI-powered customer service chatbot for a telecommunications company. Handles queries automatically, available 24/7.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat"><strong>70%</strong><span>Auto-resolved</span></div>
+                        <div class="stat"><strong>24/7</strong><span>Availability</span></div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="results-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-tag">
-                    <i class="fas fa-chart-line"></i>
-                    Results
-                </span>
-                <h2 class="section-title">The Numbers Speak</h2>
-            </div>
-            <div class="results-grid">
-                <div class="result-card fade-in">
-                    <div class="result-number">R2M+</div>
-                    <div class="result-label">Client Savings Generated</div>
-                </div>
-                <div class="result-card fade-in">
-                    <div class="result-number">50+</div>
-                    <div class="result-label">Projects Delivered</div>
-                </div>
-                <div class="result-card fade-in">
-                    <div class="result-number">99.9%</div>
-                    <div class="result-label">System Uptime</div>
-                </div>
-                <div class="result-card fade-in">
-                    <div class="result-number">100%</div>
-                    <div class="result-label">Client Satisfaction</div>
-                </div>
-            </div>
+<section class="results-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">The numbers</div>
+            <h2 class="section-title">Results that speak for themselves.</h2>
         </div>
-    </section>
+        <div class="results-grid fade-in">
+            <div class="result-card"><div class="result-number">R2<span>M+</span></div><div class="result-label">Client savings generated</div></div>
+            <div class="result-card"><div class="result-number">50<span>+</span></div><div class="result-label">Projects delivered</div></div>
+            <div class="result-card"><div class="result-number">99.9<span>%</span></div><div class="result-label">System uptime</div></div>
+            <div class="result-card"><div class="result-number">100<span>%</span></div><div class="result-label">Client satisfaction</div></div>
+        </div>
+    </div>
+</section>
 
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-tag">
-                    <i class="fas fa-quote-left"></i>
-                    Testimonials
-                </span>
-                <h2 class="section-title">What Our Clients Say</h2>
+<section class="testimonials-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Testimonials</div>
+            <h2 class="section-title">What our clients say.</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-quote">"</div>
+                <div class="testimonial-content">
+                    <p>AutoM8 transformed how we manage our school. The system is intuitive and reliable. Student engagement has improved significantly.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SJ</div>
+                    <div class="author-info">
+                        <strong>Sarah Johnson</strong>
+                        <span>Principal, Harmony Institute</span>
+                    </div>
+                </div>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-quote">"</div>
-                    <div class="testimonial-content">
-                        <p>AutoM8 transformed how we manage our school. The system is intuitive and reliable. Student engagement has improved significantly.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SJ</div>
-                        <div class="author-info">
-                            <strong>Sarah Johnson</strong>
-                            <span>Principal, Harmony Institute</span>
-                        </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-quote">"</div>
+                <div class="testimonial-content">
+                    <p>The stock control system has saved us hundreds of thousands in prevented losses. We can now track every kilogram in real-time.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">TM</div>
+                    <div class="author-info">
+                        <strong>Thabo Molefe</strong>
+                        <span>MD, LPG Energy Solutions</span>
                     </div>
                 </div>
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-quote">"</div>
-                    <div class="testimonial-content">
-                        <p>The stock control system has saved us hundreds of thousands in prevented losses. We can now track every kilogram in real-time.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">TM</div>
-                        <div class="author-info">
-                            <strong>Thabo Molefe</strong>
-                            <span>MD, LPG Energy Solutions</span>
-                        </div>
-                    </div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-quote">"</div>
+                <div class="testimonial-content">
+                    <p>From concept to launch in 6 weeks. The team understood our vision immediately and delivered beyond expectations.</p>
                 </div>
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-quote">"</div>
-                    <div class="testimonial-content">
-                        <p>From concept to launch in 6 weeks. The team understood our vision immediately and delivered beyond expectations.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">LN</div>
-                        <div class="author-info">
-                            <strong>Lindiwe Nkosi</strong>
-                            <span>Founder, Lephalale Connect</span>
-                        </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">LN</div>
+                    <div class="author-info">
+                        <strong>Lindiwe Nkosi</strong>
+                        <span>Founder, Lephalale Connect</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Be Our Next Success Story?</h2>
-                <p>Let's discuss your project and build something great together.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-white">
-                        <i class="fas fa-rocket"></i>
-                        Start Your Project
-                    </a>
-                </div>
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to be our next success story?</h2>
+            <p>Let's discuss your project and build something great together.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-white">Start your project <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>AutoM8</h3>
-                    <p>Building custom software solutions that power South African businesses.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Custom Software</a></li>
-                        <li><a href="services.html">Web Development</a></li>
-                        <li><a href="services.html">Education Tech</a></li>
-                        <li><a href="services.html">Business Automation</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section footer-contact">
-                    <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p>
-                    <p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 AutoM8. All rights reserved.</p>
-            </div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand"><h3>AutoM8</h3><p>Building custom software solutions that power South African businesses.</p></div>
+            <div class="footer-section"><h4>Services</h4><ul><li><a href="services.html">Custom Software</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">Education Tech</a></li><li><a href="services.html">Business Automation</a></li></ul></div>
+            <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p><p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p></div>
         </div>
-    </footer>
-
-    <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navMenu = document.getElementById('nav-menu');
-        mobileMenu.addEventListener('click', () => navMenu.classList.toggle('active'));
-
-        const fadeElements = document.querySelectorAll('.fade-in');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.1 });
-        fadeElements.forEach(el => observer.observe(el));
-    </script>
+        <div class="footer-bottom"><p>&copy; 2025 AutoM8. All rights reserved.</p></div>
+    </div>
+</footer>
+<script>
+const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');
+mm.addEventListener('click',()=>nm.classList.toggle('active'));
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>

@@ -3,552 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Pricing | Software Development Pricing | AutoM8 South Africa</title>
-    <meta name="description" content="AutoM8 pricing for custom software, business automation, and education technology. Transparent project-based pricing starting from R20,000.">
-    <meta name="author" content="AutoM8">
-    <meta name="theme-color" content="#2563eb">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="AutoM8 pricing for custom software, business automation, and education technology. Starting from R20,000.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/theme.css">
-    
     <style>
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
         .pricing-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
             padding: 2.5rem 2rem;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-card);
+            transition: all 0.25s;
             position: relative;
         }
-
-        .pricing-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-card-hover);
-        }
-
-        .pricing-card.featured {
-            border-color: var(--accent-primary);
-            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.15);
-        }
-
+        .pricing-card:hover { transform: translateY(-4px); border-color: #d1d5db; box-shadow: var(--shadow-card-hover); }
+        .pricing-card.featured { border-color: var(--blue); border-width: 2px; }
         .plan-badge {
             position: absolute;
-            top: -12px;
-            left: 50%;
+            top: -12px; left: 50%;
             transform: translateX(-50%);
-            background: var(--accent-primary);
-            color: white;
-            padding: 6px 20px;
+            background: var(--blue);
+            color: #fff;
+            padding: 4px 16px;
             border-radius: 100px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        .plan-header {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            padding-top: 0.5rem;
-        }
-
-        .plan-icon {
-            width: 56px;
-            height: 56px;
-            background: var(--accent-light);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-        }
-
-        .plan-icon i {
-            font-size: 1.5rem;
-            color: var(--accent-primary);
-        }
-
-        .plan-header h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.25rem;
-        }
-
-        .plan-header p {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        .plan-price {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            padding: 1.25rem;
-            background: var(--bg-secondary);
-            border-radius: 12px;
-        }
-
-        .price-label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
+            font-size: 0.7rem;
+            font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 0.25rem;
         }
-
-        .price-amount {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--accent-primary);
-        }
-
-        .price-note {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            margin-top: 0.25rem;
-        }
-
-        .plan-features {
-            list-style: none;
-            margin-bottom: 1.5rem;
-        }
-
+        .plan-micro { font-size: 0.72rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); margin-bottom: 0.75rem; }
+        .plan-header h3 { font-size: 1.3rem; font-weight: 800; color: var(--text); letter-spacing: -0.03em; margin-bottom: 0.25rem; }
+        .plan-header p { color: var(--text-3); font-size: 0.875rem; margin-bottom: 1.75rem; }
+        .plan-price { margin-bottom: 1.75rem; padding-bottom: 1.75rem; border-bottom: 1px solid var(--border-lt); }
+        .price-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--text-3); margin-bottom: 0.3rem; }
+        .price-amount { font-size: 2.2rem; font-weight: 900; color: var(--text); letter-spacing: -0.04em; line-height: 1; }
+        .price-note { font-size: 0.8rem; color: var(--text-3); margin-top: 0.25rem; }
+        .plan-features { list-style: none; margin-bottom: 2rem; }
         .plan-features li {
-            padding: 0.5rem 0;
-            color: var(--text-secondary);
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            font-size: 0.95rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .plan-features li:last-child {
-            border-bottom: none;
-        }
-
-        .plan-features li i {
-            color: var(--accent-primary);
-            margin-top: 3px;
-            font-size: 0.9rem;
-        }
-
-        .plan-btn {
-            width: 100%;
-            text-align: center;
-        }
-
-        .education-section {
-            background: var(--bg-secondary);
-        }
-
-        .education-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .education-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: var(--shadow-card);
-        }
-
-        .edu-price {
-            display: flex;
-            align-items: baseline;
-            justify-content: center;
-            gap: 4px;
-            margin-bottom: 0.75rem;
-        }
-
-        .edu-currency {
-            font-size: 1rem;
-            color: var(--text-muted);
-            font-weight: 600;
-        }
-
-        .edu-amount {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--accent-primary);
-        }
-
-        .edu-period {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-
-        .education-card h3 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .education-card > p {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .edu-features {
-            list-style: none;
-            text-align: left;
-            margin-bottom: 1.25rem;
-        }
-
-        .edu-features li {
-            padding: 0.35rem 0;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .edu-features li i {
-            color: var(--accent-primary);
-            font-size: 0.8rem;
-        }
-
-        .faq-section {
-            background: var(--bg-primary);
-        }
-
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-        }
-
-        .faq-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 1.5rem;
-        }
-
-        .faq-item h3 {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
+            padding: 0.45rem 0;
+            color: var(--text-2);
+            font-size: 0.875rem;
             display: flex;
             align-items: center;
             gap: 10px;
+            border-bottom: 1px solid var(--border-lt);
         }
+        .plan-features li:last-child { border-bottom: none; }
+        .plan-features li i { color: var(--blue); font-size: 0.7rem; }
+        .plan-btn { width: 100%; text-align: center; display: block; }
 
-        .faq-item h3 i {
-            color: var(--accent-primary);
-        }
+        .edu-section { background: var(--bg-alt); border-top: 1px solid var(--border-lt); border-bottom: 1px solid var(--border-lt); }
+        .edu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+        .edu-card { padding: 2.5rem 2rem; border-right: 1px solid var(--border); }
+        .edu-card:last-child { border-right: none; }
+        .edu-micro { font-size: 0.72rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); margin-bottom: 0.75rem; }
+        .edu-price-wrap { margin-bottom: 0.5rem; }
+        .edu-amount { font-size: 2.5rem; font-weight: 900; color: var(--text); letter-spacing: -0.04em; line-height: 1; }
+        .edu-curr { font-size: 1.1rem; font-weight: 700; color: var(--text-3); vertical-align: top; margin-top: 8px; display: inline-block; }
+        .edu-period { font-size: 0.8rem; color: var(--text-3); margin-bottom: 0.5rem; }
+        .edu-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.35rem; }
+        .edu-card > p { color: var(--text-3); font-size: 0.85rem; margin-bottom: 1.25rem; }
+        .edu-features { list-style: none; margin-bottom: 1.5rem; }
+        .edu-features li { padding: 0.35rem 0; color: var(--text-2); font-size: 0.875rem; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border-lt); }
+        .edu-features li:last-child { border-bottom: none; }
+        .edu-features li i { color: var(--blue); font-size: 0.7rem; }
 
-        .faq-item p {
-            color: var(--text-muted);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
+        .faq-section { background: var(--bg); border-bottom: 1px solid var(--border-lt); }
+        .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+        .faq-item { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+        .faq-item h3 { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
+        .faq-item p { color: var(--text-3); line-height: 1.7; font-size: 0.875rem; }
 
         @media (max-width: 1024px) {
-            .pricing-grid {
-                grid-template-columns: 1fr;
-                max-width: 450px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .education-grid {
-                grid-template-columns: 1fr;
-            }
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
+            .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+            .edu-grid { grid-template-columns: 1fr; }
+            .edu-card { border-right: none; border-bottom: 1px solid var(--border); }
+            .edu-card:last-child { border-bottom: none; }
+            .faq-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h1>AutoM8</h1>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo"><h1>AutoM8</h1></div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+    </div>
+</nav>
+
+<section class="page-hero" style="text-align:left;">
+    <div class="container">
+        <div class="section-tag" style="margin-bottom:0.75rem;">Pricing</div>
+        <h1 class="page-title fade-in">Simple, transparent<br>pricing.</h1>
+        <p class="page-subtitle fade-in" style="margin:0;">No hidden fees. No surprises. Just clear project-based pricing that scales with your needs.</p>
+    </div>
+</section>
+
+<section style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Custom projects</div>
+            <h2 class="section-title">Project-based pricing.</h2>
+            <p class="section-subtitle">Every business is unique. Our pricing reflects the scope and complexity of your solution.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card fade-in">
+                <div class="plan-micro">Starter</div>
+                <div class="plan-header">
+                    <h3>Starter</h3>
+                    <p>Simple tools & automations for growing businesses.</p>
+                </div>
+                <div class="plan-price">
+                    <div class="price-label">Starting from</div>
+                    <div class="price-amount">R20,000</div>
+                    <div class="price-note">One-time project fee</div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-circle"></i> Single-purpose applications</li>
+                    <li><i class="fas fa-circle"></i> Basic automation workflows</li>
+                    <li><i class="fas fa-circle"></i> Simple dashboards</li>
+                    <li><i class="fas fa-circle"></i> 2–4 week delivery</li>
+                    <li><i class="fas fa-circle"></i> 3 months support</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline plan-btn">Get a quote</a>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="pricing-card featured fade-in">
+                <div class="plan-badge">Most Popular</div>
+                <div class="plan-micro">Business</div>
+                <div class="plan-header">
+                    <h3>Business</h3>
+                    <p>Full-scale platforms for established businesses.</p>
+                </div>
+                <div class="plan-price">
+                    <div class="price-label">Starting from</div>
+                    <div class="price-amount">R50,000</div>
+                    <div class="price-note">One-time project fee</div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-circle"></i> Multi-module platforms</li>
+                    <li><i class="fas fa-circle"></i> User authentication</li>
+                    <li><i class="fas fa-circle"></i> Payment integrations</li>
+                    <li><i class="fas fa-circle"></i> 4–8 week delivery</li>
+                    <li><i class="fas fa-circle"></i> 6 months support</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary plan-btn">Get a quote</a>
+            </div>
+            <div class="pricing-card fade-in">
+                <div class="plan-micro">Enterprise</div>
+                <div class="plan-header">
+                    <h3>Enterprise</h3>
+                    <p>Complex integrations for large organisations.</p>
+                </div>
+                <div class="plan-price">
+                    <div class="price-label">Starting from</div>
+                    <div class="price-amount">R150,000</div>
+                    <div class="price-note">One-time project fee</div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-circle"></i> Enterprise architecture</li>
+                    <li><i class="fas fa-circle"></i> Third-party API integrations</li>
+                    <li><i class="fas fa-circle"></i> AI & automation features</li>
+                    <li><i class="fas fa-circle"></i> 8–16 week delivery</li>
+                    <li><i class="fas fa-circle"></i> 12 months support</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline plan-btn">Get a quote</a>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <section class="page-hero">
-        <div class="container">
-            <h1 class="page-title fade-in">Simple, Transparent Pricing</h1>
-            <p class="page-subtitle fade-in">Pricing that scales with your project. No hidden fees, no surprises.</p>
+<section class="edu-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Education</div>
+            <h2 class="section-title">School management system pricing.</h2>
+            <p class="section-subtitle">Affordable per-student pricing for institutions of all sizes.</p>
         </div>
-    </section>
-
-    <section style="background: var(--bg-primary);">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-tag">
-                    <i class="fas fa-briefcase"></i>
-                    Custom Projects
-                </span>
-                <h2 class="section-title">Project-Based Pricing</h2>
-                <p class="section-subtitle">Every business is unique. Our pricing reflects the scope and complexity of your solution.</p>
+        <div class="edu-grid fade-in">
+            <div class="edu-card">
+                <div class="edu-micro">Base Plan</div>
+                <div class="edu-price-wrap">
+                    <span class="edu-curr">R</span><span class="edu-amount">15</span>
+                </div>
+                <div class="edu-period">/student/month</div>
+                <h3>Base Plan</h3>
+                <p>Essential features for small schools.</p>
+                <ul class="edu-features">
+                    <li><i class="fas fa-circle"></i> Assignment management</li>
+                    <li><i class="fas fa-circle"></i> Basic grading</li>
+                    <li><i class="fas fa-circle"></i> Announcements</li>
+                    <li><i class="fas fa-circle"></i> Student profiles</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline" style="width:100%;display:flex;">Get started</a>
             </div>
-            <div class="pricing-grid">
-                <div class="pricing-card fade-in">
-                    <div class="plan-header">
-                        <div class="plan-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <h3>Starter</h3>
-                        <p>Simple tools & automations</p>
-                    </div>
-                    <div class="plan-price">
-                        <div class="price-label">Starting From</div>
-                        <div class="price-amount">R20,000</div>
-                        <div class="price-note">One-time project fee</div>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Single-purpose applications</li>
-                        <li><i class="fas fa-check"></i> Basic automation workflows</li>
-                        <li><i class="fas fa-check"></i> Simple dashboards</li>
-                        <li><i class="fas fa-check"></i> 2-4 week delivery</li>
-                        <li><i class="fas fa-check"></i> 3 months support</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-outline plan-btn">Get Quote</a>
+            <div class="edu-card">
+                <div class="edu-micro">Pro Plan</div>
+                <div class="edu-price-wrap">
+                    <span class="edu-curr">R</span><span class="edu-amount">25</span>
                 </div>
-
-                <div class="pricing-card featured fade-in">
-                    <div class="plan-badge">Most Popular</div>
-                    <div class="plan-header">
-                        <div class="plan-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <h3>Business</h3>
-                        <p>Full-scale platforms</p>
-                    </div>
-                    <div class="plan-price">
-                        <div class="price-label">Starting From</div>
-                        <div class="price-amount">R50,000</div>
-                        <div class="price-note">One-time project fee</div>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Multi-module platforms</li>
-                        <li><i class="fas fa-check"></i> User authentication</li>
-                        <li><i class="fas fa-check"></i> Payment integrations</li>
-                        <li><i class="fas fa-check"></i> 4-8 week delivery</li>
-                        <li><i class="fas fa-check"></i> 6 months support</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary plan-btn">Get Quote</a>
+                <div class="edu-period">/student/month</div>
+                <h3>Pro Plan</h3>
+                <p>Advanced features for growing institutions.</p>
+                <ul class="edu-features">
+                    <li><i class="fas fa-circle"></i> Everything in Base</li>
+                    <li><i class="fas fa-circle"></i> Attendance tracking</li>
+                    <li><i class="fas fa-circle"></i> Auto-graded quizzes</li>
+                    <li><i class="fas fa-circle"></i> Progress reports</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline" style="width:100%;display:flex;">Get started</a>
+            </div>
+            <div class="edu-card">
+                <div class="edu-micro">Premium Plan</div>
+                <div class="edu-price-wrap">
+                    <span class="edu-curr">R</span><span class="edu-amount">35</span>
                 </div>
-
-                <div class="pricing-card fade-in">
-                    <div class="plan-header">
-                        <div class="plan-icon">
-                            <i class="fas fa-city"></i>
-                        </div>
-                        <h3>Enterprise</h3>
-                        <p>Complex integrations</p>
-                    </div>
-                    <div class="plan-price">
-                        <div class="price-label">Starting From</div>
-                        <div class="price-amount">R150,000</div>
-                        <div class="price-note">One-time project fee</div>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Enterprise architecture</li>
-                        <li><i class="fas fa-check"></i> Third-party API integrations</li>
-                        <li><i class="fas fa-check"></i> AI & automation features</li>
-                        <li><i class="fas fa-check"></i> 8-16 week delivery</li>
-                        <li><i class="fas fa-check"></i> 12 months support</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-outline plan-btn">Get Quote</a>
-                </div>
+                <div class="edu-period">/student/month</div>
+                <h3>Premium Plan</h3>
+                <p>The complete solution for full institutions.</p>
+                <ul class="edu-features">
+                    <li><i class="fas fa-circle"></i> Everything in Pro</li>
+                    <li><i class="fas fa-circle"></i> Payment integration</li>
+                    <li><i class="fas fa-circle"></i> Custom branding</li>
+                    <li><i class="fas fa-circle"></i> Priority support</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary" style="width:100%;display:flex;">Get started</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="education-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-tag">
-                    <i class="fas fa-graduation-cap"></i>
-                    Education
-                </span>
-                <h2 class="section-title">School Management System</h2>
-                <p class="section-subtitle">Affordable per-student pricing for educational institutions.</p>
-            </div>
-            <div class="education-grid">
-                <div class="education-card fade-in">
-                    <div class="edu-price">
-                        <span class="edu-currency">R</span>
-                        <span class="edu-amount">15</span>
-                        <span class="edu-period">/student/month</span>
-                    </div>
-                    <h3>Base Plan</h3>
-                    <p>Essential features</p>
-                    <ul class="edu-features">
-                        <li><i class="fas fa-check"></i> Assignment management</li>
-                        <li><i class="fas fa-check"></i> Basic grading</li>
-                        <li><i class="fas fa-check"></i> Announcements</li>
-                        <li><i class="fas fa-check"></i> Student profiles</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-outline" style="width: 100%;">Get Started</a>
-                </div>
+<section class="faq-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">FAQ</div>
+            <h2 class="section-title">Common questions.</h2>
+        </div>
+        <div class="faq-grid fade-in">
+            <div class="faq-item"><h3>How does payment work?</h3><p>Projects are split into milestones: 40% upfront, 30% at midpoint, 30% on delivery. Flexible for larger projects.</p></div>
+            <div class="faq-item"><h3>How long does a project take?</h3><p>Simple tools: 2–4 weeks. Full platforms: 4–8 weeks. Enterprise: 8–16 weeks. We'll give a firm timeline upfront.</p></div>
+            <div class="faq-item"><h3>What support is included?</h3><p>All projects include 3–12 months support covering bug fixes, security patches, and technical assistance.</p></div>
+            <div class="faq-item"><h3>Do I own the code?</h3><p>Yes. You receive full ownership of all custom code — complete source code and documentation is yours forever.</p></div>
+        </div>
+    </div>
+</section>
 
-                <div class="education-card fade-in">
-                    <div class="edu-price">
-                        <span class="edu-currency">R</span>
-                        <span class="edu-amount">25</span>
-                        <span class="edu-period">/student/month</span>
-                    </div>
-                    <h3>Pro Plan</h3>
-                    <p>Advanced features</p>
-                    <ul class="edu-features">
-                        <li><i class="fas fa-check"></i> Everything in Base</li>
-                        <li><i class="fas fa-check"></i> Attendance tracking</li>
-                        <li><i class="fas fa-check"></i> Auto-graded quizzes</li>
-                        <li><i class="fas fa-check"></i> Progress reports</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-outline" style="width: 100%;">Get Started</a>
-                </div>
-
-                <div class="education-card fade-in">
-                    <div class="edu-price">
-                        <span class="edu-currency">R</span>
-                        <span class="edu-amount">35</span>
-                        <span class="edu-period">/student/month</span>
-                    </div>
-                    <h3>Premium Plan</h3>
-                    <p>Complete solution</p>
-                    <ul class="edu-features">
-                        <li><i class="fas fa-check"></i> Everything in Pro</li>
-                        <li><i class="fas fa-check"></i> Payment integration</li>
-                        <li><i class="fas fa-check"></i> Custom branding</li>
-                        <li><i class="fas fa-check"></i> Priority support</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Get Started</a>
-                </div>
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Get your custom quote.</h2>
+            <p>Tell us what you need and we'll provide a detailed proposal within 24 hours.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-white">Request a quote <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="faq-section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-tag">
-                    <i class="fas fa-question-circle"></i>
-                    FAQ
-                </span>
-                <h2 class="section-title">Common Questions</h2>
-            </div>
-            <div class="faq-grid">
-                <div class="faq-item fade-in">
-                    <h3><i class="fas fa-coins"></i> How does payment work?</h3>
-                    <p>Projects are split into milestones: 40% upfront, 30% at midpoint, 30% on delivery.</p>
-                </div>
-                <div class="faq-item fade-in">
-                    <h3><i class="fas fa-clock"></i> How long does a project take?</h3>
-                    <p>Simple tools: 2-4 weeks. Full platforms: 4-8 weeks. Enterprise: 8-16 weeks.</p>
-                </div>
-                <div class="faq-item fade-in">
-                    <h3><i class="fas fa-headset"></i> What support is included?</h3>
-                    <p>All projects include 3-12 months support covering bug fixes and technical assistance.</p>
-                </div>
-                <div class="faq-item fade-in">
-                    <h3><i class="fas fa-code"></i> Do I own the code?</h3>
-                    <p>Yes. You receive full ownership of all custom code with complete source code and documentation.</p>
-                </div>
-            </div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand"><h3>AutoM8</h3><p>Building custom software solutions that power South African businesses.</p></div>
+            <div class="footer-section"><h4>Services</h4><ul><li><a href="services.html">Custom Software</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">Education Tech</a></li><li><a href="services.html">Business Automation</a></li></ul></div>
+            <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p><p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p></div>
         </div>
-    </section>
-
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Get Your Custom Quote</h2>
-                <p>Let's discuss your requirements and provide a detailed proposal.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-white">
-                        <i class="fas fa-calculator"></i>
-                        Request Quote
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>AutoM8</h3>
-                    <p>Building custom software solutions that power South African businesses.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Custom Software</a></li>
-                        <li><a href="services.html">Web Development</a></li>
-                        <li><a href="services.html">Education Tech</a></li>
-                        <li><a href="services.html">Business Automation</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section footer-contact">
-                    <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p>
-                    <p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 AutoM8. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navMenu = document.getElementById('nav-menu');
-        mobileMenu.addEventListener('click', () => navMenu.classList.toggle('active'));
-
-        const fadeElements = document.querySelectorAll('.fade-in');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.1 });
-        fadeElements.forEach(el => observer.observe(el));
-    </script>
+        <div class="footer-bottom"><p>&copy; 2025 AutoM8. All rights reserved.</p></div>
+    </div>
+</footer>
+<script>
+const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');
+mm.addEventListener('click',()=>nm.classList.toggle('active'));
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>
