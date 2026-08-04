@@ -1,0 +1,680 @@
+Improve the existing AutoM8 website while preserving its current visual identity.
+
+## Main objective
+
+I like the current website and do not want it redesigned or rebuilt.
+
+The following must remain unless a technical problem makes a small correction necessary:
+
+* Existing visual design
+* Colour scheme
+* Branding
+* Navigation
+* Page layout
+* Animations
+* Transitions
+* Cards
+* Responsive behaviour
+* Fonts
+* Images
+* Portfolio structure
+* Services currently offered
+* General professional appearance
+
+The website should still feel like exactly the same AutoM8 website after these changes.
+
+The purpose of this update is to make the website:
+
+* More honest and credible
+* More affordable for small and medium businesses
+* Better optimised for Google
+* More effective at generating WhatsApp messages, enquiries and clients
+* Clearer about which projects are client work, personal work, academic work, internal work or prototypes
+
+Do not remove portfolio projects merely because they were not delivered to paying businesses.
+
+## 1. Preserve every portfolio project
+
+Keep all existing portfolio projects and project cards.
+
+Do not delete:
+
+* Lephalale Connect
+* LPG Gas Stock Control
+* Harmony Institute LMS
+* TransLogix Fleet Tracker
+* MedBook Appointments
+* FreshFarm Direct
+* StaffSync HR System
+* ServiceBot AI Assistant
+
+Preserve their current design, images, cards and general descriptions.
+
+However, change language that falsely suggests every project was commissioned and deployed by a paying client.
+
+Change the portfolio introduction to wording similar to:
+
+“A selection of software systems, prototypes and digital products developed by AutoM8.”
+
+Do not say that every project was built for businesses across South Africa unless that is factually verified.
+
+## 2. Add honest project categories
+
+Add an attractive category or status badge to every portfolio project.
+
+Possible categories include:
+
+* Client Project
+* Internal Project
+* Academic Project
+* Personal Project
+* Prototype
+* Concept System
+
+Do not guess which category applies to a particular project.
+
+Create a simple project-data field where I can later select the correct category.
+
+Until I provide the classifications, use the neutral public label:
+
+“Project Showcase”
+
+Do not publicly display incomplete placeholders such as “[PROJECT TYPE]”.
+
+## 3. Replace invented project results
+
+Keep the current visual result or statistic areas on the project cards, but replace unsupported performance numbers with truthful features, capabilities or project details.
+
+Remove unsupported figures including:
+
+* 50+ businesses
+* 10K+ monthly visitors
+* 40% loss reduction
+* R500K+ saved annually
+* 300+ students
+* 25 teachers
+* 45 vehicles
+* 20% fuel savings
+* 60% fewer no-shows
+* Three locations
+* 15 partner farms
+* 2K+ orders per month
+* 200+ employees
+* Eight branches
+* 70% auto-resolved
+
+Do not remove the visual boxes that contain this information. Replace the contents with non-misleading project highlights.
+
+Use project highlights similar to the following:
+
+### Lephalale Connect
+
+* Local business directory
+* Business-owner dashboard
+* Payment-processing workflow
+* Search and category filtering
+
+### LPG Gas Stock Control
+
+* Real-time KG variance
+* Stock discrepancy alerts
+* Transaction audit trail
+* Inventory monitoring
+
+### Harmony Institute LMS
+
+* Attendance and grade tracking
+* Parent communication portal
+* Learner profiles
+* School document management
+
+### TransLogix Fleet Tracker
+
+* Vehicle monitoring
+* Fuel tracking
+* Maintenance scheduling
+* Driver-performance dashboard
+
+### MedBook Appointments
+
+* Online appointment booking
+* Reminder workflow
+* Patient-information forms
+* Schedule management
+
+### FreshFarm Direct
+
+* E-commerce workflow
+* Product subscriptions
+* Delivery scheduling
+* Supplier-management concept
+
+### StaffSync HR System
+
+* Employee onboarding
+* Leave management
+* Performance tracking
+* Payroll-integration concept
+
+### ServiceBot AI Assistant
+
+* AI-assisted support
+* Frequently asked questions
+* Conversation routing
+* Automated response workflow
+
+Use wording such as “designed to,” “includes,” “demonstrates” or “supports.”
+
+Do not claim that a project produced a financial, operational or customer result unless that result has been verified.
+
+## 4. Replace the company-wide statistics
+
+Remove unsupported company-wide statistics such as:
+
+* 50+ projects delivered
+* R2M+ client savings generated
+* 99.9% system uptime
+* 100% client satisfaction
+
+Preserve the current statistics-section design.
+
+Replace the statistics with honest company or portfolio facts such as:
+
+* 8 — Projects Showcased
+* 6 — Solution Areas
+* 3 — Core Markets
+* 1 — Direct Point of Contact
+
+The three core markets are:
+
+* Small and medium businesses
+* Schools and education organisations
+* Organisations requiring custom systems
+
+Alternatively, where the design permits, replace the numerical statistics with:
+
+* Custom-Built Solutions
+* Flexible Pricing
+* South African Focus
+* Direct Support
+
+Do not invent replacement numbers merely to fill the space.
+
+Apply this change consistently on the homepage, About page and Portfolio page.
+
+## 5. Remove or hide unverified testimonials
+
+Do not display testimonials attributed to clients unless the testimonials are genuine and permission has been received.
+
+Temporarily hide the current testimonial quotes and names.
+
+Preserve the section’s visual design and replace it with:
+
+“What Our Projects Demonstrate”
+
+Use capability cards such as:
+
+* Practical problem solving
+* User-friendly interfaces
+* Custom database systems
+* Workflow automation
+* Responsive web development
+* Education technology
+* Dashboards and reporting
+* System integration
+
+Leave a clearly documented place in the code where genuine testimonials can be added later.
+
+Do not invent replacement testimonials, names, businesses, photographs or quotes.
+
+## 6. Correct the About page
+
+Change wording that makes AutoM8 appear much larger or more established than it currently is.
+
+Replace wording such as:
+
+“AutoM8 is a leading software development company”
+
+with:
+
+“AutoM8 is a growing, founder-led South African software development and workflow automation company.”
+
+Explain that AutoM8 focuses on:
+
+* Personalised service
+* Flexible pricing
+* Practical technology
+* Direct communication
+* Custom solutions
+* Supporting South African businesses and schools
+
+If the current About page presents multiple departments or employees, change the section from “The Team” to:
+
+“Our Capabilities”
+
+Keep the existing visual cards, but present them as business capabilities:
+
+* Full-Stack Development
+* AI and Automation
+* UI and UX Design
+* Technical Support
+
+Do not imply that AutoM8 employs a large team unless that information is confirmed.
+
+Add a founder section using placeholders in the project data for:
+
+* Founder name
+* Founder photograph
+* Short biography
+* Software-development background
+* Reason AutoM8 was created
+
+Do not publish visible placeholders. Hide the founder section until the information is provided.
+
+## 7. Replace excessive guarantees
+
+Remove statements such as:
+
+* Every project is delivered on time, on budget and to specification
+* Every system is delivered within a guaranteed number of weeks
+* WhatsApp replies always occur within one hour
+* Email replies always occur within four hours
+* Consultations always happen on the same day
+* Proposals are always delivered within 24 hours
+
+Use more responsible wording such as:
+
+“Every project follows a clear scope, agreed milestones and transparent communication.”
+
+“We aim to respond as soon as possible during normal business hours.”
+
+“Project timelines depend on scope, complexity and client feedback.”
+
+Do not promise response times or delivery times that may not always be achievable.
+
+## 8. Introduce affordable website pricing
+
+Replace the current R20,000, R50,000 and R150,000 general starting packages.
+
+Keep the current pricing-page design and card animations, but restructure the website section into the following packages.
+
+### Starter Website — From R1,500
+
+Designed for a new or very small business.
+
+Include:
+
+* One-page website
+* Mobile-responsive layout
+* Basic business information
+* Contact form
+* WhatsApp button
+* Social-media links
+* Basic on-page SEO
+* Client provides final text and images
+
+### Small Business Website — From R3,500
+
+Designed for an established small business.
+
+Include:
+
+* Up to five pages
+* Mobile-responsive design
+* Contact form
+* WhatsApp integration
+* Google Maps where appropriate
+* Services section
+* Gallery or portfolio section
+* Basic on-page SEO
+* Basic analytics preparation
+
+### Growth Website — From R6,500
+
+Designed for a business needing stronger lead generation.
+
+Include:
+
+* Up to eight pages
+* Blog, portfolio or case-study capability
+* Lead-generation forms
+* Basic booking or calendar integration
+* Google Analytics preparation
+* Search Console preparation
+* Enhanced on-page SEO
+* Social sharing metadata
+
+### E-Commerce or Booking Website — From R8,500
+
+Include wording explaining that the final price depends on:
+
+* Number of products
+* Payment integrations
+* Booking requirements
+* User accounts
+* Delivery functionality
+* Third-party integrations
+
+The prices must be displayed as starting prices, not guaranteed final prices.
+
+Add a notice:
+
+“Final pricing depends on the project scope, content, integrations and functionality required.”
+
+Clearly explain whether domain registration, hosting, paid third-party tools and ongoing maintenance are included or excluded.
+
+Do not invent inclusions that the existing AutoM8 service does not provide.
+
+## 9. Add affordable automation options
+
+Create a dedicated pricing area for workflow automation.
+
+### Simple Automation — From R500
+
+Examples:
+
+* Automated email notifications
+* Form-to-spreadsheet workflows
+* Simple reminders
+* Basic data transfer
+* Single-process automation
+
+### Multi-Step Automation — From R1,500
+
+Examples:
+
+* Multi-stage workflows
+* Approval processes
+* Customer follow-ups
+* Document generation
+* Multiple-system integrations
+
+### Advanced Automation — Custom Quote
+
+Examples:
+
+* Complex integrations
+* Custom dashboards
+* Business-critical workflows
+* AI-assisted processes
+* Large data-processing systems
+
+Clearly state that third-party subscription fees may be separate.
+
+Do not imply that a complicated automation will be delivered for R500.
+
+## 10. Keep custom systems as an important service
+
+Do not remove or reduce the visibility of:
+
+* Custom software
+* Web applications
+* School management systems
+* Parent portals
+* Dashboards
+* Inventory systems
+* Fraud-prevention systems
+* Booking platforms
+* Education technology
+* AI and automation
+
+Create a separate pricing category:
+
+### Custom Systems and Web Applications — From R10,000
+
+Use wording similar to:
+
+“Custom systems are quoted according to their modules, user roles, database requirements, integrations and deployment needs. Projects may be divided into phases to make development more affordable.”
+
+Add two calls to action:
+
+* Request a Custom Quote
+* Discuss a Phased Build
+
+Do not make R10,000 appear to be the guaranteed price for every custom system.
+
+Keep the existing school-management per-learner packages unchanged for now unless there is a technical or pricing inconsistency.
+
+## 11. Improve the homepage without redesigning it
+
+Keep the current homepage layout, animations and visual structure.
+
+The hero should clearly communicate the three primary service areas:
+
+* Affordable business websites
+* Custom systems and school technology
+* Workflow automation
+
+Use a heading similar to:
+
+“Websites, Custom Systems and Automation Built for South African Organisations.”
+
+Use supporting copy similar to:
+
+“AutoM8 helps businesses and schools build a professional online presence, reduce manual work and manage operations through practical, custom-built technology.”
+
+Primary calls to action:
+
+* Get a Free Quote
+* Chat on WhatsApp
+
+Secondary call to action:
+
+* View Our Projects
+
+Do not remove the broader services from the Services page.
+
+## 12. Create clearer visitor pathways
+
+Different visitors should be able to quickly find the relevant service.
+
+Add clear paths for:
+
+### Businesses needing a website
+
+Link to website services and website pricing.
+
+### Schools needing digital systems
+
+Link to the school-management and parent-portal information.
+
+### Businesses with repetitive administration
+
+Link to business automation.
+
+### Organisations needing custom software
+
+Link to custom system information and the portfolio.
+
+Use the existing visual style and cards.
+
+## 13. Create focused search landing pages
+
+Add the following pages while using the existing design system:
+
+* Website Design Pretoria
+* Affordable Business Websites South Africa
+* Business Automation South Africa
+* School Management System South Africa
+* Parent Portal for Private Schools
+* Custom Software Development Pretoria
+
+Each page should contain:
+
+* A unique page title
+* One clear H1
+* A useful description of the service
+* The customer problem
+* Relevant features
+* The AutoM8 process
+* Honest pricing guidance
+* Frequently asked questions
+* Internal links
+* WhatsApp call to action
+* Quote or consultation call to action
+* Unique meta description
+* Appropriate structured data
+
+Do not copy the same paragraphs across all pages.
+
+Do not stuff keywords unnaturally.
+
+## 14. Improve conversion opportunities
+
+Add a clear free offer:
+
+“Request a Free Website or Workflow Assessment.”
+
+The form should allow visitors to select:
+
+* Website assessment
+* Automation assessment
+* School-system demonstration
+* Custom software consultation
+
+Use the existing contact-page design.
+
+Add optional fields for:
+
+* Organisation name
+* Website address
+* Current challenge
+* Approximate budget
+* Preferred contact method
+
+Do not make the form unnecessarily long.
+
+Keep WhatsApp visible as the quickest alternative.
+
+## 15. Improve technical SEO
+
+Without changing the design, audit and improve:
+
+* Page titles
+* Meta descriptions
+* Heading hierarchy
+* Canonical URLs
+* Image alt text
+* Internal links
+* Descriptive link text
+* Mobile usability
+* Semantic HTML
+* Open Graph metadata
+* Social-sharing metadata
+* Loading performance
+* Image optimisation
+* Broken links
+* Form accessibility
+* Keyboard accessibility
+* Structured data
+
+Create or update:
+
+* `sitemap.xml`
+* `robots.txt`
+* Custom 404 page
+* Favicon metadata
+* Organization structured data
+* Service structured data
+* Breadcrumb structured data
+* FAQ structured data only where visible FAQs exist
+
+Do not use fake reviews, ratings, addresses or business statistics in structured data.
+
+## 16. Prepare analytics and search tracking
+
+Prepare optional configuration for:
+
+* Google Analytics 4
+* Google Search Console
+* Microsoft Clarity
+
+Do not insert fake tracking IDs.
+
+The website must continue functioning when tracking IDs are absent.
+
+Prepare event tracking for:
+
+* WhatsApp clicks
+* Email clicks
+* Phone clicks
+* Quote requests
+* Form submissions
+* School-demonstration requests
+* Website-assessment requests
+
+Document where the real IDs must be inserted.
+
+## 17. Make contact information consistent
+
+Use the current working Gmail address throughout the website until a domain email has been verified.
+
+Do not display `info@auto-m8.co.za` unless it is confirmed to receive messages.
+
+Use the same:
+
+* Email
+* Telephone number
+* WhatsApp number
+* Business name
+* Service area
+
+across every page and structured-data entry.
+
+Generate the copyright year dynamically.
+
+## 18. Protect the existing website
+
+Before making changes:
+
+1. Inspect the complete project.
+2. Create a checkpoint or backup.
+3. Identify reusable components and styles.
+4. Reuse the existing design system.
+5. Do not introduce a generic website template.
+6. Do not remove existing animations unless they cause a verified problem.
+7. Do not break navigation, forms, links or responsiveness.
+8. Test after every major change.
+
+After implementation, test:
+
+* Desktop
+* Tablet
+* Mobile
+* Navigation
+* Animations
+* Contact forms
+* WhatsApp links
+* Internal links
+* External links
+* New landing pages
+* Pricing cards
+* Portfolio cards
+* Metadata
+* Sitemap
+* Console errors
+* Missing assets
+
+## 19. Final report
+
+When finished, provide a report containing:
+
+* Files changed
+* New pages added
+* Statistics removed or replaced
+* Portfolio descriptions changed
+* Testimonials hidden
+* Pricing changes
+* SEO changes
+* Forms changed
+* Tracking placeholders added
+* Information still required from me
+* Project classifications I need to confirm
+* Any technical errors discovered
+* Any changes that could not be completed
+
+The result must remain visually recognisable as the existing AutoM8 website.
+
+Do not remove services or projects simply to make the website appear smaller.
+
+The final result should communicate that AutoM8 is a growing, capable and affordable South African technology company with a strong portfolio of developed projects, while remaining completely honest about project types, measured results and business experience.

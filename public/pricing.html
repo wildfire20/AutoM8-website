@@ -3,18 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing | Software Development Pricing | AutoM8 South Africa</title>
-    <meta name="description" content="AutoM8 pricing for custom software, business automation, and education technology. Starting from R20,000.">
+    <title>Pricing | Affordable Websites, Automation & Custom Software | AutoM8 South Africa</title>
+    <meta name="description" content="AutoM8 pricing for business websites from R1,500, workflow automation from R500, and custom software systems from R10,000. Transparent, starting prices for South African businesses.">
+    <link rel="canonical" href="https://auto-m8.co.za/pricing.html">
+    <meta property="og:title" content="Pricing | AutoM8 South Africa">
+    <meta property="og:description" content="Affordable websites from R1,500, automation from R500, custom systems from R10,000. Transparent starting prices for South African businesses.">
+    <meta property="og:type" content="website">
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does payment work?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Projects are typically split into milestones: a deposit upfront, a payment at an agreed midpoint, and a final payment on delivery. Exact terms depend on the project scope." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the prices shown the final price?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The prices shown are starting prices. Final pricing depends on the project scope, content, integrations and functionality required. A detailed quote is provided after a free discovery conversation." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I own the code?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. You receive full ownership of all custom code — complete source code and documentation is yours." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is hosting included?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Hosting, domain registration and ongoing maintenance are not included in the listed prices. These are discussed and quoted separately based on your requirements." }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Analytics Placeholder — see index.html for instructions -->
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/theme.css">
     <style>
-        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-bottom: 1.25rem; }
+        .pricing-grid-2 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 1.25rem; }
         .pricing-card {
             background: var(--bg);
             border: 1px solid var(--border);
             border-radius: 14px;
-            padding: 2.5rem 2rem;
+            padding: 2rem 1.75rem;
             transition: all 0.25s;
             position: relative;
         }
@@ -32,19 +70,20 @@
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            white-space: nowrap;
         }
         .plan-micro { font-size: 0.72rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); margin-bottom: 0.75rem; }
-        .plan-header h3 { font-size: 1.3rem; font-weight: 800; color: var(--text); letter-spacing: -0.03em; margin-bottom: 0.25rem; }
-        .plan-header p { color: var(--text-3); font-size: 0.875rem; margin-bottom: 1.75rem; }
-        .plan-price { margin-bottom: 1.75rem; padding-bottom: 1.75rem; border-bottom: 1px solid var(--border-lt); }
+        .plan-header h3 { font-size: 1.15rem; font-weight: 800; color: var(--text); letter-spacing: -0.03em; margin-bottom: 0.25rem; }
+        .plan-header p { color: var(--text-3); font-size: 0.85rem; margin-bottom: 1.5rem; line-height: 1.5; }
+        .plan-price { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-lt); }
         .price-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--text-3); margin-bottom: 0.3rem; }
-        .price-amount { font-size: 2.2rem; font-weight: 900; color: var(--text); letter-spacing: -0.04em; line-height: 1; }
-        .price-note { font-size: 0.8rem; color: var(--text-3); margin-top: 0.25rem; }
-        .plan-features { list-style: none; margin-bottom: 2rem; }
+        .price-amount { font-size: 2rem; font-weight: 900; color: var(--text); letter-spacing: -0.04em; line-height: 1; }
+        .price-note { font-size: 0.78rem; color: var(--text-3); margin-top: 0.25rem; }
+        .plan-features { list-style: none; margin-bottom: 1.75rem; }
         .plan-features li {
-            padding: 0.45rem 0;
+            padding: 0.4rem 0;
             color: var(--text-2);
-            font-size: 0.875rem;
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -53,6 +92,18 @@
         .plan-features li:last-child { border-bottom: none; }
         .plan-features li i { color: var(--blue); font-size: 0.7rem; }
         .plan-btn { width: 100%; text-align: center; display: block; }
+
+        .pricing-notice {
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            font-size: 0.875rem;
+            color: var(--text-3);
+            margin-top: 1.5rem;
+            line-height: 1.7;
+        }
+        .pricing-notice strong { color: var(--text-2); }
 
         .edu-section { background: var(--bg-alt); border-top: 1px solid var(--border-lt); border-bottom: 1px solid var(--border-lt); }
         .edu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
@@ -70,18 +121,32 @@
         .edu-features li:last-child { border-bottom: none; }
         .edu-features li i { color: var(--blue); font-size: 0.7rem; }
 
-        .faq-section { background: var(--bg); border-bottom: 1px solid var(--border-lt); }
+        .custom-section { background: var(--bg); border-bottom: 1px solid var(--border-lt); }
+        .custom-card { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 14px; padding: 2.5rem; max-width: 800px; margin: 0 auto; }
+        .custom-card h3 { font-size: 1.4rem; font-weight: 800; color: var(--text); letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+        .custom-price { font-size: 1.75rem; font-weight: 900; color: var(--text); letter-spacing: -0.04em; margin: 1rem 0 0.5rem; }
+        .custom-card > p { color: var(--text-3); line-height: 1.75; margin-bottom: 1.25rem; }
+        .custom-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
+
+        .faq-section { background: var(--bg-alt); border-bottom: 1px solid var(--border-lt); }
         .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-        .faq-item { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+        .faq-item { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; background: var(--bg); }
         .faq-item h3 { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
         .faq-item p { color: var(--text-3); line-height: 1.7; font-size: 0.875rem; }
 
+        @media (max-width: 1200px) {
+            .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+        }
         @media (max-width: 1024px) {
-            .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+            .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+            .pricing-grid-2 { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
             .edu-grid { grid-template-columns: 1fr; }
             .edu-card { border-right: none; border-bottom: 1px solid var(--border); }
             .edu-card:last-child { border-bottom: none; }
             .faq-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
         }
     </style>
 </head>
@@ -104,90 +169,227 @@
 <section class="page-hero" style="text-align:left;">
     <div class="container">
         <div class="section-tag" style="margin-bottom:0.75rem;">Pricing</div>
-        <h1 class="page-title fade-in">Simple, transparent<br>pricing.</h1>
-        <p class="page-subtitle fade-in" style="margin:0;">No hidden fees. No surprises. Just clear project-based pricing that scales with your needs.</p>
+        <h1 class="page-title fade-in">Affordable, transparent<br>starting prices.</h1>
+        <p class="page-subtitle fade-in" style="margin:0;">All prices shown are starting prices. Final pricing depends on scope, content, integrations and functionality. A detailed quote is provided after a free discovery conversation.</p>
     </div>
 </section>
 
+<!-- WEBSITE PRICING -->
 <section style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
     <div class="container">
         <div class="section-header fade-in">
-            <div class="section-tag">Custom projects</div>
-            <h2 class="section-title">Project-based pricing.</h2>
-            <p class="section-subtitle">Every business is unique. Our pricing reflects the scope and complexity of your solution.</p>
+            <div class="section-tag">Business websites</div>
+            <h2 class="section-title">Affordable website packages.</h2>
+            <p class="section-subtitle">Professional websites designed for South African businesses at every stage.</p>
         </div>
-        <div class="pricing-grid">
-            <div class="pricing-card fade-in">
+        <div class="pricing-grid fade-in">
+            <div class="pricing-card">
                 <div class="plan-micro">Starter</div>
                 <div class="plan-header">
-                    <h3>Starter</h3>
-                    <p>Simple tools & automations for growing businesses.</p>
+                    <h3>Starter Website</h3>
+                    <p>For a new or very small business needing a professional online presence.</p>
                 </div>
                 <div class="plan-price">
                     <div class="price-label">Starting from</div>
-                    <div class="price-amount">R20,000</div>
-                    <div class="price-note">One-time project fee</div>
+                    <div class="price-amount">R1,500</div>
+                    <div class="price-note">One-page website</div>
                 </div>
                 <ul class="plan-features">
-                    <li><i class="fas fa-circle"></i> Single-purpose applications</li>
-                    <li><i class="fas fa-circle"></i> Basic automation workflows</li>
-                    <li><i class="fas fa-circle"></i> Simple dashboards</li>
-                    <li><i class="fas fa-circle"></i> 2–4 week delivery</li>
-                    <li><i class="fas fa-circle"></i> 3 months support</li>
+                    <li><i class="fas fa-circle"></i> One-page website</li>
+                    <li><i class="fas fa-circle"></i> Mobile-responsive layout</li>
+                    <li><i class="fas fa-circle"></i> Basic business information</li>
+                    <li><i class="fas fa-circle"></i> Contact form</li>
+                    <li><i class="fas fa-circle"></i> WhatsApp button</li>
+                    <li><i class="fas fa-circle"></i> Social-media links</li>
+                    <li><i class="fas fa-circle"></i> Basic on-page SEO</li>
+                    <li><i class="fas fa-circle"></i> Client provides text and images</li>
                 </ul>
-                <a href="contact.html" class="btn btn-outline plan-btn">Get a quote</a>
+                <a href="contact.html?type=website-assessment" class="btn btn-outline plan-btn" id="track-quote-starter-web">Get a quote</a>
             </div>
-            <div class="pricing-card featured fade-in">
+            <div class="pricing-card featured">
                 <div class="plan-badge">Most Popular</div>
-                <div class="plan-micro">Business</div>
+                <div class="plan-micro">Small Business</div>
                 <div class="plan-header">
-                    <h3>Business</h3>
-                    <p>Full-scale platforms for established businesses.</p>
+                    <h3>Small Business Website</h3>
+                    <p>For an established small business needing a complete multi-page website.</p>
                 </div>
                 <div class="plan-price">
                     <div class="price-label">Starting from</div>
-                    <div class="price-amount">R50,000</div>
-                    <div class="price-note">One-time project fee</div>
+                    <div class="price-amount">R3,500</div>
+                    <div class="price-note">Up to five pages</div>
                 </div>
                 <ul class="plan-features">
-                    <li><i class="fas fa-circle"></i> Multi-module platforms</li>
-                    <li><i class="fas fa-circle"></i> User authentication</li>
-                    <li><i class="fas fa-circle"></i> Payment integrations</li>
-                    <li><i class="fas fa-circle"></i> 4–8 week delivery</li>
-                    <li><i class="fas fa-circle"></i> 6 months support</li>
+                    <li><i class="fas fa-circle"></i> Up to five pages</li>
+                    <li><i class="fas fa-circle"></i> Mobile-responsive design</li>
+                    <li><i class="fas fa-circle"></i> Contact form</li>
+                    <li><i class="fas fa-circle"></i> WhatsApp integration</li>
+                    <li><i class="fas fa-circle"></i> Google Maps where appropriate</li>
+                    <li><i class="fas fa-circle"></i> Services section</li>
+                    <li><i class="fas fa-circle"></i> Gallery or portfolio section</li>
+                    <li><i class="fas fa-circle"></i> Basic on-page SEO</li>
                 </ul>
-                <a href="contact.html" class="btn btn-primary plan-btn">Get a quote</a>
+                <a href="contact.html?type=website-assessment" class="btn btn-primary plan-btn" id="track-quote-smb-web">Get a quote</a>
             </div>
-            <div class="pricing-card fade-in">
-                <div class="plan-micro">Enterprise</div>
+            <div class="pricing-card">
+                <div class="plan-micro">Growth</div>
                 <div class="plan-header">
-                    <h3>Enterprise</h3>
-                    <p>Complex integrations for large organisations.</p>
+                    <h3>Growth Website</h3>
+                    <p>For a business needing stronger lead generation and content capabilities.</p>
                 </div>
                 <div class="plan-price">
                     <div class="price-label">Starting from</div>
-                    <div class="price-amount">R150,000</div>
-                    <div class="price-note">One-time project fee</div>
+                    <div class="price-amount">R6,500</div>
+                    <div class="price-note">Up to eight pages</div>
                 </div>
                 <ul class="plan-features">
-                    <li><i class="fas fa-circle"></i> Enterprise architecture</li>
-                    <li><i class="fas fa-circle"></i> Third-party API integrations</li>
-                    <li><i class="fas fa-circle"></i> AI & automation features</li>
-                    <li><i class="fas fa-circle"></i> 8–16 week delivery</li>
-                    <li><i class="fas fa-circle"></i> 12 months support</li>
+                    <li><i class="fas fa-circle"></i> Up to eight pages</li>
+                    <li><i class="fas fa-circle"></i> Blog, portfolio or case studies</li>
+                    <li><i class="fas fa-circle"></i> Lead-generation forms</li>
+                    <li><i class="fas fa-circle"></i> Basic booking or calendar integration</li>
+                    <li><i class="fas fa-circle"></i> Google Analytics preparation</li>
+                    <li><i class="fas fa-circle"></i> Enhanced on-page SEO</li>
+                    <li><i class="fas fa-circle"></i> Social sharing metadata</li>
+                    <li><i class="fas fa-circle"></i> Search Console preparation</li>
                 </ul>
-                <a href="contact.html" class="btn btn-outline plan-btn">Get a quote</a>
+                <a href="contact.html?type=website-assessment" class="btn btn-outline plan-btn" id="track-quote-growth-web">Get a quote</a>
+            </div>
+            <div class="pricing-card">
+                <div class="plan-micro">E-Commerce or Booking</div>
+                <div class="plan-header">
+                    <h3>E-Commerce or Booking</h3>
+                    <p>For businesses needing online sales, orders, or appointment management.</p>
+                </div>
+                <div class="plan-price">
+                    <div class="price-label">Starting from</div>
+                    <div class="price-amount">R8,500</div>
+                    <div class="price-note">Price varies by scope</div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-circle"></i> Product or service catalogue</li>
+                    <li><i class="fas fa-circle"></i> Online checkout or booking</li>
+                    <li><i class="fas fa-circle"></i> Payment integration</li>
+                    <li><i class="fas fa-circle"></i> Order or booking management</li>
+                    <li><i class="fas fa-circle"></i> Customer accounts (if required)</li>
+                    <li><i class="fas fa-circle"></i> Delivery or scheduling options</li>
+                    <li><i class="fas fa-circle"></i> Mobile-responsive design</li>
+                    <li><i class="fas fa-circle"></i> SEO foundation</li>
+                </ul>
+                <a href="contact.html?type=website-assessment" class="btn btn-outline plan-btn" id="track-quote-ecom-web">Get a quote</a>
+            </div>
+        </div>
+        <div class="pricing-notice fade-in">
+            <strong>What is not included in the prices above:</strong> domain registration, hosting, paid third-party tools (payment gateways, booking platforms, etc.), and ongoing monthly maintenance. These are discussed and quoted separately based on your requirements.<br><br>
+            <strong>Final pricing depends on</strong> the project scope, content, integrations, number of pages, functionality required and whether you are providing your own content and images.
+        </div>
+    </div>
+</section>
+
+<!-- AUTOMATION PRICING -->
+<section style="background:var(--bg-alt);border-bottom:1px solid var(--border-lt);">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Workflow automation</div>
+            <h2 class="section-title">Automation pricing.</h2>
+            <p class="section-subtitle">Reduce manual work and connect your systems. Third-party subscription fees (if required) are separate.</p>
+        </div>
+        <div class="pricing-grid-2 fade-in">
+            <div class="pricing-card">
+                <div class="plan-micro">Simple</div>
+                <div class="plan-header">
+                    <h3>Simple Automation</h3>
+                    <p>A single, clearly defined automated process to replace a repetitive task.</p>
+                </div>
+                <div class="plan-price">
+                    <div class="price-label">Starting from</div>
+                    <div class="price-amount">R500</div>
+                    <div class="price-note">Per automation</div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-circle"></i> Automated email notifications</li>
+                    <li><i class="fas fa-circle"></i> Form-to-spreadsheet workflows</li>
+                    <li><i class="fas fa-circle"></i> Simple reminders</li>
+                    <li><i class="fas fa-circle"></i> Basic data transfer</li>
+                    <li><i class="fas fa-circle"></i> Single-process automation</li>
+                </ul>
+                <a href="contact.html?type=automation-assessment" class="btn btn-outline plan-btn" id="track-quote-simple-auto">Get a quote</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="plan-badge">Most Requested</div>
+                <div class="plan-micro">Multi-Step</div>
+                <div class="plan-header">
+                    <h3>Multi-Step Automation</h3>
+                    <p>Several connected steps across multiple systems or a more complex workflow.</p>
+                </div>
+                <div class="plan-price">
+                    <div class="price-label">Starting from</div>
+                    <div class="price-amount">R1,500</div>
+                    <div class="price-note">Depends on complexity</div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-circle"></i> Multi-stage workflows</li>
+                    <li><i class="fas fa-circle"></i> Approval processes</li>
+                    <li><i class="fas fa-circle"></i> Customer follow-ups</li>
+                    <li><i class="fas fa-circle"></i> Document generation</li>
+                    <li><i class="fas fa-circle"></i> Multiple-system integrations</li>
+                </ul>
+                <a href="contact.html?type=automation-assessment" class="btn btn-primary plan-btn" id="track-quote-multi-auto">Get a quote</a>
+            </div>
+            <div class="pricing-card">
+                <div class="plan-micro">Advanced</div>
+                <div class="plan-header">
+                    <h3>Advanced Automation</h3>
+                    <p>Complex, business-critical workflows requiring a custom scoping conversation.</p>
+                </div>
+                <div class="plan-price">
+                    <div class="price-label">Pricing</div>
+                    <div class="price-amount" style="font-size:1.5rem;">Custom Quote</div>
+                    <div class="price-note">After free consultation</div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-circle"></i> Complex integrations</li>
+                    <li><i class="fas fa-circle"></i> Custom dashboards</li>
+                    <li><i class="fas fa-circle"></i> Business-critical workflows</li>
+                    <li><i class="fas fa-circle"></i> AI-assisted processes</li>
+                    <li><i class="fas fa-circle"></i> Large data-processing systems</li>
+                </ul>
+                <a href="contact.html?type=automation-assessment" class="btn btn-outline plan-btn" id="track-quote-adv-auto">Discuss requirements</a>
+            </div>
+        </div>
+        <div class="pricing-notice fade-in">
+            Third-party platform subscription fees (such as automation tools, API services, or cloud services) may be required separately. These are clearly documented during scoping. A complicated, multi-system automation will not typically be deliverable at the simple-automation starting price.
+        </div>
+    </div>
+</section>
+
+<!-- CUSTOM SYSTEMS -->
+<section class="custom-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Custom systems</div>
+            <h2 class="section-title">Custom Systems and Web Applications.</h2>
+        </div>
+        <div class="custom-card fade-in">
+            <div class="plan-micro">Custom Development</div>
+            <h3>Built Around Your Requirements</h3>
+            <div class="custom-price">From R10,000</div>
+            <p>Custom systems are quoted according to their modules, user roles, database requirements, integrations, and deployment needs. Projects may be divided into phases to make development more affordable — starting with the most critical features and expanding over time.</p>
+            <p>This category covers inventory and stock systems, booking platforms, HR and payroll tools, fraud-prevention monitoring, parent portals, school management systems, AI-assisted applications, dashboards, and any system that needs to be built specifically for how your organisation works.</p>
+            <p><strong>Pricing depends on:</strong> number of modules, user roles and access levels, database complexity, third-party integrations, reporting requirements, and whether a phased approach is used.</p>
+            <div class="custom-actions">
+                <a href="contact.html?type=custom-consultation" class="btn btn-primary" id="track-quote-custom">Request a Custom Quote</a>
+                <a href="contact.html?type=phased-build" class="btn btn-outline" id="track-quote-phased">Discuss a Phased Build</a>
             </div>
         </div>
     </div>
 </section>
 
+<!-- EDUCATION PRICING -->
 <section class="edu-section">
     <div class="container">
         <div class="section-header fade-in">
             <div class="section-tag">Education</div>
             <h2 class="section-title">School management system pricing.</h2>
-            <p class="section-subtitle">Affordable per-student pricing for institutions of all sizes.</p>
+            <p class="section-subtitle">Per-learner monthly pricing for institutions of all sizes.</p>
         </div>
         <div class="edu-grid fade-in">
             <div class="edu-card">
@@ -195,23 +397,23 @@
                 <div class="edu-price-wrap">
                     <span class="edu-curr">R</span><span class="edu-amount">15</span>
                 </div>
-                <div class="edu-period">/student/month</div>
+                <div class="edu-period">/learner/month</div>
                 <h3>Base Plan</h3>
-                <p>Essential features for small schools.</p>
+                <p>Essential features for small schools and tutoring centres.</p>
                 <ul class="edu-features">
                     <li><i class="fas fa-circle"></i> Assignment management</li>
                     <li><i class="fas fa-circle"></i> Basic grading</li>
                     <li><i class="fas fa-circle"></i> Announcements</li>
                     <li><i class="fas fa-circle"></i> Student profiles</li>
                 </ul>
-                <a href="contact.html" class="btn btn-outline" style="width:100%;display:flex;">Get started</a>
+                <a href="contact.html?type=school-demo" class="btn btn-outline" style="width:100%;display:flex;" id="track-quote-edu-base">Get started</a>
             </div>
             <div class="edu-card">
                 <div class="edu-micro">Pro Plan</div>
                 <div class="edu-price-wrap">
                     <span class="edu-curr">R</span><span class="edu-amount">25</span>
                 </div>
-                <div class="edu-period">/student/month</div>
+                <div class="edu-period">/learner/month</div>
                 <h3>Pro Plan</h3>
                 <p>Advanced features for growing institutions.</p>
                 <ul class="edu-features">
@@ -220,14 +422,14 @@
                     <li><i class="fas fa-circle"></i> Auto-graded quizzes</li>
                     <li><i class="fas fa-circle"></i> Progress reports</li>
                 </ul>
-                <a href="contact.html" class="btn btn-outline" style="width:100%;display:flex;">Get started</a>
+                <a href="contact.html?type=school-demo" class="btn btn-outline" style="width:100%;display:flex;" id="track-quote-edu-pro">Get started</a>
             </div>
             <div class="edu-card">
                 <div class="edu-micro">Premium Plan</div>
                 <div class="edu-price-wrap">
                     <span class="edu-curr">R</span><span class="edu-amount">35</span>
                 </div>
-                <div class="edu-period">/student/month</div>
+                <div class="edu-period">/learner/month</div>
                 <h3>Premium Plan</h3>
                 <p>The complete solution for full institutions.</p>
                 <ul class="edu-features">
@@ -236,12 +438,13 @@
                     <li><i class="fas fa-circle"></i> Custom branding</li>
                     <li><i class="fas fa-circle"></i> Priority support</li>
                 </ul>
-                <a href="contact.html" class="btn btn-primary" style="width:100%;display:flex;">Get started</a>
+                <a href="contact.html?type=school-demo" class="btn btn-primary" style="width:100%;display:flex;" id="track-quote-edu-prem">Get started</a>
             </div>
         </div>
     </div>
 </section>
 
+<!-- FAQ -->
 <section class="faq-section">
     <div class="container">
         <div class="section-header fade-in">
@@ -249,10 +452,12 @@
             <h2 class="section-title">Common questions.</h2>
         </div>
         <div class="faq-grid fade-in">
-            <div class="faq-item"><h3>How does payment work?</h3><p>Projects are split into milestones: 40% upfront, 30% at midpoint, 30% on delivery. Flexible for larger projects.</p></div>
-            <div class="faq-item"><h3>How long does a project take?</h3><p>Simple tools: 2–4 weeks. Full platforms: 4–8 weeks. Enterprise: 8–16 weeks. We'll give a firm timeline upfront.</p></div>
-            <div class="faq-item"><h3>What support is included?</h3><p>All projects include 3–12 months support covering bug fixes, security patches, and technical assistance.</p></div>
-            <div class="faq-item"><h3>Do I own the code?</h3><p>Yes. You receive full ownership of all custom code — complete source code and documentation is yours forever.</p></div>
+            <div class="faq-item"><h3>Are the prices shown guaranteed?</h3><p>No. All prices shown are starting prices. Final pricing depends on scope, content, integrations and functionality. A detailed quote is always provided before work begins.</p></div>
+            <div class="faq-item"><h3>How does payment work?</h3><p>Projects are typically split into milestones — a deposit to begin, a payment at an agreed midpoint, and a final payment on delivery. Exact payment terms depend on the project.</p></div>
+            <div class="faq-item"><h3>Is hosting and domain included?</h3><p>Hosting, domain registration and ongoing maintenance are not included in the listed prices. These are discussed and quoted separately depending on your requirements.</p></div>
+            <div class="faq-item"><h3>Do I own the code?</h3><p>Yes. You receive full ownership of all custom code — complete source code and documentation is yours once the project is paid in full.</p></div>
+            <div class="faq-item"><h3>How long does a project take?</h3><p>Project timelines depend on scope, complexity and client feedback. Timelines are agreed as part of the proposal before development begins.</p></div>
+            <div class="faq-item"><h3>Can I pay in phases?</h3><p>Yes. Larger projects can often be broken into phases, starting with the most critical features and expanding over time. This is discussed during the discovery conversation.</p></div>
         </div>
     </div>
 </section>
@@ -260,10 +465,10 @@
 <section class="cta-section">
     <div class="container">
         <div class="cta-content">
-            <h2>Get your custom quote.</h2>
-            <p>Tell us what you need and we'll provide a detailed proposal within 24 hours.</p>
+            <h2>Get a free quote.</h2>
+            <p>Tell us what you need and we'll come back with a clear proposal and honest pricing for your project.</p>
             <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-white">Request a quote <i class="fas fa-arrow-right"></i></a>
+                <a href="contact.html" class="btn btn-white" id="track-quote-cta">Request a quote <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -272,19 +477,30 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
-            <div class="footer-brand"><h3>AutoM8</h3><p>Building custom software solutions that power South African businesses.</p></div>
-            <div class="footer-section"><h4>Services</h4><ul><li><a href="services.html">Custom Software</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">Education Tech</a></li><li><a href="services.html">Business Automation</a></li></ul></div>
-            <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-            <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p><p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p></div>
+            <div class="footer-brand"><h3>AutoM8</h3><p>A growing, founder-led South African software development and automation company.</p></div>
+            <div class="footer-section"><h4>Services</h4><ul><li><a href="affordable-websites.html">Business Websites</a></li><li><a href="business-automation.html">Workflow Automation</a></li><li><a href="services.html">Custom Software</a></li><li><a href="school-management-system.html">School Management</a></li></ul></div>
+            <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About AutoM8</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> <a href="mailto:Autom8streamlining@gmail.com">Autom8streamlining@gmail.com</a></p><p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27681536136" target="_blank" rel="noopener">+27 68 153 6136</a></p></div>
         </div>
-        <div class="footer-bottom"><p>&copy; 2025 AutoM8. All rights reserved.</p></div>
+        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved.</p></div>
     </div>
 </footer>
 <script>
+document.getElementById('yr').textContent = new Date().getFullYear();
 const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');
 mm.addEventListener('click',()=>nm.classList.toggle('active'));
 const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:0.1});
 document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+
+function trackEvent(action, category, label) {
+    if (typeof gtag === 'function') gtag('event', action, { event_category: category, event_label: label });
+}
+['track-quote-starter-web','track-quote-smb-web','track-quote-growth-web','track-quote-ecom-web',
+ 'track-quote-simple-auto','track-quote-multi-auto','track-quote-adv-auto',
+ 'track-quote-custom','track-quote-phased','track-quote-edu-base','track-quote-edu-pro',
+ 'track-quote-edu-prem','track-quote-cta'].forEach(id => {
+    document.getElementById(id)?.addEventListener('click', () => trackEvent('quote_request', 'conversion', id));
+});
 </script>
 </body>
 </html>

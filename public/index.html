@@ -3,8 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoM8 | Custom Software Development & Business Automation | South Africa</title>
-    <meta name="description" content="AutoM8 builds custom software solutions for South African businesses. Business automation, web platforms, and education technology.">
+    <title>AutoM8 | Websites, Custom Software & Business Automation | South Africa</title>
+    <meta name="description" content="AutoM8 helps South African businesses and schools build affordable websites, reduce manual work and manage operations through practical, custom-built technology.">
+    <meta name="keywords" content="custom software South Africa, business automation, affordable websites, school management system, Pretoria web development">
+    <link rel="canonical" href="https://auto-m8.co.za/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AutoM8 | Websites, Custom Software & Business Automation | South Africa">
+    <meta property="og:description" content="AutoM8 helps South African businesses and schools build affordable websites, reduce manual work and manage operations through practical, custom-built technology.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://auto-m8.co.za/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AutoM8",
+      "url": "https://auto-m8.co.za",
+      "email": "Autom8streamlining@gmail.com",
+      "telephone": "+27681536136",
+      "areaServed": "South Africa",
+      "description": "AutoM8 is a growing, founder-led South African software development and workflow automation company.",
+      "sameAs": []
+    }
+    </script>
+
+    <!-- Analytics Placeholder -->
+    <!-- GOOGLE ANALYTICS 4: Replace GA_MEASUREMENT_ID with your real ID -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script> -->
+
+    <!-- MICROSOFT CLARITY: Replace CLARITY_PROJECT_ID with your real ID -->
+    <!-- <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","CLARITY_PROJECT_ID");</script> -->
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/theme.css">
@@ -49,7 +87,7 @@
             margin-bottom: 2.5rem;
             max-width: 420px;
         }
-        .hero-actions { display: flex; align-items: center; gap: 1.5rem; }
+        .hero-actions { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
         .hero-link {
             color: var(--text);
             font-size: 0.9rem;
@@ -95,9 +133,28 @@
         }
         .strip-label { font-size: 0.8rem; color: var(--text-3); }
 
+        /* ── PATHWAY SECTION ── */
+        .pathway-section { background: var(--bg-alt); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
+        .pathway-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+        .pathway-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 2rem;
+            text-decoration: none;
+            transition: all 0.25s;
+            display: block;
+        }
+        .pathway-card:hover { transform: translateY(-4px); border-color: #d1d5db; box-shadow: var(--shadow-card-hover); }
+        .pathway-icon { width: 40px; height: 40px; border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+        .pathway-icon i { color: var(--blue); font-size: 1rem; }
+        .pathway-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.35rem; letter-spacing: -0.02em; }
+        .pathway-card p { color: var(--text-3); font-size: 0.875rem; line-height: 1.65; margin-bottom: 0.75rem; }
+        .pathway-link { color: var(--blue); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+
         /* ── PAIN SECTION ── */
         .pain-section {
-            background: var(--bg-alt);
+            background: var(--bg);
             padding: 90px 0;
             border-bottom: 1px solid var(--border-lt);
         }
@@ -144,7 +201,7 @@
         }
 
         /* ── SERVICES ── */
-        .services-section { background: var(--bg); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
+        .services-section { background: var(--bg-alt); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
         .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -159,7 +216,7 @@
             transition: background 0.2s;
         }
         .svc-card:last-child { border-right: none; }
-        .svc-card:hover { background: var(--bg-alt); }
+        .svc-card:hover { background: var(--bg); }
         .svc-num {
             font-size: 0.72rem;
             font-weight: 800;
@@ -188,7 +245,7 @@
         .svc-link:hover { color: var(--blue); }
 
         /* ── ABOUT ── */
-        .about-section { background: var(--bg-alt); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
+        .about-section { background: var(--bg); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -230,7 +287,7 @@
         .about-feats li i { color: var(--blue); font-size: 0.75rem; }
 
         /* ── PROCESS ── */
-        .process-section { background: var(--bg); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
+        .process-section { background: var(--bg-alt); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
         .process-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -258,10 +315,10 @@
         .p-step p { color: var(--text-3); font-size: 0.9rem; line-height: 1.65; }
 
         /* ── PORTFOLIO ── */
-        .portfolio-section { background: var(--bg-alt); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
+        .portfolio-section { background: var(--bg); padding: 90px 0; border-bottom: 1px solid var(--border-lt); }
         .port-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
         .port-card {
-            background: var(--bg);
+            background: var(--bg-alt);
             border: 1px solid var(--border);
             border-radius: 14px;
             overflow: hidden;
@@ -278,6 +335,7 @@
             width: 40px; height: 40px;
             border: 1px solid var(--border);
             border-radius: 10px;
+            background: var(--bg);
             display: flex; align-items: center; justify-content: center;
         }
         .port-icon i { color: var(--blue); font-size: 1rem; }
@@ -285,7 +343,9 @@
         .port-body { padding: 1rem 1.5rem 1.5rem; }
         .port-body h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; }
         .port-body p { color: var(--text-3); font-size: 0.875rem; line-height: 1.65; margin-bottom: 1rem; }
-        .port-result { font-size: 1.1rem; font-weight: 800; color: var(--blue); letter-spacing: -0.02em; }
+        .port-highlights { display: flex; flex-direction: column; gap: 0.3rem; }
+        .port-highlights span { font-size: 0.8rem; color: var(--text-2); display: flex; align-items: center; gap: 6px; }
+        .port-highlights span::before { content: ''; width: 5px; height: 5px; background: var(--blue); border-radius: 50%; flex-shrink: 0; }
 
         /* ── CTA ── */
         .home-cta {
@@ -344,6 +404,7 @@
             .svc-card { border-right: none; border-bottom: 1px solid var(--border); }
             .svc-card:last-child { border-bottom: none; }
             .port-grid { grid-template-columns: 1fr 1fr; }
+            .pathway-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.4rem; }
@@ -377,20 +438,23 @@
 <section class="hero">
     <div class="hero-inner">
         <div class="fade-in">
-            <div class="hero-micro">Custom Software · South Africa</div>
+            <div class="hero-micro">South Africa · Websites · Custom Systems · Automation</div>
             <h1>
-                <span class="line">Software</span>
-                <span class="line blue">built for</span>
-                <span class="line">your business.</span>
+                <span class="line">Websites,</span>
+                <span class="line blue">Custom Systems</span>
+                <span class="line">and Automation.</span>
             </h1>
-            <p class="hero-sub">We design and build custom software that solves real business problems — not generic solutions that almost fit.</p>
+            <p class="hero-sub">AutoM8 helps businesses and schools build a professional online presence, reduce manual work and manage operations through practical, custom-built technology.</p>
             <div class="hero-actions">
-                <a href="contact.html" class="btn btn-primary">Start a project</a>
-                <a href="portfolio.html" class="hero-link">See our work <i class="fas fa-arrow-right"></i></a>
+                <a href="contact.html" class="btn btn-primary" id="track-quote-hero">Get a Free Quote</a>
+                <a href="https://wa.me/27681536136" class="btn btn-primary" style="background:#25D366;" target="_blank" rel="noopener" id="track-wa-hero">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+                <a href="portfolio.html" class="hero-link">View Our Projects <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
         <div class="fade-in">
-            <img class="hero-img" src="images/illustrations/illus-1.png" alt="Team working on software">
+            <img class="hero-img" src="images/illustrations/illus-1.png" alt="Software development and business automation illustration">
         </div>
     </div>
 </section>
@@ -399,23 +463,60 @@
 <div class="stats-strip">
     <div class="stats-strip-inner">
         <div class="strip-item fade-in">
-            <div class="strip-num" data-target="50" data-suffix="+">50+</div>
-            <div class="strip-label">Projects delivered</div>
+            <div class="strip-num">8</div>
+            <div class="strip-label">Projects Showcased</div>
         </div>
         <div class="strip-item fade-in">
-            <div class="strip-num" data-prefix="R" data-target="2" data-suffix="M+">R2M+</div>
-            <div class="strip-label">Client savings generated</div>
+            <div class="strip-num">6</div>
+            <div class="strip-label">Solution Areas</div>
         </div>
         <div class="strip-item fade-in">
-            <div class="strip-num" data-target="99.9" data-suffix="%" data-decimals="1">99.9%</div>
-            <div class="strip-label">System uptime</div>
+            <div class="strip-num">3</div>
+            <div class="strip-label">Core Markets</div>
         </div>
         <div class="strip-item fade-in">
-            <div class="strip-num" data-target="100" data-suffix="%">100%</div>
-            <div class="strip-label">Client satisfaction</div>
+            <div class="strip-num">1</div>
+            <div class="strip-label">Direct Point of Contact</div>
         </div>
     </div>
 </div>
+
+<!-- VISITOR PATHWAYS -->
+<section class="pathway-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Find your solution</div>
+            <h2 class="section-title">What can AutoM8 help you with?</h2>
+            <p class="section-subtitle">Choose the area most relevant to your organisation.</p>
+        </div>
+        <div class="pathway-grid fade-in">
+            <a href="affordable-websites.html" class="pathway-card">
+                <div class="pathway-icon"><i class="fas fa-globe"></i></div>
+                <h3>I need a business website</h3>
+                <p>Professional websites for new or established businesses. Starting from R1,500 for a simple one-page site.</p>
+                <div class="pathway-link">See website packages <i class="fas fa-arrow-right"></i></div>
+            </a>
+            <a href="school-management-system.html" class="pathway-card">
+                <div class="pathway-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>I run a school or institution</h3>
+                <p>Digital school management, parent portals, grade and attendance tracking for South African schools.</p>
+                <div class="pathway-link">See school systems <i class="fas fa-arrow-right"></i></div>
+            </a>
+            <a href="business-automation.html" class="pathway-card">
+                <div class="pathway-icon"><i class="fas fa-cogs"></i></div>
+                <h3>I want to automate repetitive tasks</h3>
+                <p>Workflow automation for notifications, forms, approvals, and multi-step business processes. From R500.</p>
+                <div class="pathway-link">See automation options <i class="fas fa-arrow-right"></i></div>
+            </a>
+            <a href="custom-software-pretoria.html" class="pathway-card">
+                <div class="pathway-icon"><i class="fas fa-code"></i></div>
+                <h3>I need custom software</h3>
+                <p>Inventory systems, booking platforms, HR tools, dashboards, and other bespoke applications.</p>
+                <div class="pathway-link">See custom systems <i class="fas fa-arrow-right"></i></div>
+            </a>
+        </div>
+    </div>
+</section>
 
 <!-- PAIN POINT -->
 <section class="pain-section">
@@ -427,15 +528,15 @@
             <div class="fade-in">
                 <div class="pain-micro">Sound familiar?</div>
                 <h2>Is your business drowning in manual work?</h2>
-                <p>Most South African businesses are held back by slow processes, spreadsheet chaos, and software that doesn't quite fit. AutoM8 fixes that.</p>
+                <p>Many South African businesses and schools are held back by slow processes, spreadsheet chaos, and software that doesn't quite fit. AutoM8 builds practical solutions designed around how you actually work.</p>
                 <ul class="pain-list">
                     <li>Hours wasted on manual data entry every day</li>
                     <li>No real-time visibility into stock, staff, or sales</li>
                     <li>Generic software that doesn't fit your workflow</li>
-                    <li>Losses from fraud, errors, and missed opportunities</li>
+                    <li>No professional online presence to attract clients</li>
                     <li>Decisions made on outdated or unreliable data</li>
                 </ul>
-                <a href="contact.html" class="btn btn-primary">Let's fix this <i class="fas fa-arrow-right"></i></a>
+                <a href="contact.html" class="btn btn-primary">Let's talk about a solution <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -446,30 +547,30 @@
     <div class="container">
         <div class="section-header fade-in">
             <div class="section-tag">What we build</div>
-            <h2 class="section-title">Solutions for every business challenge.</h2>
+            <h2 class="section-title">Three primary service areas.</h2>
             <p class="section-subtitle">Custom-built. Locally supported. Yours to own.</p>
         </div>
         <div class="services-grid fade-in">
             <div class="svc-card">
-                <img class="svc-img" src="images/illustrations/illus-2.png" alt="Custom software">
-                <div class="svc-num">01 — Development</div>
-                <h3>Custom Software</h3>
-                <p>Inventory, stock control, HR, dashboards — built exactly for your workflow, not adapted from a template.</p>
-                <a href="services.html" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                <img class="svc-img" src="images/illustrations/illus-2.png" alt="Affordable business websites">
+                <div class="svc-num">01 — Websites</div>
+                <h3>Affordable Business Websites</h3>
+                <p>From a simple one-page site to a lead-generating multi-page presence. Built mobile-first, SEO-ready, and designed to convert visitors into enquiries.</p>
+                <a href="affordable-websites.html" class="svc-link">See pricing <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="svc-card">
                 <img class="svc-img" src="images/illustrations/illus-4.png" alt="Business automation">
                 <div class="svc-num">02 — Automation</div>
-                <h3>Business Automation</h3>
-                <p>Stop doing manually what software can do automatically. Save hours every week and eliminate human error.</p>
-                <a href="services.html" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                <h3>Workflow Automation</h3>
+                <p>Stop doing manually what software can do automatically. Simple notifications, multi-step approvals, and AI-assisted processes — all tailored to your workflow.</p>
+                <a href="business-automation.html" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="svc-card">
-                <img class="svc-img" src="images/illustrations/illus-5.png" alt="Education technology">
-                <div class="svc-num">03 — Education</div>
-                <h3>Education Technology</h3>
-                <p>Full school management — grades, attendance, parent portals, and reporting in one reliable platform.</p>
-                <a href="services.html" class="svc-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                <img class="svc-img" src="images/illustrations/illus-5.png" alt="Custom systems and education technology">
+                <div class="svc-num">03 — Custom Systems</div>
+                <h3>Custom Systems & School Tech</h3>
+                <p>Inventory systems, HR platforms, booking tools, school management, parent portals — built specifically for how your organisation operates.</p>
+                <a href="services.html" class="svc-link">All services <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -480,22 +581,22 @@
     <div class="container">
         <div class="about-grid">
             <div class="fade-in" style="display:flex;justify-content:center;">
-                <img class="about-img" src="images/illustrations/illus-7.png" alt="Calm and in control">
+                <img class="about-img" src="images/illustrations/illus-7.png" alt="Personalised service and direct support">
             </div>
             <div class="fade-in">
                 <div class="about-micro">Why AutoM8</div>
-                <h2>We turn business chaos into calm, clear systems.</h2>
-                <p>AutoM8 is a South African software company built for businesses that are ready to stop firefighting and start growing. We scope, build, and support every project end-to-end.</p>
-                <p>From a single automation to a full enterprise platform — you own the code, always.</p>
+                <h2>Personalised service. Practical technology.</h2>
+                <p>AutoM8 is a growing, founder-led South African software development and workflow automation company. We focus on affordable, practical solutions for businesses and schools that need something built around the way they actually work.</p>
+                <p>You deal directly with the person building your project — no account managers, no unnecessary delays.</p>
                 <ul class="about-feats">
-                    <li><i class="fas fa-check"></i> Built for your business specifically</li>
-                    <li><i class="fas fa-check"></i> Delivered in weeks, not months</li>
-                    <li><i class="fas fa-check"></i> Secure, reliable infrastructure</li>
-                    <li><i class="fas fa-check"></i> Full training & ongoing support</li>
+                    <li><i class="fas fa-check"></i> Direct communication throughout</li>
+                    <li><i class="fas fa-check"></i> Flexible, affordable pricing</li>
+                    <li><i class="fas fa-check"></i> Custom-built for your workflow</li>
+                    <li><i class="fas fa-check"></i> South African focus, local knowledge</li>
                     <li><i class="fas fa-check"></i> You own the code, always</li>
-                    <li><i class="fas fa-check"></i> South African team, local knowledge</li>
+                    <li><i class="fas fa-check"></i> Phased builds available</li>
                 </ul>
-                <a href="about.html" class="btn btn-primary">Meet the team <i class="fas fa-arrow-right"></i></a>
+                <a href="about.html" class="btn btn-primary">More about AutoM8 <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -507,40 +608,40 @@
         <div class="process-grid">
             <div class="fade-in">
                 <div class="section-tag">How it works</div>
-                <h2 class="section-title" style="text-align:left;margin-bottom:2.5rem;">From idea to live system in 4 steps.</h2>
+                <h2 class="section-title" style="text-align:left;margin-bottom:2.5rem;">From first conversation to working solution.</h2>
                 <div class="process-steps">
                     <div class="p-step">
                         <div class="p-num">01</div>
                         <div>
-                            <h3>Discovery call</h3>
-                            <p>We listen to your challenges and goals. Free, no-obligation conversation.</p>
+                            <h3>Free discovery call</h3>
+                            <p>We listen to your challenges and goals. No obligation, no pressure.</p>
                         </div>
                     </div>
                     <div class="p-step">
                         <div class="p-num">02</div>
                         <div>
-                            <h3>Proposal & quote</h3>
-                            <p>A clear scope, timeline, and fixed price — no surprises, no hidden costs.</p>
+                            <h3>Clear proposal</h3>
+                            <p>A documented scope, agreed milestones, and transparent pricing — no surprises.</p>
                         </div>
                     </div>
                     <div class="p-step">
                         <div class="p-num">03</div>
                         <div>
                             <h3>Build & review</h3>
-                            <p>Built in milestones with regular demos so you're always in the loop.</p>
+                            <p>Built in milestones with regular check-ins so you're always in the loop.</p>
                         </div>
                     </div>
                     <div class="p-step">
                         <div class="p-num">04</div>
                         <div>
                             <h3>Launch & support</h3>
-                            <p>We deploy, train your team, and provide ongoing technical support.</p>
+                            <p>We deploy, walk you through everything, and remain available for technical support.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fade-in" style="display:flex;justify-content:center;">
-                <img class="process-img" src="images/illustrations/illus-6.png" alt="Managing your project" style="width:100%;filter:grayscale(20%) saturate(0.65);">
+                <img class="process-img" src="images/illustrations/illus-6.png" alt="Project process" style="width:100%;filter:grayscale(20%) saturate(0.65);">
             </div>
         </div>
     </div>
@@ -550,49 +651,78 @@
 <section class="portfolio-section">
     <div class="container">
         <div class="section-header fade-in">
-            <div class="section-tag">Recent work</div>
-            <h2 class="section-title">Projects that made a real difference.</h2>
-            <p class="section-subtitle">Every project solved a specific problem and delivered measurable results.</p>
+            <div class="section-tag">Project showcase</div>
+            <h2 class="section-title">A selection of software systems and digital products.</h2>
+            <p class="section-subtitle">A selection of software systems, prototypes and digital products developed by AutoM8.</p>
         </div>
         <div class="port-grid">
             <div class="port-card fade-in">
                 <div class="port-top">
                     <div class="port-icon"><i class="fas fa-fire-alt"></i></div>
-                    <div class="port-cat">Fraud Prevention</div>
+                    <div class="port-cat">Project Showcase</div>
                 </div>
                 <div class="port-body">
                     <h3>LPG Gas Stock Control</h3>
-                    <p>Real-time KG variance tracking that eliminated stock fraud for an energy retailer.</p>
-                    <div class="port-result">R500K+ saved annually</div>
+                    <p>Designed to track real-time KG variance and surface stock discrepancies for energy retailers.</p>
+                    <div class="port-highlights">
+                        <span>Real-time KG variance tracking</span>
+                        <span>Transaction audit trail</span>
+                        <span>Discrepancy alerts</span>
+                    </div>
                 </div>
             </div>
             <div class="port-card fade-in">
                 <div class="port-top">
                     <div class="port-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="port-cat">Education</div>
+                    <div class="port-cat">Project Showcase</div>
                 </div>
                 <div class="port-body">
                     <h3>Harmony Institute LMS</h3>
-                    <p>Full school management replacing paper-based admin at a growing institution.</p>
-                    <div class="port-result">300+ students managed</div>
+                    <p>Designed to replace paper-based administration at a school with a complete digital platform.</p>
+                    <div class="port-highlights">
+                        <span>Attendance and grade tracking</span>
+                        <span>Parent communication portal</span>
+                        <span>School document management</span>
+                    </div>
                 </div>
             </div>
             <div class="port-card fade-in">
                 <div class="port-top">
                     <div class="port-icon"><i class="fas fa-robot"></i></div>
-                    <div class="port-cat">AI Solution</div>
+                    <div class="port-cat">Project Showcase</div>
                 </div>
                 <div class="port-body">
                     <h3>ServiceBot AI Assistant</h3>
-                    <p>24/7 customer service chatbot that auto-resolves the majority of support queries.</p>
-                    <div class="port-result">70% queries resolved automatically</div>
+                    <p>Demonstrates AI-assisted customer support with automated response workflows.</p>
+                    <div class="port-highlights">
+                        <span>AI-assisted support responses</span>
+                        <span>Conversation routing</span>
+                        <span>24/7 availability design</span>
+                    </div>
                 </div>
             </div>
         </div>
         <div style="text-align:center;margin-top:2.5rem;" class="fade-in">
             <a href="portfolio.html" class="hero-link" style="font-size:0.925rem;">
-                View all 8 case studies <i class="fas fa-arrow-right"></i>
+                View all 8 projects <i class="fas fa-arrow-right"></i>
             </a>
+        </div>
+    </div>
+</section>
+
+<!-- FREE ASSESSMENT CTA -->
+<section style="background:var(--bg-alt);padding:70px 0;border-bottom:1px solid var(--border-lt);">
+    <div class="container">
+        <div style="max-width:680px;margin:0 auto;text-align:center;" class="fade-in">
+            <div class="section-tag">Free offer</div>
+            <h2 class="section-title">Request a Free Website or Workflow Assessment</h2>
+            <p style="color:var(--text-3);margin-bottom:2rem;">Not sure where to start? Let us assess your current situation and suggest the most practical, affordable approach — no commitment required.</p>
+            <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+                <a href="contact.html?type=assessment" class="btn btn-primary">Request Free Assessment <i class="fas fa-arrow-right"></i></a>
+                <a href="https://wa.me/27681536136?text=Hi%20AutoM8!%20I%27d%20like%20a%20free%20assessment." target="_blank" rel="noopener" class="btn btn-outline" id="track-wa-assessment">
+                    <i class="fab fa-whatsapp"></i> Ask on WhatsApp
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -600,10 +730,10 @@
 <!-- CTA -->
 <section class="home-cta">
     <div class="container">
-        <h2 class="fade-in">Ready to transform<br>your business?</h2>
-        <p class="fade-in">Book a free consultation. No pressure — just a conversation about your project.</p>
+        <h2 class="fade-in">Ready to build something<br>that actually works?</h2>
+        <p class="fade-in">Start with a free conversation. No pressure — just a practical discussion about your project.</p>
         <div class="cta-btns fade-in">
-            <a href="https://wa.me/27681536136" class="cta-btn-primary" target="_blank">
+            <a href="https://wa.me/27681536136" class="cta-btn-primary" target="_blank" rel="noopener" id="track-wa-cta">
                 <i class="fab fa-whatsapp"></i> Chat on WhatsApp
             </a>
             <a href="contact.html" class="cta-btn-ghost">
@@ -618,21 +748,21 @@
         <div class="footer-content">
             <div class="footer-brand">
                 <h3>AutoM8</h3>
-                <p>Building custom software solutions that power South African businesses.</p>
+                <p>A growing, founder-led South African software development and automation company.</p>
             </div>
             <div class="footer-section">
                 <h4>Services</h4>
                 <ul>
+                    <li><a href="affordable-websites.html">Business Websites</a></li>
+                    <li><a href="business-automation.html">Workflow Automation</a></li>
                     <li><a href="services.html">Custom Software</a></li>
-                    <li><a href="services.html">Web Development</a></li>
-                    <li><a href="services.html">Education Tech</a></li>
-                    <li><a href="services.html">Business Automation</a></li>
+                    <li><a href="school-management-system.html">School Management</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">About AutoM8</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -640,15 +770,17 @@
             </div>
             <div class="footer-section footer-contact">
                 <h4>Contact</h4>
-                <p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p>
-                <p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:Autom8streamlining@gmail.com" id="track-email-footer">Autom8streamlining@gmail.com</a></p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27681536136" target="_blank" rel="noopener" id="track-wa-footer">+27 68 153 6136</a></p>
             </div>
         </div>
-        <div class="footer-bottom"><p>&copy; 2025 AutoM8. All rights reserved.</p></div>
+        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved.</p></div>
     </div>
 </footer>
 
 <script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
 const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.getElementById('nav-menu');
 mobileMenu.addEventListener('click', () => navMenu.classList.toggle('active'));
@@ -658,31 +790,17 @@ const fadeObs = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-in').forEach(el => fadeObs.observe(el));
 
-function animateNum(el) {
-    if (el.dataset.counted) return;
-    el.dataset.counted = '1';
-    const target = parseFloat(el.dataset.target);
-    const suffix = el.dataset.suffix || '';
-    const prefix = el.dataset.prefix || '';
-    const dec = parseInt(el.dataset.decimals || '0');
-    const dur = 1600, start = performance.now();
-    function tick(now) {
-        const t = Math.min((now - start) / dur, 1);
-        const v = 1 - Math.pow(1 - t, 3);
-        el.textContent = prefix + (target * v).toFixed(dec) + suffix;
-        if (t < 1) requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
+// Event tracking helper — fires if GA is loaded, silently ignored otherwise
+function trackEvent(action, category, label) {
+    if (typeof gtag === 'function') gtag('event', action, { event_category: category, event_label: label });
 }
-const statObs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-        if (e.isIntersecting) {
-            const n = e.target.querySelector('[data-target]');
-            if (n) animateNum(n);
-        }
-    });
-}, { threshold: 0.5 });
-document.querySelectorAll('.strip-item').forEach(c => statObs.observe(c));
+
+document.getElementById('track-wa-hero')?.addEventListener('click', () => trackEvent('whatsapp_click', 'engagement', 'hero'));
+document.getElementById('track-wa-cta')?.addEventListener('click', () => trackEvent('whatsapp_click', 'engagement', 'cta'));
+document.getElementById('track-wa-footer')?.addEventListener('click', () => trackEvent('whatsapp_click', 'engagement', 'footer'));
+document.getElementById('track-wa-assessment')?.addEventListener('click', () => trackEvent('whatsapp_click', 'engagement', 'assessment'));
+document.getElementById('track-quote-hero')?.addEventListener('click', () => trackEvent('quote_request', 'conversion', 'hero'));
+document.getElementById('track-email-footer')?.addEventListener('click', () => trackEvent('email_click', 'engagement', 'footer'));
 </script>
 </body>
 </html>

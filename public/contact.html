@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact AutoM8 | Get Your Project Quote | South Africa</title>
-    <meta name="description" content="Contact AutoM8 for custom software. Get a free consultation. Email Autom8streamlining@gmail.com or WhatsApp +27 68 153 6136.">
+    <title>Contact AutoM8 | Free Website & Automation Assessment | South Africa</title>
+    <meta name="description" content="Contact AutoM8 for a free website or workflow assessment. Email Autom8streamlining@gmail.com or WhatsApp +27 68 153 6136. Serving businesses and schools across South Africa.">
+    <link rel="canonical" href="https://auto-m8.co.za/contact.html">
+    <meta property="og:title" content="Contact AutoM8 | Free Assessment">
+    <meta property="og:description" content="Request a free website or workflow assessment. WhatsApp, email or form — we respond during normal business hours.">
+    <meta property="og:type" content="website">
+
+    <!-- Analytics Placeholder — see index.html for instructions -->
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/theme.css">
@@ -36,6 +43,7 @@
         }
         .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-3); }
         .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .form-optional { font-size: 0.75rem; color: var(--text-3); font-weight: 400; margin-left: 4px; }
 
         .contact-info h2 { font-size: 1.4rem; font-weight: 800; color: var(--text); letter-spacing: -0.03em; margin-bottom: 1.5rem; }
         .contact-methods { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; }
@@ -47,6 +55,7 @@
             border: 1px solid var(--border);
             border-radius: 12px;
             transition: all 0.2s;
+            text-decoration: none;
         }
         .contact-method:hover { border-color: #d1d5db; background: var(--bg-alt); }
         .contact-icon { width: 44px; height: 44px; border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -80,7 +89,7 @@
         .response-card:last-child { border-right: none; }
         .response-card i { font-size: 1.5rem; color: var(--blue); margin-bottom: 0.75rem; display: block; }
         .response-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--text); margin-bottom: 0.25rem; }
-        .response-card p { font-size: 0.875rem; font-weight: 700; color: var(--blue); }
+        .response-card p { font-size: 0.85rem; color: var(--text-3); line-height: 1.5; }
 
         @media (max-width: 1024px) {
             .contact-grid { grid-template-columns: 1fr; }
@@ -115,7 +124,7 @@
     <div class="container">
         <div class="section-tag" style="margin-bottom:0.75rem;">Get in touch</div>
         <h1 class="page-title fade-in">Let's discuss<br>your project.</h1>
-        <p class="page-subtitle fade-in" style="margin:0;">Ready to get started? We'll respond within 24 hours with a clear plan for your project.</p>
+        <p class="page-subtitle fade-in" style="margin:0;">Request a free website or workflow assessment, or simply tell us what you need. We respond as soon as possible during normal business hours.</p>
     </div>
 </section>
 
@@ -123,45 +132,70 @@
     <div class="container">
         <div class="contact-grid">
             <div class="contact-form-container fade-in">
-                <h2>Send us a message</h2>
-                <p>Tell us about your project and we'll get back to you with a proposal.</p>
-                <form id="contactForm">
+                <h2>Free assessment or project enquiry</h2>
+                <p>Tell us about your organisation and what you need. We'll follow up with practical suggestions and honest pricing — no obligation.</p>
+                <form id="contactForm" novalidate>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required placeholder="john@company.co.za">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+27 68 123 4567">
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company" placeholder="Your Company">
+                            <label for="email">Email <span aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="you@example.co.za" autocomplete="email">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="service">What do you need?</label>
-                        <select id="service" name="service">
-                            <option value="">Select a service</option>
-                            <option value="custom-software">Custom Software</option>
-                            <option value="web-platform">Web Development</option>
-                            <option value="education">School Management System</option>
-                            <option value="automation">Business Automation</option>
-                            <option value="consultation">General Consultation</option>
+                        <label for="assessment-type">What are you looking for? <span aria-hidden="true">*</span></label>
+                        <select id="assessment-type" name="assessment_type" required>
+                            <option value="">Select an option</option>
+                            <option value="website-assessment">Website assessment or quote</option>
+                            <option value="automation-assessment">Automation assessment</option>
+                            <option value="school-demo">School-system demonstration</option>
+                            <option value="custom-consultation">Custom software consultation</option>
+                            <option value="phased-build">Discuss a phased build</option>
+                            <option value="general">General enquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone <span class="form-optional">(optional)</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+27 68 123 4567" autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="organisation">Organisation <span class="form-optional">(optional)</span></label>
+                            <input type="text" id="organisation" name="organisation" placeholder="Your business or school">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Current website <span class="form-optional">(optional)</span></label>
+                        <input type="url" id="website" name="website" placeholder="https://yourwebsite.co.za">
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Approximate budget <span class="form-optional">(optional)</span></label>
+                        <select id="budget" name="budget">
+                            <option value="">Prefer not to say</option>
+                            <option value="under-5000">Under R5,000</option>
+                            <option value="5000-15000">R5,000 – R15,000</option>
+                            <option value="15000-30000">R15,000 – R30,000</option>
+                            <option value="30000-plus">R30,000+</option>
+                            <option value="discuss">I'd like to discuss this</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Project Details *</label>
-                        <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project, what problem it needs to solve, and your timeline..."></textarea>
+                        <label for="preferred-contact">Preferred contact method <span class="form-optional">(optional)</span></label>
+                        <select id="preferred-contact" name="preferred_contact">
+                            <option value="">No preference</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone call</option>
+                        </select>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width:100%;">
+                    <div class="form-group">
+                        <label for="message">Your current challenge or project details <span aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Briefly describe what you need or the problem you want to solve..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;" id="track-form-submit">
                         <i class="fas fa-paper-plane"></i> Send Message
                     </button>
                 </form>
@@ -170,46 +204,46 @@
             <div class="contact-info fade-in">
                 <h2>Get in touch directly</h2>
                 <div class="contact-methods">
-                    <div class="contact-method">
+                    <a href="https://wa.me/27681536136" class="contact-method" target="_blank" rel="noopener" id="track-wa-contact">
                         <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
                         <div class="contact-details">
                             <h3>WhatsApp</h3>
                             <p>+27 68 153 6136</p>
-                            <small>Quick responses, real conversation</small>
+                            <small>The quickest way to reach us</small>
                         </div>
-                    </div>
-                    <div class="contact-method">
+                    </a>
+                    <a href="mailto:Autom8streamlining@gmail.com" class="contact-method" id="track-email-contact">
                         <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <div class="contact-details">
                             <h3>Email</h3>
                             <p>Autom8streamlining@gmail.com</p>
-                            <small>For detailed project briefs</small>
+                            <small>For detailed project briefs and documentation</small>
                         </div>
-                    </div>
-                    <div class="contact-method">
+                    </a>
+                    <a href="tel:+27681536136" class="contact-method" id="track-phone-contact">
                         <div class="contact-icon"><i class="fas fa-phone"></i></div>
                         <div class="contact-details">
                             <h3>Phone</h3>
                             <p>+27 68 153 6136</p>
-                            <small>8AM – 6PM, Monday to Friday</small>
+                            <small>During normal business hours</small>
                         </div>
-                    </div>
-                    <div class="contact-method">
+                    </a>
+                    <div class="contact-method" style="cursor:default;">
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="contact-details">
                             <h3>Location</h3>
                             <p>South Africa</p>
-                            <small>Serving clients nationwide</small>
+                            <small>Serving clients across the country</small>
                         </div>
                     </div>
                 </div>
                 <div class="quick-actions">
-                    <h3>Quick actions</h3>
+                    <h3>Quick contact</h3>
                     <div class="action-buttons">
-                        <a href="https://wa.me/27681536136" class="action-btn whatsapp" target="_blank">
+                        <a href="https://wa.me/27681536136?text=Hi%20AutoM8!%20I%27d%20like%20to%20find%20out%20more%20about%20your%20services." class="action-btn whatsapp" target="_blank" rel="noopener" id="track-wa-quick">
                             <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                         </a>
-                        <a href="mailto:Autom8streamlining@gmail.com" class="action-btn email">
+                        <a href="mailto:Autom8streamlining@gmail.com" class="action-btn email" id="track-email-quick">
                             <i class="fas fa-envelope"></i> Send Email
                         </a>
                     </div>
@@ -219,17 +253,34 @@
     </div>
 </section>
 
+<!-- RESPONSE TIMES (honest wording) -->
 <section class="response-section">
     <div class="container">
         <div class="section-header fade-in">
-            <div class="section-tag">Response times</div>
-            <h2 class="section-title">We're quick to respond.</h2>
+            <div class="section-tag">How we work</div>
+            <h2 class="section-title">What to expect.</h2>
         </div>
         <div class="response-grid fade-in">
-            <div class="response-card"><i class="fab fa-whatsapp"></i><h3>WhatsApp</h3><p>Within 1 hour</p></div>
-            <div class="response-card"><i class="fas fa-envelope"></i><h3>Email</h3><p>Within 4 hours</p></div>
-            <div class="response-card"><i class="fas fa-phone"></i><h3>Phone</h3><p>Immediate</p></div>
-            <div class="response-card"><i class="fas fa-calendar"></i><h3>Consultation</h3><p>Same day</p></div>
+            <div class="response-card">
+                <i class="fab fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <p>The quickest way to reach us. We aim to respond as soon as possible during business hours.</p>
+            </div>
+            <div class="response-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>Good for detailed briefs and project documents. We respond during normal business hours.</p>
+            </div>
+            <div class="response-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>Project Scope</h3>
+                <p>Every project follows a clear scope and agreed milestones. Timelines depend on complexity.</p>
+            </div>
+            <div class="response-card">
+                <i class="fas fa-comments"></i>
+                <h3>Communication</h3>
+                <p>Transparent, direct communication throughout. You always know where your project stands.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -237,11 +288,11 @@
 <section class="cta-section">
     <div class="container">
         <div class="cta-content">
-            <h2>Ready to start your project?</h2>
-            <p>Don't wait. The sooner we start, the sooner you'll see results.</p>
+            <h2>Not sure where to start?</h2>
+            <p>A free conversation is always the right first step. No pressure, no commitment.</p>
             <div class="cta-buttons">
-                <a href="https://wa.me/27681536136" class="btn btn-white" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Chat Now
+                <a href="https://wa.me/27681536136?text=Hi%20AutoM8!%20I%27d%20like%20a%20free%20assessment." class="btn btn-white" target="_blank" rel="noopener" id="track-wa-cta">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                 </a>
             </div>
         </div>
@@ -251,24 +302,57 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
-            <div class="footer-brand"><h3>AutoM8</h3><p>Building custom software solutions that power South African businesses.</p></div>
-            <div class="footer-section"><h4>Services</h4><ul><li><a href="services.html">Custom Software</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">Education Tech</a></li><li><a href="services.html">Business Automation</a></li></ul></div>
-            <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-            <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p><p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p></div>
+            <div class="footer-brand"><h3>AutoM8</h3><p>A growing, founder-led South African software development and automation company.</p></div>
+            <div class="footer-section"><h4>Services</h4><ul><li><a href="affordable-websites.html">Business Websites</a></li><li><a href="business-automation.html">Workflow Automation</a></li><li><a href="services.html">Custom Software</a></li><li><a href="school-management-system.html">School Management</a></li></ul></div>
+            <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About AutoM8</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> <a href="mailto:Autom8streamlining@gmail.com" id="track-email-footer">Autom8streamlining@gmail.com</a></p><p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27681536136" target="_blank" rel="noopener" id="track-wa-footer">+27 68 153 6136</a></p></div>
         </div>
-        <div class="footer-bottom"><p>&copy; 2025 AutoM8. All rights reserved.</p></div>
+        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved.</p></div>
     </div>
 </footer>
 <script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
 const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');
 mm.addEventListener('click',()=>nm.classList.toggle('active'));
 const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:0.1});
 document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
 
+function trackEvent(action, category, label) {
+    if (typeof gtag === 'function') gtag('event', action, { event_category: category, event_label: label });
+}
+
+document.getElementById('track-wa-contact')?.addEventListener('click', () => trackEvent('whatsapp_click', 'engagement', 'contact_method'));
+document.getElementById('track-wa-quick')?.addEventListener('click', () => trackEvent('whatsapp_click', 'engagement', 'quick_action'));
+document.getElementById('track-wa-cta')?.addEventListener('click', () => trackEvent('whatsapp_click', 'engagement', 'cta'));
+document.getElementById('track-wa-footer')?.addEventListener('click', () => trackEvent('whatsapp_click', 'engagement', 'footer'));
+document.getElementById('track-email-contact')?.addEventListener('click', () => trackEvent('email_click', 'engagement', 'contact_method'));
+document.getElementById('track-email-quick')?.addEventListener('click', () => trackEvent('email_click', 'engagement', 'quick_action'));
+document.getElementById('track-email-footer')?.addEventListener('click', () => trackEvent('email_click', 'engagement', 'footer'));
+document.getElementById('track-phone-contact')?.addEventListener('click', () => trackEvent('phone_click', 'engagement', 'contact_method'));
+
+// Pre-fill assessment type from URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const type = urlParams.get('type');
+if (type) {
+    const sel = document.getElementById('assessment-type');
+    if (sel) {
+        const opt = [...sel.options].find(o => o.value === type);
+        if (opt) sel.value = type;
+    }
+}
+
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const f = new FormData(this);
-    const msg = `Hi AutoM8!\n\n*New Project Inquiry*\n\nName: ${f.get('name')}\nEmail: ${f.get('email')}\nPhone: ${f.get('phone')||'Not provided'}\nCompany: ${f.get('company')||'Not provided'}\nService: ${f.get('service')||'Not specified'}\n\nMessage:\n${f.get('message')}`;
+    const assessmentType = f.get('assessment_type') || 'Not specified';
+    const budget = f.get('budget') || 'Not provided';
+    const preferredContact = f.get('preferred_contact') || 'No preference';
+    const org = f.get('organisation') || 'Not provided';
+    const website = f.get('website') || 'Not provided';
+
+    const msg = `Hi AutoM8!\n\n*New Enquiry*\n\nName: ${f.get('name')}\nEmail: ${f.get('email')}\nPhone: ${f.get('phone')||'Not provided'}\nOrganisation: ${org}\nCurrent website: ${website}\n\nType of enquiry: ${assessmentType}\nApproximate budget: ${budget}\nPreferred contact: ${preferredContact}\n\nChallenge / details:\n${f.get('message')}`;
+    trackEvent('form_submission', 'conversion', assessmentType);
     window.open(`https://wa.me/27681536136?text=${encodeURIComponent(msg)}`, '_blank');
 });
 </script>

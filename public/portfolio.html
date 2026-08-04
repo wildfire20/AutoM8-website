@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Our Projects & Case Studies | AutoM8 South Africa</title>
-    <meta name="description" content="Explore AutoM8's portfolio of software projects. Case studies from business automation, web platforms, and education technology.">
+    <title>Portfolio | Software Systems & Digital Products | AutoM8 South Africa</title>
+    <meta name="description" content="A selection of software systems, prototypes and digital products developed by AutoM8 — including business automation, school management, and custom web applications.">
+    <link rel="canonical" href="https://auto-m8.co.za/portfolio.html">
+    <meta property="og:title" content="Portfolio | AutoM8 South Africa">
+    <meta property="og:description" content="A selection of software systems, prototypes and digital products developed by AutoM8.">
+    <meta property="og:type" content="website">
+
+    <!-- Analytics Placeholder — see index.html for instructions -->
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/theme.css">
@@ -29,6 +36,45 @@
         }
         .portfolio-image i { font-size: 3.5rem; color: var(--blue); opacity: 0.25; }
         .portfolio-content { padding: 1.75rem; }
+
+        /* Project category badge */
+        .portfolio-badge {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-3);
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            padding: 3px 10px;
+            margin-bottom: 0.6rem;
+        }
+
+        /*
+        =============================================================
+        PROJECT CATEGORIES — UPDATE THESE VALUES ONCE YOU CONFIRM EACH PROJECT TYPE
+        =============================================================
+        Available badge styles (apply by adding a class to .portfolio-badge):
+          .badge-client    → "Client Project"      — blue border/text
+          .badge-internal  → "Internal Project"    — purple border/text
+          .badge-academic  → "Academic Project"    → green border/text
+          .badge-personal  → "Personal Project"    → orange border/text
+          .badge-prototype → "Prototype"           → amber border/text
+          .badge-concept   → "Concept System"      → grey border/text
+
+        Currently all set to the neutral "Project Showcase" label.
+        =============================================================
+        */
+
+        .badge-client   { color: #1d4ed8; background: #eff6ff; border-color: #bfdbfe; }
+        .badge-internal { color: #6d28d9; background: #f5f3ff; border-color: #ddd6fe; }
+        .badge-academic { color: #065f46; background: #ecfdf5; border-color: #a7f3d0; }
+        .badge-personal { color: #c2410c; background: #fff7ed; border-color: #fed7aa; }
+        .badge-prototype{ color: #b45309; background: #fffbeb; border-color: #fde68a; }
+        .badge-concept  { color: #374151; background: #f9fafb; border-color: #e5e7eb; }
+
         .portfolio-tag {
             display: inline-block;
             font-size: 0.7rem;
@@ -36,41 +82,87 @@
             letter-spacing: 1.5px;
             text-transform: uppercase;
             color: var(--blue);
-            margin-bottom: 0.6rem;
+            margin-bottom: 0.4rem;
         }
         .portfolio-content h3 { font-size: 1.15rem; font-weight: 700; color: var(--text); letter-spacing: -0.02em; margin-bottom: 0.5rem; }
         .portfolio-content > p { color: var(--text-3); line-height: 1.7; font-size: 0.9rem; margin-bottom: 1.25rem; }
-        .portfolio-stats { display: flex; gap: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-lt); }
-        .stat strong { display: block; font-size: 1.2rem; font-weight: 900; color: var(--text); letter-spacing: -0.03em; }
-        .stat span { font-size: 0.72rem; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+        .portfolio-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; padding-top: 1rem; border-top: 1px solid var(--border-lt); }
+        .highlight-item {
+            font-size: 0.8rem;
+            color: var(--text-2);
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+            line-height: 1.4;
+        }
+        .highlight-item::before { content: ''; width: 5px; height: 5px; background: var(--blue); border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
 
         .results-section { background: var(--bg-alt); border-top: 1px solid var(--border-lt); border-bottom: 1px solid var(--border-lt); }
         .results-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
         .result-card { padding: 2.5rem 2rem; text-align: center; border-right: 1px solid var(--border); }
         .result-card:last-child { border-right: none; }
-        .result-number { font-size: 2.5rem; font-weight: 900; color: var(--text); letter-spacing: -0.04em; line-height: 1; margin-bottom: 0.4rem; }
-        .result-number span { color: var(--blue); }
+        .result-label-big { font-size: 1.1rem; font-weight: 800; color: var(--text); letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 0.4rem; }
         .result-label { font-size: 0.8rem; color: var(--text-3); }
 
-        .testimonials-section { background: var(--bg); border-bottom: 1px solid var(--border-lt); }
-        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-        .testimonial-card { border: 1px solid var(--border); border-radius: 14px; padding: 2rem; transition: all 0.25s; }
-        .testimonial-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-card-hover); border-color: #d1d5db; }
-        .testimonial-quote { font-size: 1.5rem; color: var(--blue); margin-bottom: 0.75rem; font-family: Georgia, serif; }
-        .testimonial-content p { color: var(--text-2); line-height: 1.8; font-size: 0.9rem; margin-bottom: 1.25rem; }
-        .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
-        .author-avatar { width: 40px; height: 40px; background: var(--text); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
-        .author-info strong { display: block; color: var(--text); font-weight: 600; font-size: 0.9rem; }
-        .author-info span { font-size: 0.8rem; color: var(--text-3); }
+        /* Capability cards replacing testimonials */
+        .capabilities-section { background: var(--bg); border-bottom: 1px solid var(--border-lt); }
+        .capabilities-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+        .capability-card {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.75rem;
+            transition: all 0.25s;
+        }
+        .capability-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-card-hover); border-color: #d1d5db; }
+        .cap-icon { font-size: 1.4rem; color: var(--blue); margin-bottom: 0.75rem; display: block; }
+        .capability-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--text); margin-bottom: 0.3rem; }
+        .capability-card p { font-size: 0.82rem; color: var(--text-3); line-height: 1.6; }
+
+        /*
+        =============================================================
+        GENUINE TESTIMONIALS — ADD HERE ONCE VERIFIED
+        =============================================================
+        Once you have real testimonials with client permission, replace the
+        capabilities section above with the testimonials section below.
+        Each testimonial should include:
+          - The exact quote (written or recorded)
+          - The client's real name
+          - Their business or role
+          - Permission to publish
+
+        Template:
+        <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-content">
+                <p>[EXACT QUOTE]</p>
+            </div>
+            <div class="testimonial-author">
+                <div class="author-avatar">[INITIALS]</div>
+                <div class="author-info">
+                    <strong>[FULL NAME]</strong>
+                    <span>[ROLE], [BUSINESS]</span>
+                </div>
+            </div>
+        </div>
+        =============================================================
+        */
 
         @media (max-width: 1024px) {
             .portfolio-grid { grid-template-columns: 1fr; }
-            .testimonials-grid { grid-template-columns: 1fr; }
             .results-grid { grid-template-columns: 1fr 1fr; }
             .result-card:nth-child(2) { border-right: none; }
             .result-card:nth-child(3), .result-card:nth-child(4) { border-top: 1px solid var(--border); }
+            .capabilities-grid { grid-template-columns: 1fr 1fr; }
         }
-        @media (max-width: 768px) { .results-grid { grid-template-columns: 1fr; } .result-card { border-right: none; border-bottom: 1px solid var(--border); } }
+        @media (max-width: 768px) {
+            .results-grid { grid-template-columns: 1fr; }
+            .result-card { border-right: none; border-bottom: 1px solid var(--border); }
+            .capabilities-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 480px) {
+            .capabilities-grid { grid-template-columns: 1fr; }
+            .portfolio-highlights { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -91,175 +183,240 @@
 
 <section class="page-hero" style="text-align:left;">
     <div class="container">
-        <div class="section-tag" style="margin-bottom:0.75rem;">Case studies</div>
-        <h1 class="page-title fade-in">Projects that made<br>a real difference.</h1>
-        <p class="page-subtitle fade-in" style="margin:0;">Every project here solved a specific problem and delivered measurable, documented results.</p>
+        <div class="section-tag" style="margin-bottom:0.75rem;">Project showcase</div>
+        <h1 class="page-title fade-in">Software systems,<br>prototypes and digital products.</h1>
+        <p class="page-subtitle fade-in" style="margin:0;">A selection of software systems, prototypes and digital products developed by AutoM8. Projects include client work, internal development, and prototype systems.</p>
     </div>
 </section>
 
 <section style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
     <div class="container">
         <div class="portfolio-grid">
+
+            <!-- PROJECT 1: Lephalale Connect -->
+            <!-- CATEGORY: Update .portfolio-badge class once confirmed (e.g. badge-client, badge-prototype, etc.) -->
             <div class="portfolio-card fade-in">
                 <div class="portfolio-image"><i class="fas fa-map-marker-alt"></i></div>
                 <div class="portfolio-content">
+                    <span class="portfolio-badge">Project Showcase</span>
                     <div class="portfolio-tag">Web Platform</div>
                     <h3>Lephalale Connect</h3>
-                    <p>A comprehensive local business directory serving the Lephalale region with automated payment processing and business owner dashboards.</p>
-                    <div class="portfolio-stats">
-                        <div class="stat"><strong>50+</strong><span>Businesses listed</span></div>
-                        <div class="stat"><strong>10K+</strong><span>Monthly visitors</span></div>
+                    <p>A local business directory designed for the Lephalale region, including business-owner dashboards, payment-processing workflows, and search and category filtering.</p>
+                    <div class="portfolio-highlights">
+                        <span class="highlight-item">Local business directory</span>
+                        <span class="highlight-item">Business-owner dashboard</span>
+                        <span class="highlight-item">Payment-processing workflow</span>
+                        <span class="highlight-item">Search and category filtering</span>
                     </div>
                 </div>
             </div>
+
+            <!-- PROJECT 2: LPG Gas Stock Control -->
+            <!-- CATEGORY: Update .portfolio-badge class once confirmed -->
             <div class="portfolio-card fade-in">
                 <div class="portfolio-image"><i class="fas fa-fire-alt"></i></div>
                 <div class="portfolio-content">
+                    <span class="portfolio-badge">Project Showcase</span>
                     <div class="portfolio-tag">Fraud Prevention</div>
                     <h3>LPG Gas Stock Control</h3>
-                    <p>Custom fraud-prevention software for energy retailers. Real-time tracking of KG variance with automated alerts for discrepancies.</p>
-                    <div class="portfolio-stats">
-                        <div class="stat"><strong>40%</strong><span>Loss reduction</span></div>
-                        <div class="stat"><strong>R500K+</strong><span>Saved annually</span></div>
+                    <p>Custom stock-monitoring software designed to track real-time KG variance and surface discrepancies for energy retailers. Includes automated alerting and a full transaction audit trail.</p>
+                    <div class="portfolio-highlights">
+                        <span class="highlight-item">Real-time KG variance tracking</span>
+                        <span class="highlight-item">Stock discrepancy alerts</span>
+                        <span class="highlight-item">Transaction audit trail</span>
+                        <span class="highlight-item">Inventory monitoring</span>
                     </div>
                 </div>
             </div>
+
+            <!-- PROJECT 3: Harmony Institute LMS -->
+            <!-- CATEGORY: Update .portfolio-badge class once confirmed -->
             <div class="portfolio-card fade-in">
                 <div class="portfolio-image"><i class="fas fa-graduation-cap"></i></div>
                 <div class="portfolio-content">
+                    <span class="portfolio-badge">Project Showcase</span>
                     <div class="portfolio-tag">Education</div>
                     <h3>Harmony Institute LMS</h3>
-                    <p>Full school digitization including grade management, attendance tracking, parent communication, and cloud-based document storage.</p>
-                    <div class="portfolio-stats">
-                        <div class="stat"><strong>300+</strong><span>Students managed</span></div>
-                        <div class="stat"><strong>25</strong><span>Teachers onboarded</span></div>
+                    <p>A school management platform designed to support attendance tracking, grade management, parent communication, learner profiles, and cloud-based document management.</p>
+                    <div class="portfolio-highlights">
+                        <span class="highlight-item">Attendance and grade tracking</span>
+                        <span class="highlight-item">Parent communication portal</span>
+                        <span class="highlight-item">Learner profiles</span>
+                        <span class="highlight-item">School document management</span>
                     </div>
                 </div>
             </div>
+
+            <!-- PROJECT 4: TransLogix Fleet Tracker -->
+            <!-- CATEGORY: Update .portfolio-badge class once confirmed -->
             <div class="portfolio-card fade-in">
                 <div class="portfolio-image"><i class="fas fa-truck"></i></div>
                 <div class="portfolio-content">
+                    <span class="portfolio-badge">Project Showcase</span>
                     <div class="portfolio-tag">Fleet Management</div>
                     <h3>TransLogix Fleet Tracker</h3>
-                    <p>Complete fleet management with GPS tracking, fuel monitoring, driver analytics, and maintenance scheduling.</p>
-                    <div class="portfolio-stats">
-                        <div class="stat"><strong>45</strong><span>Vehicles tracked</span></div>
-                        <div class="stat"><strong>20%</strong><span>Fuel savings</span></div>
+                    <p>Fleet management software designed to support vehicle monitoring, fuel tracking, maintenance scheduling, and driver-performance reporting.</p>
+                    <div class="portfolio-highlights">
+                        <span class="highlight-item">Vehicle monitoring</span>
+                        <span class="highlight-item">Fuel tracking</span>
+                        <span class="highlight-item">Maintenance scheduling</span>
+                        <span class="highlight-item">Driver-performance dashboard</span>
                     </div>
                 </div>
             </div>
+
+            <!-- PROJECT 5: MedBook Appointments -->
+            <!-- CATEGORY: Update .portfolio-badge class once confirmed -->
             <div class="portfolio-card fade-in">
                 <div class="portfolio-image"><i class="fas fa-calendar-check"></i></div>
                 <div class="portfolio-content">
+                    <span class="portfolio-badge">Project Showcase</span>
                     <div class="portfolio-tag">Booking Platform</div>
                     <h3>MedBook Appointments</h3>
-                    <p>Online booking platform for a medical practice group with SMS reminders and pre-visit forms for patients.</p>
-                    <div class="portfolio-stats">
-                        <div class="stat"><strong>60%</strong><span>Fewer no-shows</span></div>
-                        <div class="stat"><strong>3</strong><span>Locations served</span></div>
+                    <p>An online appointment booking system designed to support patient scheduling, reminder workflows, pre-visit information forms, and schedule management for medical practices.</p>
+                    <div class="portfolio-highlights">
+                        <span class="highlight-item">Online appointment booking</span>
+                        <span class="highlight-item">Reminder workflow</span>
+                        <span class="highlight-item">Patient-information forms</span>
+                        <span class="highlight-item">Schedule management</span>
                     </div>
                 </div>
             </div>
+
+            <!-- PROJECT 6: FreshFarm Direct -->
+            <!-- CATEGORY: Update .portfolio-badge class once confirmed -->
             <div class="portfolio-card fade-in">
                 <div class="portfolio-image"><i class="fas fa-shopping-cart"></i></div>
                 <div class="portfolio-content">
+                    <span class="portfolio-badge">Project Showcase</span>
                     <div class="portfolio-tag">E-Commerce</div>
                     <h3>FreshFarm Direct</h3>
-                    <p>Farm-to-table e-commerce connecting local farmers with urban consumers, with subscription boxes and delivery scheduling.</p>
-                    <div class="portfolio-stats">
-                        <div class="stat"><strong>15</strong><span>Partner farms</span></div>
-                        <div class="stat"><strong>2K+</strong><span>Orders per month</span></div>
+                    <p>An e-commerce concept designed to connect local farmers with consumers, including product subscriptions, delivery scheduling, and a supplier-management workflow.</p>
+                    <div class="portfolio-highlights">
+                        <span class="highlight-item">E-commerce workflow</span>
+                        <span class="highlight-item">Product subscriptions</span>
+                        <span class="highlight-item">Delivery scheduling</span>
+                        <span class="highlight-item">Supplier-management concept</span>
                     </div>
                 </div>
             </div>
+
+            <!-- PROJECT 7: StaffSync HR System -->
+            <!-- CATEGORY: Update .portfolio-badge class once confirmed -->
             <div class="portfolio-card fade-in">
                 <div class="portfolio-image"><i class="fas fa-users-cog"></i></div>
                 <div class="portfolio-content">
+                    <span class="portfolio-badge">Project Showcase</span>
                     <div class="portfolio-tag">HR Platform</div>
                     <h3>StaffSync HR System</h3>
-                    <p>Complete HR management for a retail chain — onboarding, leave management, performance tracking, and payroll integration.</p>
-                    <div class="portfolio-stats">
-                        <div class="stat"><strong>200+</strong><span>Employees managed</span></div>
-                        <div class="stat"><strong>8</strong><span>Branches covered</span></div>
+                    <p>An HR management system designed to support employee onboarding, leave management, performance tracking, and a payroll-integration workflow concept.</p>
+                    <div class="portfolio-highlights">
+                        <span class="highlight-item">Employee onboarding</span>
+                        <span class="highlight-item">Leave management</span>
+                        <span class="highlight-item">Performance tracking</span>
+                        <span class="highlight-item">Payroll-integration concept</span>
                     </div>
                 </div>
             </div>
+
+            <!-- PROJECT 8: ServiceBot AI Assistant -->
+            <!-- CATEGORY: Update .portfolio-badge class once confirmed -->
             <div class="portfolio-card fade-in">
                 <div class="portfolio-image"><i class="fas fa-robot"></i></div>
                 <div class="portfolio-content">
+                    <span class="portfolio-badge">Project Showcase</span>
                     <div class="portfolio-tag">AI Solution</div>
                     <h3>ServiceBot AI Assistant</h3>
-                    <p>AI-powered customer service chatbot for a telecommunications company. Handles queries automatically, available 24/7.</p>
-                    <div class="portfolio-stats">
-                        <div class="stat"><strong>70%</strong><span>Auto-resolved</span></div>
-                        <div class="stat"><strong>24/7</strong><span>Availability</span></div>
+                    <p>An AI-assisted customer support system designed to handle frequently asked questions, route conversations, and demonstrate automated response workflows.</p>
+                    <div class="portfolio-highlights">
+                        <span class="highlight-item">AI-assisted support</span>
+                        <span class="highlight-item">Frequently asked questions</span>
+                        <span class="highlight-item">Conversation routing</span>
+                        <span class="highlight-item">Automated response workflow</span>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
 
+<!-- PORTFOLIO FACTS -->
 <section class="results-section">
     <div class="container">
         <div class="section-header fade-in">
-            <div class="section-tag">The numbers</div>
-            <h2 class="section-title">Results that speak for themselves.</h2>
+            <div class="section-tag">What this portfolio demonstrates</div>
+            <h2 class="section-title">A range of practical solutions.</h2>
         </div>
         <div class="results-grid fade-in">
-            <div class="result-card"><div class="result-number">R2<span>M+</span></div><div class="result-label">Client savings generated</div></div>
-            <div class="result-card"><div class="result-number">50<span>+</span></div><div class="result-label">Projects delivered</div></div>
-            <div class="result-card"><div class="result-number">99.9<span>%</span></div><div class="result-label">System uptime</div></div>
-            <div class="result-card"><div class="result-number">100<span>%</span></div><div class="result-label">Client satisfaction</div></div>
+            <div class="result-card">
+                <div class="result-label-big">Custom-Built<br>Solutions</div>
+                <div class="result-label">No generic templates</div>
+            </div>
+            <div class="result-card">
+                <div class="result-label-big">Flexible<br>Pricing</div>
+                <div class="result-label">Phased builds available</div>
+            </div>
+            <div class="result-card">
+                <div class="result-label-big">South African<br>Focus</div>
+                <div class="result-label">Businesses and schools</div>
+            </div>
+            <div class="result-card">
+                <div class="result-label-big">Direct<br>Support</div>
+                <div class="result-label">One point of contact</div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="testimonials-section">
+<!-- WHAT OUR PROJECTS DEMONSTRATE (replacing testimonials) -->
+<section class="capabilities-section">
     <div class="container">
         <div class="section-header fade-in">
-            <div class="section-tag">Testimonials</div>
-            <h2 class="section-title">What our clients say.</h2>
+            <div class="section-tag">Capabilities</div>
+            <h2 class="section-title">What Our Projects Demonstrate</h2>
+            <p class="section-subtitle">The range of practical problems these systems are designed to solve.</p>
         </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card fade-in">
-                <div class="testimonial-quote">"</div>
-                <div class="testimonial-content">
-                    <p>AutoM8 transformed how we manage our school. The system is intuitive and reliable. Student engagement has improved significantly.</p>
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-avatar">SJ</div>
-                    <div class="author-info">
-                        <strong>Sarah Johnson</strong>
-                        <span>Principal, Harmony Institute</span>
-                    </div>
-                </div>
+        <div class="capabilities-grid fade-in">
+            <div class="capability-card">
+                <i class="fas fa-tools cap-icon"></i>
+                <h3>Practical Problem Solving</h3>
+                <p>Systems designed around real operational challenges, not generic feature sets.</p>
             </div>
-            <div class="testimonial-card fade-in">
-                <div class="testimonial-quote">"</div>
-                <div class="testimonial-content">
-                    <p>The stock control system has saved us hundreds of thousands in prevented losses. We can now track every kilogram in real-time.</p>
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-avatar">TM</div>
-                    <div class="author-info">
-                        <strong>Thabo Molefe</strong>
-                        <span>MD, LPG Energy Solutions</span>
-                    </div>
-                </div>
+            <div class="capability-card">
+                <i class="fas fa-desktop cap-icon"></i>
+                <h3>User-Friendly Interfaces</h3>
+                <p>Clean, intuitive layouts designed for the people who will use the system daily.</p>
             </div>
-            <div class="testimonial-card fade-in">
-                <div class="testimonial-quote">"</div>
-                <div class="testimonial-content">
-                    <p>From concept to launch in 6 weeks. The team understood our vision immediately and delivered beyond expectations.</p>
-                </div>
-                <div class="testimonial-author">
-                    <div class="author-avatar">LN</div>
-                    <div class="author-info">
-                        <strong>Lindiwe Nkosi</strong>
-                        <span>Founder, Lephalale Connect</span>
-                    </div>
-                </div>
+            <div class="capability-card">
+                <i class="fas fa-database cap-icon"></i>
+                <h3>Custom Database Systems</h3>
+                <p>Purpose-built data structures that match how an organisation actually works.</p>
+            </div>
+            <div class="capability-card">
+                <i class="fas fa-cogs cap-icon"></i>
+                <h3>Workflow Automation</h3>
+                <p>Automated alerts, notifications, approvals and data transfers to reduce manual steps.</p>
+            </div>
+            <div class="capability-card">
+                <i class="fas fa-mobile-alt cap-icon"></i>
+                <h3>Responsive Web Development</h3>
+                <p>Web-based systems that work across desktop, tablet and mobile devices.</p>
+            </div>
+            <div class="capability-card">
+                <i class="fas fa-graduation-cap cap-icon"></i>
+                <h3>Education Technology</h3>
+                <p>School management, learner tracking, parent portals and document management.</p>
+            </div>
+            <div class="capability-card">
+                <i class="fas fa-chart-bar cap-icon"></i>
+                <h3>Dashboards and Reporting</h3>
+                <p>Real-time visibility into operations, stock, staff, and performance data.</p>
+            </div>
+            <div class="capability-card">
+                <i class="fas fa-plug cap-icon"></i>
+                <h3>System Integration</h3>
+                <p>Connecting different tools and data sources into a single, coherent workflow.</p>
             </div>
         </div>
     </div>
@@ -268,10 +425,10 @@
 <section class="cta-section">
     <div class="container">
         <div class="cta-content">
-            <h2>Ready to be our next success story?</h2>
-            <p>Let's discuss your project and build something great together.</p>
+            <h2>Interested in a similar system?</h2>
+            <p>Let's discuss your requirements and find the most practical approach for your project.</p>
             <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-white">Start your project <i class="fas fa-arrow-right"></i></a>
+                <a href="contact.html" class="btn btn-white">Start a conversation <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -280,15 +437,16 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
-            <div class="footer-brand"><h3>AutoM8</h3><p>Building custom software solutions that power South African businesses.</p></div>
-            <div class="footer-section"><h4>Services</h4><ul><li><a href="services.html">Custom Software</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">Education Tech</a></li><li><a href="services.html">Business Automation</a></li></ul></div>
-            <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-            <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> Autom8streamlining@gmail.com</p><p><i class="fab fa-whatsapp"></i> +27 68 153 6136</p></div>
+            <div class="footer-brand"><h3>AutoM8</h3><p>A growing, founder-led South African software development and automation company.</p></div>
+            <div class="footer-section"><h4>Services</h4><ul><li><a href="affordable-websites.html">Business Websites</a></li><li><a href="business-automation.html">Workflow Automation</a></li><li><a href="services.html">Custom Software</a></li><li><a href="school-management-system.html">School Management</a></li></ul></div>
+            <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About AutoM8</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> <a href="mailto:Autom8streamlining@gmail.com">Autom8streamlining@gmail.com</a></p><p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27681536136" target="_blank" rel="noopener">+27 68 153 6136</a></p></div>
         </div>
-        <div class="footer-bottom"><p>&copy; 2025 AutoM8. All rights reserved.</p></div>
+        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved.</p></div>
     </div>
 </footer>
 <script>
+document.getElementById('yr').textContent = new Date().getFullYear();
 const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');
 mm.addEventListener('click',()=>nm.classList.toggle('active'));
 const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:0.1});
