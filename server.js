@@ -7,20 +7,22 @@ const PORT = process.env.PORT || 5000;
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Route for the root path to serve index.html
+// Route for the root path
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Handle all other routes by serving index.html (for SPA-like behavior)
-app.get('*', (req, res) => {
-    // Check if the request is for a specific HTML file
-    const requestedFile = req.path.substring(1); // Remove leading slash
-    if (requestedFile.endsWith('.html')) {
-        res.sendFile(path.join(__dirname, 'public', requestedFile));
-    } else {
-        res.sendFile(path.join(__dirname, 'public', 'index.html'));
-    }
+// Serve known HTML pages directly
+app.get('/:page.html', (req, res, next) => {
+    const filePath = path.join(__dirname, 'public', req.params.page + '.html');
+    res.sendFile(filePath, (err) => {
+        if (err) next(); // fall through to 404
+    });
+});
+
+// 404 handler — serve custom 404 page
+app.use((req, res) => {
+    res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
 });
 
 app.listen(PORT, '0.0.0.0', () => {
