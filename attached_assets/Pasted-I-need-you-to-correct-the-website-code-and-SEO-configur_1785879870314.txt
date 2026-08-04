@@ -1,0 +1,256 @@
+I need you to correct the website code and SEO configuration for the actual AutoM8 deployment architecture.
+
+Important deployment information:
+
+- The website code is edited through Replit.
+- The repository is hosted on GitHub.
+- Railway automatically deploys the GitHub repository.
+- The domain is registered and managed through GoDaddy.
+- The working production domain is:
+
+https://www.auto-m8.co.za
+
+- The non-www domain currently has routing problems:
+
+https://auto-m8.co.za
+
+Do not redesign the website.
+
+Do not change the current visual design, pricing, projects, animations, branding, layout or content unless required for the technical corrections below.
+
+## 1. Use www as the canonical production domain
+
+The official primary domain must be:
+
+https://www.auto-m8.co.za
+
+Update every website file so that all canonical and SEO references consistently use the www domain.
+
+Search the complete repository for:
+
+https://auto-m8.co.za
+
+Replace it with:
+
+https://www.auto-m8.co.za
+
+where it is being used in:
+
+- Canonical tags
+- Open Graph URLs
+- JSON-LD structured data
+- Organization schema
+- LocalBusiness schema
+- Service schema
+- Breadcrumb schema
+- Sitemap URLs
+- Robots.txt sitemap reference
+- Social sharing information
+- Absolute internal links
+- Form return URLs
+- Website identity configuration
+
+Do not change email addresses or unrelated text containing the business name.
+
+Relative internal links such as:
+
+about.html
+services.html
+contact.html
+
+may remain relative if they already function correctly.
+
+## 2. Verify that the new files are committed to GitHub
+
+Confirm that all of the following files exist in the repository and are tracked by Git:
+
+- index.html
+- about.html
+- services.html
+- portfolio.html
+- pricing.html
+- contact.html
+- affordable-websites.html
+- website-design-pretoria.html
+- business-automation.html
+- school-management-system.html
+- parent-portal.html
+- custom-software-pretoria.html
+- sitemap.xml
+- robots.txt
+- 404.html
+
+Confirm that none of these files are excluded through:
+
+- .gitignore
+- Railway deployment configuration
+- Build configuration
+- Static-output configuration
+- Incorrect project root settings
+
+The new landing pages must not exist only inside the Replit workspace. They must be committed and pushed to the GitHub branch Railway deploys from.
+
+Report:
+
+- The GitHub branch being used
+- The files committed
+- The latest commit hash
+- Whether Railway should automatically redeploy that commit
+
+## 3. Rebuild sitemap.xml for the www domain
+
+Create a valid sitemap at:
+
+https://www.auto-m8.co.za/sitemap.xml
+
+Use this XML structure:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+Include exactly these public URLs:
+
+https://www.auto-m8.co.za/
+https://www.auto-m8.co.za/about.html
+https://www.auto-m8.co.za/services.html
+https://www.auto-m8.co.za/portfolio.html
+https://www.auto-m8.co.za/pricing.html
+https://www.auto-m8.co.za/contact.html
+https://www.auto-m8.co.za/affordable-websites.html
+https://www.auto-m8.co.za/website-design-pretoria.html
+https://www.auto-m8.co.za/business-automation.html
+https://www.auto-m8.co.za/school-management-system.html
+https://www.auto-m8.co.za/parent-portal.html
+https://www.auto-m8.co.za/custom-software-pretoria.html
+
+Close the file correctly with:
+
+</urlset>
+
+Requirements:
+
+- Use only complete https://www.auto-m8.co.za URLs.
+- Do not include the 404 page.
+- Do not include Replit preview URLs.
+- Do not include Railway-generated URLs.
+- Do not include non-www URLs.
+- Do not include duplicate URLs.
+- Do not include fake last-modified dates.
+- Ensure no content appears before the XML declaration.
+- Ensure the file is saved as valid UTF-8.
+- Ensure the filename is exactly sitemap.xml using lowercase letters.
+
+## 4. Update robots.txt
+
+Use:
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.auto-m8.co.za/sitemap.xml
+
+Do not block any CSS files, JavaScript files, images or public landing pages.
+
+## 5. Verify canonical tags
+
+Every page must have its own exact canonical URL.
+
+Examples:
+
+Homepage:
+<link rel="canonical" href="https://www.auto-m8.co.za/">
+
+About:
+<link rel="canonical" href="https://www.auto-m8.co.za/about.html">
+
+Custom software:
+<link rel="canonical" href="https://www.auto-m8.co.za/custom-software-pretoria.html">
+
+Business automation:
+<link rel="canonical" href="https://www.auto-m8.co.za/business-automation.html">
+
+Do not point every canonical tag to the homepage.
+
+Do not use the non-www domain in any canonical tag.
+
+## 6. Verify Railway deployment compatibility
+
+Inspect the project deployment configuration.
+
+Determine whether Railway is:
+
+- Serving the repository directly as static files;
+- Running an Express or Node server;
+- Running another web server;
+- Or using a build output directory.
+
+Confirm that the seven recently created files are copied into the actual production output.
+
+If a build process exists, ensure that sitemap.xml, robots.txt and all HTML landing pages are included in the production build.
+
+Do not assume that a file being present in the repository automatically means it is being served.
+
+## 7. Do not attempt to fix GoDaddy DNS from the code
+
+The domain is managed through GoDaddy and deployed through Railway.
+
+Do not claim that website code can fix:
+
+- GoDaddy forwarding
+- DNS A records
+- DNS CNAME records
+- Railway custom-domain verification
+- Railway TXT verification records
+- Root-domain forwarding
+- SSL certificate provisioning
+
+Instead, provide a separate section called:
+
+“Manual GoDaddy and Railway checks required”
+
+Explain exactly what the owner must check, but do not tell the owner to delete or replace DNS records without first inspecting screenshots of the existing records.
+
+## 8. Production testing
+
+After pushing the changes to GitHub and triggering Railway deployment, test the actual www production addresses.
+
+These should return the correct pages:
+
+https://www.auto-m8.co.za/
+https://www.auto-m8.co.za/about.html
+https://www.auto-m8.co.za/services.html
+https://www.auto-m8.co.za/portfolio.html
+https://www.auto-m8.co.za/pricing.html
+https://www.auto-m8.co.za/contact.html
+https://www.auto-m8.co.za/affordable-websites.html
+https://www.auto-m8.co.za/website-design-pretoria.html
+https://www.auto-m8.co.za/business-automation.html
+https://www.auto-m8.co.za/school-management-system.html
+https://www.auto-m8.co.za/parent-portal.html
+https://www.auto-m8.co.za/custom-software-pretoria.html
+https://www.auto-m8.co.za/sitemap.xml
+https://www.auto-m8.co.za/robots.txt
+
+Do not test only the Replit preview.
+
+Do not claim that a URL works unless it was checked on the actual www production domain.
+
+## 9. Final report
+
+Provide:
+
+- Files changed
+- All non-www references found and corrected
+- Sitemap contents
+- Number of URLs in the sitemap
+- Robots.txt contents
+- Canonical URL for every page
+- Git branch used
+- Latest commit hash
+- Confirmation that changes were pushed to GitHub
+- Confirmation that Railway deployed the latest commit
+- Production URLs tested
+- URLs that still failed
+- Manual Railway checks required
+- Manual GoDaddy checks required
+- Confirmation that the website design was not changed
