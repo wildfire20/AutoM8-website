@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Custom Software, Websites & Automation | AutoM8 South Africa</title>
-    <meta name="description" content="AutoM8 provides affordable business websites, workflow automation, custom software, education technology and fraud-prevention systems for South African businesses and schools.">
+    <title>Services | WordPress & Custom Websites, Software & Automation | AutoM8</title>
+    <meta name="description" content="AutoM8 provides WordPress website design South Africa, custom website development Pretoria, workflow automation, custom software and education technology for local organisations.">
     <link rel="canonical" href="https://www.auto-m8.co.za/services.html">
     <meta property="og:title" content="Services | AutoM8 South Africa">
     <meta property="og:description" content="Business websites, workflow automation, custom software, school management and more — built for South African organisations.">
@@ -62,6 +62,23 @@
         }
         .service-cta:hover { color: var(--blue); }
 
+        .website-branches { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-bottom: 1.5rem; }
+        .website-branch {
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 2rem;
+            transition: all 0.25s;
+        }
+        .website-branch:hover { transform: translateY(-4px); border-color: #d1d5db; box-shadow: var(--shadow-card-hover); }
+        .website-branch-icon { width: 42px; height: 42px; border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--bg); margin-bottom: 1rem; }
+        .website-branch-icon i { color: var(--blue); }
+        .website-branch h3 { font-size: 1.1rem; font-weight: 800; color: var(--text); margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+        .website-branch p { color: var(--text-3); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
+        .website-branch ul { list-style: none; margin-bottom: 1.25rem; }
+        .website-branch li { color: var(--text-2); font-size: 0.85rem; padding: 0.3rem 0; display: flex; gap: 8px; align-items: flex-start; }
+        .website-branch li i { color: var(--blue); font-size: 0.7rem; margin-top: 5px; }
+
         .process-section { background: var(--bg-alt); border-top: 1px solid var(--border-lt); }
         .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
         .process-step {
@@ -96,6 +113,7 @@
 
         @media (max-width: 1024px) {
             .services-grid { grid-template-columns: 1fr 1fr; }
+            .website-branches { grid-template-columns: 1fr 1fr; }
             .process-grid { grid-template-columns: 1fr 1fr; }
             .tech-grid { grid-template-columns: repeat(2, 1fr); }
             .process-step { border-right: none; border-bottom: 1px solid var(--border); }
@@ -103,6 +121,7 @@
         }
         @media (max-width: 768px) {
             .services-grid { grid-template-columns: 1fr; }
+            .website-branches { grid-template-columns: 1fr; }
             .process-grid { grid-template-columns: 1fr; }
             .tech-grid { grid-template-columns: 1fr 1fr; }
         }
@@ -134,6 +153,35 @@
 
 <section style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
     <div class="container">
+        <div class="section-header fade-in" style="margin-bottom:2.5rem;">
+            <div class="section-tag">Website development</div>
+            <h2 class="section-title">Two professional website options.</h2>
+            <p class="section-subtitle">WordPress is an established platform for standard business websites. Custom development is for specialised functionality. Neither is automatically better.</p>
+        </div>
+        <div class="website-branches">
+            <div class="website-branch fade-in" id="wordpress-websites">
+                <div class="website-branch-icon"><i class="fab fa-wordpress"></i></div>
+                <h3>WordPress Website Development</h3>
+                <p>Professional websites for businesses that mainly need to present their company, services, products, portfolio, contact information or content online.</p>
+                <ul>
+                    <li><i class="fas fa-circle"></i> Established content-management platform</li>
+                    <li><i class="fas fa-circle"></i> Faster development for standard requirements</li>
+                    <li><i class="fas fa-circle"></i> Suitable for businesses, portfolios, blogs and basic shops</li>
+                </ul>
+                <a href="pricing.html#wordpress-websites" class="service-cta">Explore WordPress packages <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="website-branch fade-in" id="custom-dynamic-websites">
+                <div class="website-branch-icon"><i class="fas fa-code"></i></div>
+                <h3>Custom / Dynamic Web Development</h3>
+                <p>Built specifically around the way your business operates, when you need functionality beyond a normal company website.</p>
+                <ul>
+                    <li><i class="fas fa-circle"></i> Custom databases, accounts and dashboards</li>
+                    <li><i class="fas fa-circle"></i> Booking, ordering and business workflows</li>
+                    <li><i class="fas fa-circle"></i> Specialised integrations and reporting</li>
+                </ul>
+                <a href="pricing.html#custom-dynamic-websites" class="service-cta">Explore custom solutions <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
         <div class="services-grid">
             <div class="service-card fade-in">
                 <div class="svc-num-tag">01 — Websites</div>

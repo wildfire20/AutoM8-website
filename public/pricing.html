@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing | Affordable Websites, Automation & Custom Software | AutoM8 South Africa</title>
-    <meta name="description" content="AutoM8 pricing for business websites from R1,500, workflow automation from R500, and custom software systems from R10,000. Transparent, starting prices for South African businesses.">
+    <title>Pricing | WordPress & Custom Websites, Automation & Software | AutoM8</title>
+    <meta name="description" content="Compare WordPress website design South Africa packages from R1,500 with custom website development Pretoria options, automation from R500, custom software from R10,000 and optional Website Care.">
     <link rel="canonical" href="https://www.auto-m8.co.za/pricing.html">
     <meta property="og:title" content="Pricing | AutoM8 South Africa">
     <meta property="og:description" content="Affordable websites from R1,500, automation from R500, custom systems from R10,000. Transparent starting prices for South African businesses.">
@@ -35,7 +35,40 @@
           "@type": "Question",
           "name": "Is hosting included?",
           "acceptedAnswer": { "@type": "Answer", "text": "Hosting, domain registration and ongoing maintenance are not included in the listed prices. These are discussed and quoted separately based on your requirements." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is WordPress worse than a custom website?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. They serve different purposes. WordPress is often the better and more affordable solution for normal business websites. Custom development is recommended when a business requires specialised functionality or workflows." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is a custom website more expensive?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Custom websites often require functionality to be designed and programmed specifically for the business, including databases, user accounts, dashboards, integrations and business logic." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I move from WordPress to a custom system later?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. A business can begin with a WordPress website and introduce custom systems later as its requirements grow." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you add automation to a WordPress website?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Automation is an independent AutoM8 service and can often integrate with WordPress forms, CRM systems, email, WhatsApp and other supported tools." }
         }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "AutoM8 Website Development Packages",
+      "itemListElement": [
+        { "@type": "Offer", "position": 1, "name": "WordPress Starter Website", "price": "1500", "priceCurrency": "ZAR" },
+        { "@type": "Offer", "position": 2, "name": "WordPress Business Website", "price": "3500", "priceCurrency": "ZAR" },
+        { "@type": "Offer", "position": 3, "name": "WordPress E-Commerce Website", "price": "6500", "priceCurrency": "ZAR" }
       ]
     }
     </script>
@@ -48,6 +81,7 @@
     <style>
         .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-bottom: 1.25rem; }
         .pricing-grid-2 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 1.25rem; }
+        .pricing-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 1.25rem; }
         .pricing-card {
             background: var(--bg);
             border: 1px solid var(--border);
@@ -128,6 +162,33 @@
         .custom-card > p { color: var(--text-3); line-height: 1.75; margin-bottom: 1.25rem; }
         .custom-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
 
+        .comparison-section { background: var(--bg-alt); border-bottom: 1px solid var(--border-lt); }
+        .comparison-wrap { border: 1px solid var(--border); border-radius: 14px; overflow: hidden; background: var(--bg); }
+        .comparison-row { display: grid; grid-template-columns: 1.1fr 1fr 1fr; }
+        .comparison-row > div { padding: 1rem 1.25rem; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border-lt); color: var(--text-3); font-size: 0.85rem; line-height: 1.55; }
+        .comparison-row > div:last-child { border-right: none; }
+        .comparison-row:last-child > div { border-bottom: none; }
+        .comparison-row.header > div { background: var(--text); color: #fff; font-weight: 700; font-size: 0.875rem; }
+        .comparison-row > div:first-child { color: var(--text-2); font-weight: 700; }
+        .comparison-row.header > div:first-child { color: #fff; }
+        .trust-callout { margin-top: 1.5rem; border: 1px solid var(--blue); border-radius: 12px; padding: 1.5rem; background: var(--blue-lt); color: var(--text-2); line-height: 1.7; font-size: 0.925rem; }
+        .trust-callout strong { display: block; color: var(--text); font-size: 1rem; margin-bottom: 0.35rem; }
+        .hosting-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1.5rem; }
+        .hosting-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; background: var(--bg-alt); }
+        .hosting-card h3 { color: var(--text); font-size: 1rem; margin-bottom: 0.4rem; }
+        .hosting-card p { color: var(--text-3); font-size: 0.875rem; line-height: 1.7; }
+        .care-section { background: var(--bg); border-bottom: 1px solid var(--border-lt); }
+        .care-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+        .care-card { border: 1px solid var(--border); border-radius: 14px; padding: 2rem; background: var(--bg-alt); }
+        .care-card.featured { border-color: var(--blue); border-width: 2px; }
+        .care-card h3 { font-size: 1.1rem; color: var(--text); margin-bottom: 0.25rem; }
+        .care-price { font-size: 1.8rem; font-weight: 900; color: var(--text); letter-spacing: -0.04em; margin: 0.5rem 0 1rem; }
+        .care-card p { color: var(--text-3); font-size: 0.85rem; line-height: 1.7; margin-bottom: 1rem; }
+        .care-features { list-style: none; }
+        .care-features li { color: var(--text-2); font-size: 0.85rem; padding: 0.35rem 0; display: flex; gap: 8px; align-items: flex-start; border-bottom: 1px solid var(--border-lt); }
+        .care-features li:last-child { border-bottom: none; }
+        .care-features i { color: var(--blue); font-size: 0.7rem; margin-top: 5px; }
+
         .faq-section { background: var(--bg-alt); border-bottom: 1px solid var(--border-lt); }
         .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
         .faq-item { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; background: var(--bg); }
@@ -140,13 +201,18 @@
         @media (max-width: 1024px) {
             .pricing-grid { grid-template-columns: repeat(2, 1fr); }
             .pricing-grid-2 { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+            .pricing-grid-3 { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
             .edu-grid { grid-template-columns: 1fr; }
             .edu-card { border-right: none; border-bottom: 1px solid var(--border); }
             .edu-card:last-child { border-bottom: none; }
             .faq-grid { grid-template-columns: 1fr; }
+            .care-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
         }
         @media (max-width: 768px) {
             .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+            .comparison-wrap { overflow-x: auto; }
+            .comparison-row { min-width: 680px; }
+            .hosting-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -174,20 +240,109 @@
     </div>
 </section>
 
-<!-- WEBSITE PRICING -->
-<section style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
+<!-- WORDPRESS WEBSITE PRICING -->
+<section id="wordpress-websites" style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
     <div class="container">
         <div class="section-header fade-in">
-            <div class="section-tag">Business websites</div>
-            <h2 class="section-title">Affordable website packages.</h2>
-            <p class="section-subtitle">Professional websites designed for South African businesses at every stage.</p>
+            <div class="section-tag">Website development · WordPress</div>
+            <h2 class="section-title">WordPress Websites</h2>
+            <p class="section-subtitle">Professional websites for businesses that need a strong online presence without the cost or complexity of custom software.</p>
+        </div>
+        <div style="max-width:760px;margin:0 auto 2.5rem;text-align:center;color:var(--text-3);font-size:0.95rem;line-height:1.8;" class="fade-in">
+            WordPress websites are ideal for presenting your company, services, products, contact information, portfolio or content online. Because WordPress uses an established content-management platform, these websites can normally be developed faster and hosted using traditional website-hosting plans. They are a good choice when you do not need complex custom databases, advanced dashboards or specialised business logic.
+        </div>
+        <div class="pricing-grid-3 fade-in">
+            <div class="pricing-card">
+                <div class="plan-micro">WordPress Starter</div>
+                <div class="plan-header">
+                    <h3>WordPress Starter</h3>
+                    <p>For small businesses that need a simple professional online presence.</p>
+                </div>
+                <div class="plan-price">
+                    <div class="price-label">Starting from</div>
+                    <div class="price-amount">R1,500</div>
+                    <div class="price-note">Once-off</div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-circle"></i> Up to approximately 5 core pages</li>
+                    <li><i class="fas fa-circle"></i> Home, About, Services and Contact</li>
+                    <li><i class="fas fa-circle"></i> Mobile-responsive design</li>
+                    <li><i class="fas fa-circle"></i> WhatsApp integration and contact form</li>
+                    <li><i class="fas fa-circle"></i> Social-media links and Google Maps where required</li>
+                    <li><i class="fas fa-circle"></i> Basic SEO configuration</li>
+                    <li><i class="fas fa-circle"></i> SSL assistance, theme customisation and client branding</li>
+                </ul>
+                <a href="contact.html?type=wordpress-starter" class="btn btn-outline plan-btn" id="track-quote-wp-starter">Get a quote</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="plan-badge">Recommended for growing businesses</div>
+                <div class="plan-micro">WordPress Business</div>
+                <div class="plan-header">
+                    <h3>WordPress Business</h3>
+                    <p>For a larger, more polished website with additional content and functionality.</p>
+                </div>
+                <div class="plan-price">
+                    <div class="price-label">Starting from</div>
+                    <div class="price-amount">R3,500</div>
+                    <div class="price-note">Once-off</div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-circle"></i> Everything in WordPress Starter</li>
+                    <li><i class="fas fa-circle"></i> Additional pages and customised layouts</li>
+                    <li><i class="fas fa-circle"></i> Portfolio, gallery or blog/news functionality</li>
+                    <li><i class="fas fa-circle"></i> More advanced forms</li>
+                    <li><i class="fas fa-circle"></i> Analytics setup and enhanced SEO configuration</li>
+                    <li><i class="fas fa-circle"></i> Additional compatible plugins and integrations</li>
+                    <li><i class="fas fa-circle"></i> Improved content structure</li>
+                </ul>
+                <a href="contact.html?type=wordpress-business" class="btn btn-primary plan-btn" id="track-quote-wp-business">Get a quote</a>
+            </div>
+            <div class="pricing-card">
+                <div class="plan-micro">WordPress E-Commerce</div>
+                <div class="plan-header">
+                    <h3>WordPress E-Commerce</h3>
+                    <p>For businesses that want to sell products online using WordPress and WooCommerce.</p>
+                </div>
+                <div class="plan-price">
+                    <div class="price-label">Starting from</div>
+                    <div class="price-amount">R6,500</div>
+                    <div class="price-note">Once-off · Varies by scope</div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-circle"></i> WooCommerce setup and product catalogue</li>
+                    <li><i class="fas fa-circle"></i> Product categories, cart and checkout</li>
+                    <li><i class="fas fa-circle"></i> Customer accounts where required</li>
+                    <li><i class="fas fa-circle"></i> Order management and basic shipping configuration</li>
+                    <li><i class="fas fa-circle"></i> EFT/manual payment instructions</li>
+                    <li><i class="fas fa-circle"></i> Optional payment-gateway integration</li>
+                    <li><i class="fas fa-circle"></i> Product images, pricing and stock information where appropriate</li>
+                </ul>
+                <a href="contact.html?type=wordpress-ecommerce" class="btn btn-outline plan-btn" id="track-quote-wp-ecommerce">Get a quote</a>
+            </div>
+        </div>
+        <div class="pricing-notice fade-in">
+            Hosting and domain costs are separate. Payment-gateway provider fees, premium plugins and other external services remain separate where applicable. More advanced or highly customised e-commerce functionality should be quoted separately.
+        </div>
+    </div>
+</section>
+
+<!-- CUSTOM / DYNAMIC WEBSITE PRICING -->
+<section id="custom-dynamic-websites" style="background:var(--bg-alt);border-bottom:1px solid var(--border-lt);">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Website development · Custom / dynamic</div>
+            <h2 class="section-title">Custom &amp; Dynamic Websites</h2>
+            <p class="section-subtitle">Built specifically around the way your business operates — for functionality beyond a normal company website.</p>
+        </div>
+        <div style="max-width:760px;margin:0 auto 2.5rem;text-align:center;color:var(--text-3);font-size:0.95rem;line-height:1.8;" class="fade-in">
+            These systems can be built around custom databases, user accounts, admin dashboards, booking systems, customer portals, rentals, ordering systems, business rules, reporting and specialised integrations. They are suitable for businesses with specialised workflows and operational requirements.
         </div>
         <div class="pricing-grid fade-in">
             <div class="pricing-card">
-                <div class="plan-micro">Starter</div>
+                <div class="plan-micro">Custom / Dynamic · Starter</div>
                 <div class="plan-header">
-                    <h3>Starter Website</h3>
-                    <p>For a new or very small business needing a professional online presence.</p>
+                    <h3>Custom Starter Website</h3>
+                    <p>A focused custom-built website for a business with requirements beyond a standard platform.</p>
                 </div>
                 <div class="plan-price">
                     <div class="price-label">Starting from</div>
@@ -208,10 +363,10 @@
             </div>
             <div class="pricing-card featured">
                 <div class="plan-badge">Most Popular</div>
-                <div class="plan-micro">Small Business</div>
+                <div class="plan-micro">Custom / Dynamic · Small Business</div>
                 <div class="plan-header">
-                    <h3>Small Business Website</h3>
-                    <p>For an established small business needing a complete multi-page website.</p>
+                    <h3>Custom Small Business Website</h3>
+                    <p>A complete custom multi-page website for an established business.</p>
                 </div>
                 <div class="plan-price">
                     <div class="price-label">Starting from</div>
@@ -231,10 +386,10 @@
                 <a href="contact.html?type=website-assessment" class="btn btn-primary plan-btn" id="track-quote-smb-web">Get a quote</a>
             </div>
             <div class="pricing-card">
-                <div class="plan-micro">Growth</div>
+                <div class="plan-micro">Custom / Dynamic · Growth</div>
                 <div class="plan-header">
-                    <h3>Growth Website</h3>
-                    <p>For a business needing stronger lead generation and content capabilities.</p>
+                    <h3>Custom Growth Website</h3>
+                    <p>A custom-built website with stronger lead-generation and content capabilities.</p>
                 </div>
                 <div class="plan-price">
                     <div class="price-label">Starting from</div>
@@ -254,10 +409,10 @@
                 <a href="contact.html?type=website-assessment" class="btn btn-outline plan-btn" id="track-quote-growth-web">Get a quote</a>
             </div>
             <div class="pricing-card">
-                <div class="plan-micro">E-Commerce or Booking</div>
+                <div class="plan-micro">Custom / Dynamic · E-Commerce or Booking</div>
                 <div class="plan-header">
-                    <h3>E-Commerce or Booking</h3>
-                    <p>For businesses needing online sales, orders, or appointment management.</p>
+                    <h3>Custom E-Commerce or Booking</h3>
+                    <p>For businesses needing tailored online sales, orders, or appointment management.</p>
                 </div>
                 <div class="plan-price">
                     <div class="price-label">Starting from</div>
@@ -284,13 +439,69 @@
     </div>
 </section>
 
+<!-- WORDPRESS VS CUSTOM COMPARISON -->
+<section class="comparison-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Choose the right fit</div>
+            <h2 class="section-title">Which Type of Website Does Your Business Need?</h2>
+            <p class="section-subtitle">Both are professional options. The best choice depends on what your business needs its website to do.</p>
+        </div>
+        <div class="comparison-wrap fade-in">
+            <div class="comparison-row header">
+                <div>Attribute</div><div>WordPress Website</div><div>Custom / Dynamic Website</div>
+            </div>
+            <div class="comparison-row"><div>Best for</div><div>Professional online presence</div><div>Specialised business operations</div></div>
+            <div class="comparison-row"><div>Development</div><div>Uses the WordPress platform, themes and plugins</div><div>Custom-built functionality and code</div></div>
+            <div class="comparison-row"><div>Database</div><div>Basic WordPress database</div><div>Custom business/database architecture</div></div>
+            <div class="comparison-row"><div>Admin dashboard</div><div>WordPress admin</div><div>Custom dashboard designed around the business</div></div>
+            <div class="comparison-row"><div>Customer accounts</div><div>Basic or plugin-based where appropriate</div><div>Fully custom account systems</div></div>
+            <div class="comparison-row"><div>Bookings</div><div>Plugin-based or basic booking</div><div>Custom booking logic and workflows</div></div>
+            <div class="comparison-row"><div>E-commerce</div><div>WooCommerce</div><div>Custom commerce and order systems</div></div>
+            <div class="comparison-row"><div>Custom business logic</div><div>Limited to WordPress and plugin capability</div><div>Designed specifically around the client's processes</div></div>
+            <div class="comparison-row"><div>Hosting</div><div>Usually traditional/shared WordPress hosting</div><div>May require cloud/application hosting and database infrastructure</div></div>
+            <div class="comparison-row"><div>Cost</div><div>Generally more affordable</div><div>Higher investment because functionality is custom developed</div></div>
+            <div class="comparison-row"><div>Scalability</div><div>Excellent for normal content/business websites</div><div>Better suited to specialised platforms and operational systems</div></div>
+        </div>
+        <div class="trust-callout fade-in">
+            <strong>You do not need custom software if WordPress can properly solve the problem.</strong>
+            AutoM8 does not believe in making clients pay for unnecessary technology. If WordPress can properly satisfy your requirements, we can recommend it. Custom development is recommended when the business needs functionality that would be difficult, unreliable or unnecessarily restrictive to implement using standard themes and plugins.<br><br>
+            <strong style="margin-bottom:0;">Not sure which one you need? AutoM8 will recommend the simplest solution that properly meets your requirements.</strong>
+        </div>
+    </div>
+</section>
+
+<!-- HOSTING AND DOMAIN GUIDANCE -->
+<section style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Hosting and domains</div>
+            <h2 class="section-title">What happens after development?</h2>
+            <p class="section-subtitle">Development fees and provider costs are kept separate so you can see what you are paying for.</p>
+        </div>
+        <div class="hosting-grid fade-in">
+            <div class="hosting-card">
+                <h3>WordPress hosting</h3>
+                <p>WordPress websites can normally use traditional WordPress or shared hosting, which is often billed monthly or annually depending on the provider.</p>
+            </div>
+            <div class="hosting-card">
+                <h3>Custom / dynamic hosting</h3>
+                <p>Custom applications may require application or cloud hosting, databases, object storage or other production infrastructure.</p>
+            </div>
+        </div>
+        <div class="pricing-notice fade-in">
+            Domains are normally owned and paid for by the client. Hosting-provider fees are separate from AutoM8 development fees unless specifically included. Paid plugins, APIs, databases, storage, SMS, email providers, payment gateways and other third-party services remain separate. AutoM8 can assist with choosing, configuring and deploying to suitable providers.
+        </div>
+    </div>
+</section>
+
 <!-- AUTOMATION PRICING -->
 <section style="background:var(--bg-alt);border-bottom:1px solid var(--border-lt);">
     <div class="container">
         <div class="section-header fade-in">
             <div class="section-tag">Workflow automation</div>
             <h2 class="section-title">Automation pricing.</h2>
-            <p class="section-subtitle">Reduce manual work and connect your systems. Third-party subscription fees (if required) are separate.</p>
+            <p class="section-subtitle">An independent recurring monthly service for reducing manual work and connecting systems. You do not need an AutoM8 website to use automation.</p>
         </div>
         <div class="pricing-grid-2 fade-in">
             <div class="pricing-card">
@@ -302,7 +513,7 @@
                 <div class="plan-price">
                     <div class="price-label">Starting from</div>
                     <div class="price-amount">R500</div>
-                    <div class="price-note">Per automation</div>
+                    <div class="price-note">Monthly service starting point</div>
                 </div>
                 <ul class="plan-features">
                     <li><i class="fas fa-circle"></i> Automated email notifications</li>
@@ -323,7 +534,7 @@
                 <div class="plan-price">
                     <div class="price-label">Starting from</div>
                     <div class="price-amount">R1,500</div>
-                    <div class="price-note">Depends on complexity</div>
+                    <div class="price-note">Monthly · Depends on complexity</div>
                 </div>
                 <ul class="plan-features">
                     <li><i class="fas fa-circle"></i> Multi-stage workflows</li>
@@ -343,7 +554,7 @@
                 <div class="plan-price">
                     <div class="price-label">Pricing</div>
                     <div class="price-amount" style="font-size:1.5rem;">Custom Quote</div>
-                    <div class="price-note">After free consultation</div>
+                    <div class="price-note">Monthly · After free consultation</div>
                 </div>
                 <ul class="plan-features">
                     <li><i class="fas fa-circle"></i> Complex integrations</li>
@@ -356,17 +567,17 @@
             </div>
         </div>
         <div class="pricing-notice fade-in">
-            Third-party platform subscription fees (such as automation tools, API services, or cloud services) may be required separately. These are clearly documented during scoping. A complicated, multi-system automation will not typically be deliverable at the simple-automation starting price.
+            Automation can be used with a WordPress website, a custom website, an existing third-party website, or without a website. Third-party platform subscription fees (such as automation tools, API services, or cloud services) may be required separately. These are clearly documented during scoping. A complicated, multi-system automation will not typically be deliverable at the simple-automation starting price.
         </div>
     </div>
 </section>
 
-<!-- CUSTOM SYSTEMS -->
+<!-- CUSTOM SOFTWARE -->
 <section class="custom-section">
     <div class="container">
         <div class="section-header fade-in">
-            <div class="section-tag">Custom systems</div>
-            <h2 class="section-title">Custom Systems and Web Applications.</h2>
+            <div class="section-tag">Custom software</div>
+            <h2 class="section-title">Custom Software Systems and Web Applications.</h2>
         </div>
         <div class="custom-card fade-in">
             <div class="plan-micro">Custom Development</div>
@@ -379,6 +590,57 @@
                 <a href="contact.html?type=custom-consultation" class="btn btn-primary" id="track-quote-custom">Request a Custom Quote</a>
                 <a href="contact.html?type=phased-build" class="btn btn-outline" id="track-quote-phased">Discuss a Phased Build</a>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- WEBSITE CARE -->
+<section class="care-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Optional ongoing support</div>
+            <h2 class="section-title">Website Care Plans</h2>
+            <p class="section-subtitle">Website Care can apply to WordPress or custom websites where appropriate. The exact technical work differs by platform.</p>
+        </div>
+        <div class="care-grid fade-in">
+            <div class="care-card">
+                <div class="plan-micro">Self Managed</div>
+                <h3>Self Managed</h3>
+                <div class="care-price">R0/month</div>
+                <p>You manage updates, content and routine website administration yourself.</p>
+                <ul class="care-features">
+                    <li><i class="fas fa-circle"></i> Client-managed updates and content</li>
+                    <li><i class="fas fa-circle"></i> No recurring AutoM8 care fee</li>
+                    <li><i class="fas fa-circle"></i> Technical support can be quoted separately</li>
+                </ul>
+            </div>
+            <div class="care-card featured">
+                <div class="plan-micro">Essential Care</div>
+                <h3>Essential Care</h3>
+                <div class="care-price">R300/month</div>
+                <p>Routine care for keeping your website maintained and supported.</p>
+                <ul class="care-features">
+                    <li><i class="fas fa-circle"></i> WordPress, plugin and theme updates where applicable</li>
+                    <li><i class="fas fa-circle"></i> Backups and security checks</li>
+                    <li><i class="fas fa-circle"></i> Minor content changes</li>
+                    <li><i class="fas fa-circle"></i> Troubleshooting</li>
+                </ul>
+            </div>
+            <div class="care-card">
+                <div class="plan-micro">Business Care</div>
+                <h3>Business Care</h3>
+                <div class="care-price">R600/month</div>
+                <p>More involved ongoing support for an active business website or application.</p>
+                <ul class="care-features">
+                    <li><i class="fas fa-circle"></i> Everything in Essential Care</li>
+                    <li><i class="fas fa-circle"></i> Application monitoring where applicable</li>
+                    <li><i class="fas fa-circle"></i> Deployment assistance and technical maintenance</li>
+                    <li><i class="fas fa-circle"></i> Additional troubleshooting and minor content changes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pricing-notice fade-in">
+            Care work depends on the website platform. WordPress care may include WordPress, plugin and theme updates, while custom website care may include application monitoring, deployment assistance and technical maintenance. Hosting and third-party provider fees remain separate.
         </div>
     </div>
 </section>
@@ -454,7 +716,13 @@
         <div class="faq-grid fade-in">
             <div class="faq-item"><h3>Are the prices shown guaranteed?</h3><p>No. All prices shown are starting prices. Final pricing depends on scope, content, integrations and functionality. A detailed quote is always provided before work begins.</p></div>
             <div class="faq-item"><h3>How does payment work?</h3><p>Projects are typically split into milestones — a deposit to begin, a payment at an agreed midpoint, and a final payment on delivery. Exact payment terms depend on the project.</p></div>
-            <div class="faq-item"><h3>Is hosting and domain included?</h3><p>Hosting, domain registration and ongoing maintenance are not included in the listed prices. These are discussed and quoted separately depending on your requirements.</p></div>
+            <div class="faq-item"><h3>Is WordPress worse than a custom website?</h3><p>No. They serve different purposes. WordPress is often the better and more affordable solution for normal business websites. Custom development is recommended when a business requires specialised functionality or workflows.</p></div>
+            <div class="faq-item"><h3>Why is a custom website more expensive?</h3><p>Custom websites often require functionality to be designed and programmed specifically for the business, including databases, user accounts, dashboards, integrations and business logic.</p></div>
+            <div class="faq-item"><h3>Can I move from WordPress to a custom system later?</h3><p>Yes. A business can begin with a WordPress website and introduce custom systems later as its requirements grow.</p></div>
+            <div class="faq-item"><h3>Do I need monthly website fees?</h3><p>No. Website development is normally a once-off fee. You may self-manage your website or select an optional AutoM8 Website Care plan.</p></div>
+            <div class="faq-item"><h3>Who pays for hosting and the domain?</h3><p>Hosting, domains and other third-party provider costs are normally paid separately by the client. AutoM8 can assist with setup and management where required.</p></div>
+            <div class="faq-item"><h3>Can WordPress have an online shop?</h3><p>Yes. AutoM8 can implement WooCommerce-based online stores where WordPress is suitable. Payment-gateway fees, premium plugins and other provider costs remain separate.</p></div>
+            <div class="faq-item"><h3>Can you add automation to a WordPress website?</h3><p>Yes. Automation is an independent AutoM8 service and can often integrate with WordPress forms, CRM systems, email, WhatsApp and other supported tools.</p></div>
             <div class="faq-item"><h3>Do I own the code?</h3><p>Yes. You receive full ownership of all custom code — complete source code and documentation is yours once the project is paid in full.</p></div>
             <div class="faq-item"><h3>How long does a project take?</h3><p>Project timelines depend on scope, complexity and client feedback. Timelines are agreed as part of the proposal before development begins.</p></div>
             <div class="faq-item"><h3>Can I pay in phases?</h3><p>Yes. Larger projects can often be broken into phases, starting with the most critical features and expanding over time. This is discussed during the discovery conversation.</p></div>
@@ -495,7 +763,8 @@ document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
 function trackEvent(action, category, label) {
     if (typeof gtag === 'function') gtag('event', action, { event_category: category, event_label: label });
 }
-['track-quote-starter-web','track-quote-smb-web','track-quote-growth-web','track-quote-ecom-web',
+['track-quote-wp-starter','track-quote-wp-business','track-quote-wp-ecommerce',
+ 'track-quote-starter-web','track-quote-smb-web','track-quote-growth-web','track-quote-ecom-web',
  'track-quote-simple-auto','track-quote-multi-auto','track-quote-adv-auto',
  'track-quote-custom','track-quote-phased','track-quote-edu-base','track-quote-edu-pro',
  'track-quote-edu-prem','track-quote-cta'].forEach(id => {

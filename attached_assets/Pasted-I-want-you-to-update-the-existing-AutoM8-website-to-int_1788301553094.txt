@@ -1,0 +1,611 @@
+I want you to update the existing AutoM8 website to introduce a new WordPress Website service category while preserving all existing custom/dynamic website pricing, website care pricing, automation pricing, custom software pricing, branding, SEO structure, responsive design and existing functionality.
+
+IMPORTANT:
+Before making any changes, inspect the existing AutoM8 project and understand:
+- the current homepage
+- services page
+- pricing page
+- portfolio page
+- navigation
+- existing pricing cards
+- website care plans
+- automation plans
+- custom software pricing
+- colours, typography and visual style
+- responsive/mobile layout
+- SEO metadata and structured data
+
+DO NOT replace or change the existing prices for AutoM8's current dynamic/custom websites.
+DO NOT change the existing Website Care prices.
+DO NOT change the existing Automation prices.
+DO NOT remove any existing services.
+DO NOT remove or break any existing pages or links.
+
+The objective is to ADD WordPress websites as another service option and make the distinction between WordPress websites and custom/dynamic websites extremely easy for a normal business owner to understand.
+
+==================================================
+1. NEW WEBSITE CATEGORIES
+==================================================
+
+AutoM8 should now clearly offer TWO main types of websites:
+
+A. WORDPRESS WEBSITES
+B. CUSTOM / DYNAMIC WEBSITES & WEB APPLICATIONS
+
+The website must explain that neither option is automatically "better".
+
+They are designed for different business requirements.
+
+Use simple customer-friendly language rather than overly technical terminology.
+
+==================================================
+2. WORDPRESS WEBSITE SECTION
+==================================================
+
+Create a new WordPress Websites section/service.
+
+Use wording similar to:
+
+TITLE:
+WordPress Websites
+
+SUBTITLE:
+Professional websites for businesses that need a strong online presence without the cost or complexity of custom software.
+
+DESCRIPTION:
+
+WordPress websites are ideal for businesses that mainly need to present their company, services, products, contact information, portfolio or content online.
+
+Because WordPress uses an established content-management platform, these websites can normally be developed faster and hosted using more affordable traditional website-hosting plans.
+
+They are a good choice for businesses that do not require complex custom databases, advanced dashboards or highly specialised business logic.
+
+Suitable for:
+
+- Small businesses
+- Start-ups
+- Restaurants
+- Salons and barbers
+- Churches
+- Consultants
+- Contractors
+- Professional services
+- Portfolios
+- Company websites
+- Blogs
+- Basic online shops
+- Businesses mainly looking for a professional online presence
+
+==================================================
+3. WORDPRESS PRICING
+==================================================
+
+Add these NEW WordPress packages.
+
+WORDPRESS STARTER
+From R1,500 once-off
+
+Best for:
+Small businesses that need a simple professional online presence.
+
+Include:
+- Up to approximately 5 core pages
+- Mobile-responsive design
+- Home
+- About
+- Services
+- Contact
+- WhatsApp integration
+- Contact form
+- Social-media links
+- Google Maps where required
+- Basic SEO configuration
+- SSL configuration assistance
+- Theme customisation
+- Client branding
+
+Hosting and domain costs are separate.
+
+--------------------------------------------
+
+WORDPRESS BUSINESS
+From R3,500 once-off
+
+Best for:
+Businesses that need a larger and more polished website with additional content and functionality.
+
+Include:
+- Everything in WordPress Starter
+- Additional pages
+- Portfolio or gallery
+- Blog/news functionality
+- More advanced forms
+- Analytics setup
+- Enhanced SEO configuration
+- Additional plugins where appropriate
+- More customised page layouts
+- Improved content structure
+- Additional business integrations where compatible
+
+Hosting, domains and paid premium plugins remain separate where applicable.
+
+--------------------------------------------
+
+WORDPRESS E-COMMERCE
+From R6,500 once-off
+
+Best for:
+Businesses that want to sell products online using WordPress and WooCommerce.
+
+Potential features:
+- WooCommerce setup
+- Product catalogue
+- Product categories
+- Cart
+- Checkout
+- Customer accounts where required
+- Order management
+- EFT/manual payment instructions
+- Optional payment-gateway integration
+- Basic shipping configuration
+- Product images
+- Pricing
+- Stock information where appropriate
+
+Make it clear that:
+Payment-gateway provider fees, premium plugins and other external services are separate.
+
+More advanced or highly customised e-commerce functionality should be quoted separately.
+
+==================================================
+4. PRESERVE EXISTING CUSTOM/DYNAMIC WEBSITE PRICING
+==================================================
+
+DO NOT change the current AutoM8 custom/dynamic website prices.
+
+Use whatever exact prices are already on the live project.
+
+However, update the wording around those packages so visitors understand what makes them different from WordPress.
+
+Rename or visually classify this category as something similar to:
+
+CUSTOM & DYNAMIC WEBSITES
+
+or
+
+CUSTOM WEB APPLICATIONS
+
+Use wording similar to:
+
+"Built specifically around the way your business operates."
+
+Explain:
+
+Custom and dynamic websites are designed for businesses that require functionality beyond a normal company website.
+
+Unlike a standard WordPress website, these systems can be built around custom databases, user accounts, admin dashboards, booking systems, customer portals, rentals, ordering systems, business rules, reporting and specialised integrations.
+
+Suitable for:
+
+- Customer portals
+- Admin dashboards
+- Booking platforms
+- School systems
+- Inventory management
+- Rental systems
+- Order-management systems
+- Staff portals
+- Membership systems
+- Business dashboards
+- Custom e-commerce requirements
+- Database-driven applications
+- Multi-user systems
+- Businesses with specialised workflows
+
+Use the EXISTING AutoM8 prices for these packages.
+
+Do not invent replacements.
+
+==================================================
+5. ADD A WORDPRESS VS CUSTOM COMPARISON
+==================================================
+
+Add a visually attractive comparison section.
+
+TITLE:
+
+Which Type of Website Does Your Business Need?
+
+Create a comparison table/cards similar to:
+
+ATTRIBUTE:
+WordPress Website
+Custom / Dynamic Website
+
+BEST FOR:
+Professional online presence
+vs
+Specialised business operations
+
+DEVELOPMENT:
+Uses WordPress platform/themes/plugins
+vs
+Custom-built functionality and code
+
+DATABASE:
+Basic WordPress database
+vs
+Custom business/database architecture
+
+ADMIN DASHBOARD:
+WordPress admin
+vs
+Custom dashboard designed around the business
+
+CUSTOMER ACCOUNTS:
+Basic/plugin-based where appropriate
+vs
+Fully custom account systems
+
+BOOKINGS:
+Plugin-based/basic
+vs
+Custom booking logic and workflows
+
+E-COMMERCE:
+WooCommerce
+vs
+Custom commerce/order systems
+
+CUSTOM BUSINESS LOGIC:
+Limited to WordPress/plugin capability
+vs
+Designed specifically around the client's processes
+
+HOSTING:
+Usually traditional/shared WordPress hosting
+vs
+May require cloud/application hosting and database infrastructure
+
+COST:
+Generally more affordable
+vs
+Higher investment because functionality is custom developed
+
+SCALABILITY:
+Excellent for normal content/business websites
+vs
+Better suited to specialised platforms and operational systems
+
+Then include this message prominently:
+
+"Not sure which one you need? AutoM8 will recommend the simplest solution that properly meets your requirements."
+
+==================================================
+6. IMPORTANT SALES MESSAGE
+==================================================
+
+Add a short section or highlighted callout:
+
+"You do not need custom software if WordPress can properly solve the problem."
+
+Explain:
+
+AutoM8 does not believe in making clients pay for unnecessary technology.
+
+If a WordPress website can properly satisfy the business's requirements, we can recommend the WordPress option.
+
+Custom development is recommended when the business requires functionality that would be difficult, unreliable or unnecessarily restrictive to implement using standard themes and plugins.
+
+This is an important trust message.
+
+==================================================
+7. HOSTING & DOMAIN EXPLANATION
+==================================================
+
+Add or update the explanation so customers understand:
+
+WORDPRESS:
+WordPress websites can normally use traditional WordPress/shared hosting, which is often billed monthly or annually depending on the provider.
+
+CUSTOM/DYNAMIC:
+Custom applications may require application/cloud hosting, databases, object storage or other production infrastructure.
+
+For ALL website types:
+
+- Domains are normally owned and paid for by the client.
+- Hosting-provider fees are separate from AutoM8 development fees unless specifically included.
+- Paid plugins, APIs, databases, storage, SMS, email providers, payment gateways and other third-party services remain separate.
+- AutoM8 can assist with choosing, configuring and deploying to suitable providers.
+
+Do not make fixed claims such as "WordPress hosting costs R200/year" because provider pricing differs.
+
+==================================================
+8. WEBSITE CARE — DO NOT CHANGE PRICES
+==================================================
+
+Preserve the current AutoM8 website-care pricing exactly.
+
+Keep:
+
+Self Managed
+R0/month
+
+Essential Care
+R300/month
+
+Business Care
+R600/month
+
+Make it clear that Website Care can apply to WordPress or custom websites where appropriate, although the exact technical work may differ.
+
+For WordPress, care may include:
+- WordPress updates
+- plugin updates
+- theme updates
+- backups
+- security checks
+- minor content changes
+- troubleshooting
+
+For custom websites, care may include:
+- application monitoring
+- deployment assistance
+- technical maintenance
+- backups
+- security checks
+- minor content changes
+- troubleshooting
+
+Do NOT change the existing pricing.
+
+==================================================
+9. AUTOMATION — DO NOT CHANGE
+==================================================
+
+Do not modify the existing AutoM8 automation prices or remove automation.
+
+Keep automation as its own independent service category.
+
+Make it clear that:
+
+- Clients do NOT need an AutoM8 website to use automation.
+- A WordPress customer can also use AutoM8 automation.
+- A custom website customer can use AutoM8 automation.
+- Automation is a recurring monthly service.
+- Third-party automation services remain separate.
+
+Do not combine WordPress pricing with automation pricing.
+
+==================================================
+10. HOMEPAGE UPDATE
+==================================================
+
+Do not overcrowd the homepage.
+
+Add a small section introducing:
+
+"Two Ways to Build Your Website"
+
+CARD 1:
+WordPress Websites
+Affordable professional websites for businesses that primarily need an online presence.
+
+CTA:
+Explore WordPress Websites
+
+CARD 2:
+Custom & Dynamic Websites
+Purpose-built web applications for businesses requiring databases, dashboards, accounts and specialised functionality.
+
+CTA:
+Explore Custom Solutions
+
+The buttons should link to the appropriate section on the services/pricing page.
+
+==================================================
+11. SERVICES PAGE
+==================================================
+
+Update the Services page so Website Development clearly branches into:
+
+WordPress Website Development
+
+and
+
+Custom / Dynamic Web Development
+
+Keep all other AutoM8 services unchanged.
+
+==================================================
+12. PRICING PAGE
+==================================================
+
+Structure the website-development pricing section in this order:
+
+WEBSITE DEVELOPMENT
+
+A. WordPress Websites
+- Starter — R1,500+
+- Business — R3,500+
+- E-Commerce — R6,500+
+
+B. Custom / Dynamic Websites
+- KEEP ALL EXISTING PRICES EXACTLY AS THEY CURRENTLY ARE
+
+Then separately show:
+
+CUSTOM SOFTWARE
+
+AUTOMATION
+
+WEBSITE CARE
+
+SCHOOL SYSTEMS
+
+or whatever existing categories are already present.
+
+Do not mix all these prices together.
+
+==================================================
+13. PORTFOLIO
+==================================================
+
+Do not remove any existing portfolio projects.
+
+Where possible, allow portfolio projects to be labelled using categories such as:
+
+- WordPress Website
+- Custom Website
+- Web Application
+- Automation
+- Custom Software
+- School System
+- Prototype / Internal Project
+
+Do not falsely label existing projects as WordPress if they were not built using WordPress.
+
+For current projects, preserve the correct existing technology/category.
+
+This categorisation should allow future WordPress work to be added easily.
+
+==================================================
+14. FAQ SECTION
+==================================================
+
+Add FAQ items such as:
+
+Q: Is WordPress worse than a custom website?
+A:
+No. They serve different purposes. WordPress is often the better and more affordable solution for normal business websites. Custom development is recommended when the business requires specialised functionality or workflows.
+
+Q: Why is a custom website more expensive?
+A:
+Custom websites often require functionality to be designed and programmed specifically for the business, including databases, user accounts, dashboards, integrations and business logic.
+
+Q: Can I move from WordPress to a custom system later?
+A:
+Yes. A business can begin with a WordPress website and introduce custom systems later as its requirements grow.
+
+Q: Do I need monthly website fees?
+A:
+No. Website development is normally a once-off fee. Clients may self-manage their website or select an optional AutoM8 Website Care plan.
+
+Q: Who pays for hosting and the domain?
+A:
+Hosting, domains and other third-party provider costs are normally paid separately by the client. AutoM8 can assist with setup and management where required.
+
+Q: Can WordPress have an online shop?
+A:
+Yes. AutoM8 can implement WooCommerce-based online stores where WordPress is suitable.
+
+Q: Can you add automation to a WordPress website?
+A:
+Yes. Automation is an independent AutoM8 service and can often integrate with WordPress forms, CRM systems, email, WhatsApp and other supported tools.
+
+==================================================
+15. SEO
+==================================================
+
+Update relevant SEO metadata naturally to include phrases such as:
+
+WordPress website design South Africa
+WordPress website design Pretoria
+affordable WordPress websites
+business websites South Africa
+custom website development Pretoria
+custom web application development
+WordPress vs custom website
+website development Gauteng
+AutoM8 WordPress websites
+
+Do not keyword-stuff.
+
+If relevant, update:
+- page titles
+- meta descriptions
+- headings
+- structured data
+- internal links
+- sitemap
+
+Do not damage existing SEO URLs.
+
+==================================================
+16. DESIGN
+==================================================
+
+Maintain AutoM8's existing visual identity.
+
+Do not redesign the entire site.
+
+Use the existing:
+- colours
+- typography
+- card style
+- button style
+- spacing system
+- navigation
+- responsive behaviour
+
+The WordPress section should feel like it has always belonged on the AutoM8 website.
+
+Use clear visual hierarchy.
+
+The WordPress and Custom/Dynamic options must look like two professional choices rather than:
+"cheap option" vs "expensive option".
+
+Never call WordPress:
+- cheap
+- basic
+- inferior
+- low quality
+
+Use:
+- affordable
+- streamlined
+- established platform
+- suitable for standard business requirements
+- cost-effective
+
+Use:
+- custom-built
+- specialised
+- database-driven
+- operational
+for the custom option.
+
+==================================================
+17. TESTING
+==================================================
+
+After making the changes:
+
+1. Run the project.
+2. Check every modified page.
+3. Check desktop responsiveness.
+4. Check tablet responsiveness.
+5. Check mobile responsiveness.
+6. Test all navigation links.
+7. Test the new CTA buttons.
+8. Ensure existing pricing was not accidentally changed.
+9. Ensure care pricing remains unchanged.
+10. Ensure automation pricing remains unchanged.
+11. Check there are no console errors.
+12. Check there are no broken imports.
+13. Check existing portfolio functionality.
+14. Verify sitemap/SEO changes where applicable.
+
+Then provide me with a report containing:
+
+- Files modified
+- New sections created
+- Exact WordPress packages added
+- Confirmation that existing dynamic/custom prices were preserved
+- Confirmation that maintenance prices were preserved
+- Confirmation that automation prices were preserved
+- SEO changes
+- Any issues discovered
+- Any recommendations before deployment
+
+Do not deploy or push changes until I review them.

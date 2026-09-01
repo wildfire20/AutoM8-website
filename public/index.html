@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoM8 | Websites, Custom Software & Business Automation | South Africa</title>
-    <meta name="description" content="AutoM8 helps South African businesses and schools build affordable websites, reduce manual work and manage operations through practical, custom-built technology.">
-    <meta name="keywords" content="custom software South Africa, business automation, affordable websites, school management system, Pretoria web development">
+    <title>AutoM8 | WordPress & Custom Websites, Software & Automation | South Africa</title>
+    <meta name="description" content="AutoM8 helps South African businesses and schools choose between professional WordPress websites, custom web applications, practical automation and digital systems.">
+    <meta name="keywords" content="WordPress website design South Africa, WordPress website design Pretoria, affordable WordPress websites, custom software South Africa, business automation, school management system, Pretoria web development">
     <link rel="canonical" href="https://www.auto-m8.co.za/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="AutoM8 | Websites, Custom Software & Business Automation | South Africa">
-    <meta property="og:description" content="AutoM8 helps South African businesses and schools build affordable websites, reduce manual work and manage operations through practical, custom-built technology.">
+    <meta property="og:title" content="AutoM8 | WordPress & Custom Websites, Software & Automation | South Africa">
+    <meta property="og:description" content="Professional WordPress websites, custom web applications, practical automation and digital systems for South African businesses and schools.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.auto-m8.co.za/">
     <meta name="twitter:card" content="summary_large_image">
@@ -151,6 +151,24 @@
         .pathway-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.35rem; letter-spacing: -0.02em; }
         .pathway-card p { color: var(--text-3); font-size: 0.875rem; line-height: 1.65; margin-bottom: 0.75rem; }
         .pathway-link { color: var(--blue); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        /* ── WEBSITE CHOICES ── */
+        .website-choice-section { background: var(--bg); padding: 80px 0; border-bottom: 1px solid var(--border-lt); }
+        .website-choice-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+        .website-choice-card {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 2rem;
+            background: var(--bg-alt);
+            text-decoration: none;
+            transition: all 0.25s;
+        }
+        .website-choice-card:hover { transform: translateY(-4px); border-color: #d1d5db; box-shadow: var(--shadow-card-hover); }
+        .website-choice-icon { width: 42px; height: 42px; border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; background: var(--bg); }
+        .website-choice-icon i { color: var(--blue); font-size: 1rem; }
+        .website-choice-card h3 { font-size: 1.1rem; font-weight: 800; color: var(--text); margin-bottom: 0.45rem; letter-spacing: -0.02em; }
+        .website-choice-card p { color: var(--text-3); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
+        .website-choice-link { color: var(--blue); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
 
         /* ── PAIN SECTION ── */
         .pain-section {
@@ -412,6 +430,7 @@
             .strip-item { flex: 1 1 50%; border-right: none; border-bottom: 1px solid var(--border-lt); }
             .services-grid { grid-template-columns: 1fr; }
             .port-grid { grid-template-columns: 1fr; }
+            .website-choice-grid { grid-template-columns: 1fr; }
             .home-cta h2 { font-size: 2rem; }
         }
     </style>
@@ -480,6 +499,31 @@
         </div>
     </div>
 </div>
+
+<!-- WEBSITE CHOICES -->
+<section class="website-choice-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Website development</div>
+            <h2 class="section-title">Two Ways to Build Your Website</h2>
+            <p class="section-subtitle">Neither option is automatically better. The right choice depends on what your business needs its website to do.</p>
+        </div>
+        <div class="website-choice-grid fade-in">
+            <a href="pricing.html#wordpress-websites" class="website-choice-card">
+                <div class="website-choice-icon"><i class="fab fa-wordpress"></i></div>
+                <h3>WordPress Websites</h3>
+                <p>Affordable professional websites for businesses that primarily need a strong online presence, clear information and an easy way for customers to get in touch.</p>
+                <div class="website-choice-link">Explore WordPress Websites <i class="fas fa-arrow-right"></i></div>
+            </a>
+            <a href="pricing.html#custom-dynamic-websites" class="website-choice-card">
+                <div class="website-choice-icon"><i class="fas fa-code"></i></div>
+                <h3>Custom &amp; Dynamic Websites</h3>
+                <p>Purpose-built web applications for businesses requiring databases, dashboards, accounts, specialised workflows or operational functionality.</p>
+                <div class="website-choice-link">Explore Custom Solutions <i class="fas fa-arrow-right"></i></div>
+            </a>
+        </div>
+    </div>
+</section>
 
 <!-- VISITOR PATHWAYS -->
 <section class="pathway-section">
