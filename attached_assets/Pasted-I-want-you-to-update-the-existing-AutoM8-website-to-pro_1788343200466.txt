@@ -1,0 +1,855 @@
+I want you to update the existing AutoM8 website to properly introduce School Management Systems as a major AutoM8 service.
+
+IMPORTANT:
+Before changing anything, inspect the existing AutoM8 website and understand:
+
+- Current homepage
+- Services page
+- Pricing page
+- Navigation
+- Existing WordPress website section
+- Existing Custom / Dynamic Website section
+- Existing automation section
+- Existing school-related content
+- Current design system
+- Colours
+- Typography
+- Cards
+- Buttons
+- Responsive behaviour
+- SEO structure
+- Existing URLs
+
+DO NOT redesign the entire website.
+
+DO NOT change the existing:
+- WordPress pricing
+- Custom / dynamic website pricing
+- Automation pricing
+- Website Care pricing
+- Existing portfolio items
+- Existing School Management System subscription prices
+
+For this update, focus mainly on:
+
+1. Updating the Services page
+2. Creating a dedicated School Management Systems page
+3. Updating navigation/internal links where appropriate
+
+DO NOT redesign the main Pricing page yet. We will update the Pricing page separately after reviewing this work.
+
+==================================================
+1. UPDATE THE SERVICES PAGE
+==================================================
+
+On the current Services page, add School Management Systems as a major service category.
+
+It should have its own professional service card/section alongside AutoM8's other services.
+
+Use wording similar to:
+
+TITLE:
+School Management Systems
+
+SHORT DESCRIPTION:
+Custom-built digital systems for schools that want to manage staff, learners, parents, academic information and school administration from one connected platform.
+
+Explain briefly that AutoM8 can build:
+
+- Staff Portals
+- Parent Portals
+- Student Portals
+- Learning Management functionality
+- Attendance systems
+- Marks and results systems
+- Notices and documents
+- Fee information
+- Assignment management
+- Administrative dashboards
+- School reporting
+- Custom school workflows
+
+CTA BUTTON:
+Explore School Systems
+
+The CTA should open the new dedicated School Management Systems page.
+
+Do not overload the Services page with every feature or every price.
+
+The Services page should introduce the solution and send the visitor to the full School Management Systems page.
+
+==================================================
+2. CREATE A DEDICATED SCHOOL MANAGEMENT SYSTEMS PAGE
+==================================================
+
+Create a new dedicated page.
+
+Use the existing AutoM8 page architecture and naming conventions.
+
+Preferred URL where appropriate:
+
+/school-management-system.html
+
+or the equivalent route used by the current website.
+
+The page should feel like a complete AutoM8 product/service page rather than a small landing-page section.
+
+==================================================
+3. HERO SECTION
+==================================================
+
+Use a strong headline such as:
+
+RUN YOUR SCHOOL FROM ONE CONNECTED SYSTEM
+
+Alternative wording is acceptable if it fits the AutoM8 brand better.
+
+Subheading:
+
+Custom-built Staff, Parent and Student portals designed around the way your school actually operates.
+
+Supporting paragraph:
+
+AutoM8 develops custom school management systems for schools that want to digitise administration, communication, academic information and learning without being forced into unnecessary functionality.
+
+Schools can select the portals and features they actually need.
+
+CTA buttons:
+
+REQUEST A SCHOOL SYSTEM
+VIEW OPTIONS
+
+Keep the existing AutoM8 visual style.
+
+==================================================
+4. IMPORTANT POSITIONING
+==================================================
+
+The page must clearly explain that AutoM8 currently offers TWO ways for schools to work with us:
+
+A. CUSTOM SCHOOL PORTAL BUILDS
+B. EXISTING AUTOM8 SCHOOL MANAGEMENT PACKAGES
+
+These are different commercial models.
+
+Do not make them look like duplicate products.
+
+==================================================
+5. CUSTOM SCHOOL PORTAL BUILDS
+==================================================
+
+Create a major section titled something similar to:
+
+CUSTOM SCHOOL PORTALS
+
+Supporting message:
+
+Not every school needs the same system.
+
+AutoM8 can build only the portals and functionality your school requires.
+
+These systems are custom-built for the individual school and normally use a once-off development fee.
+
+Use "From" pricing because complexity differs between schools.
+
+--------------------------------------------------
+CUSTOM OPTION 1
+--------------------------------------------------
+
+STAFF PORTAL
+
+From R6,500 once-off
+
+Best for:
+Schools that mainly want to digitise their internal administration and staff operations.
+
+Possible functionality:
+
+- Secure staff/admin login
+- Learner records
+- Staff records
+- Classes and grades
+- Attendance management
+- Marks and results
+- Notices
+- Documents
+- Basic reports
+- Staff permissions
+- School information management
+- Dashboard
+
+Make it clear that final features depend on the agreed project scope.
+
+--------------------------------------------------
+CUSTOM OPTION 2
+--------------------------------------------------
+
+STAFF + PARENT PORTAL
+
+From R10,500 once-off
+
+Best for:
+Schools that want internal administration together with a digital communication and information portal for parents.
+
+Potential functionality:
+
+Everything appropriate from the Staff Portal plus:
+
+- Parent accounts
+- Multiple children linked to one parent
+- Attendance viewing
+- Results and marks
+- Notices
+- School documents
+- Fee information where required
+- School announcements
+- Child information
+- Parent profile
+- Communication tools where required
+
+Mark this as a strong option for primary schools where learners may not require their own accounts.
+
+--------------------------------------------------
+CUSTOM OPTION 3
+--------------------------------------------------
+
+STAFF + STUDENT PORTAL
+
+From R12,500 once-off
+
+Best for:
+Schools that want staff administration together with digital learning and student access.
+
+Potential functionality:
+
+Everything appropriate from the Staff Portal plus:
+
+- Student login
+- Subjects
+- Learning resources
+- Assignments
+- Assignment submissions
+- Marks/results
+- Notices
+- Documents
+- Academic progress
+- Student dashboard
+
+Explain that this can include Learning Management System functionality depending on the school's requirements.
+
+--------------------------------------------------
+CUSTOM OPTION 4
+--------------------------------------------------
+
+COMPLETE CUSTOM SCHOOL SYSTEM
+
+From R18,500 once-off
+
+Includes:
+
+STAFF PORTAL
++
+PARENT PORTAL
++
+STUDENT PORTAL / LMS
+
+Potential functionality:
+
+- Staff/admin dashboard
+- Parent dashboard
+- Student dashboard
+- Learner records
+- Attendance
+- Results
+- Assignments
+- Assignment submissions
+- Learning materials
+- Notices
+- Documents
+- Parent-child linking
+- Fee information
+- Reporting
+- Classes and subjects
+- User roles and permissions
+- School communication
+- Other custom workflows
+
+Mark this visually as:
+
+MOST COMPLETE
+
+Do NOT label it "Most Popular" unless that information is already supported by actual customer data.
+
+==================================================
+6. EXPLAIN CUSTOM PRICING
+==================================================
+
+Add a short explanation:
+
+WHY DO CUSTOM SCHOOL SYSTEMS USE "FROM" PRICING?
+
+Use customer-friendly wording.
+
+Explain that every school operates differently.
+
+One school may require only learner records, attendance and reports.
+
+Another may need:
+
+- Fees
+- Assignments
+- Multiple campuses
+- Custom reports
+- Advanced permissions
+- Integrations
+- SMS
+- Online payments
+- Custom dashboards
+- Complex academic structures
+
+Therefore the displayed amount is a starting price.
+
+AutoM8 first confirms the requirements and then provides a final quotation before development begins.
+
+Add a message such as:
+
+"Your final price is agreed before development starts. New functionality requested outside the agreed scope is quoted separately."
+
+This is very important.
+
+==================================================
+7. EXISTING AUTOM8 SCHOOL MANAGEMENT PACKAGES
+==================================================
+
+Below the custom portal section, add another section such as:
+
+PREFER OUR STANDARD SCHOOL MANAGEMENT PACKAGES?
+
+This section should preserve the EXISTING AutoM8 school pricing.
+
+DO NOT replace the current school prices.
+
+Keep the existing:
+
+R15 per learner / month
+R25 per learner / month
+R35 per learner / month
+
+Use the exact package names, features and structure already present in the current AutoM8 project wherever possible.
+
+Do not invent completely new replacements if the existing project already contains package definitions.
+
+Explain that these are different from custom once-off systems.
+
+Suggested explanation:
+
+"Our standard School Management packages are suitable for schools that prefer an ongoing subscription model using AutoM8's established school-management functionality."
+
+Clearly distinguish:
+
+CUSTOM BUILD
+= Built specifically for one school
+= Larger once-off development fee
+
+STANDARD SCHOOL PACKAGE
+= Existing AutoM8 solution
+= Per-learner monthly subscription
+
+==================================================
+8. PORTAL EXPLANATION SECTION
+==================================================
+
+Create a visual section explaining the three major portal types.
+
+--------------------------------------------------
+STAFF PORTAL
+--------------------------------------------------
+
+Designed for school employees and administrators.
+
+Possible uses:
+
+- Learner management
+- Attendance
+- Marks
+- Classes
+- Documents
+- Notices
+- Reports
+- Administration
+- Staff permissions
+
+--------------------------------------------------
+PARENT PORTAL
+--------------------------------------------------
+
+Designed to give parents access to relevant information about their children.
+
+Possible uses:
+
+- Attendance
+- Results
+- Notices
+- Documents
+- Fee information
+- School announcements
+- Multiple children
+- Parent profiles
+
+--------------------------------------------------
+STUDENT PORTAL
+--------------------------------------------------
+
+Designed for learner access and digital learning.
+
+Possible uses:
+
+- Assignments
+- Assignment submissions
+- Subjects
+- Learning resources
+- Results
+- Notices
+- Documents
+- Academic information
+
+Add simple visual connections showing that the portals can share the same underlying school information while each user sees only what their role allows.
+
+Do not create false claims that every feature is automatically included in every package.
+
+==================================================
+9. SCHOOL SYSTEM CARE
+==================================================
+
+Add a section for optional ongoing technical support for CUSTOM school systems.
+
+Do NOT replace the normal Website Care packages.
+
+This is a separate School System Care service.
+
+Use:
+
+SELF MANAGED
+R0/month
+
+Suitable for a school that wants to take responsibility for the system after handover.
+
+Explain that AutoM8 ongoing maintenance/support is not included.
+
+--------------------------------------------------
+
+ESSENTIAL SYSTEM CARE
+R600/month
+
+Possible coverage:
+
+- Basic technical support
+- System health checks
+- Deployment assistance
+- Backup checks
+- Security checks
+- Bug troubleshooting
+- Minor updates
+- Small agreed changes
+
+--------------------------------------------------
+
+MANAGED SYSTEM CARE
+R1,000/month
+
+Possible coverage:
+
+- Priority technical support
+- More active monitoring
+- Troubleshooting
+- Deployment support
+- Backup checks
+- Security checks
+- Higher monthly support allowance
+- More minor changes than Essential
+- Production assistance
+
+IMPORTANT:
+
+Do not describe either plan as unlimited changes.
+
+New modules, major features, integrations, redesigns or significant workflow changes remain separately quoted development.
+
+==================================================
+10. THIRD-PARTY COSTS
+==================================================
+
+Add a clear section called:
+
+THIRD-PARTY SERVICES
+
+Explain that third-party provider costs are separate from AutoM8 development and support charges.
+
+These may include:
+
+- Hosting
+- Databases
+- Cloud storage
+- Domains
+- SMS providers
+- Email providers
+- APIs
+- Payment gateways
+- AI services
+- Other external platforms
+
+Use wording similar to:
+
+"AutoM8 does not hide external provider charges inside development pricing. Where possible, the school owns and pays for its third-party accounts directly while AutoM8 assists with configuration and integration."
+
+Also explain:
+
+AutoM8 does not normally fund third-party services on behalf of the school.
+
+Where paid infrastructure is required, deployment may depend on the relevant provider accounts being active and funded.
+
+==================================================
+11. DATA AND SYSTEM OWNERSHIP
+==================================================
+
+For CUSTOM school builds:
+
+Explain this carefully.
+
+The final ownership arrangement depends on the individual project agreement.
+
+Do NOT make a blanket statement that AutoM8 always owns every custom-built school system.
+
+Use wording such as:
+
+"Ownership, licensing, handover and source-code arrangements for custom school systems are defined in the individual project agreement."
+
+Also state clearly:
+
+"The school retains ownership of its own business, learner, parent, staff and academic data."
+
+Avoid overly legal language.
+
+==================================================
+12. SECURITY & PRIVACY
+==================================================
+
+Create a professional section explaining that school systems may contain sensitive information.
+
+Mention appropriate practices such as:
+
+- Role-based access
+- Secure authentication
+- Strong password policies
+- HTTPS
+- Protected databases
+- Access permissions
+- Backups
+- Secure environment variables
+- Data protection considerations
+- POPIA-aware implementation
+- Audit logging where appropriate
+
+Do NOT claim that a system is automatically "100% secure".
+
+Use wording such as:
+
+"AutoM8 designs school systems with appropriate security and privacy controls based on the agreed system requirements."
+
+==================================================
+13. HOW A SCHOOL PROJECT WORKS
+==================================================
+
+Create a simple process/timeline:
+
+1. DISCOVERY
+We understand the school's requirements.
+
+2. SYSTEM SELECTION
+The school chooses Staff, Staff + Parent, Staff + Student, Complete, or a standard package.
+
+3. FINAL SCOPE & QUOTATION
+AutoM8 confirms exactly what will be built and provides the final price.
+
+4. AGREEMENT & DEPOSIT
+Development begins after the agreed contract and payment requirements are completed.
+
+5. DEVELOPMENT
+AutoM8 builds/configures the system.
+
+6. TESTING
+The agreed functionality is tested.
+
+7. TRAINING & LAUNCH
+Relevant school users are introduced to the system and the production platform is launched.
+
+8. OPTIONAL ONGOING SUPPORT
+The school may choose a System Care plan where applicable.
+
+==================================================
+14. ADD-ON / FUTURE FEATURES
+==================================================
+
+Add a section such as:
+
+GROW THE SYSTEM WHEN YOUR SCHOOL IS READY
+
+Possible future additions:
+
+- Fees and invoices
+- SMS notifications
+- Email notifications
+- Online payments
+- Timetables
+- Report cards
+- Advanced reports
+- Transport management
+- Library management
+- Admissions
+- Staff attendance
+- Parent communication
+- Student assignments
+- Online assessments
+- Certificates
+- School document management
+- Multiple campuses
+- Advanced analytics
+
+Clearly label these as potential additions.
+
+Do not imply every feature is included in the starting package price.
+
+==================================================
+15. FAQ
+==================================================
+
+Add FAQs including:
+
+Q: Does every school need all three portals?
+A:
+No. AutoM8 can build a Staff Portal only, Staff + Parent, Staff + Student, or a complete three-portal system.
+
+Q: Why are custom systems priced from a starting amount?
+A:
+Because every school's requirements are different. The final quotation depends on the agreed features and complexity.
+
+Q: Do custom school systems require monthly payments?
+A:
+The custom development fee is normally once-off. Schools can select optional AutoM8 System Care where required. Third-party infrastructure charges remain separate.
+
+Q: What are the R15, R25 and R35 per learner packages?
+A:
+These are AutoM8's existing standard school-management subscription options and are separate from bespoke custom system development.
+
+Q: Can we start with only a Staff Portal and add a Parent Portal later?
+A:
+Yes. AutoM8 can scope future expansion when the school is ready.
+
+Q: Can the system include student assignments?
+A:
+Yes. Student/LMS functionality can include assignments, learning materials and submissions depending on the agreed project scope.
+
+Q: Can parents have multiple children under one account?
+A:
+Yes, this can be implemented where required.
+
+Q: Who pays for hosting and SMS?
+A:
+Hosting, databases, SMS, domains and other third-party provider costs are separate and normally paid by the school.
+
+==================================================
+16. CALL TO ACTION
+==================================================
+
+At the bottom of the page add a strong CTA.
+
+Example:
+
+NOT SURE WHAT YOUR SCHOOL NEEDS?
+
+Tell us how your school currently operates and AutoM8 will help determine whether you need:
+
+- Staff only
+- Staff + Parent
+- Staff + Student
+- Complete system
+- Standard subscription package
+
+CTA:
+
+REQUEST A SCHOOL SYSTEM CONSULTATION
+
+Link it to the existing AutoM8 contact/quote flow.
+
+==================================================
+17. NAVIGATION
+==================================================
+
+Make School Management Systems easy to find.
+
+Update navigation intelligently.
+
+Possible placement:
+
+Services
+  - WordPress Websites
+  - Custom Web Development
+  - Automation
+  - School Management Systems
+
+Or add School Systems as a direct navigation item if that fits the existing layout better.
+
+Do not overcrowd the navigation.
+
+Ensure mobile navigation also works correctly.
+
+==================================================
+18. SEO
+==================================================
+
+Add natural SEO targeting relevant phrases such as:
+
+school management system South Africa
+school management software South Africa
+school portal South Africa
+parent portal for schools
+student portal South Africa
+staff portal for schools
+school management system Pretoria
+school software Gauteng
+custom school management system
+learning management system South Africa
+school administration software
+AutoM8 school management system
+
+Do not keyword-stuff.
+
+Update where relevant:
+
+- Page title
+- Meta description
+- H1
+- Headings
+- Canonical URL
+- Open Graph metadata
+- Structured data
+- Internal links
+- Sitemap
+
+Do not damage existing AutoM8 SEO.
+
+==================================================
+19. DESIGN
+==================================================
+
+Use the existing AutoM8 brand.
+
+Keep:
+
+- Existing dark/navy style
+- Cyan/teal accents
+- Existing typography
+- Existing card styles
+- Existing buttons
+- Existing spacing patterns
+- Existing responsive layout
+
+Do not redesign the entire website.
+
+The new School Management Systems page should look like it was always part of AutoM8.
+
+Use:
+
+- Cards
+- Comparison blocks
+- Portal diagrams
+- Feature lists
+- Process/timeline components
+- Clear pricing presentation
+- Good whitespace
+
+Avoid giant walls of text.
+
+==================================================
+20. IMPORTANT COMMERCIAL RULES
+==================================================
+
+The page must communicate these distinctions clearly:
+
+CUSTOM SCHOOL PORTALS
+= Once-off custom development
+= Starting price depending on scope
+
+STANDARD AUTOM8 SCHOOL PACKAGES
+= Existing R15 / R25 / R35 per learner per month model
+
+SYSTEM CARE
+= Optional recurring AutoM8 technical support for custom systems
+
+THIRD-PARTY COSTS
+= Separate from AutoM8 pricing
+
+NEW FUNCTIONALITY
+= Separately quoted if outside original scope
+
+Do not merge these into one fee.
+
+==================================================
+21. DO NOT CHANGE THESE YET
+==================================================
+
+For this update:
+
+DO NOT redesign the main Pricing page yet.
+
+DO NOT alter:
+
+- Current WordPress pricing
+- Current dynamic/custom website pricing
+- Current automation pricing
+- Current Website Care pricing
+- Existing school subscription prices
+- Existing portfolio pricing/content unless technically necessary for navigation
+
+We will handle the main Pricing page in a separate update after reviewing this new service page.
+
+==================================================
+22. TESTING
+==================================================
+
+After implementation:
+
+1. Run the website.
+2. Check the new School Management Systems page.
+3. Check the Services page.
+4. Test every new CTA.
+5. Test navigation.
+6. Test mobile navigation.
+7. Check desktop responsiveness.
+8. Check tablet responsiveness.
+9. Check mobile responsiveness.
+10. Check that existing pages were not broken.
+11. Check existing website pricing was unchanged.
+12. Confirm R15 / R25 / R35 school subscription prices were preserved.
+13. Confirm custom portal starting prices are correct.
+14. Check there are no broken links.
+15. Check console errors.
+16. Check sitemap/internal links.
+17. Check SEO metadata.
+
+Then give me a completion report containing:
+
+- Files changed
+- New page created
+- Services page changes
+- Navigation changes
+- Custom school portal packages added
+- Standard school subscription section
+- System Care section
+- Third-party cost explanation
+- SEO changes
+- Responsive/mobile checks
+- Any issues discovered
+- Any recommendations
+
+DO NOT deploy or push the changes until I review the completed work.
