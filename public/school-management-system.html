@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Management System South Africa | Custom School Portals | AutoM8</title>
-    <meta name="description" content="School management software South Africa from AutoM8. Custom staff, parent and student portals, LMS functionality, attendance, marks, documents and school administration. Standard plans from R15 per learner/month.">
+    <title>School Management & Fee Reconciliation System South Africa | AutoM8</title>
+    <meta name="description" content="Custom school administration software South Africa for learner records, attendance, parent access, assignments and school-fee reconciliation. Standard plans from R15 per learner/month.">
     <link rel="canonical" href="https://www.auto-m8.co.za/school-management-system.html">
     <meta property="og:title" content="School Management System South Africa | AutoM8">
-    <meta property="og:description" content="Custom school management systems, staff portals, parent portals and student learning systems for South African schools.">
+    <meta property="og:description" content="Reduce repetitive school administration with connected learner records, attendance, parent access, assignments and smart fee reconciliation.">
     <meta property="og:type" content="website">
 
     <script type="application/ld+json">
@@ -16,7 +16,7 @@
       "@type": "Service",
       "name": "AutoM8 School Management Systems",
       "provider": { "@type": "Organization", "name": "AutoM8", "url": "https://www.auto-m8.co.za" },
-      "description": "School management software South Africa with custom staff, parent and student portals, learning management functionality and standard per-learner packages.",
+      "description": "School management and fee reconciliation software South Africa with custom staff, parent and student portals, attendance, learning management functionality and standard per-learner packages.",
       "areaServed": [{"@type": "Country", "name": "South Africa"}, {"@type": "City", "name": "Pretoria"}],
       "serviceType": "School Management Software"
     }
@@ -31,7 +31,8 @@
         { "@type": "Question", "name": "Do custom school systems require monthly payments?", "acceptedAnswer": { "@type": "Answer", "text": "The custom development fee is normally once-off. Schools can select optional System Care where required. Third-party infrastructure charges remain separate." } },
         { "@type": "Question", "name": "What are the R15, R25 and R35 per learner packages?", "acceptedAnswer": { "@type": "Answer", "text": "These are AutoM8's existing standard school-management subscription options and are separate from bespoke custom system development." } },
         { "@type": "Question", "name": "Can we start with only a Staff Portal and add a Parent Portal later?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AutoM8 can scope future expansion when the school is ready." } },
-        { "@type": "Question", "name": "Who pays for hosting and SMS?", "acceptedAnswer": { "@type": "Answer", "text": "Hosting, databases, SMS, domains and other third-party provider costs are separate and normally paid by the school." } }
+        { "@type": "Question", "name": "Who pays for hosting and SMS?", "acceptedAnswer": { "@type": "Answer", "text": "Hosting, databases, SMS, domains and other third-party provider costs are separate and normally paid by the school." } },
+        { "@type": "Question", "name": "Does school-fee management require an online payment gateway?", "acceptedAnswer": { "@type": "Answer", "text": "No. Schools using EFT can use learner payment references and bank-statement reconciliation. Online card payments are an optional additional integration with separate provider charges." } }
       ]
     }
     </script>
@@ -85,11 +86,53 @@
         .comparison-box > div:last-child { border-right:none; background:var(--blue-lt); }
         .comparison-box h3 { color:var(--text); font-size:1rem; margin-bottom:.6rem; }
         .comparison-box p { color:var(--text-3); font-size:.875rem; line-height:1.7; }
+        .problem-grid, .example-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
+        .problem-card, .example-card { border:1px solid var(--border); border-radius:14px; padding:1.5rem; background:var(--bg); }
+        .problem-card .problem-label, .example-card .example-label { color:var(--blue); font-size:.68rem; font-weight:900; letter-spacing:1.4px; text-transform:uppercase; margin-bottom:.55rem; }
+        .problem-card h3, .example-card h3 { color:var(--text); font-size:1rem; line-height:1.35; margin-bottom:.55rem; }
+        .problem-card p, .example-card p { color:var(--text-3); font-size:.86rem; line-height:1.65; }
+        .problem-card .solution { border-top:1px solid var(--border-lt); margin-top:1rem; padding-top:1rem; }
+        .fee-feature { display:grid; grid-template-columns:.9fr 1.1fr; gap:2rem; align-items:start; }
+        .fee-feature-copy { border:1px solid var(--blue); border-radius:14px; padding:2rem; background:var(--blue-lt); }
+        .fee-feature-copy h3 { color:var(--text); font-size:1.45rem; letter-spacing:-.03em; margin:.5rem 0 .75rem; }
+        .fee-feature-copy p { color:var(--text-2); font-size:.9rem; line-height:1.75; }
+        .fee-statuses { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.25rem; }
+        .fee-status { border:1px solid var(--border); border-radius:999px; padding:.35rem .65rem; color:var(--text-2); background:var(--bg); font-size:.72rem; font-weight:700; }
+        .fee-workflow { display:grid; grid-template-columns:repeat(5,1fr); gap:.75rem; align-items:stretch; }
+        .fee-step { position:relative; border:1px solid var(--border); border-radius:12px; padding:1rem .85rem; background:var(--bg); min-height:125px; }
+        .fee-step:not(:last-child):after { content:"→"; position:absolute; right:-.85rem; top:2.2rem; color:var(--blue); font-weight:900; z-index:2; }
+        .fee-step .step-no { margin-bottom:.55rem; }
+        .fee-step h4 { color:var(--text); font-size:.78rem; line-height:1.35; margin-bottom:.4rem; }
+        .fee-step p { color:var(--text-3); font-size:.73rem; line-height:1.5; }
+        .fee-table-wrap { overflow-x:auto; border:1px solid var(--border); border-radius:14px; background:var(--bg); }
+        .fee-table { width:100%; border-collapse:collapse; min-width:620px; }
+        .fee-table caption { caption-side:top; text-align:left; padding:1rem 1.25rem; color:var(--blue); font-size:.7rem; font-weight:900; letter-spacing:1.4px; text-transform:uppercase; }
+        .fee-table th, .fee-table td { text-align:left; padding:.8rem 1rem; border-top:1px solid var(--border-lt); color:var(--text-2); font-size:.82rem; }
+        .fee-table th { color:var(--text); font-size:.75rem; background:var(--bg-alt); }
+        .fee-table .status-paid { color:#17834b; font-weight:800; }
+        .fee-table .status-review { color:#9a6500; font-weight:800; }
+        .whatsapp-grid, .before-after { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; }
+        .whatsapp-column, .before-after > div { border:1px solid var(--border); border-radius:14px; padding:1.75rem; background:var(--bg); }
+        .whatsapp-column:last-child, .before-after > div:last-child { border-color:var(--blue); background:var(--blue-lt); }
+        .whatsapp-column h3, .before-after h3 { color:var(--text); font-size:1rem; margin-bottom:1rem; }
+        .comparison-line { padding:.65rem 0; border-bottom:1px solid var(--border-lt); color:var(--text-2); font-size:.85rem; line-height:1.55; }
+        .comparison-line:last-child { border-bottom:none; }
+        .comparison-line span { display:block; color:var(--blue); font-size:.65rem; font-weight:900; letter-spacing:1px; margin-bottom:.2rem; }
+        .closing-statement { color:var(--text); font-size:1.2rem; font-weight:800; letter-spacing:-.02em; line-height:1.4; text-align:center; margin-top:1.5rem; }
+        .month-end { border:1px solid var(--blue); border-radius:14px; padding:1.75rem 2rem; background:var(--blue-lt); }
+        .month-end h3 { color:var(--text); font-size:1.2rem; margin-bottom:.6rem; }
+        .month-end p, .month-end li { color:var(--text-2); font-size:.88rem; line-height:1.7; }
+        .month-end ul { list-style:none; columns:2; margin-top:.75rem; }
+        .month-end li:before { content:"→"; color:var(--blue); font-weight:900; margin-right:.5rem; }
+        .highlight-strip { margin-top:1.5rem; border:1px solid var(--blue); border-radius:12px; padding:1.25rem 1.5rem; color:var(--text-2); background:var(--blue-lt); font-size:.95rem; line-height:1.7; text-align:center; }
+        .highlight-strip strong { color:var(--text); }
         .breadcrumb { font-size:.8rem; color:var(--text-3); margin-bottom:1rem; }
         .breadcrumb a { color:var(--text-3); text-decoration:none; }
         .breadcrumb a:hover { color:var(--blue); }
+        .nav-logo .logo-text { color:var(--text); font-size:1.25rem; font-weight:900; letter-spacing:-.04em; text-decoration:none; }
         @media (max-width:1024px) {
             .pricing-grid-4 { grid-template-columns:1fr 1fr; }
+            .fee-feature { grid-template-columns:1fr; }
             .process-grid { grid-template-columns:1fr 1fr; }
             .process-step { border-right:none; border-bottom:1px solid var(--border); }
             .process-step:nth-child(odd) { border-right:1px solid var(--border); }
@@ -104,13 +147,19 @@
             .process-grid { grid-template-columns:1fr; }
             .process-step, .process-step:nth-child(odd) { border-right:none; border-bottom:1px solid var(--border); }
             .process-step:last-child { border-bottom:none; }
+            .problem-grid, .example-grid, .fee-feature { grid-template-columns:1fr; }
+            .fee-workflow { grid-template-columns:1fr; }
+            .fee-step { min-height:0; }
+            .fee-step:not(:last-child):after { content:"↓"; right:auto; top:auto; bottom:-1.15rem; left:50%; }
+            .whatsapp-grid, .before-after { grid-template-columns:1fr; }
+            .month-end ul { columns:1; }
         }
     </style>
 </head>
 <body>
 <nav class="navbar">
     <div class="nav-container">
-        <div class="nav-logo"><h1>AutoM8</h1></div>
+        <div class="nav-logo"><a href="index.html" class="logo-text" aria-label="AutoM8 home">AutoM8</a></div>
         <ul class="nav-menu" id="nav-menu">
             <li><a href="index.html" class="nav-link">Home</a></li>
             <li><a href="services.html" class="nav-link">Services</a></li>
@@ -128,12 +177,97 @@
     <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> › <a href="services.html">Services</a> › School Management Systems</nav>
         <div class="section-tag" style="margin-bottom:.75rem;">School Management Systems · South Africa</div>
-        <h1 class="page-title fade-in">Run Your School from<br>One Connected System.</h1>
-        <p class="page-subtitle fade-in" style="margin:0 0 .7rem;">Custom-built Staff, Parent and Student portals designed around the way your school actually operates.</p>
-        <p class="fade-in" style="max-width:680px;color:var(--text-3);line-height:1.8;margin:0 0 2rem;">AutoM8 develops school management systems for schools across South Africa, including Pretoria and Gauteng, that want to digitise administration, communication, academic information and learning without being forced into unnecessary functionality. Schools can select the portals and features they actually need.</p>
+        <h1 class="page-title fade-in">Less Paperwork. Less Chasing.<br>One Place to Run Your School.</h1>
+        <p class="page-subtitle fade-in" style="margin:0 0 .7rem;">From learner records and attendance to parent access, assignments and school-fee reconciliation, AutoM8 builds school systems around the work your staff already does every day.</p>
+        <p class="fade-in" style="max-width:680px;color:var(--text-3);line-height:1.8;margin:0 0 2rem;">Instead of managing information through spreadsheets, paper records, WhatsApp messages and disconnected systems, AutoM8 helps schools bring important administrative processes into one structured platform. Schools can select the portals and features they actually need.</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;" class="fade-in">
-            <a href="contact.html?type=school-demo" class="btn btn-primary">Request a School System</a>
-            <a href="#school-options" class="btn btn-outline">View Options</a>
+            <a href="contact.html?type=school-demo" class="btn btn-primary">Request a Free School System Demo</a>
+            <a href="#problems-solved" class="btn btn-outline">Explore What It Can Do</a>
+        </div>
+    </div>
+</section>
+
+<section id="problems-solved" class="section-rule" style="background:var(--bg-alt);padding:80px 0;">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Problems we help solve</div>
+            <h2 class="section-title">What Is Taking Up Your Staff's Time?</h2>
+            <p class="section-subtitle">AutoM8 helps bring repeated administrative work into structured, searchable workflows without promising to remove every task.</p>
+        </div>
+        <div class="problem-grid fade-in">
+            <div class="problem-card">
+                <div class="problem-label">Problem</div><h3>Still matching school-fee payments manually?</h3>
+                <div class="solution"><div class="problem-label">Possible solution</div><p>Upload the school's bank statement and use learner payment references to help match incoming EFT payments to the correct learner accounts.</p></div>
+            </div>
+            <div class="problem-card">
+                <div class="problem-label">Problem</div><h3>Parents constantly asking for marks, notices or balances?</h3>
+                <div class="solution"><div class="problem-label">Possible solution</div><p>Give authorised parents secure access to the information the school chooses to make available.</p></div>
+            </div>
+            <div class="problem-card">
+                <div class="problem-label">Problem</div><h3>Attendance spread across paper registers and spreadsheets?</h3>
+                <div class="solution"><div class="problem-label">Possible solution</div><p>Record attendance in one structured system and maintain searchable learner attendance histories.</p></div>
+            </div>
+            <div class="problem-card">
+                <div class="problem-label">Problem</div><h3>Assignments being distributed through WhatsApp groups?</h3>
+                <div class="solution"><div class="problem-label">Possible solution</div><p>Use a Student Portal to organise assignments, learning material, submissions and academic information.</p></div>
+            </div>
+            <div class="problem-card">
+                <div class="problem-label">Problem</div><h3>Different staff members maintaining separate spreadsheets?</h3>
+                <div class="solution"><div class="problem-label">Possible solution</div><p>Bring important learner, academic and administrative records together in one connected database.</p></div>
+            </div>
+            <div class="problem-card">
+                <div class="problem-label">Problem</div><h3>Staff spending time answering repetitive questions?</h3>
+                <div class="solution"><div class="problem-label">Possible solution</div><p>Allow parents and students to access authorised information themselves through dedicated portals.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="fee-reconciliation" class="section-rule" style="background:var(--bg);padding:80px 0;">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Flagship workflow</div>
+            <h2 class="section-title">Smart School-Fee Reconciliation</h2>
+            <p class="section-subtitle">Turn a monthly bank statement into organised learner payment records.</p>
+        </div>
+        <div class="fee-feature fade-in">
+            <div class="fee-feature-copy">
+                <div class="package-micro">Built around school administration</div>
+                <h3>Spend less time repeating routine payment matching.</h3>
+                <p>Each learner can be assigned a unique payment reference for EFT payments. Recognised references can help the system match transactions to learner accounts, while unclear or unmatched transactions can be flagged for staff review.</p>
+                <p style="margin-top:.75rem;"><strong>Fee management does not require an online payment gateway.</strong> Schools using EFT can use learner payment references and bank-statement reconciliation. Online card payments are an optional additional integration, and provider charges remain separate.</p>
+                <div class="fee-statuses"><span class="fee-status">Paid in full</span><span class="fee-status">Partially paid</span><span class="fee-status">Outstanding</span><span class="fee-status">Overpaid / credit</span><span class="fee-status">Needs review</span></div>
+            </div>
+            <div>
+                <div class="fee-workflow">
+                    <div class="fee-step"><div class="step-no">01</div><h4>PARENT MAKES EFT</h4><p>Reference: LRN-1048</p></div>
+                    <div class="fee-step"><div class="step-no">02</div><h4>BANK STATEMENT</h4><p>Payment appears in the school's statement.</p></div>
+                    <div class="fee-step"><div class="step-no">03</div><h4>SCHOOL UPLOADS</h4><p>An authorised staff member uploads the statement.</p></div>
+                    <div class="fee-step"><div class="step-no">04</div><h4>REFERENCE MATCH</h4><p>Recognised references are matched to learner accounts.</p></div>
+                    <div class="fee-step"><div class="step-no">05</div><h4>ACCOUNT UPDATED</h4><p>Example Learner · Paid R1,200 · Balance R0 · PAID</p></div>
+                </div>
+                <p style="color:var(--text-3);font-size:.78rem;line-height:1.6;margin-top:1rem;">The workflow is designed to support review, not replace financial oversight. Matching depends on the quality and consistency of payment references.</p>
+            </div>
+        </div>
+        <div style="margin-top:2rem;" class="fade-in">
+            <div class="fee-table-wrap">
+                <table class="fee-table">
+                    <caption>Example only · fictional dashboard data</caption>
+                    <thead><tr><th scope="col">Learner</th><th scope="col">Expected</th><th scope="col">Payment Found</th><th scope="col">Balance</th><th scope="col">Status</th></tr></thead>
+                    <tbody>
+                        <tr><td>Example Learner A</td><td>R1,200</td><td>R1,200</td><td>R0</td><td class="status-paid">Paid</td></tr>
+                        <tr><td>Example Learner B</td><td>R1,200</td><td>R800</td><td>R400</td><td class="status-review">Partially Paid</td></tr>
+                        <tr><td>Example Learner C</td><td>R1,200</td><td>R1,500</td><td>-R300</td><td class="status-paid">Credit</td></tr>
+                        <tr><td>Example Learner D</td><td>R1,200</td><td>R0</td><td>R1,200</td><td class="status-review">Outstanding</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="month-end fade-in" style="margin-top:1.5rem;">
+            <h3>Imagine Month-End Without Manually Matching Every Payment</h3>
+            <p>A school has 250 learners. Parents pay throughout the month using assigned learner references. At month-end, authorised administration staff upload the bank statement. Recognised references can be matched to learner accounts so staff can focus attention on:</p>
+            <ul><li>Unmatched payments</li><li>Outstanding balances</li><li>Partial payments</li><li>Overpayments</li><li>Unusual transactions</li></ul>
+            <p style="margin-top:1rem;"><strong>The system does not remove financial oversight — it helps staff spend their time reviewing exceptions instead of repeating routine matching work.</strong></p>
         </div>
     </div>
 </section>
@@ -162,19 +296,51 @@
     </div>
 </section>
 
+<section id="whatsapp-comparison" class="section-rule" style="background:var(--bg);padding:80px 0;">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Communication vs operations</div>
+            <h2 class="section-title">Why Not Just Use WhatsApp?</h2>
+            <p class="section-subtitle">WhatsApp is an excellent communication tool — and AutoM8 is not trying to replace it. But it was not designed to manage structured school operations, learner records, academic histories or financial information.</p>
+        </div>
+        <div class="whatsapp-grid fade-in">
+            <div class="whatsapp-column">
+                <h3><i class="fab fa-whatsapp" style="color:#22c55e;margin-right:.5rem;"></i> WhatsApp helps you communicate</h3>
+                <div class="comparison-line"><span>MESSAGE</span>Send a parent a message</div>
+                <div class="comparison-line"><span>PAYMENT</span>Receive a proof of payment</div>
+                <div class="comparison-line"><span>ATTENDANCE</span>Ask staff whether a learner attended</div>
+                <div class="comparison-line"><span>RESULTS</span>Send report information manually</div>
+                <div class="comparison-line"><span>RECORDS</span>Search old chats for information</div>
+                <div class="comparison-line"><span>ASSIGNMENTS</span>Mix assignments into group chats</div>
+            </div>
+            <div class="whatsapp-column">
+                <h3><i class="fas fa-layer-group" style="color:var(--blue);margin-right:.5rem;"></i> AutoM8 helps you operate</h3>
+                <div class="comparison-line"><span>SECURE ACCESS</span>Give the correct parent access to authorised learner information</div>
+                <div class="comparison-line"><span>FEE RECORDS</span>Upload a bank statement and match recognised references to learner accounts</div>
+                <div class="comparison-line"><span>ATTENDANCE HISTORY</span>View the learner's recorded attendance history</div>
+                <div class="comparison-line"><span>PUBLISHED RESULTS</span>Let authorised parents access published academic information</div>
+                <div class="comparison-line"><span>STRUCTURED RECORDS</span>Keep important information inside the school's system</div>
+                <div class="comparison-line"><span>ACADEMIC WORKSPACE</span>Organise assignments, resources and submissions through the Student Portal</div>
+            </div>
+        </div>
+        <p class="closing-statement fade-in">WhatsApp helps your school communicate. AutoM8 helps your school operate.</p>
+        <p style="text-align:center;color:var(--text-3);font-size:.9rem;margin-top:.5rem;" class="fade-in">We are not trying to replace WhatsApp. We are reducing the administrative work WhatsApp was never designed to manage.</p>
+    </div>
+</section>
+
 <section id="custom-portals" class="section-rule" style="background:var(--bg);padding:80px 0;">
     <div class="container">
         <div class="section-header fade-in">
             <div class="section-tag">Custom school portals</div>
-            <h2 class="section-title">Not every school needs the same system.</h2>
-            <p class="section-subtitle">AutoM8 can build only the portals and functionality your school requires. Prices below are once-off starting points.</p>
+            <h2 class="section-title">Choose Only What Your School Actually Needs</h2>
+            <p class="section-subtitle">Not every school needs three portals. Start with the functionality that solves your immediate administrative problems and expand later if your requirements grow. Prices below are once-off starting points.</p>
         </div>
         <div class="pricing-grid-4 fade-in">
             <div class="custom-card">
                 <div class="micro">Custom Option 01</div>
                 <h3>Staff Portal</h3>
                 <div class="custom-price">From R6,500</div>
-                <p class="best-for"><strong>Best for:</strong> Schools that mainly want to digitise internal administration and staff operations.</p>
+                <p class="best-for"><strong>Best for:</strong> Internal school administration.</p>
                 <ul class="package-features">
                     <li><i class="fas fa-circle"></i> Secure staff/admin login</li><li><i class="fas fa-circle"></i> Learner and staff records</li><li><i class="fas fa-circle"></i> Classes and grades</li><li><i class="fas fa-circle"></i> Attendance management</li><li><i class="fas fa-circle"></i> Marks and results</li><li><i class="fas fa-circle"></i> Notices and documents</li><li><i class="fas fa-circle"></i> Basic reports and staff permissions</li><li><i class="fas fa-circle"></i> School information and dashboard</li>
                 </ul>
@@ -183,7 +349,7 @@
                 <div class="micro">Custom Option 02</div>
                 <h3>Staff + Parent Portal</h3>
                 <div class="custom-price">From R10,500</div>
-                <p class="best-for"><strong>Best for:</strong> Schools that want internal administration with a parent communication and information portal. A strong option for primary schools where learners may not need their own accounts.</p>
+                <p class="best-for"><strong>Best for:</strong> Schools wanting administration and parent self-service. A strong option for primary schools where learners may not need their own accounts.</p>
                 <ul class="package-features">
                     <li><i class="fas fa-circle"></i> Everything appropriate from Staff Portal</li><li><i class="fas fa-circle"></i> Parent accounts</li><li><i class="fas fa-circle"></i> Multiple children linked to one parent</li><li><i class="fas fa-circle"></i> Attendance, results and marks viewing</li><li><i class="fas fa-circle"></i> Notices, announcements and documents</li><li><i class="fas fa-circle"></i> Fee information where required</li><li><i class="fas fa-circle"></i> Child and parent profiles</li><li><i class="fas fa-circle"></i> Communication tools where required</li>
                 </ul>
@@ -192,7 +358,7 @@
                 <div class="micro">Custom Option 03</div>
                 <h3>Staff + Student Portal</h3>
                 <div class="custom-price">From R12,500</div>
-                <p class="best-for"><strong>Best for:</strong> Schools that want staff administration together with digital learning and student access.</p>
+                <p class="best-for"><strong>Best for:</strong> Schools wanting administration and digital learning.</p>
                 <ul class="package-features">
                     <li><i class="fas fa-circle"></i> Everything appropriate from Staff Portal</li><li><i class="fas fa-circle"></i> Student login and dashboard</li><li><i class="fas fa-circle"></i> Subjects and learning resources</li><li><i class="fas fa-circle"></i> Assignments and submissions</li><li><i class="fas fa-circle"></i> Marks/results and academic progress</li><li><i class="fas fa-circle"></i> Notices and documents</li><li><i class="fas fa-circle"></i> Learning Management functionality depending on requirements</li>
                 </ul>
@@ -201,13 +367,15 @@
                 <div class="micro">Most Complete</div>
                 <h3>Complete Custom School System</h3>
                 <div class="custom-price">From R18,500</div>
-                <p class="best-for"><strong>Includes:</strong> Staff Portal + Parent Portal + Student Portal / LMS.</p>
+                <p class="best-for"><strong>Best for:</strong> Schools wanting one connected environment for staff, parents and learners.</p>
                 <ul class="package-features">
                     <li><i class="fas fa-circle"></i> Staff, parent and student dashboards</li><li><i class="fas fa-circle"></i> Learner records, attendance and results</li><li><i class="fas fa-circle"></i> Assignments, submissions and learning materials</li><li><i class="fas fa-circle"></i> Notices, documents and fee information</li><li><i class="fas fa-circle"></i> Parent-child linking</li><li><i class="fas fa-circle"></i> Reporting, classes and subjects</li><li><i class="fas fa-circle"></i> User roles, permissions and school communication</li><li><i class="fas fa-circle"></i> Other custom school workflows</li>
                 </ul>
             </div>
         </div>
         <div class="scope-note fade-in">Final features depend on the agreed project scope. The displayed amount is a starting price; your final price is agreed before development starts. New functionality requested outside the agreed scope is quoted separately.</div>
+        <div class="highlight-strip fade-in"><strong>You do not need every module.</strong> We recommend the simplest system that properly solves your school's requirements.</div>
+        <div style="text-align:center;margin-top:1.5rem;" class="fade-in"><a href="contact.html?type=school-demo" class="btn btn-primary">Request a Free School System Demo</a></div>
     </div>
 </section>
 
@@ -250,21 +418,59 @@
             </div>
         </div>
         <div class="scope-note fade-in">Standard package functionality and availability should be confirmed for your school's requirements. Request a demonstration to discuss the right option.</div>
+        <div style="text-align:center;margin-top:1.5rem;" class="fade-in"><a href="contact.html?type=school-demo" class="btn btn-primary">Request a Free School System Demo</a></div>
+    </div>
+</section>
+
+<section id="portal-outcomes" class="section-rule" style="background:var(--bg-alt);padding:80px 0;">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Portal types</div>
+            <h2 class="section-title">Three Portals. Clear Operational Outcomes.</h2>
+            <p class="section-subtitle">The portals can share the same underlying school information while each user sees only what their role allows. Possible functionality is confirmed during discovery and is not automatically included in every build.</p>
+        </div>
+        <div class="portal-network fade-in">
+            <div class="portal-card"><i class="fas fa-user-tie"></i><h3>Staff Portal — Run the School</h3><p>Give authorised staff one place to manage the information and administrative work they are responsible for.</p><ul><li><i class="fas fa-circle"></i> Learner records and attendance</li><li><i class="fas fa-circle"></i> Marks, results and classes</li><li><i class="fas fa-circle"></i> Notices and documents</li><li><i class="fas fa-circle"></i> Fee information and reports</li><li><i class="fas fa-circle"></i> Staff permissions and school administration</li></ul></div>
+            <div class="portal-card"><i class="fas fa-users"></i><h3>Parent Portal — Reduce Repetitive Parent Enquiries</h3><p>Give parents secure self-service access to information the school chooses to share. Parents no longer need to contact the office for every routine information request.</p><ul><li><i class="fas fa-circle"></i> Attendance and published results</li><li><i class="fas fa-circle"></i> Notices and documents</li><li><i class="fas fa-circle"></i> Fee position and announcements</li><li><i class="fas fa-circle"></i> Multiple linked children</li><li><i class="fas fa-circle"></i> Parent profile information</li></ul></div>
+            <div class="portal-card"><i class="fas fa-user-graduate"></i><h3>Student Portal — One Academic Workspace</h3><p>Give learners a structured place to access their academic information and learning resources.</p><ul><li><i class="fas fa-circle"></i> Assignments and submissions</li><li><i class="fas fa-circle"></i> Subjects and learning material</li><li><i class="fas fa-circle"></i> Results and academic progress</li><li><i class="fas fa-circle"></i> Notices and documents</li></ul></div>
+        </div>
+    </div>
+</section>
+
+<section id="before-after" class="section-rule" style="background:var(--bg);padding:80px 0;">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Before and after</div>
+            <h2 class="section-title">What Changes When Your School Moves Away From Manual Processes?</h2>
+        </div>
+        <div class="before-after fade-in">
+            <div>
+                <h3>Before AutoM8</h3>
+                <div class="comparison-line">Attendance written on paper</div><div class="comparison-line">Parents ask for results on WhatsApp</div><div class="comparison-line">Fee information maintained in spreadsheets</div><div class="comparison-line">Proofs of payment sent to staff manually</div><div class="comparison-line">Staff compare bank transactions manually</div><div class="comparison-line">Assignments distributed through messages</div><div class="comparison-line">School documents scattered across devices</div><div class="comparison-line">Different staff members maintain separate records</div>
+            </div>
+            <div>
+                <h3>With AutoM8</h3>
+                <div class="comparison-line">Attendance recorded in the system</div><div class="comparison-line">Authorised parents access published results</div><div class="comparison-line">Learner fee records organised digitally</div><div class="comparison-line">Bank statements uploaded for reconciliation</div><div class="comparison-line">Recognised payment references matched</div><div class="comparison-line">Assignments organised through the Student Portal</div><div class="comparison-line">Documents stored in structured areas</div><div class="comparison-line">Staff access one connected system based on permissions</div>
+            </div>
+        </div>
+        <p class="closing-statement fade-in">One system. Less repetitive administration.</p>
     </div>
 </section>
 
 <section class="section-rule" style="background:var(--bg-alt);padding:80px 0;">
     <div class="container">
         <div class="section-header fade-in">
-            <div class="section-tag">Portal types</div>
-            <h2 class="section-title">One school information base, role-aware access.</h2>
-            <p class="section-subtitle">The portals can share the same underlying school information while each user sees only what their role allows. Features are implemented according to the selected scope.</p>
+            <div class="section-tag">Custom-first school software</div>
+            <h2 class="section-title">Your School Does Not Have to Work Like Every Other School</h2>
+            <p class="section-subtitle">AutoM8 builds around your school's workflow instead of forcing your school into ours. Features are confirmed during discovery.</p>
         </div>
-        <div class="portal-network fade-in">
-            <div class="portal-card"><i class="fas fa-user-tie"></i><h3>Staff Portal</h3><p>Designed for school employees and administrators.</p><ul><li><i class="fas fa-circle"></i> Learner management</li><li><i class="fas fa-circle"></i> Attendance and marks</li><li><i class="fas fa-circle"></i> Classes and documents</li><li><i class="fas fa-circle"></i> Notices, reports and administration</li><li><i class="fas fa-circle"></i> Staff permissions</li></ul></div>
-            <div class="portal-card"><i class="fas fa-users"></i><h3>Parent Portal</h3><p>Designed to give parents access to relevant information about their children.</p><ul><li><i class="fas fa-circle"></i> Attendance and results</li><li><i class="fas fa-circle"></i> Notices and documents</li><li><i class="fas fa-circle"></i> Fee information</li><li><i class="fas fa-circle"></i> Announcements</li><li><i class="fas fa-circle"></i> Multiple children and profiles</li></ul></div>
-            <div class="portal-card"><i class="fas fa-user-graduate"></i><h3>Student Portal</h3><p>Designed for learner access and digital learning.</p><ul><li><i class="fas fa-circle"></i> Assignments and submissions</li><li><i class="fas fa-circle"></i> Subjects and resources</li><li><i class="fas fa-circle"></i> Results and academic information</li><li><i class="fas fa-circle"></i> Notices and documents</li></ul></div>
+        <div class="example-grid fade-in">
+            <div class="example-card"><div class="example-label">Example only · Primary school</div><h3>Administration and parent self-service</h3><p><strong>Needs:</strong> Staff administration, parent communication, attendance, marks and fee information.</p><p style="margin-top:.6rem;"><strong>Possible fit:</strong> Staff + Parent Portal, because younger learners may not need individual Student Portal accounts.</p></div>
+            <div class="example-card"><div class="example-label">Example only · High school</div><h3>Administration and digital learning</h3><p><strong>Needs:</strong> Staff administration, student assignments, learning resources, results and parent access.</p><p style="margin-top:.6rem;"><strong>Possible fit:</strong> Complete system or Staff + Student, depending on the school's requirements.</p></div>
+            <div class="example-card"><div class="example-label">Example only · Small private school</div><h3>Focused internal operations</h3><p><strong>Needs:</strong> Learner records, attendance, fee reconciliation and reports.</p><p style="margin-top:.6rem;"><strong>Possible fit:</strong> A custom Staff Portal with only the agreed operational modules.</p></div>
         </div>
+        <div class="highlight-strip fade-in"><strong>Choose Staff only, Staff + Parent, Staff + Student, a complete three-portal system, or an existing AutoM8 subscription package.</strong></div>
+        <div style="text-align:center;margin-top:1.5rem;" class="fade-in"><a href="contact.html?type=school-demo" class="btn btn-primary">Discuss Your School's Workflow</a></div>
     </div>
 </section>
 
@@ -297,8 +503,8 @@
 <section class="section-rule" style="background:var(--bg);padding:80px 0;">
     <div class="container">
         <div class="info-grid fade-in">
-            <div class="info-card"><i class="fas fa-file-contract"></i><h3>Data and system ownership</h3><p>Ownership, licensing, handover and source-code arrangements for custom school systems are defined in the individual project agreement. The school retains ownership of its own business, learner, parent, staff and academic data.</p></div>
-            <div class="info-card"><i class="fas fa-shield-alt"></i><h3>Security and privacy</h3><p>AutoM8 designs school systems with appropriate security and privacy controls based on the agreed system requirements, including role-based access, secure authentication, strong password policies, HTTPS, protected databases, access permissions, backups, secure environment variables, POPIA-aware implementation and audit logging where appropriate.</p></div>
+            <div class="info-card"><i class="fas fa-file-contract"></i><h3>Data and system ownership</h3><p>Ownership, licensing, handover and source-code arrangements for custom school systems are defined in the individual project agreement. Your school retains ownership of its own business, learner, parent, staff and academic data.</p></div>
+            <div class="info-card"><i class="fas fa-shield-alt"></i><h3>Security and privacy that reflect each role</h3><p>Unlike shared spreadsheets and chat histories, a proper school system can use role-based access so teachers see what they are authorised to see, parents see information linked to their children, students access appropriate academic content and administrators have broader authorised controls.</p><p style="margin-top:.75rem;">Systems can include secure authentication, HTTPS, access permissions, protected databases, backups and security updates. They are designed with privacy and POPIA considerations in mind; specific controls depend on the agreed requirements.</p></div>
         </div>
     </div>
 </section>
@@ -321,7 +527,7 @@
 
 <section class="section-rule" style="background:var(--bg);padding:80px 0;">
     <div class="container">
-        <div class="section-header fade-in"><div class="section-tag">Future additions</div><h2 class="section-title">Grow the system when your school is ready.</h2><p class="section-subtitle">These are potential additions, not automatic inclusions in the starting prices.</p></div>
+        <div class="section-header fade-in"><div class="section-tag">Start small, grow later</div><h2 class="section-title">Start With What You Need. Add More Later.</h2><p class="section-subtitle">A school might begin with a Staff Portal and later add a Parent Portal, Student Portal, assignments, fee reconciliation, SMS, online payments, reporting or other modules. Future additions outside the original agreement are scoped and quoted separately.</p></div>
         <div class="info-card fade-in"><ul class="future-list" style="columns:2;column-gap:3rem;margin-top:0;"><li><i class="fas fa-circle"></i> Fees and invoices</li><li><i class="fas fa-circle"></i> SMS and email notifications</li><li><i class="fas fa-circle"></i> Online payments</li><li><i class="fas fa-circle"></i> Timetables and report cards</li><li><i class="fas fa-circle"></i> Advanced reports and analytics</li><li><i class="fas fa-circle"></i> Transport and library management</li><li><i class="fas fa-circle"></i> Admissions</li><li><i class="fas fa-circle"></i> Staff attendance</li><li><i class="fas fa-circle"></i> Parent communication</li><li><i class="fas fa-circle"></i> Student assignments and assessments</li><li><i class="fas fa-circle"></i> Certificates and school documents</li><li><i class="fas fa-circle"></i> Multiple campuses</li></ul></div>
     </div>
 </section>
@@ -338,6 +544,7 @@
             <div class="info-card"><h3>Can the system include assignments?</h3><p>Yes. Student/LMS functionality can include assignments, learning materials and submissions depending on the agreed project scope.</p></div>
             <div class="info-card"><h3>Can parents have multiple children under one account?</h3><p>Yes, this can be implemented where required.</p></div>
             <div class="info-card"><h3>Who pays for hosting and SMS?</h3><p>Hosting, databases, SMS, domains and other third-party provider costs are separate and normally paid by the school.</p></div>
+            <div class="info-card"><h3>Does fee management require online card payments?</h3><p>No. Schools using EFT can use learner payment references and bank-statement reconciliation. An online payment gateway is optional, and its provider charges remain separate.</p></div>
         </div>
     </div>
 </section>
@@ -347,7 +554,7 @@
         <h2 style="font-size:2.4rem;font-weight:900;color:#fff;letter-spacing:-.04em;line-height:1.1;margin-bottom:1rem;" class="fade-in">Not sure what your school needs?</h2>
         <p style="max-width:680px;margin:0 auto 2rem;color:#9ca3af;font-size:1.05rem;line-height:1.7;" class="fade-in">Tell us how your school currently operates and AutoM8 will help determine whether you need Staff only, Staff + Parent, Staff + Student, a Complete system, or a standard subscription package.</p>
         <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" class="fade-in">
-            <a href="contact.html?type=school-demo" class="btn btn-primary">Request a School System Consultation</a>
+            <a href="contact.html?type=school-demo" class="btn btn-primary">Request a Free School System Demo</a>
             <a href="https://wa.me/27681536136?text=Hi%20AutoM8!%20I%27d%20like%20to%20discuss%20a%20school%20management%20system." class="btn btn-outline" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
         </div>
     </div>
