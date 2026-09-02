@@ -1,0 +1,540 @@
+I want you to improve the visual design of the existing AutoM8 School Management Systems page by incorporating the SAME STYLE of illustrated human characters already used throughout the rest of the AutoM8 website.
+
+IMPORTANT:
+Do not redesign the School Management Systems page.
+
+Do not change:
+- pricing
+- wording unless required for layout
+- package structure
+- functionality
+- navigation
+- SEO
+- CTA destinations
+- existing colours
+- existing AutoM8 design system
+
+This update is specifically about integrating the existing AutoM8 illustration/character style into the School Management Systems page so that the page feels visually connected to the rest of the website.
+
+==================================================
+1. FIRST INSPECT THE EXISTING WEBSITE
+==================================================
+
+Before adding anything, inspect:
+
+- Homepage
+- Services page
+- Pricing page
+- Portfolio page
+- WordPress sections
+- Custom systems sections
+- Automation sections
+- Other landing pages
+
+Identify the illustrated human characters/people already being used throughout AutoM8.
+
+Look at:
+
+- illustration style
+- proportions
+- line style
+- colours
+- placement
+- image sizes
+- spacing
+- how illustrations sit beside text
+- how they behave on mobile
+- whether they use SVG, PNG, WebP, or another format
+- where the illustration assets are stored in the project
+
+IMPORTANT:
+
+Reuse the SAME visual illustration family wherever possible.
+
+Do not introduce random stock photography.
+
+Do not introduce a completely different cartoon style.
+
+Do not use realistic AI-generated people.
+
+Do not mix multiple illustration styles.
+
+The School Management Systems page should feel like it was designed at the same time as the rest of AutoM8.
+
+==================================================
+2. USE EXISTING ASSETS FIRST
+==================================================
+
+Search the project assets for existing illustrated character graphics before sourcing or creating anything new.
+
+If there are suitable existing illustrations that can be reused without making the page repetitive, use them.
+
+If the project already contains multiple illustrations in the same visual family, select ones that naturally fit education, administration, technology, communication, finance or teamwork.
+
+If additional illustrations are genuinely required, they must closely match the existing AutoM8 flat-vector human illustration style.
+
+Do not add illustrations simply to fill empty space.
+
+Every illustration should have a visual purpose.
+
+==================================================
+3. HERO SECTION
+==================================================
+
+The School Management Systems hero section should include a strong illustration on the right side, similar to the visual balance used on the AutoM8 homepage.
+
+LEFT:
+- Headline
+- Supporting text
+- CTA buttons
+
+RIGHT:
+- Character illustration
+
+The illustration should visually suggest:
+
+- school administration
+- technology
+- staff
+- students
+- parents
+- dashboards or digital systems
+
+Possible scene:
+
+A small group containing:
+- teacher/staff member using a laptop
+- student using a tablet or laptop
+- parent using a phone
+- subtle floating interface/dashboard elements
+
+Do not make the illustration overly literal.
+
+It should retain the clean AutoM8 character style.
+
+Desktop:
+Illustration should sit naturally beside the hero copy.
+
+Mobile:
+Stack the illustration cleanly below or above the copy depending on what looks best.
+
+Do not allow it to dominate the screen.
+
+==================================================
+4. SMART FEE RECONCILIATION SECTION
+==================================================
+
+This is one of the MOST IMPORTANT places to use the character illustrations.
+
+The Smart Fee Reconciliation section should not feel like a dry banking/accounting section.
+
+Add a relevant illustration around the workflow.
+
+Possible visual concept:
+
+- school administrator sitting with a laptop
+- another person reviewing payment information
+- floating payment/reference cards
+- simple bank statement graphic
+- learner/payment status elements
+
+The illustration should support the message:
+
+"Stop manually matching every school-fee payment."
+
+Keep the existing bank-statement/reference workflow diagram.
+
+The character graphic should complement the diagram, not replace it.
+
+Possible layout:
+
+LEFT:
+Character illustration
+
+RIGHT:
+Smart Fee Reconciliation explanation/workflow
+
+OR
+
+LEFT:
+Text/workflow
+
+RIGHT:
+Illustration
+
+Choose whichever produces the best visual balance based on the existing section.
+
+==================================================
+5. STAFF, PARENT & STUDENT PORTALS
+==================================================
+
+Use illustrations to help visually distinguish the portal types.
+
+Do not necessarily place a giant image inside every card.
+
+Instead use small/medium illustrations strategically.
+
+STAFF PORTAL:
+Use a character or group representing:
+- teacher
+- administrator
+- staff working on laptop
+- school management
+
+PARENT PORTAL:
+Use a character representing:
+- parent using smartphone
+- parent checking information
+- parent and child where appropriate
+
+STUDENT PORTAL:
+Use a character representing:
+- learner with laptop/tablet
+- studying
+- assignments
+- digital learning
+
+These illustrations must use the same AutoM8 visual style.
+
+Avoid childish/cartoon-school graphics that clash with the rest of the brand.
+
+The page is selling to school owners and administrators, so it should still feel professional.
+
+==================================================
+6. "WHY NOT JUST USE WHATSAPP?" SECTION
+==================================================
+
+Add a subtle illustration to this section if it improves the layout.
+
+Possible concept:
+
+Person using smartphone/WhatsApp-style communication on one side
+
+versus
+
+Person using structured laptop/dashboard on the other.
+
+Do NOT use the official WhatsApp logo in a way that suggests affiliation.
+
+The idea should visually reinforce:
+
+"Communication tool vs school management system."
+
+The illustration should remain secondary to the comparison content.
+
+==================================================
+7. BEFORE AUTOM8 / WITH AUTOM8
+==================================================
+
+This section would benefit strongly from character illustrations.
+
+BEFORE AUTOM8:
+Use a visual suggesting:
+- paperwork
+- spreadsheets
+- multiple devices
+- confused/busy administrator
+- scattered information
+
+WITH AUTOM8:
+Use a visual suggesting:
+- organised dashboard
+- calm administrator
+- centralised system
+- connected users
+
+Do not make the "before" illustration insulting or overly dramatic.
+
+It should show administrative complexity, not incompetent staff.
+
+==================================================
+8. CUSTOMISATION SECTION
+==================================================
+
+For the section explaining:
+
+"Your School Does Not Have to Work Like Every Other School"
+
+Use an illustration representing:
+
+- team discussion
+- consultation
+- custom planning
+- people looking at a dashboard
+- collaborative decision-making
+
+This should reinforce the message that AutoM8 builds around the school's workflow.
+
+==================================================
+9. SCHOOL USE-CASE EXAMPLES
+==================================================
+
+For the Primary School / High School / Small Private School examples:
+
+Do NOT add three huge unrelated illustrations.
+
+Instead consider:
+
+- small character artwork
+- compact character scenes
+- subtle icon + character combinations
+
+The design should remain clean and easy to scan.
+
+==================================================
+10. FINAL CTA
+==================================================
+
+At the bottom:
+
+"Request a Free School System Demo"
+
+Add a friendly AutoM8-style character illustration around the final CTA.
+
+Possible scene:
+
+- administrator and AutoM8 representative discussing system
+- team looking at laptop/dashboard
+- school staff reviewing a digital solution
+
+This should make the final section feel more inviting and less like a plain contact banner.
+
+==================================================
+11. DO NOT OVERUSE ILLUSTRATIONS
+==================================================
+
+VERY IMPORTANT:
+
+Do not put characters in every single section.
+
+The page should not become visually noisy.
+
+Aim for approximately 4–6 meaningful illustration placements across the entire School Management Systems page.
+
+Prioritise:
+
+1. Hero
+2. Smart Fee Reconciliation
+3. Portal section
+4. Before/After
+5. Customisation/consultation
+6. Final CTA
+
+If the page looks better with only 4 or 5, use fewer.
+
+Quality of placement is more important than quantity.
+
+==================================================
+12. MAKE THEM FEEL INTENTIONAL
+==================================================
+
+The illustrations should NOT look like images pasted into empty spaces.
+
+For every placement:
+
+- align them with the content
+- use consistent width/height ratios
+- maintain proper whitespace
+- avoid awkward floating
+- avoid touching card borders
+- avoid covering text
+- avoid oversized graphics
+- use subtle background shapes where appropriate
+- follow the same visual rhythm used on existing AutoM8 pages
+
+Where the existing site uses coloured blobs, backgrounds, interface cards or floating decorative elements around characters, use the same treatment.
+
+==================================================
+13. COLOUR CONSISTENCY
+==================================================
+
+Maintain AutoM8's existing visual palette.
+
+The illustrations can retain their original character colours, but surrounding decorative elements should use the existing brand palette:
+
+- AutoM8 blue
+- dark/navy
+- white
+- subtle greys
+- existing secondary accent colours
+
+Do not introduce strong unrelated colours that make the school page look like a different brand.
+
+==================================================
+14. RESPONSIVENESS
+==================================================
+
+All new illustrations must work correctly on:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+Desktop:
+Illustrations can sit beside content.
+
+Tablet:
+Reduce size appropriately.
+
+Mobile:
+Stack illustrations naturally.
+
+On small screens:
+- do not let images push important content too far down
+- do not make characters wider than the viewport
+- avoid horizontal overflow
+- maintain CTA visibility
+- keep text priority
+
+Use responsive CSS rather than hardcoded dimensions where appropriate.
+
+==================================================
+15. PERFORMANCE
+==================================================
+
+Do not unnecessarily make the page heavy.
+
+Where possible:
+
+- reuse existing optimised assets
+- use SVG where already available
+- compress raster images appropriately
+- lazy-load below-the-fold illustrations
+- specify image dimensions to reduce layout shifting
+- use descriptive alt text
+
+Do not significantly damage page speed for decorative images.
+
+==================================================
+16. ACCESSIBILITY
+==================================================
+
+For meaningful illustrations, use descriptive alt text.
+
+Examples:
+
+"School administrator reviewing learner records on a laptop"
+
+"Parent checking school information on a mobile phone"
+
+"Student accessing assignments through a digital portal"
+
+For purely decorative graphics, use appropriate empty alt attributes so screen readers do not announce irrelevant content.
+
+==================================================
+17. VISUAL CONSISTENCY CHECK
+==================================================
+
+After implementing the illustrations, compare the School Management Systems page directly against:
+
+- Homepage
+- Services
+- Pricing
+- Other AutoM8 landing pages
+
+Ask:
+
+"Does this look like the same website and the same brand?"
+
+If the School page looks like it came from a different template, adjust it.
+
+The illustration language must be consistent throughout AutoM8.
+
+==================================================
+18. IMPORTANT DESIGN PRINCIPLE
+==================================================
+
+The illustrations must support the sales story.
+
+They are NOT decoration for decoration's sake.
+
+They should help communicate:
+
+- technology
+- simplicity
+- organisation
+- schools
+- staff
+- parents
+- students
+- reduced administration
+- connected systems
+
+The result should make the page feel:
+
+Professional
+Modern
+Friendly
+Approachable
+Technology-focused
+School-focused
+
+NOT childish.
+
+==================================================
+19. DO NOT CHANGE PRICING OR CONTENT
+==================================================
+
+Do NOT modify any approved pricing during this task.
+
+Do NOT alter:
+
+- custom school package prices
+- R15 / R25 / R35 per learner pricing
+- System Care pricing
+- WordPress pricing
+- automation pricing
+- website pricing
+
+Do not remove the Smart Fee Reconciliation functionality.
+
+Do not change the current commercial structure.
+
+This is primarily a VISUAL improvement.
+
+==================================================
+20. TESTING
+==================================================
+
+After implementation:
+
+1. Run the website.
+2. Inspect the School Management Systems page on desktop.
+3. Inspect it on laptop.
+4. Inspect it on tablet.
+5. Inspect it on mobile.
+6. Check every illustration.
+7. Confirm none overlap text.
+8. Confirm none are blurry.
+9. Confirm there is no horizontal overflow.
+10. Confirm loading performance remains reasonable.
+11. Confirm visual style matches the homepage.
+12. Confirm no pricing changed.
+13. Confirm no existing functionality broke.
+14. Check all CTA buttons.
+15. Check alt text/accessibility.
+16. Check there are no console errors.
+
+==================================================
+21. COMPLETION REPORT
+==================================================
+
+When finished, provide a report showing:
+
+- Existing illustration assets found
+- Any new assets added
+- Hero illustration used
+- Fee reconciliation illustration
+- Portal illustrations
+- Before/After illustration changes
+- Final CTA illustration
+- Responsive adjustments
+- Performance optimisations
+- Accessibility changes
+- Files modified
+- Confirmation that pricing/content remained unchanged
+
+IMPORTANT:
+
+DO NOT deploy or push the changes until I review them.
