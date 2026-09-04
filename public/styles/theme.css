@@ -65,11 +65,12 @@ img { max-width: 100%; }
     justify-content: space-between;
     height: 64px;
 }
-.nav-logo h1 {
+.nav-logo a {
     font-size: 1.25rem;
     font-weight: 900;
     color: var(--text);
     letter-spacing: -0.04em;
+    text-decoration: none;
 }
 .nav-menu { display:flex; list-style:none; gap:2.5rem; align-items:center; }
 .nav-link {

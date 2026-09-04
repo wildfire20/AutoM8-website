@@ -4,6 +4,11 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Keep one canonical homepage URL so search engines do not split signals.
+app.get('/index.html', (req, res) => {
+    res.redirect(301, '/');
+});
+
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
 

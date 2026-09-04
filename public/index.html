@@ -19,14 +19,28 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "AutoM8",
-      "url": "https://www.auto-m8.co.za",
-      "email": "Autom8streamlining@gmail.com",
-      "telephone": "+27681536136",
-      "areaServed": "South Africa",
-      "description": "AutoM8 is a growing, founder-led South African software development and workflow automation company.",
-      "sameAs": []
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.auto-m8.co.za/#organization",
+          "name": "AutoM8",
+          "alternateName": "AutoM8 South Africa",
+          "url": "https://www.auto-m8.co.za/",
+          "email": "Autom8streamlining@gmail.com",
+          "telephone": "+27681536136",
+          "areaServed": "South Africa",
+          "description": "AutoM8 is a growing, founder-led South African software development and workflow automation company."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.auto-m8.co.za/#website",
+          "url": "https://www.auto-m8.co.za/",
+          "name": "AutoM8",
+          "alternateName": "AutoM8 South Africa",
+          "publisher": { "@id": "https://www.auto-m8.co.za/#organization" },
+          "inLanguage": "en-ZA"
+        }
+      ]
     }
     </script>
 
@@ -438,9 +452,9 @@
 <body>
 <nav class="navbar">
     <div class="nav-container">
-        <div class="nav-logo"><h1>AutoM8</h1></div>
+        <div class="nav-logo"><a href="/" aria-label="AutoM8 home">AutoM8</a></div>
         <ul class="nav-menu" id="nav-menu">
-            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="/" class="nav-link active">Home</a></li>
             <li><a href="services.html" class="nav-link">Services</a></li>
             <li><a href="school-management-system.html" class="nav-link">School Systems</a></li>
             <li><a href="pricing.html" class="nav-link">Pricing</a></li>
