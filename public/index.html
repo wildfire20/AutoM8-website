@@ -439,13 +439,57 @@
             .pathway-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 768px) {
+            .hero { padding: 100px 0 56px; }
+            .hero-inner {
+                gap: 1.75rem;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
             .hero h1 { font-size: 2.4rem; }
+            .hero-sub { margin-left: auto; margin-right: auto; }
+            .hero-img,
+            .pain-img,
+            .about-img,
+            .process-img {
+                display: block;
+                width: min(88vw, 320px);
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .pain-section,
+            .services-section,
+            .about-section,
+            .process-section,
+            .portfolio-section,
+            .pathway-section,
+            .website-choice-section { padding: 60px 0; }
+            .pain-grid,
+            .about-grid,
+            .process-grid { gap: 1.5rem; }
             .stats-strip-inner { flex-wrap: wrap; }
             .strip-item { flex: 1 1 50%; border-right: none; border-bottom: 1px solid var(--border-lt); }
             .services-grid { grid-template-columns: 1fr; }
+            .svc-card { padding: 1.5rem; }
+            .svc-img {
+                display: block;
+                width: min(100%, 280px);
+                margin: 0 auto 1rem;
+            }
             .port-grid { grid-template-columns: 1fr; }
             .website-choice-grid { grid-template-columns: 1fr; }
             .home-cta h2 { font-size: 2rem; }
+        }
+        @media (max-width: 380px) {
+            .hero-inner { padding-left: 18px; padding-right: 18px; }
+            .hero h1 { font-size: 2rem; }
+            .hero-micro { font-size: 0.66rem; letter-spacing: 1.15px; }
+            .hero-actions { gap: 0.85rem; }
+            .hero-actions .btn { width: 100%; }
+            .hero-link { width: 100%; justify-content: center; }
+            .strip-item { flex-basis: 100%; }
+            .about-feats { grid-template-columns: 1fr; justify-items: start; text-align: left; }
+            .website-choice-card,
+            .pathway-card { padding: 1.35rem; }
         }
     </style>
 </head>
