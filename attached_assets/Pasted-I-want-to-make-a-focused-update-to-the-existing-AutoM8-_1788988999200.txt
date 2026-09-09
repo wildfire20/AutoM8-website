@@ -1,0 +1,718 @@
+I want to make a focused update to the existing AutoM8 website portfolio.
+
+IMPORTANT:
+Do NOT redesign the AutoM8 website.
+Do NOT replace the current visual style.
+Do NOT change the existing colour scheme, animations, typography, navigation, cards, responsive behaviour or overall branding.
+
+I like the current website.
+
+This update is specifically about making the portfolio a stronger proof-of-work section by clearly distinguishing live systems, client projects, prototypes and concepts, and by adding links to projects that can actually be viewed.
+
+The current live AutoM8 portfolio is:
+
+https://www.auto-m8.co.za/portfolio.html
+
+Inspect the existing implementation first and reuse its current design system.
+
+==================================================
+1. CHANGE THE PORTFOLIO STATUS SYSTEM
+==================================================
+
+The current portfolio uses the generic label:
+
+“Project Showcase”
+
+for every project.
+
+Replace this with a proper project-status system.
+
+Supported project statuses should include:
+
+- Live System
+- Live Website
+- Client Project
+- Client Project — Pre-Launch
+- Internal System
+- Academic Project
+- Personal Project
+- Prototype
+- Concept System
+
+Do NOT guess a project's status.
+
+Create the portfolio data so the project type/status can easily be changed later.
+
+For any project where no classification has been confirmed yet, use:
+
+“Project Showcase”
+
+temporarily.
+
+Use small, attractive status badges that match the existing AutoM8 design.
+
+Do not make the badges overly colourful or redesign the cards.
+
+==================================================
+2. ADD PROJECT LINK SUPPORT
+==================================================
+
+Update the portfolio cards so projects can optionally contain:
+
+- liveUrl
+- demoUrl
+- caseStudyUrl
+
+The buttons should appear only when the relevant URL exists.
+
+Possible buttons:
+
+“View Live System”
+“Visit Website”
+“View Live Demo”
+“View Project”
+“Read Case Study”
+
+For projects with no public system or demo:
+
+Do NOT display a fake link.
+
+Instead show:
+
+“View Project Details”
+
+if a case-study page exists.
+
+External project links must:
+
+- Open in a new tab
+- Use target="_blank"
+- Use rel="noopener noreferrer"
+- Clearly indicate that the user is leaving AutoM8
+
+==================================================
+3. UPDATE HARMONY LEARNING INSTITUTE
+==================================================
+
+The existing Harmony project currently significantly understates the system.
+
+Change:
+
+“Harmony Institute LMS”
+
+to:
+
+“Harmony Learning Institute — School Management & Admissions Platform”
+
+Project category:
+
+Education Technology
+
+Status:
+
+Live System
+
+Live website:
+
+https://www.harmonylearning.co.za/
+
+Button:
+
+“View Live System”
+
+The portfolio-card description should be:
+
+“A complete digital school platform developed by AutoM8, combining a modern public website with online admissions, automated email communication, secure document submission, digital registration, parent-facing secure portals and an Admin admissions dashboard.”
+
+Use four concise feature highlights on the card:
+
+- Online admissions & registration
+- Secure parent document portal
+- Automated admissions communication
+- Admin admissions management
+
+Do not try to fit every system feature onto the card.
+
+==================================================
+4. CREATE A HARMONY CASE-STUDY PAGE
+==================================================
+
+Create a detailed project page using the existing AutoM8 website design.
+
+Suggested URL:
+
+/projects/harmony-learning-institute.html
+
+Do NOT make this page look like a separate website.
+
+Reuse:
+
+- AutoM8 navigation
+- fonts
+- spacing
+- colours
+- footer
+- cards
+- animations
+- CTA design
+
+Page title:
+
+Harmony Learning Institute — School Management & Admissions Platform
+
+Subtitle:
+
+Live School Technology Implementation
+
+Add a visible status badge:
+
+“Live System”
+
+Add:
+
+“View Live System”
+
+linking to:
+
+https://www.harmonylearning.co.za/
+
+--------------------------------------------------
+PROJECT OVERVIEW
+--------------------------------------------------
+
+Use wording similar to:
+
+“AutoM8 redesigned and expanded Harmony Learning Institute’s digital platform into a modern public school website connected to a secure school-management and admissions system.
+
+The platform supports the journey from a parent discovering the school and submitting an application through document collection, admissions review, registration and ongoing school communication, while providing administrators with tools to manage the process from one central environment.”
+
+Do not claim unsupported performance percentages or financial results.
+
+--------------------------------------------------
+THE PUBLIC SCHOOL WEBSITE
+--------------------------------------------------
+
+Include:
+
+- Responsive desktop and mobile experience
+- School information and programmes
+- Facilities and school-life content
+- Admissions information
+- 2027 fees and fee information
+- Boarding information
+- Transport/service information where available
+- School gallery
+- Contact and WhatsApp functionality
+- Links to Parent, Student and Staff portals
+
+--------------------------------------------------
+ONLINE ADMISSIONS
+--------------------------------------------------
+
+Include:
+
+- Online parent/guardian applications
+- Unique application reference numbers
+- Example format: HLI-2027-XXXX
+- Applicant and learner information capture
+- Application status tracking
+
+Possible admission statuses include:
+
+- New
+- Under Review
+- More Information Required
+- Approved
+- Registration Pending
+- Registered
+- Not Accepted
+
+--------------------------------------------------
+AUTOMATED ADMISSIONS COMMUNICATION
+--------------------------------------------------
+
+Include:
+
+- Application received confirmation
+- Under-review updates
+- More-information-required communication
+- Approval emails
+- Registration updates
+- Not-accepted/waitlist communication
+- Admin notifications for new applications
+- Secure email delivery through the configured email system
+
+Do not expose API credentials or technical secrets.
+
+--------------------------------------------------
+SECURE INFORMATION REQUESTS
+--------------------------------------------------
+
+Explain that school administrators can request specific missing information from a parent.
+
+Features include:
+
+- Administrator selects information required
+- Parent receives a private secure link
+- Parent can access only the information relevant to their application
+- Save-and-return functionality where applicable
+- Secure expiring links
+- Links can be revoked and reissued
+
+--------------------------------------------------
+DOCUMENT MANAGEMENT
+--------------------------------------------------
+
+Include:
+
+- Upload Online or Bring in Person
+- PDF, JPG and PNG support
+- Private document storage
+- File type and size validation
+- Document status management
+
+Document statuses may include:
+
+- Received
+- Pending Review
+- Replacement Required
+
+If a document needs replacement:
+
+- Admin records a reason
+- Parent receives a new secure request
+- Replacement can be submitted
+- Admin receives notification
+
+Do not show actual learner documents or sensitive information anywhere in the portfolio.
+
+--------------------------------------------------
+DIGITAL REGISTRATION
+--------------------------------------------------
+
+Include:
+
+- Approved applicants receive a secure registration link
+- Existing application information can be pre-filled
+- Parent completes remaining registration details
+- Address and emergency contact details
+- School-service selections
+- Save-progress functionality
+- Submitted registration becomes read-only while under review
+- Admin controls the final Registered status
+
+--------------------------------------------------
+ADMIN ADMISSIONS DASHBOARD
+--------------------------------------------------
+
+Include:
+
+- Search and filter applications
+- Admissions overview
+- Application details
+- Status history
+- Registration progress
+- Document checklist
+- Secure-link management
+- Resend/revoke/reissue tools
+- Document review tools
+- Admissions notifications
+
+--------------------------------------------------
+ADMIN NOTIFICATIONS
+--------------------------------------------------
+
+Examples:
+
+- New application
+- New document uploaded
+- Requested information submitted
+- Parent selected Bring in Person
+- Replacement document submitted
+- Registration submitted
+
+Explain that notifications can link administrators directly to the relevant application.
+
+--------------------------------------------------
+PRIVACY & SECURITY
+--------------------------------------------------
+
+Include:
+
+- Secure token-based parent links
+- Role-based administrator access
+- Private cloud document storage
+- PostgreSQL database
+- Protected file uploads
+- Authentication hardening
+- Rate limiting
+- Audit logging where implemented
+- Secure production hosting
+
+Do NOT expose:
+
+- Admin URLs that should remain private
+- Database credentials
+- API keys
+- AWS bucket details
+- OAuth secrets
+- Authentication configuration
+- Private learner information
+
+--------------------------------------------------
+TECHNOLOGY
+--------------------------------------------------
+
+Create a tasteful technology section.
+
+Only list technologies actually used.
+
+Based on the project information currently provided, these may include:
+
+- PostgreSQL
+- AWS S3
+- Gmail API
+- Railway
+- GitHub
+- Secure token-based authentication
+
+Inspect the project information before adding anything else.
+
+Do not invent technology.
+
+--------------------------------------------------
+CASE STUDY CTA
+--------------------------------------------------
+
+At the bottom include:
+
+“Need a school system like this?”
+
+Supporting copy:
+
+“AutoM8 builds school-management, admissions and parent-facing systems around the way each school actually operates.”
+
+Buttons:
+
+“Discuss a School System”
+“Chat on WhatsApp”
+
+WhatsApp:
+
+https://wa.me/27681536136
+
+==================================================
+5. ADD STATES COMPANIES TO THE PORTFOLIO
+==================================================
+
+States Companies is currently missing from the AutoM8 portfolio.
+
+Add it as a new project.
+
+Project title:
+
+States Companies Booking, Rental & Ordering Platform
+
+Category:
+
+Booking & Business Platform
+
+Status:
+
+Client Project
+
+IMPORTANT:
+
+I will provide the current public/demo URL separately.
+
+Use this placeholder only in the project-data/configuration:
+
+[STATES_COMPANIES_URL]
+
+Do NOT display this placeholder publicly.
+
+Until a URL is supplied, hide the external-link button.
+
+Portfolio-card description:
+
+“A custom dynamic web platform developed for States Companies, combining customer bookings, rentals and ordering with account authentication and an administrative management dashboard.”
+
+Suggested feature highlights:
+
+- Booking management
+- Rental & ordering workflows
+- Customer authentication
+- Admin management dashboard
+
+Do not claim that the platform is commercially launched if it is still in development or pre-launch.
+
+If the URL I provide is only a development/demo URL, label the button:
+
+“View Live Demo”
+
+NOT:
+
+“Visit Live Website”
+
+If the final production domain is supplied later, then it may use:
+
+“Visit Live Platform”
+
+==================================================
+6. CREATE A STATES COMPANIES CASE STUDY
+==================================================
+
+Suggested URL:
+
+/projects/states-companies.html
+
+Title:
+
+States Companies — Booking, Rental & Ordering Platform
+
+Explain the project honestly.
+
+Suggested overview:
+
+“AutoM8 developed a custom dynamic platform for States Companies that brings booking, rental and ordering functionality into one web-based system. The solution also includes customer account functionality and an administrative dashboard for managing platform activity.”
+
+Feature sections:
+
+- Online booking
+- Rental workflows
+- Ordering
+- Customer accounts
+- Third-party account sign-in where implemented
+- Database-backed application
+- Administrative dashboard
+- Responsive interface
+
+Do not invent:
+
+- customer numbers
+- order volumes
+- revenue
+- conversion rates
+- business savings
+- usage statistics
+
+Add:
+
+“Need a booking or ordering platform?”
+
+with buttons:
+
+“Discuss Your Project”
+“Chat on WhatsApp”
+
+==================================================
+7. UPDATE THE HOMEPAGE PROJECT PREVIEW
+==================================================
+
+The homepage currently features:
+
+- LPG Gas Stock Control
+- Harmony Institute LMS
+- ServiceBot AI Assistant
+
+Change the featured portfolio projects to prioritise stronger proof of real work.
+
+Use:
+
+1. Harmony Learning Institute
+Status: Live System
+
+2. States Companies
+Status: Client Project
+
+3. LPG Gas Stock Control
+Keep its current truthful classification until confirmed
+
+Harmony should include:
+
+“View Live System”
+
+States Companies should only show an external button if a valid URL has been configured.
+
+Keep the existing homepage project-card design and animations.
+
+==================================================
+8. STRUCTURE THE PORTFOLIO FOR FUTURE CLIENTS
+==================================================
+
+Do not hard-code every project differently if the existing project structure can be made reusable.
+
+Create a consistent portfolio/project data structure containing fields such as:
+
+name
+category
+status
+shortDescription
+features
+image
+liveUrl
+demoUrl
+caseStudyUrl
+featured
+projectType
+
+The purpose is that future AutoM8 clients can easily be added later without redesigning the portfolio.
+
+A future project should simply be able to specify:
+
+Status:
+Live Client Project
+
+Live URL:
+https://...
+
+Case study:
+...
+
+and automatically use the existing portfolio-card design.
+
+==================================================
+9. ADD A SMALL PORTFOLIO FILTER IF IT FITS NATURALLY
+==================================================
+
+Only if this can be done WITHOUT redesigning the page, add simple filters such as:
+
+All
+Live Systems
+Client Work
+Prototypes
+Concepts
+
+Do not add this if it makes the existing design cluttered.
+
+The portfolio should remain simple and professional.
+
+==================================================
+10. KEEP CONCEPT PROJECTS
+==================================================
+
+Do not remove existing portfolio projects just because they do not have live links.
+
+Projects without public URLs can remain as:
+
+- Prototype
+- Concept System
+- Internal System
+- Academic Project
+- Project Showcase
+
+depending on their confirmed status.
+
+For those projects:
+
+Do not show “Visit Website”.
+
+They may show:
+
+“View Project Details”
+
+if a case-study/details page exists.
+
+==================================================
+11. IMPORTANT TRUST RULES
+==================================================
+
+Do not describe every project as a client project.
+
+Do not invent:
+
+- client relationships
+- testimonials
+- project results
+- traffic
+- revenue
+- user counts
+- savings
+- performance percentages
+
+A live project should be labelled live only if the URL actually works.
+
+A client project should be labelled client project only if commissioned by a real client.
+
+A concept should clearly say Concept.
+
+A prototype should clearly say Prototype.
+
+Honesty is part of the AutoM8 positioning.
+
+==================================================
+12. SEO
+==================================================
+
+Add appropriate metadata for both new case-study pages.
+
+Harmony page should naturally target topics such as:
+
+- school management system South Africa
+- school admissions system
+- parent portal
+- school administration software
+
+States Companies page should naturally cover:
+
+- custom booking system
+- rental management platform
+- ordering system
+- custom web application
+
+Do not keyword-stuff.
+
+Add:
+
+- unique title
+- meta description
+- canonical URL
+- Open Graph metadata
+- Breadcrumb structured data where appropriate
+
+Add the two case-study pages to sitemap.xml.
+
+Keep all canonical URLs under:
+
+https://www.auto-m8.co.za/
+
+==================================================
+13. FINAL TESTING
+==================================================
+
+After making the changes:
+
+- Test desktop
+- Test mobile
+- Test all portfolio cards
+- Test external links
+- Test WhatsApp links
+- Test case-study pages
+- Test navigation
+- Test status badges
+- Test homepage featured projects
+- Confirm external links open in new tabs
+- Confirm no sensitive information is exposed
+- Confirm no fake claims were introduced
+- Confirm sitemap includes the new pages
+- Confirm the existing AutoM8 visual design remains intact
+
+==================================================
+14. FINAL REPORT
+==================================================
+
+Report:
+
+- Files changed
+- New files created
+- Portfolio statuses changed
+- Harmony changes
+- States Companies changes
+- Homepage changes
+- External URLs configured
+- URLs still waiting for me
+- Sitemap changes
+- Any project classifications still requiring confirmation
+- Any issues discovered
+
+Do not make additional unrelated changes to the AutoM8 website.
