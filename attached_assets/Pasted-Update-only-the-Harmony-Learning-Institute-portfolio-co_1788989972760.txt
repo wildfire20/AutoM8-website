@@ -1,0 +1,285 @@
+Update only the Harmony Learning Institute portfolio content on the AutoM8 website.
+
+IMPORTANT:
+Do not redesign the AutoM8 website.
+Do not change the existing colours, layout, animations, typography, card style, navigation, footer or overall structure.
+Do not make unrelated changes.
+
+The current Harmony entry should be upgraded so that it presents Harmony as a complete custom school-management platform, not only an LMS or admissions system.
+
+==================================================
+1. UPDATE THE HARMONY PORTFOLIO CARD
+==================================================
+
+Change the project title to:
+
+Harmony Learning Institute — Custom School Management Platform
+
+Category:
+
+Education Technology
+
+Status:
+
+Live System
+
+Live URL:
+
+https://www.harmonylearning.co.za/
+
+Use a button:
+
+View Live System
+
+Short description:
+
+“A custom-built digital school-management platform for Harmony Learning Institute, combining the public school website, online admissions, secure registration, parent portal, learner records, attendance, fees, document management, automated communication, Admin notifications and operational tools into one connected system.”
+
+Use four concise feature highlights:
+
+- Online admissions & registration
+- Parent portal & learner records
+- Fees, attendance & document management
+- Automated school communication
+
+Keep the card clean and do not overload it with too much text.
+
+==================================================
+2. UPDATE THE HARMONY CASE-STUDY PAGE
+==================================================
+
+If a Harmony case-study page already exists, update it.
+
+If not, create:
+
+/projects/harmony-learning-institute.html
+
+Keep the existing AutoM8 design system.
+
+Use this title:
+
+Harmony Learning Institute — Custom School Management Platform
+
+Subtitle:
+
+Live Private School Technology Implementation
+
+Status badge:
+
+Live System
+
+Button:
+
+View Live System
+
+Link:
+
+https://www.harmonylearning.co.za/
+
+==================================================
+3. PROJECT OVERVIEW
+==================================================
+
+Use wording similar to:
+
+“Harmony Learning Institute is a private school with a fully custom digital platform designed specifically around the way the school operates.
+
+AutoM8 developed a connected system that brings together the school website, admissions, administration, parent communication, learner information, attendance, fees, documents, notifications and day-to-day school operations in one platform.”
+
+==================================================
+4. SYSTEM FEATURES
+==================================================
+
+Create clearly separated feature sections for:
+
+### Modern School Website
+Include:
+
+- Responsive public website
+- Admissions information
+- School programmes
+- Facilities
+- Fees
+- Boarding
+- Transport
+- Contact details
+- School updates
+
+### Online Admissions & Registration
+Include:
+
+- Online applications
+- Unique application references
+- Secure personal links
+- Missing-information requests
+- Secure document submission
+- Option to bring documents in person
+- Digital registration workflow
+
+### Automated Parent Communication
+Include:
+
+- Application received emails
+- Review updates
+- Approval notifications
+- Decline/hold communication
+- More-information-required emails
+- Registration communication
+- Secure action links
+
+### Parent Portal
+Include:
+
+- Parent login
+- Child information
+- Attendance
+- Grades/results
+- Notices
+- Documents
+- Fee information
+- Invoices
+- Payment history
+- Enrolled services
+
+### Multiple Children Under One Account
+Explain that parents can manage more than one learner under a single account and switch between children.
+
+### Attendance & Learner Records
+Include:
+
+- Learner profiles
+- Attendance history
+- Attendance statuses
+- School records
+
+### Fees & Payments
+Include:
+
+- Outstanding balances
+- Invoices
+- Payment history
+- School services
+- Payment information
+- Proof-of-payment upload support
+
+### Document Management
+Include:
+
+- Digital document handling
+- Private cloud storage
+- Controlled access
+- Admissions documents
+- School records where applicable
+
+### Admin Admissions Dashboard
+Include:
+
+- Application review
+- Missing-information requests
+- Approve/decline workflow
+- Registration monitoring
+- Document review
+- Secure-link management
+
+### Admin Notifications
+Include:
+
+- New applications
+- Information submissions
+- Uploaded documents
+- Registration submissions
+- Replacement documents
+- Other important admissions actions
+
+### Operational Automation
+Explain that repetitive processes such as:
+
+- Admissions emails
+- Status updates
+- Registration links
+- Document requests
+- Staff notifications
+
+are automated to reduce manual administration.
+
+### Analytics & Management Visibility
+Explain that the system gives school management a clearer overview of learner and administrative activity from one central platform.
+
+==================================================
+5. ADD A “BUILT SPECIFICALLY FOR HARMONY” SECTION
+==================================================
+
+Use this message:
+
+“This is not an off-the-shelf school template.
+
+Harmony’s platform was designed around the requirements and workflows of Harmony Learning Institute as a private school.
+
+AutoM8 uses the same approach for other organisations — the system is designed around how the school, academy or business actually operates rather than forcing the organisation into a generic one-size-fits-all platform.”
+
+Add a CTA underneath:
+
+Need a custom school system?
+
+Buttons:
+
+Discuss a School System
+Chat on WhatsApp
+
+WhatsApp:
+
+https://wa.me/27681536136
+
+==================================================
+6. REMOVE OR AVOID UNSUPPORTED CLAIMS
+==================================================
+
+Do not add:
+
+- Fake percentages
+- Fake performance improvements
+- Fake student numbers
+- Fake savings
+- Fake traffic numbers
+- Fake testimonials
+- Unsupported HR functionality
+
+Do not prominently mention any HR scanning feature unless it is already clearly implemented and verified.
+
+==================================================
+7. SEO
+==================================================
+
+Update the Harmony case-study metadata to naturally target:
+
+- school management system South Africa
+- private school management system
+- school admissions system
+- parent portal
+- school administration software
+- custom school management platform
+
+Do not keyword-stuff.
+
+Add or update:
+
+- Meta title
+- Meta description
+- Canonical URL
+- Open Graph metadata
+- Breadcrumb structured data where appropriate
+
+==================================================
+8. FINAL CHECK
+==================================================
+
+After the update:
+
+- Confirm the Harmony portfolio card still matches the existing AutoM8 design
+- Confirm the live-system button works
+- Confirm the case-study page works on desktop and mobile
+- Confirm no sensitive information is exposed
+- Confirm no unsupported claims were added
+- Confirm no unrelated portfolio projects were changed
+
+Provide a short report of the files changed and exactly what was updated.

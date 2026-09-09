@@ -7,15 +7,15 @@
  */
 window.autoM8Projects = [
     {
-        name: 'Harmony Learning Institute — School Management & Admissions Platform',
+        name: 'Harmony Learning Institute — Custom School Management Platform',
         category: 'Education Technology',
         status: 'Live System',
-        shortDescription: 'A complete digital school platform developed by AutoM8, combining a modern public website with online admissions, automated email communication, secure document submission, digital registration, parent-facing secure portals and an Admin admissions dashboard.',
+        shortDescription: 'A custom-built digital school-management platform for Harmony Learning Institute, combining the public school website, online admissions, secure registration, parent portal, learner records, attendance, fees, document management, automated communication, Admin notifications and operational tools into one connected system.',
         features: [
             'Online admissions & registration',
-            'Secure parent document portal',
-            'Automated admissions communication',
-            'Admin admissions management'
+            'Parent portal & learner records',
+            'Fees, attendance & document management',
+            'Automated school communication'
         ],
         image: null,
         icon: 'fa-graduation-cap',
