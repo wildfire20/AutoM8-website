@@ -378,6 +378,15 @@
         .port-highlights { display: flex; flex-direction: column; gap: 0.3rem; }
         .port-highlights span { font-size: 0.8rem; color: var(--text-2); display: flex; align-items: center; gap: 6px; }
         .port-highlights span::before { content: ''; width: 5px; height: 5px; background: var(--blue); border-radius: 50%; flex-shrink: 0; }
+        .port-actions { display:flex; flex-wrap:wrap; gap:.55rem; margin-top:1rem; }
+        .port-action {
+            display:inline-flex; align-items:center; gap:5px; padding:8px 11px;
+            border:1px solid var(--border); border-radius:7px; background:var(--bg);
+            color:var(--text); font-size:.75rem; font-weight:700; text-decoration:none;
+        }
+        .port-action:hover { color:var(--blue); border-color:var(--blue); }
+        .port-action-primary { color:#fff; background:var(--blue); border-color:var(--blue); }
+        .port-action-primary:hover { color:#fff; background:var(--blue-dk); border-color:var(--blue-dk); }
 
         /* ── CTA ── */
         .home-cta {
@@ -758,7 +767,39 @@
             <h2 class="section-title">A selection of software systems and digital products.</h2>
             <p class="section-subtitle">A selection of software systems, prototypes and digital products developed by AutoM8.</p>
         </div>
-        <div class="port-grid">
+        <div class="port-grid" id="featured-projects">
+            <div class="port-card fade-in">
+                <div class="port-top">
+                    <div class="port-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="port-cat">Live System</div>
+                </div>
+                <div class="port-body">
+                    <h3>Harmony Learning Institute — School Management &amp; Admissions Platform</h3>
+                    <p>A live school platform with online admissions, secure parent workflows and central admissions management.</p>
+                    <div class="port-highlights">
+                        <span>Online admissions &amp; registration</span>
+                        <span>Secure parent document portal</span>
+                        <span>Admin admissions management</span>
+                    </div>
+                    <div class="port-actions"><a class="port-action port-action-primary" href="https://www.harmonylearning.co.za/" target="_blank" rel="noopener noreferrer" aria-label="View Live System (opens in a new tab, leaving AutoM8)">View Live System <i class="fas fa-external-link-alt"></i></a><a class="port-action" href="projects/harmony-learning-institute.html">View Project Details <i class="fas fa-arrow-right"></i></a></div>
+                </div>
+            </div>
+            <div class="port-card fade-in">
+                <div class="port-top">
+                    <div class="port-icon"><i class="fas fa-calendar-check"></i></div>
+                    <div class="port-cat">Client Project</div>
+                </div>
+                <div class="port-body">
+                    <h3>Stats Companies Booking, Rental &amp; Ordering Platform</h3>
+                    <p>A custom business platform connecting bookings, rentals, ordering, customer accounts and administration.</p>
+                    <div class="port-highlights">
+                        <span>Booking management</span>
+                        <span>Rental &amp; ordering workflows</span>
+                        <span>Admin management dashboard</span>
+                    </div>
+                    <div class="port-actions"><a class="port-action port-action-primary" href="https://www.statscompanies.co.za/" target="_blank" rel="noopener noreferrer" aria-label="Visit Live Platform (opens in a new tab, leaving AutoM8)">Visit Live Platform <i class="fas fa-external-link-alt"></i></a><a class="port-action" href="projects/states-companies.html">View Project Details <i class="fas fa-arrow-right"></i></a></div>
+                </div>
+            </div>
             <div class="port-card fade-in">
                 <div class="port-top">
                     <div class="port-icon"><i class="fas fa-fire-alt"></i></div>
@@ -774,40 +815,10 @@
                     </div>
                 </div>
             </div>
-            <div class="port-card fade-in">
-                <div class="port-top">
-                    <div class="port-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="port-cat">Project Showcase</div>
-                </div>
-                <div class="port-body">
-                    <h3>Harmony Institute LMS</h3>
-                    <p>Designed to replace paper-based administration at a school with a complete digital platform.</p>
-                    <div class="port-highlights">
-                        <span>Attendance and grade tracking</span>
-                        <span>Parent communication portal</span>
-                        <span>School document management</span>
-                    </div>
-                </div>
-            </div>
-            <div class="port-card fade-in">
-                <div class="port-top">
-                    <div class="port-icon"><i class="fas fa-robot"></i></div>
-                    <div class="port-cat">Project Showcase</div>
-                </div>
-                <div class="port-body">
-                    <h3>ServiceBot AI Assistant</h3>
-                    <p>Demonstrates AI-assisted customer support with automated response workflows.</p>
-                    <div class="port-highlights">
-                        <span>AI-assisted support responses</span>
-                        <span>Conversation routing</span>
-                        <span>24/7 availability design</span>
-                    </div>
-                </div>
-            </div>
         </div>
         <div style="text-align:center;margin-top:2.5rem;" class="fade-in">
             <a href="portfolio.html" class="hero-link" style="font-size:0.925rem;">
-                View all 8 projects <i class="fas fa-arrow-right"></i>
+                View all 9 projects <i class="fas fa-arrow-right"></i>
             </a>
         </div>
     </div>
@@ -881,7 +892,28 @@
     </div>
 </footer>
 
+<script src="scripts/portfolio-data.js"></script>
 <script>
+const featuredProjects=document.getElementById('featured-projects');
+featuredProjects.innerHTML=window.autoM8Projects.filter(project=>project.featured).map(project=>`
+    <article class="port-card fade-in">
+        <div class="port-top">
+            <div class="port-icon"><i class="fas ${project.icon}" aria-hidden="true"></i></div>
+            <div class="port-cat">${project.status}</div>
+        </div>
+        <div class="port-body">
+            <h3>${project.name}</h3>
+            <p>${project.shortDescription}</p>
+            <div class="port-highlights">
+                ${project.features.slice(0,3).map(feature=>`<span>${feature}</span>`).join('')}
+            </div>
+            <div class="port-actions">
+                ${project.liveUrl ? `<a class="port-action port-action-primary" href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" aria-label="${project.liveLabel} (opens in a new tab, leaving AutoM8)">${project.liveLabel} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>` : ''}
+                ${project.caseStudyUrl ? `<a class="port-action" href="${project.caseStudyUrl}">View Project Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>` : ''}
+            </div>
+        </div>
+    </article>
+`).join('');
 document.getElementById('yr').textContent = new Date().getFullYear();
 
 const mobileMenu = document.getElementById('mobile-menu');

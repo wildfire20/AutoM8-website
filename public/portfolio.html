@@ -68,6 +68,7 @@
         =============================================================
         */
 
+        .badge-live     { color: #065f46; background: #ecfdf5; border-color: #a7f3d0; }
         .badge-client   { color: #1d4ed8; background: #eff6ff; border-color: #bfdbfe; }
         .badge-internal { color: #6d28d9; background: #f5f3ff; border-color: #ddd6fe; }
         .badge-academic { color: #065f46; background: #ecfdf5; border-color: #a7f3d0; }
@@ -96,6 +97,15 @@
             line-height: 1.4;
         }
         .highlight-item::before { content: ''; width: 5px; height: 5px; background: var(--blue); border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+        .project-actions { display:flex; gap:.65rem; flex-wrap:wrap; margin-top:1.1rem; }
+        .project-link {
+            display:inline-flex; align-items:center; gap:6px; padding:9px 13px;
+            border:1px solid var(--border); border-radius:7px; color:var(--text);
+            font-size:.78rem; font-weight:700; text-decoration:none; transition:all .2s;
+        }
+        .project-link:hover { border-color:var(--blue); color:var(--blue); }
+        .project-link-primary { background:var(--blue); border-color:var(--blue); color:#fff; }
+        .project-link-primary:hover { background:var(--blue-dk); border-color:var(--blue-dk); color:#fff; }
 
         .results-section { background: var(--bg-alt); border-top: 1px solid var(--border-lt); border-bottom: 1px solid var(--border-lt); }
         .results-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
@@ -162,6 +172,7 @@
         @media (max-width: 480px) {
             .capabilities-grid { grid-template-columns: 1fr; }
             .portfolio-highlights { grid-template-columns: 1fr; }
+            .project-link { width:100%; justify-content:center; }
         }
     </style>
 </head>
@@ -197,7 +208,7 @@
 
 <section style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
     <div class="container">
-        <div class="portfolio-grid">
+        <div class="portfolio-grid" id="portfolio-projects">
 
             <!-- PROJECT 1: Lephalale Connect -->
             <!-- CATEGORY: Update .portfolio-badge class once confirmed (e.g. badge-client, badge-prototype, etc.) -->
@@ -235,25 +246,49 @@
                 </div>
             </div>
 
-            <!-- PROJECT 3: Harmony Institute LMS -->
-            <!-- CATEGORY: Update .portfolio-badge class once confirmed -->
+            <!-- PROJECT 3: Harmony Learning Institute -->
             <div class="portfolio-card fade-in">
                 <div class="portfolio-image"><i class="fas fa-graduation-cap"></i></div>
                 <div class="portfolio-content">
-                    <span class="portfolio-badge">Project Showcase</span>
-                    <div class="portfolio-tag">Education</div>
-                    <h3>Harmony Institute LMS</h3>
-                    <p>A school management platform designed to support attendance tracking, grade management, parent communication, learner profiles, and cloud-based document management.</p>
+                    <span class="portfolio-badge badge-live">Live System</span>
+                    <div class="portfolio-tag">Education Technology</div>
+                    <h3>Harmony Learning Institute — School Management &amp; Admissions Platform</h3>
+                    <p>A complete digital school platform developed by AutoM8, combining a modern public website with online admissions, automated email communication, secure document submission, digital registration, parent-facing secure portals and an Admin admissions dashboard.</p>
                     <div class="portfolio-highlights">
-                        <span class="highlight-item">Attendance and grade tracking</span>
-                        <span class="highlight-item">Parent communication portal</span>
-                        <span class="highlight-item">Learner profiles</span>
-                        <span class="highlight-item">School document management</span>
+                        <span class="highlight-item">Online admissions &amp; registration</span>
+                        <span class="highlight-item">Secure parent document portal</span>
+                        <span class="highlight-item">Automated admissions communication</span>
+                        <span class="highlight-item">Admin admissions management</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="project-link project-link-primary" href="https://www.harmonylearning.co.za/" target="_blank" rel="noopener noreferrer" aria-label="View Live System (opens in a new tab, leaving AutoM8)">View Live System <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                        <a class="project-link" href="projects/harmony-learning-institute.html">View Project Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
 
-            <!-- PROJECT 4: TransLogix Fleet Tracker -->
+            <!-- PROJECT 4: Stats Companies -->
+            <div class="portfolio-card fade-in">
+                <div class="portfolio-image"><i class="fas fa-calendar-check"></i></div>
+                <div class="portfolio-content">
+                    <span class="portfolio-badge badge-client">Client Project</span>
+                    <div class="portfolio-tag">Booking &amp; Business Platform</div>
+                    <h3>Stats Companies Booking, Rental &amp; Ordering Platform</h3>
+                    <p>A custom dynamic web platform developed for Stats Companies, combining customer bookings, rentals and ordering with account authentication and an administrative management dashboard.</p>
+                    <div class="portfolio-highlights">
+                        <span class="highlight-item">Booking management</span>
+                        <span class="highlight-item">Rental &amp; ordering workflows</span>
+                        <span class="highlight-item">Customer authentication</span>
+                        <span class="highlight-item">Admin management dashboard</span>
+                    </div>
+                    <div class="project-actions">
+                        <a class="project-link project-link-primary" href="https://www.statscompanies.co.za/" target="_blank" rel="noopener noreferrer" aria-label="Visit Live Platform (opens in a new tab, leaving AutoM8)">Visit Live Platform <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                        <a class="project-link" href="projects/states-companies.html">View Project Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 5: TransLogix Fleet Tracker -->
             <!-- CATEGORY: Update .portfolio-badge class once confirmed -->
             <div class="portfolio-card fade-in">
                 <div class="portfolio-image"><i class="fas fa-truck"></i></div>
@@ -451,7 +486,24 @@
         <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved.</p></div>
     </div>
 </footer>
+<script src="scripts/portfolio-data.js"></script>
 <script>
+const portfolioGrid=document.getElementById('portfolio-projects');
+portfolioGrid.innerHTML=window.autoM8Projects.map(project=>`
+    <article class="portfolio-card fade-in" data-project-type="${project.projectType}">
+        <div class="portfolio-image"><i class="fas ${project.icon}" aria-hidden="true"></i></div>
+        <div class="portfolio-content">
+            <span class="portfolio-badge ${window.autoM8StatusClass(project.status)}">${project.status}</span>
+            <div class="portfolio-tag">${project.category}</div>
+            <h3>${project.name}</h3>
+            <p>${project.shortDescription}</p>
+            <div class="portfolio-highlights">
+                ${project.features.map(feature=>`<span class="highlight-item">${feature}</span>`).join('')}
+            </div>
+            ${window.autoM8ProjectLinks(project) ? `<div class="project-actions">${window.autoM8ProjectLinks(project)}</div>` : ''}
+        </div>
+    </article>
+`).join('');
 document.getElementById('yr').textContent = new Date().getFullYear();
 const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');
 mm.addEventListener('click',()=>nm.classList.toggle('active'));
