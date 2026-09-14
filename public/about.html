@@ -24,6 +24,8 @@
             align-items: center;
         }
         .about-img { width: 100%; filter: grayscale(20%) saturate(0.65); }
+        .about-art { display:flex; justify-content:center; align-items:center; }
+        .about-art .about-img { max-width:520px; }
         .about-content h2 { font-size: 2.2rem; font-weight: 900; color: var(--text); letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 1.25rem; }
         .about-content p { color: var(--text-3); line-height: 1.8; margin-bottom: 1.25rem; }
         .about-list { list-style: none; margin-bottom: 1.75rem; }
@@ -55,6 +57,20 @@
         .val-num { font-size: 0.72rem; font-weight: 800; letter-spacing: 1.5px; color: var(--blue); margin-bottom: 0.75rem; }
         .value-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; }
         .value-card p { color: var(--text-3); font-size: 0.875rem; line-height: 1.65; }
+        .tool-mark {
+            width:46px;
+            height:46px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            margin-bottom:1rem;
+            border:1px solid #bdd3f4;
+            border-radius:12px;
+            background:var(--blue-lt);
+            color:var(--blue);
+            box-shadow:0 5px 14px rgba(23,105,232,.1);
+        }
+        .tool-mark i { color:inherit; font-size:1.35rem; }
 
         /* Team section is now "Our Capabilities" */
         .team-section { background: var(--bg-alt); border-bottom: 1px solid var(--border-lt); }
@@ -113,7 +129,7 @@
             <p class="page-subtitle fade-in" style="margin:0;">AutoM8 is a growing, founder-led South African software development and workflow automation company supporting businesses and schools with affordable, custom-built technology.</p>
         </div>
         <div class="page-hero-art fade-in">
-            <img src="images/illustrations/source/illus-7.svg" alt="Personalised software development support" width="1024" height="768">
+            <img src="images/illustrations/source/illus-6.svg" alt="Team planning practical digital systems" width="1024" height="768">
         </div>
     </div>
 </section>
@@ -121,6 +137,9 @@
 <section style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
     <div class="container">
         <div class="about-grid">
+            <div class="about-art fade-in">
+                <img class="about-img" src="images/illustrations/source/illus-7.svg" alt="Personalised software development support" width="1024" height="768" loading="lazy">
+            </div>
             <div class="about-content fade-in">
                 <div class="section-tag">Who we are</div>
                 <h2>Personalised service.<br>Flexible pricing.<br>Direct communication.</h2>
@@ -260,12 +279,12 @@ To activate this section:
             <p class="section-subtitle">AutoM8 does not use technology names as decoration. The stack is chosen around the website, workflow or operational system being built.</p>
         </div>
         <div class="values-grid fade-in">
-            <div class="value-card"><div class="val-num">WEB APPLICATIONS</div><h3>JavaScript, Node.js &amp; Express</h3><p>Custom web applications and server-side functionality for connected business workflows.</p></div>
-            <div class="value-card"><div class="val-num">DATA</div><h3>PostgreSQL &amp; SQL databases</h3><p>Structured data for dashboards, records, portals and operational systems.</p></div>
-            <div class="value-card"><div class="val-num">INTEGRATION</div><h3>APIs &amp; webhooks</h3><p>Connecting forms, notifications, external services and process steps where required.</p></div>
-            <div class="value-card"><div class="val-num">WEBSITES</div><h3>WordPress, HTML, CSS &amp; JavaScript</h3><p>Professional business websites and custom interactive experiences.</p></div>
-            <div class="value-card"><div class="val-num">DELIVERY</div><h3>GitHub &amp; cloud deployment</h3><p>Version-controlled development and practical deployment based on project requirements.</p></div>
-            <div class="value-card"><div class="val-num">APPROACH</div><h3>Fit before fashion</h3><p>The simplest appropriate stack is preferred over unnecessary technical complexity.</p></div>
+            <div class="value-card"><div class="tool-mark" aria-hidden="true"><i class="fab fa-js-square"></i></div><div class="val-num">WEB APPLICATIONS</div><h3>JavaScript, Node.js &amp; Express</h3><p>Custom web applications and server-side functionality for connected business workflows.</p></div>
+            <div class="value-card"><div class="tool-mark" aria-hidden="true"><i class="fas fa-database"></i></div><div class="val-num">DATA</div><h3>PostgreSQL &amp; SQL databases</h3><p>Structured data for dashboards, records, portals and operational systems.</p></div>
+            <div class="value-card"><div class="tool-mark" aria-hidden="true"><i class="fas fa-plug"></i></div><div class="val-num">INTEGRATION</div><h3>APIs &amp; webhooks</h3><p>Connecting forms, notifications, external services and process steps where required.</p></div>
+            <div class="value-card"><div class="tool-mark" aria-hidden="true"><i class="fab fa-wordpress-simple"></i></div><div class="val-num">WEBSITES</div><h3>WordPress, HTML, CSS &amp; JavaScript</h3><p>Professional business websites and custom interactive experiences.</p></div>
+            <div class="value-card"><div class="tool-mark" aria-hidden="true"><i class="fab fa-github"></i></div><div class="val-num">DELIVERY</div><h3>GitHub &amp; cloud deployment</h3><p>Version-controlled development and practical deployment based on project requirements.</p></div>
+            <div class="value-card"><div class="tool-mark" aria-hidden="true"><i class="fas fa-lightbulb"></i></div><div class="val-num">APPROACH</div><h3>Fit before fashion</h3><p>The simplest appropriate stack is preferred over unnecessary technical complexity.</p></div>
         </div>
     </div>
 </section>

@@ -163,15 +163,17 @@
          .secondary-research p { color:var(--text-3); font-size:.84rem; line-height:1.7; margin-top:.7rem; }
          .sales-stage > .stage-disclosures { max-width:1200px; margin:0 auto; padding:0 28px 3rem; }
          .buying-stage { padding-top:0 !important; }
-         .buying-stage > .container { padding-top:42px !important; padding-bottom:1.25rem !important; }
+         .buying-stage > .container { padding-top:64px !important; padding-bottom:2.5rem !important; }
          .buying-stage > .container > section,
          .buying-stage .stage-disclosure > section { padding-top:0 !important; padding-bottom:0 !important; }
          .buying-stage .stage-disclosure > section > .container { padding-top:1.5rem !important; padding-bottom:1.5rem !important; }
-         .buying-stage .pricing-grid-4 { margin-top:1rem; }
-         .buying-stage .custom-card { padding:1.5rem; }
-         .buying-stage > .container > #custom-portals { margin-top:0; }
+         .buying-stage .intro-grid { margin-bottom:4.5rem; gap:1.5rem; }
+         .buying-stage .model-card { padding:2.25rem; }
+         .buying-stage .pricing-grid-4 { margin-top:1.75rem; gap:1.25rem; }
+         .buying-stage .custom-card { padding:1.75rem; }
+         .buying-stage > .container > #custom-portals { margin-top:0; padding-top:.5rem !important; }
          .buying-stage > .container > #custom-portals > .container { padding:0; }
-         .buying-stage > .container > #custom-portals > .container > .section-header { margin-bottom:1.25rem; }
+         .buying-stage > .container > #custom-portals > .container > .section-header { max-width:780px; margin:0 auto 2rem; }
          .buying-stage > .container > #custom-portals > .container > details.secondary-research { display:block; border:0; padding:0; margin:0; }
          .buying-stage > .container > #custom-portals > .container > details.secondary-research > summary { display:none; }
          .stage-disclosure { margin:0 0 1rem; border:1px solid var(--border); border-radius:14px; background:var(--bg); overflow:hidden; }
@@ -186,6 +188,9 @@
              .school-modules .module-grid, .proof-panel, .portal-accordions { grid-template-columns:1fr !important; }
              .sales-stage > .stage-disclosures { padding-left:20px; padding-right:20px; }
              .school-modules .module-detail { padding:1rem; }
+             .buying-stage > .container { padding-top:48px !important; padding-bottom:2rem !important; }
+             .buying-stage .intro-grid { margin-bottom:3.25rem; gap:1rem; }
+             .buying-stage .model-card, .buying-stage .custom-card { padding:1.5rem; }
          }
          @media (max-width:380px) {
              .school-modules .module-grid { gap:.75rem; }
@@ -272,7 +277,7 @@
         <a href="#portal-outcomes">Parent Portal</a>
         <a href="#custom-portals">Administration</a>
         <a href="#fee-reconciliation">Fees</a>
-        <a href="#standard-packages">Pricing</a>
+        <a href="#custom-portals">Pricing</a>
         <a href="#security">Security</a>
         <a href="#faq">FAQs</a>
     </div>
