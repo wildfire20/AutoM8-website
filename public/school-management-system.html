@@ -9,6 +9,7 @@
     <meta property="og:title" content="School Management System South Africa | AutoM8">
     <meta property="og:description" content="Reduce repetitive school administration with connected learner records, attendance, parent access, assignments and smart fee reconciliation.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.auto-m8.co.za/school-management-system.html">
 
     <script type="application/ld+json">
     {
@@ -139,6 +140,10 @@
         .breadcrumb a { color:var(--text-3); text-decoration:none; }
         .breadcrumb a:hover { color:var(--blue); }
         .nav-logo .logo-text { color:var(--text); font-size:1.25rem; font-weight:900; letter-spacing:-.04em; text-decoration:none; }
+        .school-jump { position:sticky; top:70px; z-index:20; background:rgba(255,255,255,.96); border-bottom:1px solid var(--border-lt); }
+        .school-jump .container { display:flex; gap:.5rem; overflow-x:auto; padding-top:.8rem; padding-bottom:.8rem; scrollbar-width:thin; }
+        .school-jump a { white-space:nowrap; border:1px solid var(--border); border-radius:999px; padding:.45rem .8rem; color:var(--text-2); text-decoration:none; font-size:.76rem; font-weight:700; }
+        .school-jump a:hover, .school-jump a:focus-visible { color:var(--blue); border-color:var(--blue); }
         @media (max-width:1024px) {
             .pricing-grid-4 { grid-template-columns:1fr 1fr; }
             .fee-feature { grid-template-columns:1fr; }
@@ -186,7 +191,7 @@
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-        <div class="nav-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        <button type="button" class="nav-toggle" id="mobile-menu" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')!=='true')"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
     </div>
 </nav>
 
@@ -210,6 +215,19 @@
         </div>
     </div>
 </section>
+
+<nav class="school-jump" aria-label="School system page sections">
+    <div class="container">
+        <a href="#problems-solved">Overview</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#portal-outcomes">Parent Portal</a>
+        <a href="#custom-portals">Administration</a>
+        <a href="#fee-reconciliation">Fees</a>
+        <a href="#standard-packages">Pricing</a>
+        <a href="#security">Security</a>
+        <a href="#faq">FAQs</a>
+    </div>
+</nav>
 
 <section id="problems-solved" class="section-rule" style="background:var(--bg-alt);padding:80px 0;">
     <div class="container">
@@ -297,7 +315,17 @@
     </div>
 </section>
 
-<section id="school-options" class="section-rule" style="background:var(--bg-alt);padding:80px 0;">
+<section id="admissions" class="section-rule" style="background:var(--bg);padding:70px 0;">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Admissions workflows</div>
+            <h2 class="section-title">Move school applications into a clear review process.</h2>
+            <p class="section-subtitle">A school admissions system can collect applications, supporting documents, statuses and follow-up actions in one structured workflow. Explore the <a href="solutions/school-admissions-system-south-africa.html">school admissions system guide</a> or see how admissions fits into the <a href="projects/harmony-learning-institute.html">Harmony live school-management platform</a>.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-rule" style="background:var(--bg-alt);padding:80px 0;">
     <div class="container">
         <div class="section-header fade-in">
             <div class="section-tag">Two ways to work with AutoM8</div>
@@ -537,7 +565,7 @@
     </div>
 </section>
 
-<section class="section-rule" style="background:var(--bg);padding:80px 0;">
+<section id="security" class="section-rule" style="background:var(--bg);padding:80px 0;">
     <div class="container">
         <div class="info-grid fade-in">
             <div class="info-card"><i class="fas fa-file-contract"></i><h3>Data and system ownership</h3><p>Ownership, licensing, handover and source-code arrangements for custom school systems are defined in the individual project agreement. Your school retains ownership of its own business, learner, parent, staff and academic data.</p></div>
@@ -569,19 +597,19 @@
     </div>
 </section>
 
-<section class="section-rule" style="background:var(--bg-alt);padding:80px 0;">
+<section id="faq" class="section-rule" style="background:var(--bg-alt);padding:80px 0;">
     <div class="container">
-        <div class="section-header fade-in"><div class="section-tag">FAQ</div><h2 class="section-title">Questions about school management systems.</h2></div>
+                <div class="section-header fade-in"><div class="section-tag">FAQ</div><h2 class="section-title">Questions about school management systems.</h2></div>
         <div class="info-grid fade-in">
-            <div class="info-card"><h3>Does every school need all three portals?</h3><p>No. AutoM8 can build a Staff Portal only, Staff + Parent, Staff + Student, or a complete three-portal system.</p></div>
-            <div class="info-card"><h3>Why are custom systems priced from a starting amount?</h3><p>Every school's requirements are different. The final quotation depends on the agreed features and complexity.</p></div>
-            <div class="info-card"><h3>Do custom school systems require monthly payments?</h3><p>The custom development fee is normally once-off. Schools can select optional System Care where required. Third-party infrastructure charges remain separate.</p></div>
-            <div class="info-card"><h3>What are the R15, R25 and R35 packages?</h3><p>These are AutoM8's existing standard school-management subscription options and are separate from bespoke custom system development.</p></div>
-            <div class="info-card"><h3>Can we add a Parent Portal later?</h3><p>Yes. AutoM8 can scope future expansion when the school is ready.</p></div>
-            <div class="info-card"><h3>Can the system include assignments?</h3><p>Yes. Student/LMS functionality can include assignments, learning materials and submissions depending on the agreed project scope.</p></div>
-            <div class="info-card"><h3>Can parents have multiple children under one account?</h3><p>Yes, this can be implemented where required.</p></div>
-            <div class="info-card"><h3>Who pays for hosting and SMS?</h3><p>Hosting, databases, SMS, domains and other third-party provider costs are separate and normally paid by the school.</p></div>
-            <div class="info-card"><h3>Does fee management require online card payments?</h3><p>No. Schools using EFT can use learner payment references and bank-statement reconciliation. An online payment gateway is optional, and its provider charges remain separate.</p></div>
+            <details class="info-card"><summary><strong>Does every school need all three portals?</strong></summary><p>No. AutoM8 can build a Staff Portal only, Staff + Parent, Staff + Student, or a complete three-portal system.</p></details>
+            <details class="info-card"><summary><strong>Why are custom systems priced from a starting amount?</strong></summary><p>Every school's requirements are different. The final quotation depends on the agreed features and complexity.</p></details>
+            <details class="info-card"><summary><strong>Do custom school systems require monthly payments?</strong></summary><p>The custom development fee is normally once-off. Schools can select optional System Care where required. Third-party infrastructure charges remain separate.</p></details>
+            <details class="info-card"><summary><strong>What are the R15, R25 and R35 packages?</strong></summary><p>These are AutoM8's existing standard school-management subscription options and are separate from bespoke custom system development.</p></details>
+            <details class="info-card"><summary><strong>Can we add a Parent Portal later?</strong></summary><p>Yes. AutoM8 can scope future expansion when the school is ready.</p></details>
+            <details class="info-card"><summary><strong>Can the system include assignments?</strong></summary><p>Yes. Student/LMS functionality can include assignments, learning materials and submissions depending on the agreed project scope.</p></details>
+            <details class="info-card"><summary><strong>Can parents have multiple children under one account?</strong></summary><p>Yes, this can be implemented where required.</p></details>
+            <details class="info-card"><summary><strong>Who pays for hosting and SMS?</strong></summary><p>Hosting, databases, SMS, domains and other third-party provider costs are separate and normally paid by the school.</p></details>
+            <details class="info-card"><summary><strong>Does fee management require online card payments?</strong></summary><p>No. Schools using EFT can use learner payment references and bank-statement reconciliation. An online payment gateway is optional, and its provider charges remain separate.</p></details>
         </div>
     </div>
 </section>
@@ -596,6 +624,7 @@
                     <a href="contact.html?type=school-demo" class="btn btn-primary">Request a Free School System Demo</a>
                     <a href="https://wa.me/27681536136?text=Hi%20AutoM8!%20I%27d%20like%20to%20discuss%20a%20school%20management%20system." class="btn btn-outline" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
                 </div>
+                <p style="color:#9ca3af;font-size:.82rem;margin-top:1.25rem;" class="fade-in">Related: <a href="solutions/school-admissions-system-south-africa.html" style="color:#fff;">school admissions system guide</a> · <a href="insights/private-school-management-system.html" style="color:#fff;">what a private school management system should include</a> · <a href="projects/harmony-learning-institute.html" style="color:#fff;">Harmony live-system case study</a></p>
             </div>
             <img class="final-cta-art fade-in" src="images/illustrations/source/illus-7.svg" alt="School administrator supported by an organised digital workspace" width="1024" height="768" loading="lazy">
         </div>
@@ -610,7 +639,7 @@
             <div class="footer-section"><h4>Other Services</h4><ul><li><a href="affordable-websites.html">Business Websites</a></li><li><a href="business-automation.html">Workflow Automation</a></li><li><a href="custom-software-pretoria.html">Custom Software</a></li></ul></div>
             <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> <a href="mailto:Autom8streamlining@gmail.com">Autom8streamlining@gmail.com</a></p><p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27681536136" target="_blank" rel="noopener">+27 68 153 6136</a></p></div>
         </div>
-        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved.</p></div>
+        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved. · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></p></div>
     </div>
 </footer>
 <script>

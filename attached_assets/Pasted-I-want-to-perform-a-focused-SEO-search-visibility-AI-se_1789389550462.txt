@@ -1,0 +1,1048 @@
+I want to perform a focused SEO, search-visibility, AI-search visibility and usability upgrade on the existing AutoM8 website.
+
+IMPORTANT:
+
+This is NOT a redesign.
+
+I already like the current AutoM8:
+- branding
+- colour scheme
+- visual identity
+- animations
+- card design
+- typography
+- navigation style
+- portfolio presentation
+- general layout
+
+Do not replace the site with a generic agency template.
+
+The purpose of this update is to make AutoM8:
+
+1. Easier to discover through Google Search
+2. Easier to understand and cite through AI-powered search systems
+3. More authoritative for software-development searches in South Africa
+4. More competitive for searches around websites, custom software, automation and school technology
+5. Easier and faster for human visitors to understand
+6. Less text-heavy where the current pages have become too long
+7. More credible without inventing company size, clients, statistics or testimonials
+
+Official domain:
+
+https://www.auto-m8.co.za/
+
+Primary market:
+
+South Africa, with a strong focus on Pretoria / Gauteng.
+
+Primary service areas:
+
+- Business websites
+- Custom software development
+- Web applications
+- Business workflow automation
+- School management systems
+- Parent portals
+- Admissions systems
+- Booking systems
+- Business dashboards
+- Inventory / stock systems
+- Custom operational systems
+
+Do NOT make AutoM8 sound like a huge enterprise consultancy.
+
+Preserve the existing positioning:
+
+- Founder-led
+- Direct communication
+- Flexible pricing
+- Custom-built solutions
+- Affordable entry points
+- Phased builds
+- Practical technology
+- Clients deal directly with the person building the system
+
+==================================================
+1. BEGIN WITH A COMPLETE SEO AUDIT
+==================================================
+
+Before editing anything, inspect the entire current production codebase.
+
+Audit:
+
+- Every public URL
+- Page titles
+- Meta descriptions
+- H1 headings
+- H2/H3 hierarchy
+- Canonical URLs
+- Open Graph metadata
+- Structured data
+- Internal links
+- Image alt text
+- Sitemap
+- robots.txt
+- Broken links
+- Duplicate content
+- Thin pages
+- Pages competing for the same keyword
+- Long pages
+- Core service pages
+- Case-study pages
+- Blog / insight infrastructure
+- Page performance
+- Mobile layout
+- Accessibility
+- Heading clarity
+- CTA placement
+
+Do not make assumptions based only on file names.
+
+Provide the audit findings in the final report.
+
+==================================================
+2. DO NOT TRY TO RANK FOR “EVERYTHING”
+==================================================
+
+Do NOT create hundreds of low-quality pages for every keyword, city or possible service.
+
+Do NOT create doorway pages such as:
+
+software-development-johannesburg
+software-development-centurion
+software-development-midrand
+software-development-sandton
+software-development-boksburg
+
+with almost identical content.
+
+AutoM8 should build topical authority around things it genuinely provides.
+
+The primary search/topic clusters should be:
+
+CLUSTER 1 — CUSTOM SOFTWARE
+- custom software development South Africa
+- custom software development Pretoria
+- software development company Pretoria
+- custom business software
+- custom web applications
+- business management systems
+- custom operational systems
+
+CLUSTER 2 — WEBSITES
+- website design Pretoria
+- web development Pretoria
+- business websites South Africa
+- affordable business websites
+- custom website development
+- booking websites
+- dynamic business websites
+
+CLUSTER 3 — AUTOMATION
+- business automation South Africa
+- workflow automation
+- automate repetitive business tasks
+- business process automation
+- automated customer communication
+- custom workflow systems
+
+CLUSTER 4 — EDUCATION TECHNOLOGY
+- school management system South Africa
+- private school management system
+- school admissions system
+- parent portal
+- learner management system
+- school fee management
+- school administration software
+
+CLUSTER 5 — OPERATIONAL BUSINESS SYSTEMS
+- custom booking system
+- rental management system
+- ordering system
+- inventory / stock management system
+- business dashboard
+- customer portal
+- admin portal
+
+Build depth around these genuine areas instead of trying to rank for unrelated technology topics.
+
+==================================================
+3. IMPROVE THE HOMEPAGE FOR SEARCH + HUMANS
+==================================================
+
+Keep the existing homepage design.
+
+Do NOT make the homepage extremely long.
+
+The top of the homepage should explain AutoM8 within a few seconds.
+
+Use positioning similar to:
+
+H1:
+
+Custom Software, Websites & Business Automation for South African Organisations
+
+Supporting text:
+
+“AutoM8 builds practical websites, custom business systems, school platforms and workflow automation around the way your organisation actually operates.”
+
+Primary CTAs:
+
+- Discuss Your Project
+- Chat on WhatsApp
+
+Secondary:
+
+- View Our Work
+
+Near the hero, naturally establish:
+
+- Pretoria / Gauteng
+- South Africa
+- Custom development
+- Websites
+- Automation
+- School technology
+
+Do not keyword-stuff the hero.
+
+==================================================
+4. ADD A CLEAR “WHAT DO YOU NEED?” PATHWAY
+==================================================
+
+Create a concise section helping visitors identify themselves.
+
+Examples:
+
+“I need a professional business website”
+→ Website Development
+
+“I need software built around my business”
+→ Custom Software
+
+“My business has repetitive manual work”
+→ Business Automation
+
+“My school needs a digital management system”
+→ School Systems
+
+“I need bookings, rentals, orders or customer accounts”
+→ Operational Systems
+
+Use the existing card design.
+
+This section should make AutoM8 useful for visitors who arrive with a PROBLEM rather than already knowing what technical product they need.
+
+==================================================
+5. CREATE PROBLEM-BASED SEARCH CONTENT
+==================================================
+
+One major goal is to capture searches where users describe their problem rather than searching for “AutoM8”.
+
+Create a small number of high-quality problem/solution pages.
+
+Do NOT mass-produce them.
+
+Create these initial pages:
+
+/solutions/replace-spreadsheets-with-custom-software.html
+
+Target problem:
+Businesses managing important operations through spreadsheets, WhatsApp, paper or disconnected tools.
+
+Explain:
+- when spreadsheets become a problem
+- signs a custom system may be worthwhile
+- dashboards
+- central databases
+- staff access
+- audit trails
+- automation
+- examples of systems AutoM8 can build
+
+CTA:
+“Discuss Your Current Process”
+
+--------------------------------------------------
+
+/solutions/automate-business-admin.html
+
+Target problem:
+Businesses spending too much time doing repetitive admin.
+
+Discuss:
+- manual emails
+- reminders
+- data entry
+- follow-ups
+- approvals
+- document creation
+- status notifications
+- reporting
+
+CTA:
+“Find Out What You Can Automate”
+
+--------------------------------------------------
+
+/solutions/custom-booking-system-south-africa.html
+
+Explain:
+- booking systems
+- customer accounts
+- scheduling
+- rentals
+- orders
+- confirmations
+- dashboards
+- admin management
+- payment integration where required
+
+Use States Companies as a relevant example without making unsupported performance claims.
+
+--------------------------------------------------
+
+/solutions/school-admissions-system-south-africa.html
+
+Explain:
+- online applications
+- application references
+- admissions statuses
+- missing-information requests
+- secure document submission
+- registration
+- parent communication
+- admin notifications
+
+Use Harmony Learning Institute as real proof-of-work.
+
+These pages must contain genuinely useful explanations.
+
+Do NOT write generic AI-style filler.
+
+==================================================
+6. STRENGTHEN THE SERVICE PILLAR PAGES
+==================================================
+
+Audit and strengthen the existing pages for:
+
+- Website Design Pretoria
+- Affordable Business Websites
+- Business Automation
+- School Management Systems
+- Parent Portals
+- Custom Software Pretoria
+
+Each should have one primary search intent.
+
+Avoid having multiple pages competing for the same primary phrase.
+
+For every pillar page include:
+
+- One clear H1
+- Who the service is for
+- The business problem
+- What AutoM8 builds
+- Common use cases
+- Relevant project proof
+- Process
+- Pricing guidance
+- FAQs
+- CTA
+- Related services
+- Related case studies
+- Related useful articles
+
+Use natural South African wording.
+
+==================================================
+7. IMPROVE THE SCHOOL MANAGEMENT PAGE WITHOUT REMOVING ITS DEPTH
+==================================================
+
+The current School Management System page contains valuable information but has become too long for casual visitors.
+
+Do NOT delete the useful SEO content.
+
+Restructure it for progressive disclosure.
+
+Add a useful top navigation/jump menu such as:
+
+- Overview
+- Admissions
+- Parent Portal
+- Administration
+- Fees
+- Pricing
+- Security
+- FAQs
+
+Where suitable use accessible:
+
+- accordions
+- tabs
+- expandable sections
+- <details>/<summary>
+
+Keep important content in the HTML/DOM and accessible to crawlers and screen readers.
+
+Consider separate visual tabs for:
+
+Parent Portal
+Staff/Admin Portal
+Student Portal
+
+Keep the strongest selling points visible without requiring the visitor to read the whole page.
+
+Use a sticky or repeated:
+
+“Book a School System Demo”
+
+CTA at sensible intervals.
+
+Do NOT remove content simply to make the page shorter.
+
+==================================================
+8. IMPROVE CASE STUDIES FOR QUICK SCANNING
+==================================================
+
+Keep the detailed Harmony and States Companies case studies.
+
+At the top of each case study add a concise executive summary:
+
+THE PROBLEM
+
+WHAT AUTOM8 BUILT
+
+CURRENT OUTCOME / STATUS
+
+Use only factual results.
+
+Do not invent percentages.
+
+Then allow visitors to continue into the detailed feature breakdown.
+
+For Harmony prominently show:
+
+Live System
+
+and:
+
+View Live System
+
+For States Companies use the truthful current project status.
+
+Use case studies as evidence throughout relevant service pages.
+
+==================================================
+9. CREATE A REAL TECHNOLOGY SECTION
+==================================================
+
+Add a polished “Technology We Work With” section.
+
+Do not use technology logos merely for decoration.
+
+Only list technologies AutoM8 has genuinely worked with.
+
+Organise them by purpose.
+
+Example structure:
+
+Web Applications
+- relevant frameworks actually used
+
+Data & Databases
+- PostgreSQL
+- SQL Server
+- other genuinely used technologies
+
+Cloud & Deployment
+- Railway
+- AWS
+- GitHub
+
+Automation & Integration
+- APIs
+- Webhooks
+- Python where applicable
+- Gmail API where applicable
+
+Websites
+- WordPress where genuinely offered
+- relevant frontend technologies
+
+Do not invent expertise.
+
+The point is to demonstrate technical capability without trying to look like a giant enterprise consultancy.
+
+==================================================
+10. STRENGTHEN ENTITY / COMPANY INFORMATION
+==================================================
+
+Search engines and AI systems should be able to clearly identify AutoM8 as one consistent company/entity.
+
+Ensure the website consistently states:
+
+Business:
+AutoM8
+
+Official website:
+https://www.auto-m8.co.za/
+
+Phone:
++27 68 153 6136
+
+Current working email:
+autom8streamlining@gmail.com
+
+Location / service context:
+Pretoria, Gauteng, South Africa
+Serving organisations across South Africa.
+
+Do not invent a street address.
+
+If a verified @auto-m8.co.za email exists in the future, the site can be updated later.
+
+Keep company information consistent across:
+
+- footer
+- contact page
+- About page
+- structured data
+- case studies
+- social metadata
+
+==================================================
+11. IMPROVE THE ABOUT PAGE FOR AUTHORITY
+==================================================
+
+Keep the founder-led positioning.
+
+Make it obvious that AutoM8 is a real growing South African software company.
+
+Sections should communicate:
+
+- What AutoM8 does
+- Who AutoM8 serves
+- Why the business exists
+- How projects are approached
+- Founder-led development
+- Direct communication
+- Custom development rather than one-size-fits-all products
+- South African focus
+
+If founder information has already been supplied, create a credible founder section.
+
+Do not invent team members.
+
+==================================================
+12. ADD AUTHORSHIP TO INSIGHTS / ARTICLES
+==================================================
+
+For educational articles and guides, visibly identify who created or reviewed the content.
+
+Use accurate authorship.
+
+Example:
+
+Written by [actual founder/developer name]
+AutoM8 Software Developer
+
+Do not create fake authors.
+
+Create an author/profile page if appropriate, including:
+
+- actual development background
+- areas of experience
+- selected projects
+- AutoM8 role
+
+This is intended to make first-hand expertise clear.
+
+==================================================
+13. CREATE A USEFUL INSIGHTS / RESOURCES HUB
+==================================================
+
+Do NOT create dozens of generic blog articles immediately.
+
+Create the infrastructure for high-quality first-hand content.
+
+Suggested URL:
+
+/insights/
+
+Start with a limited set of strong articles:
+
+1. How Much Does a Business Website Cost in South Africa?
+
+2. When Does a Business Need Custom Software Instead of Excel?
+
+3. Website vs Web Application: What Does Your Business Actually Need?
+
+4. What Should a Private School Management System Include?
+
+5. How We Built a Digital Admissions Workflow for a Private School
+
+6. How a Custom Booking System Works
+
+7. What Business Processes Can Be Automated?
+
+8. Custom Software vs Off-the-Shelf Software for Small Businesses
+
+Content must:
+
+- answer the query properly
+- contain first-hand AutoM8 knowledge
+- use examples from actual projects where appropriate
+- avoid invented statistics
+- avoid padding to reach a word count
+- contain relevant internal links
+- contain an appropriate CTA
+
+Do not publish thin AI-generated articles just for SEO.
+
+==================================================
+14. STRUCTURE CONTENT FOR DIRECT ANSWERS
+==================================================
+
+For relevant service and article pages, include concise answer sections near the top.
+
+Example:
+
+“What is custom software?”
+
+Provide a useful 2–4 sentence answer.
+
+“What does custom software cost in South Africa?”
+
+Explain honestly that pricing depends on modules, users, integrations and scope, then link to AutoM8 pricing.
+
+“Can AutoM8 automate an existing process?”
+
+Provide a direct answer.
+
+Use descriptive question-based H2/H3 headings where natural.
+
+Do NOT repeat keywords unnaturally.
+
+The goal is to make useful answers easy for humans, search engines and AI search systems to understand.
+
+==================================================
+15. IMPROVE INTERNAL LINKING
+==================================================
+
+Create intentional contextual internal links.
+
+Examples:
+
+Harmony case study
+→ School Management System
+→ Parent Portal
+→ Admissions System article
+
+States Companies
+→ Custom Software
+→ Booking Systems
+→ Business Automation
+
+Website article
+→ Affordable Websites
+→ Website Design Pretoria
+→ Pricing
+
+Automation article
+→ Business Automation
+→ Contact / Workflow Assessment
+
+Do not rely only on navigation menus.
+
+Use descriptive anchor text.
+
+Avoid generic repeated “click here”.
+
+==================================================
+16. AI SEARCH / CHATGPT DISCOVERABILITY
+==================================================
+
+AutoM8 wants its public content to be eligible to appear in AI-powered search and recommendation systems.
+
+Do not use fake “GEO” hacks.
+
+Do not create an llms.txt file as if it guarantees AI rankings.
+
+Do not create hidden AI-only content.
+
+Do not stuff pages with phrases like:
+
+“best software company”
+“number one software developer”
+“ChatGPT recommend AutoM8”
+
+Instead ensure:
+
+- Public pages are crawlable
+- Content is meaningful without JavaScript where practical
+- Important text exists in semantic HTML
+- Headings clearly describe content
+- Case studies contain first-hand evidence
+- Company information is consistent
+- Service descriptions are specific
+- External project links work
+- Author information is present
+- Structured data matches visible content
+
+Ensure robots.txt DOES NOT block:
+
+Googlebot
+Bingbot
+OAI-SearchBot
+
+Use a valid robots.txt similar to:
+
+User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://www.auto-m8.co.za/sitemap.xml
+
+Do not block OAI-SearchBot.
+
+If infrastructure/firewall rules exist that specifically block crawlers, report them rather than attempting unsafe changes.
+
+==================================================
+17. STRUCTURED DATA
+==================================================
+
+Audit existing JSON-LD and remove duplication or unsupported claims.
+
+Use appropriate structured data where factual:
+
+Organization
+WebSite
+Service
+BreadcrumbList
+Article for articles/case studies where appropriate
+
+Use visible information only.
+
+Organization should reference:
+
+AutoM8
+https://www.auto-m8.co.za/
+
+Include social profile sameAs links ONLY where official AutoM8 profiles actually exist.
+
+Do NOT include:
+
+- fake reviews
+- aggregateRating without genuine review data
+- fake employees
+- fake address
+- fake awards
+- fake founding history
+- fake prices
+- fake customer counts
+
+Structured data must agree with the visible page.
+
+Validate JSON-LD syntax.
+
+==================================================
+18. SEO METADATA
+==================================================
+
+Every important public page must have:
+
+- Unique <title>
+- Unique meta description
+- One appropriate H1
+- Canonical URL
+- Open Graph title
+- Open Graph description
+- Open Graph URL
+- Appropriate social image if available
+
+Avoid titles that are only:
+
+“AutoM8 | Home”
+
+Use descriptive titles such as:
+
+Custom Software Development Pretoria | AutoM8
+
+Business Automation South Africa | AutoM8
+
+School Management System South Africa | AutoM8
+
+Affordable Business Websites South Africa | AutoM8
+
+Do not create titles that exceed usability simply to stuff keywords.
+
+==================================================
+19. IMAGE SEO
+==================================================
+
+Audit project images and screenshots.
+
+Use:
+
+- descriptive filenames
+- appropriate alt text
+- width/height attributes
+- lazy loading for below-the-fold images
+- compressed WebP/AVIF where safe
+- responsive image handling where appropriate
+
+Example alt text:
+
+“Harmony Learning Institute admissions dashboard developed by AutoM8”
+
+NOT:
+
+“image123”
+
+Do not stuff alt text with keywords.
+
+==================================================
+20. PERFORMANCE
+==================================================
+
+Preserve the animations but optimise responsibly.
+
+Check:
+
+- unnecessarily large images
+- render-blocking JavaScript
+- unused scripts
+- unnecessary third-party libraries
+- font loading
+- layout shifts
+- mobile performance
+- animation performance
+- caching
+- compression
+
+Do not destroy the visual experience purely to improve a Lighthouse score.
+
+==================================================
+21. ACCESSIBILITY AND AI/AGENT FRIENDLINESS
+==================================================
+
+Improve semantic accessibility.
+
+Check:
+
+- buttons
+- links
+- forms
+- menu states
+- ARIA labels where needed
+- form labels
+- keyboard navigation
+- focus states
+- accessible accordions
+- accessible tabs
+- descriptive button text
+
+Do not add unnecessary ARIA where native HTML already provides correct semantics.
+
+==================================================
+22. LEGAL / TRUST POLISH
+==================================================
+
+If proper legal pages do not yet exist, create clearly written templates for:
+
+- Privacy Policy
+- Terms of Service
+- Cookie Policy / Cookie Information
+
+Do not claim they constitute professional legal advice.
+
+Do not copy another company's policies.
+
+Add appropriate footer links.
+
+On contact forms add a short privacy notice such as:
+
+“By submitting this form, you agree that AutoM8 may use the information provided to respond to your enquiry.”
+
+Link to Privacy Policy.
+
+==================================================
+23. CONVERSION IMPROVEMENTS
+==================================================
+
+SEO traffic is useless if visitors do not contact AutoM8.
+
+For each page determine one primary CTA.
+
+Examples:
+
+Custom software:
+Discuss Your System
+
+Schools:
+Book a School System Demo
+
+Automation:
+Request a Workflow Assessment
+
+Websites:
+Get a Website Quote
+
+Booking systems:
+Discuss a Booking Platform
+
+Avoid placing five equal CTAs in the same section.
+
+Keep WhatsApp available as a secondary option.
+
+==================================================
+24. DO NOT REMOVE PUBLIC PRICING
+==================================================
+
+Keep AutoM8's transparent pricing advantage.
+
+However, do not make the company look like it competes only on being cheap.
+
+Present the value first.
+
+For example:
+
+“Custom Business Systems”
+
+then:
+
+“Focused custom builds from R10,000. Larger platforms are quoted according to modules, users, integrations and deployment requirements.”
+
+For automation:
+
+“Workflow Automation”
+
+then:
+
+“Simple automations available from R500.”
+
+Do not make R500 the main identity of AutoM8.
+
+==================================================
+25. DO NOT COPY CYBERSPRINT
+==================================================
+
+Do not reproduce the CyberSprint website.
+
+Do not copy its wording, design or sections.
+
+AutoM8 should remain differentiated around:
+
+- accessible custom development
+- founder-led delivery
+- direct communication
+- clear pricing
+- school technology expertise
+- SMEs
+- custom operational software
+- flexible phased builds
+
+The purpose of competitor analysis is to improve trust signals and structure, NOT to imitate them.
+
+==================================================
+26. SITEMAP AND INDEXING
+==================================================
+
+Update sitemap.xml with every canonical, indexable public page.
+
+Do not include:
+
+- 404
+- temporary URLs
+- duplicate pages
+- development URLs
+- private/admin pages
+- login-only pages
+- noindex pages
+
+Use only:
+
+https://www.auto-m8.co.za/
+
+URLs.
+
+Keep:
+
+https://www.auto-m8.co.za/sitemap.xml
+
+referenced correctly in robots.txt.
+
+==================================================
+27. DO NOT BREAK EXISTING SEARCH PERFORMANCE
+==================================================
+
+Before changing existing URLs:
+
+- inspect whether they are indexed
+- preserve their URLs where possible
+
+Do not rename established pages unnecessarily.
+
+If a URL absolutely must change:
+
+- implement a 301 redirect
+- update internal links
+- update canonical URLs
+- update sitemap
+
+Do not create orphan pages.
+
+==================================================
+28. FINAL QUALITY CHECK
+==================================================
+
+After implementation verify:
+
+- All public pages return HTTP 200
+- Canonicals are correct
+- Sitemap is valid XML
+- robots.txt is accessible
+- OAI-SearchBot is not blocked
+- Googlebot is not blocked
+- All page titles are unique
+- All primary pages have one H1
+- No important page is accidentally noindex
+- Internal links work
+- External portfolio links work
+- Mobile works correctly
+- Accordions/tabs are accessible
+- Forms work
+- WhatsApp works
+- Structured data contains no invented information
+- New solution pages are linked from relevant existing pages
+- No sensitive client information is exposed
+- Existing animations and visual identity remain intact
+
+==================================================
+29. FINAL REPORT
+==================================================
+
+After completing the work, provide a detailed report containing:
+
+1. Files changed
+2. New pages created
+3. Existing pages shortened/restructured
+4. Main keyword/topic target for every page
+5. Pages that may compete with one another
+6. Internal links added
+7. Structured data changes
+8. Sitemap changes
+9. robots.txt changes
+10. OAI-SearchBot status
+11. Performance improvements
+12. Accessibility improvements
+13. Legal/trust additions
+14. Any missing company information still required
+15. Any SEO problems that require action outside Replit
+16. Pages I should request Google to re-index
+17. A final list of all live canonical URLs
+
+Do not make unrelated changes.

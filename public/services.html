@@ -9,6 +9,7 @@
     <meta property="og:title" content="Services | AutoM8 South Africa">
     <meta property="og:description" content="Business websites, workflow automation, custom software, school management and more — built for South African organisations.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.auto-m8.co.za/services.html">
 
     <!-- Analytics Placeholder — see index.html for instructions -->
 
@@ -140,7 +141,7 @@
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-        <div class="nav-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        <button type="button" class="nav-toggle" id="mobile-menu" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')!=='true')"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
     </div>
 </nav>
 
@@ -306,13 +307,13 @@
             <p class="section-subtitle">Modern technologies selected for reliability, maintainability, and cost-effectiveness.</p>
         </div>
         <div class="tech-grid fade-in">
-            <div class="tech-card"><i class="fab fa-react"></i><h4>React</h4><p>Modern frontends</p></div>
-            <div class="tech-card"><i class="fab fa-node-js"></i><h4>Node.js</h4><p>Scalable backends</p></div>
+            <div class="tech-card"><i class="fab fa-js"></i><h4>JavaScript</h4><p>Interactive web applications</p></div>
+            <div class="tech-card"><i class="fab fa-node-js"></i><h4>Node.js &amp; Express</h4><p>Server-side applications</p></div>
             <div class="tech-card"><i class="fas fa-database"></i><h4>PostgreSQL</h4><p>Reliable databases</p></div>
-            <div class="tech-card"><i class="fab fa-python"></i><h4>Python</h4><p>AI and automation</p></div>
-            <div class="tech-card"><i class="fab fa-aws"></i><h4>Cloud Hosting</h4><p>Scalable infrastructure</p></div>
+            <div class="tech-card"><i class="fab fa-wordpress"></i><h4>WordPress</h4><p>Business websites</p></div>
+            <div class="tech-card"><i class="fas fa-link"></i><h4>APIs &amp; Webhooks</h4><p>Connected workflows</p></div>
             <div class="tech-card"><i class="fas fa-mobile-alt"></i><h4>Mobile-Responsive</h4><p>Works on all devices</p></div>
-            <div class="tech-card"><i class="fas fa-lock"></i><h4>Security</h4><p>Built in from the start</p></div>
+            <div class="tech-card"><i class="fab fa-github"></i><h4>GitHub</h4><p>Version-controlled delivery</p></div>
             <div class="tech-card"><i class="fas fa-chart-line"></i><h4>Analytics</h4><p>Dashboards and reporting</p></div>
         </div>
     </div>
@@ -330,6 +331,16 @@
     </div>
 </section>
 
+<section style="background:var(--bg-alt);border-bottom:1px solid var(--border-lt);">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Solve a specific problem</div>
+            <h2 class="section-title">Start with a practical guide.</h2>
+            <p class="section-subtitle">Explore <a href="solutions/index.html">all problem-based solutions</a>, including guidance on <a href="solutions/custom-booking-system-south-africa.html">custom booking and operational platforms</a>, <a href="solutions/automate-business-admin.html">repetitive business administration</a> and <a href="solutions/replace-spreadsheets-with-custom-software.html">replacing spreadsheets with custom software</a>.</p>
+        </div>
+    </div>
+</section>
+
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
@@ -338,7 +349,7 @@
             <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About AutoM8</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
             <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> <a href="mailto:Autom8streamlining@gmail.com">Autom8streamlining@gmail.com</a></p><p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27681536136" target="_blank" rel="noopener">+27 68 153 6136</a></p></div>
         </div>
-        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved.</p></div>
+        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved. · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></p></div>
     </div>
 </footer>
 <script>

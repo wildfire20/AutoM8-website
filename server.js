@@ -4,13 +4,33 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+app.disable('x-powered-by');
+app.use((req, res, next) => {
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+    res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+    res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+    if (process.env.NODE_ENV === 'production') {
+        res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+    }
+    next();
+});
+
 // Keep one canonical homepage URL so search engines do not split signals.
 app.get('/index.html', (req, res) => {
     res.redirect(301, '/');
 });
 
 // Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), {
+    setHeaders: (res, filePath) => {
+        if (filePath.endsWith('.html')) {
+            res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+        } else if (/\.(?:css|js|svg|png|jpe?g|webp|avif|woff2?)$/i.test(filePath)) {
+            res.setHeader('Cache-Control', 'public, max-age=3600, must-revalidate');
+        }
+    }
+}));
 
 // Route for the root path
 app.get('/', (req, res) => {

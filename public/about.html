@@ -9,6 +9,7 @@
     <meta property="og:title" content="About AutoM8 | South African Software Development">
     <meta property="og:description" content="AutoM8 is a growing, founder-led South African software development and automation company.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.auto-m8.co.za/about.html">
 
     <!-- Analytics Placeholder — see index.html for instructions -->
 
@@ -100,7 +101,7 @@
             <li><a href="about.html" class="nav-link active">About</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-        <div class="nav-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        <button type="button" class="nav-toggle" id="mobile-menu" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')!=='true')"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
     </div>
 </nav>
 
@@ -128,7 +129,7 @@
                     <li><i class="fas fa-check"></i> Flexible pricing and phased build options</li>
                     <li><i class="fas fa-check"></i> Direct communication throughout every project</li>
                     <li><i class="fas fa-check"></i> Supporting South African businesses and schools</li>
-                    <li><i class="fas fa-check"></i> You own the source code, always</li>
+                    <li><i class="fas fa-check"></i> Ownership and handover terms agreed clearly in writing</li>
                 </ul>
                 <a href="contact.html" class="btn btn-primary">Get in touch <i class="fas fa-arrow-right"></i></a>
             </div>
@@ -139,7 +140,7 @@
 <section class="stats-section">
     <div class="container">
         <div class="stats-grid fade-in">
-            <div class="stat-card"><div class="stat-number">8<span></span></div><div class="stat-label">Projects Showcased</div></div>
+            <div class="stat-card"><div class="stat-number">9<span></span></div><div class="stat-label">Projects Showcased</div></div>
             <div class="stat-card"><div class="stat-number">6<span></span></div><div class="stat-label">Solution Areas</div></div>
             <div class="stat-card"><div class="stat-number">3<span></span></div><div class="stat-label">Core Markets Served</div></div>
             <div class="stat-card"><div class="stat-number">1<span></span></div><div class="stat-label">Direct Point of Contact</div></div>
@@ -249,6 +250,24 @@ To activate this section:
     </div>
 </section>
 
+<section style="background:var(--bg-alt);border-top:1px solid var(--border-lt);border-bottom:1px solid var(--border-lt);">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Technology we work with</div>
+            <h2 class="section-title">Tools selected for the job they need to do.</h2>
+            <p class="section-subtitle">AutoM8 does not use technology names as decoration. The stack is chosen around the website, workflow or operational system being built.</p>
+        </div>
+        <div class="values-grid fade-in">
+            <div class="value-card"><div class="val-num">WEB APPLICATIONS</div><h3>JavaScript, Node.js &amp; Express</h3><p>Custom web applications and server-side functionality for connected business workflows.</p></div>
+            <div class="value-card"><div class="val-num">DATA</div><h3>PostgreSQL &amp; SQL databases</h3><p>Structured data for dashboards, records, portals and operational systems.</p></div>
+            <div class="value-card"><div class="val-num">INTEGRATION</div><h3>APIs &amp; webhooks</h3><p>Connecting forms, notifications, external services and process steps where required.</p></div>
+            <div class="value-card"><div class="val-num">WEBSITES</div><h3>WordPress, HTML, CSS &amp; JavaScript</h3><p>Professional business websites and custom interactive experiences.</p></div>
+            <div class="value-card"><div class="val-num">DELIVERY</div><h3>GitHub &amp; cloud deployment</h3><p>Version-controlled development and practical deployment based on project requirements.</p></div>
+            <div class="value-card"><div class="val-num">APPROACH</div><h3>Fit before fashion</h3><p>The simplest appropriate stack is preferred over unnecessary technical complexity.</p></div>
+        </div>
+    </div>
+</section>
+
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
@@ -257,7 +276,7 @@ To activate this section:
             <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About AutoM8</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
             <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> <a href="mailto:Autom8streamlining@gmail.com">Autom8streamlining@gmail.com</a></p><p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27681536136" target="_blank" rel="noopener">+27 68 153 6136</a></p></div>
         </div>
-        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved.</p></div>
+        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved. · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></p></div>
     </div>
 </footer>
 <script>

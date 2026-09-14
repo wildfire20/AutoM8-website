@@ -83,8 +83,11 @@ img { max-width: 100%; height: auto; }
 }
 .nav-link:hover, .nav-link.active { color: var(--text); }
 .nav-link.active { font-weight: 600; }
-.nav-toggle { display:none; flex-direction:column; cursor:pointer; gap:5px; }
+.nav-toggle { appearance:none; background:transparent; border:0; padding:0; display:none; flex-direction:column; cursor:pointer; gap:5px; }
 .bar { width:22px; height:2px; background:var(--text); border-radius:2px; transition:0.3s; }
+
+details.info-card summary { cursor:pointer; list-style-position:outside; }
+details.info-card[open] summary { margin-bottom:.75rem; }
 
 /* ── PAGE HERO (inner pages) ── */
 .page-hero {
@@ -230,6 +233,15 @@ section { padding: 90px 0; }
 .footer-contact i { color: #9ca3af; width:16px; }
 .footer-bottom { padding-top: 2rem; border-top: 1px solid #1f2937; text-align: center; }
 .footer-bottom p { color: #4b5563; font-size: 0.875rem; }
+.footer-bottom a { color:#9ca3af; }
+.footer-bottom a:hover { color:#fff; }
+
+:focus-visible {
+    outline: 3px solid rgba(37,99,235,.45);
+    outline-offset: 3px;
+}
+
+[id] { scroll-margin-top: 90px; }
 
 /* ── FADE-IN ANIMATION ── */
 .fade-in { opacity:0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }

@@ -1,0 +1,1 @@
+- [Public credibility rules](public-credibility-rules.md) — Keep AutoM8 founder-led and evidence-based; never invent people, scale, clients, statistics, testimonials, or expertise.

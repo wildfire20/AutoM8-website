@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoM8 | WordPress & Custom Websites, Software & Automation | South Africa</title>
-    <meta name="description" content="AutoM8 helps South African businesses and schools choose between professional WordPress websites, custom web applications, practical automation and digital systems.">
+    <title>Custom Software, Websites & Business Automation | AutoM8</title>
+    <meta name="description" content="AutoM8 builds custom software, business websites, school platforms and workflow automation for organisations in Pretoria, Gauteng and across South Africa.">
     <meta name="keywords" content="WordPress website design South Africa, WordPress website design Pretoria, affordable WordPress websites, custom software South Africa, business automation, school management system, Pretoria web development">
     <link rel="canonical" href="https://www.auto-m8.co.za/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="AutoM8 | WordPress & Custom Websites, Software & Automation | South Africa">
-    <meta property="og:description" content="Professional WordPress websites, custom web applications, practical automation and digital systems for South African businesses and schools.">
+    <meta property="og:title" content="Custom Software, Websites & Business Automation | AutoM8">
+    <meta property="og:description" content="Practical custom software, websites, school technology and workflow automation for South African organisations.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.auto-m8.co.za/">
     <meta name="twitter:card" content="summary_large_image">
@@ -26,9 +26,9 @@
           "name": "AutoM8",
           "alternateName": "AutoM8 South Africa",
           "url": "https://www.auto-m8.co.za/",
-          "email": "Autom8streamlining@gmail.com",
+            "email": "autom8streamlining@gmail.com",
           "telephone": "+27681536136",
-          "areaServed": "South Africa",
+          "areaServed": [{"@type":"Country","name":"South Africa"},{"@type":"AdministrativeArea","name":"Gauteng"},{"@type":"City","name":"Pretoria"}],
           "description": "AutoM8 is a growing, founder-led South African software development and workflow automation company."
         },
         {
@@ -515,9 +515,9 @@
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-        <div class="nav-toggle" id="mobile-menu">
+        <button type="button" class="nav-toggle" id="mobile-menu" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')!=='true')">
             <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-        </div>
+        </button>
     </div>
 </nav>
 
@@ -525,19 +525,19 @@
 <section class="hero">
     <div class="hero-inner">
         <div class="fade-in">
-            <div class="hero-micro">South Africa · Websites · Custom Systems · Automation</div>
+            <div class="hero-micro">Pretoria · Gauteng · Serving South Africa</div>
             <h1>
-                <span class="line">Websites,</span>
-                <span class="line blue">Custom Systems</span>
-                <span class="line">and Automation.</span>
+                <span class="line">Custom Software, Websites</span>
+                <span class="line blue">&amp; Business Automation</span>
+                <span class="line">for South African Organisations</span>
             </h1>
-            <p class="hero-sub">AutoM8 helps businesses and schools build a professional online presence, reduce manual work and manage operations through practical, custom-built technology.</p>
+            <p class="hero-sub">AutoM8 builds practical websites, custom business systems, school platforms and workflow automation around the way your organisation actually operates.</p>
             <div class="hero-actions">
-                <a href="contact.html" class="btn btn-primary" id="track-quote-hero">Get a Free Quote</a>
+                <a href="contact.html" class="btn btn-primary" id="track-quote-hero">Discuss Your Project</a>
                 <a href="https://wa.me/27681536136" class="btn btn-primary" style="background:#25D366;" target="_blank" rel="noopener" id="track-wa-hero">
                     <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                 </a>
-                <a href="portfolio.html" class="hero-link">View Our Projects <i class="fas fa-arrow-right"></i></a>
+                <a href="portfolio.html" class="hero-link">View Our Work <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
         <div class="fade-in">
@@ -550,7 +550,7 @@
 <div class="stats-strip">
     <div class="stats-strip-inner">
         <div class="strip-item fade-in">
-            <div class="strip-num">8</div>
+            <div class="strip-num">9</div>
             <div class="strip-label">Projects Showcased</div>
         </div>
         <div class="strip-item fade-in">
@@ -598,33 +598,39 @@
     <div class="container">
         <div class="section-header fade-in">
             <div class="section-tag">Find your solution</div>
-            <h2 class="section-title">What can AutoM8 help you with?</h2>
-            <p class="section-subtitle">Choose the area most relevant to your organisation.</p>
+            <h2 class="section-title">What do you need help with?</h2>
+            <p class="section-subtitle">Start with the problem. AutoM8 will help identify the right type of system.</p>
         </div>
         <div class="pathway-grid fade-in">
             <a href="affordable-websites.html" class="pathway-card">
                 <div class="pathway-icon"><i class="fas fa-globe"></i></div>
-                <h3>I need a business website</h3>
-                <p>Professional websites for new or established businesses. Starting from R1,500 for a simple one-page site.</p>
-                <div class="pathway-link">See website packages <i class="fas fa-arrow-right"></i></div>
+                <h3>I need a professional business website</h3>
+                <p>Clear, responsive websites for organisations that need a credible online presence and a better way to generate enquiries.</p>
+                <div class="pathway-link">Website development <i class="fas fa-arrow-right"></i></div>
             </a>
             <a href="school-management-system.html" class="pathway-card">
                 <div class="pathway-icon"><i class="fas fa-graduation-cap"></i></div>
-                <h3>I run a school or institution</h3>
-                <p>Digital school management, parent portals, grade and attendance tracking for South African schools.</p>
-                <div class="pathway-link">See school systems <i class="fas fa-arrow-right"></i></div>
+                <h3>My school needs a digital management system</h3>
+                <p>Connected admissions, parent portals, learner records, attendance, fees and administration.</p>
+                <div class="pathway-link">School systems <i class="fas fa-arrow-right"></i></div>
             </a>
             <a href="business-automation.html" class="pathway-card">
                 <div class="pathway-icon"><i class="fas fa-cogs"></i></div>
-                <h3>I want to automate repetitive tasks</h3>
-                <p>Workflow automation for notifications, forms, approvals, and multi-step business processes. From R500.</p>
-                <div class="pathway-link">See automation options <i class="fas fa-arrow-right"></i></div>
+                <h3>My business has repetitive manual work</h3>
+                <p>Automate emails, reminders, approvals, documents, status updates and recurring administration.</p>
+                <div class="pathway-link">Business automation <i class="fas fa-arrow-right"></i></div>
             </a>
             <a href="custom-software-pretoria.html" class="pathway-card">
                 <div class="pathway-icon"><i class="fas fa-code"></i></div>
-                <h3>I need custom software</h3>
-                <p>Inventory systems, booking platforms, HR tools, dashboards, and other bespoke applications.</p>
-                <div class="pathway-link">See custom systems <i class="fas fa-arrow-right"></i></div>
+                <h3>I need software built around my business</h3>
+                <p>Custom web applications, dashboards, portals and operational systems designed around your workflow.</p>
+                <div class="pathway-link">Custom software <i class="fas fa-arrow-right"></i></div>
+            </a>
+            <a href="solutions/custom-booking-system-south-africa.html" class="pathway-card">
+                <div class="pathway-icon"><i class="fas fa-calendar-check"></i></div>
+                <h3>I need bookings, rentals, orders or customer accounts</h3>
+                <p>Bring customer transactions and internal management into one connected operational platform.</p>
+                <div class="pathway-link">Operational systems <i class="fas fa-arrow-right"></i></div>
             </a>
         </div>
     </div>
@@ -705,7 +711,7 @@
                     <li><i class="fas fa-check"></i> Flexible, affordable pricing</li>
                     <li><i class="fas fa-check"></i> Custom-built for your workflow</li>
                     <li><i class="fas fa-check"></i> South African focus, local knowledge</li>
-                    <li><i class="fas fa-check"></i> You own the code, always</li>
+                    <li><i class="fas fa-check"></i> Ownership and handover terms agreed clearly in writing</li>
                     <li><i class="fas fa-check"></i> Phased builds available</li>
                 </ul>
                 <a href="about.html" class="btn btn-primary">More about AutoM8 <i class="fas fa-arrow-right"></i></a>
@@ -880,6 +886,8 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="solutions/index.html">Solutions</a></li>
+                    <li><a href="insights/index.html">Insights</a></li>
                 </ul>
             </div>
             <div class="footer-section footer-contact">
@@ -888,7 +896,7 @@
                 <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27681536136" target="_blank" rel="noopener" id="track-wa-footer">+27 68 153 6136</a></p>
             </div>
         </div>
-        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved.</p></div>
+        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved. · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></p></div>
     </div>
 </footer>
 

@@ -9,6 +9,7 @@
     <meta property="og:title" content="Contact AutoM8 | Free Assessment">
     <meta property="og:description" content="Request a free website or workflow assessment. WhatsApp, email or form — we respond during normal business hours.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.auto-m8.co.za/contact.html">
 
     <!-- Analytics Placeholder — see index.html for instructions -->
 
@@ -117,7 +118,7 @@
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="contact.html" class="nav-link active">Contact</a></li>
         </ul>
-        <div class="nav-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        <button type="button" class="nav-toggle" id="mobile-menu" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')!=='true')"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
     </div>
 </nav>
 
@@ -207,6 +208,7 @@
                     <button type="submit" class="btn btn-primary" style="width:100%;" id="track-form-submit">
                         <i class="fas fa-paper-plane"></i> Send Message
                     </button>
+                    <p style="font-size:.78rem;line-height:1.6;margin-top:1rem;color:var(--text-3);">By submitting this form, you agree that AutoM8 may use the information provided to respond to your enquiry. See the <a href="privacy.html">Privacy Policy</a>.</p>
                 </form>
             </div>
 
@@ -316,7 +318,7 @@
             <div class="footer-section"><h4>Company</h4><ul><li><a href="about.html">About AutoM8</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
             <div class="footer-section footer-contact"><h4>Contact</h4><p><i class="fas fa-envelope"></i> <a href="mailto:Autom8streamlining@gmail.com" id="track-email-footer">Autom8streamlining@gmail.com</a></p><p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27681536136" target="_blank" rel="noopener" id="track-wa-footer">+27 68 153 6136</a></p></div>
         </div>
-        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved.</p></div>
+        <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved. · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></p></div>
     </div>
 </footer>
 <script>
@@ -353,6 +355,10 @@ if (type) {
 
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
+    if (!this.checkValidity()) {
+        this.reportValidity();
+        return;
+    }
     const f = new FormData(this);
     const assessmentType = f.get('assessment_type') || 'Not specified';
     const budget = f.get('budget') || 'Not provided';
