@@ -1,0 +1,664 @@
+I want to make a VISUAL REFINEMENT to the current local AutoM8 version.
+
+IMPORTANT:
+
+DO NOT roll back the recent UX/content restructuring.
+
+The new information architecture is better.
+
+Keep:
+
+- shorter sections
+- reduced repetition
+- new SEO pages
+- Solutions architecture
+- Insights architecture
+- progressive disclosure
+- portfolio filters
+- simplified process
+- improved pricing hierarchy
+- shorter commercial pages
+- structured internal linking
+- all SEO metadata
+- schema
+- sitemap
+- robots.txt
+- OAI-SearchBot access
+- current canonical URLs
+
+However, the recent update has unintentionally weakened the visual identity of AutoM8.
+
+The previous deployed production website had a stronger visual personality.
+
+The objective is:
+
+OLD AUTOM8 VISUAL IDENTITY
++
+NEW UX / CONTENT STRUCTURE
+
+Do NOT redesign the site again.
+
+==================================================
+1. USE THE CURRENT LIVE PRODUCTION SITE AS THE VISUAL REFERENCE
+==================================================
+
+Compare the current local Replit version against:
+
+https://www.auto-m8.co.za/
+
+Also inspect the Git history and identify the last deployed production version before the recent UX simplification.
+
+Use the previous production version as the visual reference for:
+
+- heading treatment
+- blue accents
+- hero styling
+- button styling
+- card styling
+- section backgrounds
+- spacing rhythm
+- gradients
+- animations
+- hover states
+- typography treatment
+- visual contrast
+
+DO NOT restore the old long-form content.
+
+Restore VISUAL LANGUAGE, not old information architecture.
+
+==================================================
+2. FIX THE HOMEPAGE HERO
+==================================================
+
+The current local hero is too visually plain.
+
+The extremely large pure-black multi-line heading makes the page feel like a
+wireframe rather than the existing AutoM8 brand.
+
+Do NOT keep the current seven-line giant black H1 presentation.
+
+Use a shorter, more visually balanced H1.
+
+Recommended:
+
+Custom Software,
+Websites & Automation.
+
+Then use a secondary highlighted line or supporting statement:
+
+Built for South African organisations.
+
+OR:
+
+Custom Software, Websites
+& Business Automation.
+
+with:
+
+For South African organisations.
+
+The exact wording may be adjusted for visual balance while maintaining the
+existing SEO intent.
+
+IMPORTANT:
+
+Bring back AutoM8's black + blue heading treatment.
+
+For example:
+
+“Custom Software,”
+in dark navy/black
+
+“Websites & Automation.”
+using the existing AutoM8 blue or subtle blue gradient treatment.
+
+Do NOT make every word blue.
+
+Use blue to create emphasis and visual rhythm.
+
+Retain the eyebrow:
+
+PRETORIA · GAUTENG · SERVING SOUTH AFRICA
+
+but keep it subtle.
+
+The H1 should preferably occupy approximately 2–4 visual lines on desktop,
+not 6–8 lines.
+
+Maintain the existing illustration/image if it works visually, but rebalance
+its size and position relative to the heading.
+
+The hero should feel premium, confident and recognisably AutoM8.
+
+==================================================
+3. RESTORE VISUAL CONTRAST
+==================================================
+
+The current version contains too many consecutive white sections.
+
+This has made the site feel flat.
+
+Restore the previous AutoM8 rhythm using a controlled mixture of:
+
+- white
+- very light blue/grey
+- AutoM8 blue
+- dark navy sections
+
+Do not turn the entire site dark.
+
+Use contrast strategically.
+
+For example:
+
+Hero:
+light / white
+
+Service selection:
+light neutral
+
+Proof / portfolio:
+white
+
+CTA:
+AutoM8 blue or navy
+
+Process:
+white
+
+Final CTA:
+dark navy or AutoM8 blue
+
+The visitor should visually FEEL when they enter a new section.
+
+Avoid endless white canvas with thin borders.
+
+==================================================
+4. REMOVE ALL DEFAULT-LOOKING TEXT LINKS
+==================================================
+
+This is extremely important.
+
+Some current inline links appear like default browser hyperlinks:
+
+- blue
+- purple after visiting
+- underlined
+
+Example visible in the current local version:
+
+“problem-based solutions”
+
+This looks unprofessional and inconsistent with the AutoM8 design.
+
+Audit ALL public pages.
+
+No normal commercial-page hyperlink should use the browser default blue /
+purple / underline appearance.
+
+Create/reuse a consistent branded `.text-link` style.
+
+Suggested behaviour:
+
+Normal:
+- AutoM8 blue
+- font-weight 600
+- NO underline
+- inherited site font
+
+Hover:
+- slightly darker blue OR subtle underline / animated underline
+- optional arrow movement
+
+Visited:
+- remain the AutoM8 brand colour
+- DO NOT become purple
+
+Keyboard focus:
+- visible accessible focus outline
+
+Example:
+
+Explore problem-based solutions →
+
+instead of:
+
+underlined purple “problem-based solutions”
+
+Links inside articles/legal pages may use a subtle accessible underline where
+appropriate, but commercial-page body copy should not look like a raw browser
+document.
+
+==================================================
+5. BUTTONS MUST LOOK LIKE AUTOM8 BUTTONS
+==================================================
+
+Audit all CTAs.
+
+Primary CTA:
+
+- AutoM8 blue background
+- white text
+- existing AutoM8 radius
+- subtle hover movement/colour change
+- no underline
+
+Secondary CTA:
+
+- white/light background
+- blue or dark text
+- AutoM8 border
+- consistent hover
+
+Text CTA:
+
+Explore Solutions →
+
+Do not mix several unrelated button styles.
+
+Do not allow ordinary inline hyperlinks to compete visually with buttons.
+
+==================================================
+6. RESTORE BLUE ACCENTS TO MAJOR HEADINGS
+==================================================
+
+The new version uses many large completely black headings.
+
+Examples such as:
+
+“What Our Projects Demonstrate”
+
+look clean but have lost some AutoM8 personality.
+
+Do not colour entire headings blue.
+
+Instead use one of:
+
+- blue eyebrow labels
+- one highlighted word
+- blue gradient on a key phrase
+- small blue rule/accent
+- existing AutoM8 heading treatment
+
+Example:
+
+WHAT OUR PROJECTS
+Demonstrate
+
+or retain:
+
+CAPABILITIES
+
+in AutoM8 blue above the black heading.
+
+Keep the presentation restrained.
+
+Do not make the site overly colourful.
+
+==================================================
+7. KEEP THE NEW PORTFOLIO STRUCTURE
+==================================================
+
+The new portfolio grid and filters are useful.
+
+KEEP:
+
+All Projects
+Live Systems
+Client Projects
+Showcase Work
+
+Keep the cleaner cards.
+
+However, apply the previous AutoM8 visual polish:
+
+- stronger card hierarchy
+- subtle shadows
+- existing radius
+- better image/illustration backgrounds
+- consistent blue accents
+- polished hover states
+
+Do not return to long card descriptions.
+
+Each portfolio card should remain:
+
+Status
+Category
+Project Name
+Short description
+3–4 feature highlights
+CTA
+
+Harmony and States Companies should remain visually more prominent because
+they are stronger proof-of-work.
+
+==================================================
+8. NAVIGATION — RESTORE CLEAR COMMERCIAL LANGUAGE
+==================================================
+
+The previous production navigation was clearer for AutoM8's positioning.
+
+Prefer:
+
+Home
+Services
+School Systems
+Portfolio
+Pricing
+About
+Contact
+
+rather than making:
+
+Solutions
+Work
+
+the only visible descriptions.
+
+Reason:
+
+“School Systems” is an important AutoM8 differentiator.
+
+“Portfolio” is immediately understood by business clients.
+
+The Solutions hub should still exist and remain internally linked.
+
+It may be accessible through:
+
+Services → Solutions
+
+or through contextual links and footer navigation.
+
+Insights should remain under Resources/footer/contextual navigation.
+
+Do NOT orphan those pages.
+
+If a dropdown can be implemented cleanly without clutter:
+
+Services
+  - Websites
+  - Custom Software
+  - Automation
+  - Solutions
+
+School Systems
+
+Portfolio
+
+Pricing
+
+About
+
+Contact
+
+Keep mobile navigation simple.
+
+==================================================
+9. HOMEPAGE CONTENT STRUCTURE — KEEP THE NEW LOGIC
+==================================================
+
+Do NOT restore the previous long homepage.
+
+Keep the improved shorter flow:
+
+1. Hero
+2. Quick trust indicators
+3. What are you trying to solve?
+4. Real work / proof
+5. Core services
+6. Simple process
+7. Final CTA
+
+But make these sections LOOK like the previous AutoM8 website.
+
+This is the key principle:
+
+NEW STRUCTURE
+OLD VISUAL QUALITY
+
+==================================================
+10. FIX EXCESSIVE EMPTY SPACE
+==================================================
+
+The current redesign occasionally uses very large areas of empty white space.
+
+Whitespace is good.
+
+Excessive blank space makes the site look unfinished.
+
+Audit:
+
+- hero height
+- section padding
+- top margins
+- bottom margins
+- large gaps between section labels and headings
+- blank space before portfolio filters
+- blank space around CTA sections
+
+Keep breathing room but reduce unnecessary vertical emptiness.
+
+The site should feel deliberate, not sparse.
+
+==================================================
+11. KEEP TYPOGRAPHY BOLD BUT NOT OVERWHELMING
+==================================================
+
+The current homepage H1 is too large for the amount of text it contains.
+
+Use responsive typography.
+
+Desktop hero heading should feel bold without consuming almost the entire
+left side of the screen.
+
+Short headline = larger text.
+
+Long headline = reduce font size.
+
+Never allow typography to force awkward 6–8 line headings on desktop.
+
+Keep readable line-height.
+
+==================================================
+12. PRESERVE THE NEW PRICING UX
+==================================================
+
+The revised pricing cards seen in the current version are clearer.
+
+Keep that information hierarchy.
+
+Only improve their visual treatment to better match AutoM8:
+
+- card depth
+- blue emphasis
+- recommended package treatment
+- buttons
+- spacing
+
+Do not return to overwhelming pricing cards.
+
+==================================================
+13. KEEP THE NEW PROCESS SECTION
+==================================================
+
+The four-step process:
+
+Discovery
+Proposal
+Development
+Launch and Support
+
+is much better.
+
+KEEP IT.
+
+Improve visual styling if required but do not expand it back to 8 visible
+steps.
+
+==================================================
+14. WHATSAPP FLOATING BUTTON
+==================================================
+
+Ensure the requested floating WhatsApp button exists across commercial pages.
+
+Phone:
+
++27 68 153 6136
+
+Link:
+
+https://wa.me/27681536136
+
+Pre-filled message:
+
+Hi AutoM8, I’d like to discuss a website, custom system or automation for my organisation.
+
+Design requirements:
+
+- fixed bottom-right
+- polished
+- compact
+- visible but not aggressive
+- accessible
+- keyboard focus
+- mobile safe-area support
+- no pulsing animation
+- do not cover content
+- do not overlap sticky navigation
+- do not overlap cookie notices
+
+STYLE:
+
+Do not use a giant generic third-party WhatsApp widget.
+
+Prefer an AutoM8-styled floating button:
+
+Desktop:
+WhatsApp icon + “Chat with AutoM8”
+
+Mobile:
+compact WhatsApp icon button
+
+It may use a restrained WhatsApp green icon/accent, but the container should
+still feel consistent with AutoM8's design.
+
+==================================================
+15. LINKS INSIDE CARDS
+==================================================
+
+Avoid raw inline blue links inside cards.
+
+Use:
+
+- small button
+- arrow CTA
+- branded text-link component
+
+Examples:
+
+Explore Website Packages →
+See School Systems →
+View Case Study →
+
+Never browser-default underlined text.
+
+==================================================
+16. SECTION EYEBROWS
+==================================================
+
+Keep the uppercase blue eyebrow labels because they work well.
+
+Examples:
+
+CAPABILITIES
+OUR PROCESS
+PROJECT SHOWCASE
+WEBSITE DEVELOPMENT
+
+Use them consistently.
+
+They help create hierarchy and maintain AutoM8's blue brand identity.
+
+==================================================
+17. ANIMATIONS
+==================================================
+
+Preserve the original AutoM8 animation feel.
+
+Use subtle:
+
+- fade/slide reveal
+- card hover
+- button transitions
+- heading accent animation where already present
+
+Do NOT add excessive movement.
+
+Do NOT remove useful animation simply because the UX was simplified.
+
+The previous website felt alive; the new one should retain that quality.
+
+==================================================
+18. DO NOT TOUCH SEO ARCHITECTURE
+==================================================
+
+This visual correction must NOT undo:
+
+- 27 canonical pages
+- metadata
+- title tags
+- descriptions
+- structured data
+- sitemap
+- robots.txt
+- OAI-SearchBot access
+- internal links
+- Solutions pages
+- Insights pages
+- case studies
+- problem-based content
+- accessibility improvements
+
+Visual changes only where possible.
+
+If the H1 wording is shortened for presentation, preserve the broader keyword
+context naturally in:
+
+- eyebrow
+- supporting paragraph
+- title tag
+- meta description
+- surrounding semantic copy
+
+Do not stuff keywords.
+
+==================================================
+19. DO NOT DEPLOY
+==================================================
+
+Make the changes locally.
+
+Do not publish automatically.
+
+I want to review the Replit preview first.
+
+==================================================
+20. FINAL REPORT
+==================================================
+
+Report:
+
+1. Visual styles restored from the previous production version
+2. Hero before/after
+3. Heading treatments changed
+4. Default-style hyperlinks removed
+5. Navigation wording changes
+6. Background/section contrast changes
+7. Card visual changes
+8. Whitespace adjustments
+9. WhatsApp implementation
+10. SEO infrastructure verification
+11. Confirmation that the newer simplified content hierarchy was retained
+12. Confirmation that nothing was deployed

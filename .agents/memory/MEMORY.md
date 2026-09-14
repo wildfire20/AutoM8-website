@@ -1,1 +1,2 @@
 - [Public credibility rules](public-credibility-rules.md) — Keep AutoM8 founder-led and evidence-based; never invent people, scale, clients, statistics, testimonials, or expertise.
+- [Visual continuity](visual-continuity.md) — Preserve AutoM8’s live navy/blue visual identity while keeping the newer concise UX and SEO architecture.

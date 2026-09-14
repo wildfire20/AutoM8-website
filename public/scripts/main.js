@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
                 navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+                navbar.style.boxShadow = '0 8px 24px rgba(7, 20, 38, 0.12)';
             } else {
                 navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                navbar.style.boxShadow = '0 4px 18px rgba(7, 20, 38, 0.05)';
             }
         });
     }
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
         right: 20px;
         width: 50px;
         height: 50px;
-        background: linear-gradient(135deg, #2563eb, #7c3aed);
+         background: #1769e8;
         color: white;
         border: none;
         border-radius: 50%;
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function() {
         display: none;
         z-index: 1000;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+         box-shadow: 0 4px 15px rgba(23, 105, 232, 0.25);
     `;
     
     document.body.appendChild(backToTop);
