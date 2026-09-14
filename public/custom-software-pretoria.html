@@ -48,9 +48,19 @@
         .faq-item { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; background: var(--bg); }
         .faq-item h3 { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
         .faq-item p { color: var(--text-3); line-height: 1.7; font-size: 0.875rem; }
+        .faq-item summary { cursor:pointer; list-style:none; font-weight:700; color:var(--text); }
+        .faq-item summary::-webkit-details-marker { display:none; }
+        .faq-item summary::after { content:'+'; float:right; color:var(--blue); font-size:1.2rem; }
+        .faq-item[open] summary::after { content:'−'; }
         .breadcrumb { font-size: 0.8rem; color: var(--text-3); margin-bottom: 1rem; }
         .breadcrumb a { color: var(--text-3); text-decoration: none; }
         .breadcrumb a:hover { color: var(--blue); }
+         .proof-strip { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1.75rem; }
+         .proof-card { border:1px solid var(--border); border-radius:12px; padding:1.25rem; background:var(--bg); }
+         .proof-card strong { display:block; color:var(--text); font-size:1rem; margin-bottom:.25rem; }
+         .proof-card span { color:var(--text-3); font-size:.84rem; line-height:1.55; }
+         .decision-note { border-left:4px solid var(--blue); background:var(--blue-lt); padding:1.1rem 1.25rem; border-radius:0 10px 10px 0; margin-top:1.25rem; }
+         @media (max-width:768px) { .proof-strip { grid-template-columns:1fr; } }
         @media (max-width: 1024px) { .solutions-grid { grid-template-columns: 1fr 1fr; } .faq-grid { grid-template-columns: 1fr; } }
         @media (max-width: 768px) { .solutions-grid { grid-template-columns: 1fr; } }
     </style>
@@ -62,9 +72,9 @@
         <ul class="nav-menu" id="nav-menu">
             <li><a href="/" class="nav-link">Home</a></li>
             <li><a href="services.html" class="nav-link">Services</a></li>
-            <li><a href="school-management-system.html" class="nav-link">School Systems</a></li>
+            <li><a href="solutions/index.html" class="nav-link">Solutions</a></li>
+            <li><a href="portfolio.html" class="nav-link">Work</a></li>
             <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
@@ -83,7 +93,7 @@
             <p class="page-subtitle fade-in" style="margin:0 0 2rem;">When off-the-shelf software doesn't fit your workflow, AutoM8 builds a system around how your business actually operates. Inventory, booking, HR, dashboards, fraud prevention — designed and built to your specification. Projects may be phased for affordability, starting from R10,000.</p>
             <div style="display:flex;gap:1rem;flex-wrap:wrap;" class="fade-in">
                 <a href="contact.html?type=custom-consultation" class="btn btn-primary">Request a Custom Quote</a>
-                <a href="contact.html?type=phased-build" class="btn btn-outline">Discuss a Phased Build</a>
+                 <a href="https://wa.me/27681536136?text=Hi%20AutoM8!%20I%27d%20like%20to%20discuss%20a%20custom%20software%20system." class="btn btn-outline" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Ask on WhatsApp</a>
             </div>
         </div>
         <div class="page-hero-art fade-in">
@@ -110,6 +120,22 @@
     </div>
 </section>
 
+<!-- EARLY PROOF -->
+<section style="background:var(--bg);border-bottom:1px solid var(--border-lt);padding:64px 0;">
+    <div class="container">
+        <div class="section-header fade-in" style="margin-bottom:1.5rem;">
+            <div class="section-tag">Evidence from real builds</div>
+            <h2 class="section-title">The same approach works across real operations.</h2>
+            <p class="section-subtitle">AutoM8 has built connected systems for school administration, bookings, rentals, ordering, inventory and reporting.</p>
+        </div>
+        <div class="proof-strip fade-in">
+            <div class="proof-card"><strong>Harmony Learning Institute</strong><span>Live school platform connecting admissions, parent access, learner records and fees.</span></div>
+            <div class="proof-card"><strong>Stats Companies</strong><span>Live booking, rental and ordering platform with customer accounts and admin management.</span></div>
+            <div class="proof-card"><strong>Custom operations tools</strong><span>Stock monitoring, dashboards and workflow systems shaped around the way teams actually work.</span></div>
+        </div>
+    </div>
+</section>
+
 <!-- PRICING + PHASED -->
 <section style="background:var(--bg);border-bottom:1px solid var(--border-lt);padding:80px 0;">
     <div class="container">
@@ -122,6 +148,7 @@
                 <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:12px;padding:1.25rem;font-size:0.875rem;color:var(--text-3);line-height:1.7;">
                     Projects may be divided into phases — starting with the most critical features and expanding over time. This makes development more affordable and allows your team to start using the system earlier.
                 </div>
+                 <div class="decision-note"><strong style="color:var(--text);">A practical starting decision:</strong><br>Start with the workflow that costs you the most time or creates the most risk. We can scope that first phase from <strong style="color:var(--text);">R10,000</strong>, then expand only when the system proves its value.</div>
             </div>
             <div style="border:1px solid var(--border);border-radius:14px;padding:2rem;background:var(--bg-alt);">
                 <h3 style="font-size:1rem;font-weight:700;color:var(--text);margin-bottom:1rem;">Project process</h3>
@@ -160,10 +187,10 @@
             <h2 class="section-title">Common questions about custom software.</h2>
         </div>
         <div class="faq-grid fade-in">
-            <div class="faq-item"><h3>How much does custom software cost?</h3><p>Custom systems start from R10,000. Final pricing depends on scope, modules, integrations and complexity. A detailed quote is always provided after a free discovery conversation.</p></div>
-            <div class="faq-item"><h3>Can a project be built in phases?</h3><p>Yes. Projects can be divided into phases, starting with the most critical features and expanding over time. This makes development more affordable and lets your team start using the system earlier.</p></div>
-            <div class="faq-item"><h3>Do I own the source code?</h3><p>Yes. You receive full ownership of all custom code — the complete source code and documentation is yours once the project is paid in full.</p></div>
-            <div class="faq-item"><h3>How long does it take to build?</h3><p>Project timelines depend on scope and complexity. All timelines are agreed in writing as part of the proposal before development begins.</p></div>
+            <details class="faq-item"><summary>How much does custom software cost?</summary><p>Custom systems start from R10,000. Final pricing depends on scope, modules, integrations and complexity. A detailed quote is always provided after a free discovery conversation.</p></details>
+            <details class="faq-item"><summary>Can a project be built in phases?</summary><p>Yes. Projects can be divided into phases, starting with the most critical features and expanding over time. This makes development more affordable and lets your team start using the system earlier.</p></details>
+            <details class="faq-item"><summary>Do I own the source code?</summary><p>Yes. You receive full ownership of all custom code — the complete source code and documentation is yours once the project is paid in full.</p></details>
+            <details class="faq-item"><summary>How long does it take to build?</summary><p>Project timelines depend on scope and complexity. All timelines are agreed in writing as part of the proposal before development begins.</p></details>
         </div>
     </div>
 </section>
@@ -191,6 +218,7 @@
         <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved. · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></p></div>
     </div>
 </footer>
+<script src="scripts/floating-whatsapp.js"></script>
 <script>
 document.getElementById('yr').textContent = new Date().getFullYear();
 const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');

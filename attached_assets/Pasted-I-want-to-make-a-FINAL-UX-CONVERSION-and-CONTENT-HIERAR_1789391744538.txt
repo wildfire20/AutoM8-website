@@ -1,0 +1,987 @@
+I want to make a FINAL UX, CONVERSION and CONTENT-HIERARCHY refinement to the
+current deployed AutoM8 website.
+
+IMPORTANT:
+
+THIS IS NOT ANOTHER SEO EXPANSION.
+
+The recent SEO work is good and must be preserved.
+
+Do NOT:
+- redesign the website
+- change the brand
+- change the colour system
+- remove the current animations
+- replace the typography
+- remove indexed pages
+- remove useful SEO content
+- rename established URLs
+- break canonical URLs
+- break structured data
+- break the sitemap
+- remove internal linking
+- remove OAI-SearchBot / search crawler access
+- create additional SEO pages unless absolutely necessary
+
+The visual identity is already strong.
+
+The problem to solve now is:
+
+TOO MUCH INFORMATION IS BEING PRESENTED AT THE SAME TIME.
+
+AutoM8 should feel deep and capable without feeling mentally exhausting.
+
+==================================================
+PRIMARY UX OBJECTIVE
+==================================================
+
+Restructure the website around this visitor journey:
+
+1. I recognise my problem.
+2. I understand what AutoM8 can do about it.
+3. I see proof that AutoM8 has built something similar.
+4. I understand the likely price / starting point.
+5. I can contact AutoM8 immediately.
+
+Use established non-manipulative UX principles:
+
+- Hick’s Law / reduced choice overload
+- progressive disclosure
+- cognitive fluency
+- strong visual hierarchy
+- recognition over recall
+- contextual social proof
+- F-pattern / scan-friendly reading
+- summary first, detail second
+- one dominant CTA per decision point
+
+DO NOT use dark patterns.
+
+==================================================
+1. HOMEPAGE — REDUCE THE NUMBER OF SALES MESSAGES
+==================================================
+
+Audit the homepage carefully.
+
+There are currently multiple sections explaining similar ideas in different ways.
+
+The homepage must become a DECISION PAGE, not a full explanation of the company.
+
+Target approximately 7 core content sections before the footer.
+
+Recommended structure:
+
+-----------------------------------------
+SECTION 1 — HERO
+-----------------------------------------
+
+Keep the current visual hero treatment.
+
+H1:
+
+Custom Software, Websites & Business Automation for South African Organisations
+
+Supporting copy:
+
+“AutoM8 builds practical digital systems around the way your business or school
+actually operates.”
+
+Maximum 2 short sentences.
+
+Primary CTA:
+
+Discuss Your Project
+
+Secondary CTA:
+
+View Our Work
+
+Do not place 3–4 equal hero buttons.
+
+WhatsApp will be available through the global floating button.
+
+-----------------------------------------
+SECTION 2 — QUICK TRUST STRIP
+-----------------------------------------
+
+Use a compact visual strip.
+
+Possible items:
+
+Founder-Led
+Custom Built
+Flexible Pricing
+South African
+Direct Support
+
+Do not use invented numerical statistics.
+
+If the current 9 Projects / Solution Areas / Markets style statistics appear
+more useful than these trust messages, retain only the strongest 3–4.
+
+Do not show both systems if they duplicate each other.
+
+-----------------------------------------
+SECTION 3 — “WHAT ARE YOU TRYING TO SOLVE?”
+-----------------------------------------
+
+This should be the homepage’s main service-selection section.
+
+Use no more than 5 cards.
+
+Card 1:
+I need a professional website
+
+Card 2:
+I need software built around my business
+
+Card 3:
+I need to automate repetitive work
+
+Card 4:
+My school needs a digital system
+
+Card 5:
+I need bookings, rentals, ordering or a customer portal
+
+Each card:
+- short heading
+- maximum one sentence
+- one relevant link
+
+Do not write mini essays inside the cards.
+
+-----------------------------------------
+SECTION 4 — REAL WORK
+-----------------------------------------
+
+Immediately establish proof.
+
+Feature only:
+
+1. Harmony Learning Institute
+   Status: Live System
+
+2. States Companies
+   Status: Client Project
+
+3. One additional strong showcase project
+
+Each card:
+- status
+- project name
+- one sentence
+- maximum 3 feature tags
+- View Project
+
+Harmony should have:
+View Live System
+
+States Companies should use the correct current public/demo wording.
+
+Do not explain each whole project on the homepage.
+
+-----------------------------------------
+SECTION 5 — WHAT AUTOM8 ACTUALLY BUILDS
+-----------------------------------------
+
+Use only four service families:
+
+Websites
+Custom Software
+Business Automation
+School Technology
+
+Each gets:
+- one sentence
+- Learn More
+
+Do not duplicate the five “What do you need?” explanations.
+
+This section should describe CAPABILITY while the previous section describes
+CUSTOMER PROBLEMS.
+
+-----------------------------------------
+SECTION 6 — SIMPLE PROCESS
+-----------------------------------------
+
+Maximum four steps:
+
+1. Tell us the problem
+2. We define the solution
+3. We build and test
+4. We launch and support
+
+Keep it visual.
+
+Do not turn each step into a paragraph.
+
+-----------------------------------------
+SECTION 7 — FINAL CTA
+-----------------------------------------
+
+Use something like:
+
+“Have a process that should be easier?”
+
+Supporting sentence:
+
+“Tell us what is slowing your organisation down and we’ll help you work out
+whether a website, automation or custom system makes sense.”
+
+Primary:
+Discuss Your Project
+
+Secondary:
+WhatsApp
+
+Do NOT add another large assessment section if it is effectively asking for
+the same action.
+
+==================================================
+2. REMOVE HOMEPAGE REPETITION
+==================================================
+
+Audit repeated concepts including:
+
+- custom-built
+- flexible pricing
+- affordable
+- South African
+- founder-led
+- direct communication
+- reduce manual work
+- built around your workflow
+- phased development
+- practical technology
+
+These are GOOD messages.
+
+The problem is repetition.
+
+Give each idea one strong location.
+
+Do not mention “built around your workflow” in five consecutive sections.
+
+Preserve important SEO wording naturally.
+
+==================================================
+3. SERVICES PAGE — TURN IT INTO A DIRECTORY
+==================================================
+
+The Services page should answer:
+
+“Which AutoM8 service applies to me?”
+
+It should NOT duplicate every service landing page.
+
+Recommended flow:
+
+Hero
+↓
+Service cards
+↓
+Short “Not sure what you need?” section
+↓
+How projects work
+↓
+CTA
+
+Service cards:
+
+Websites
+Custom Software
+Automation
+School Technology
+Operational Systems
+Support / Maintenance
+
+For each:
+
+- service name
+- ideal use case
+- one sentence
+- Learn More
+
+Move detailed feature lists to dedicated service pages.
+
+==================================================
+4. SCHOOL MANAGEMENT PAGE — MAJOR SIMPLIFICATION
+==================================================
+
+This is the highest-priority page for UX simplification.
+
+DO NOT delete the valuable content.
+
+The current page contains too many full sections presented sequentially.
+
+A principal should understand the offer without reading everything.
+
+Visible top-level structure should become approximately:
+
+1. Hero
+2. Common school problems
+3. Main system modules
+4. Harmony proof
+5. Pricing / ways to buy
+6. Security & ownership summary
+7. FAQ
+8. CTA
+
+-----------------------------------------
+MAIN MODULES
+-----------------------------------------
+
+Create concise module cards for:
+
+Admissions & Registration
+Parent Portal
+Attendance & Learner Records
+Fees & Payments
+Documents
+Communication
+Administration
+Reporting
+
+Each card shows only:
+- title
+- 1–2 sentence summary
+
+Use:
+“See what’s included”
+
+to reveal the detailed content.
+
+-----------------------------------------
+FEE RECONCILIATION
+-----------------------------------------
+
+The fee-reconciliation explanation is useful but currently dominates too much
+of the page.
+
+Keep a concise version on the main school page:
+
+- problem
+- 5-step visual workflow
+- benefit
+
+Move the extended example table and long explanation into an expandable
+section OR a dedicated supporting solution/article page that is already part
+of the current site architecture.
+
+Do not duplicate the same explanation twice.
+
+-----------------------------------------
+WHATSAPP VS AUTOM8
+-----------------------------------------
+
+Keep the strong idea:
+
+“WhatsApp helps your school communicate. AutoM8 helps your school operate.”
+
+But shorten the comparison.
+
+Use no more than 4–5 strong comparison examples.
+
+Do not create two huge columns containing every possible workflow.
+
+-----------------------------------------
+PRICING
+-----------------------------------------
+
+The school page currently contains:
+
+- custom portals
+- complete custom systems
+- standard per-learner subscriptions
+- system care
+
+This can overwhelm buyers.
+
+First ask:
+
+“How would you like to use AutoM8?”
+
+Card 1:
+Custom School System
+One-off custom development.
+
+Card 2:
+Standard School Package
+Per-learner monthly subscription.
+
+Then reveal the relevant pricing beneath/inside each option.
+
+Do not present every price simultaneously before the visitor understands the
+difference.
+
+-----------------------------------------
+PORTALS
+-----------------------------------------
+
+Convert Staff / Parent / Student Portal explanations into accessible tabs or
+accordions.
+
+Only one portal’s full detail should be open at a time.
+
+-----------------------------------------
+PROJECT PROCESS
+-----------------------------------------
+
+Reduce the current 8 visible process steps.
+
+Show four main stages:
+
+1. Discovery & requirements
+2. Scope & quotation
+3. Build & test
+4. Launch & support
+
+If desired, the more detailed 8-stage version can be expanded under:
+
+“See the full process”
+
+-----------------------------------------
+FUTURE FEATURES
+-----------------------------------------
+
+The very long “add more later” feature list should be collapsed.
+
+Visible copy:
+
+“Start with what your school needs today and expand later.”
+
+Then show approximately six examples.
+
+Put the remaining examples under:
+“See more possible modules”.
+
+==================================================
+5. PUT HARMONY EARLIER ON THE SCHOOL PAGE
+==================================================
+
+Do not make the visitor scroll through most of the page before seeing proof.
+
+After the main modules, insert a compact section:
+
+“See it working at Harmony Learning Institute”
+
+Show:
+
+Live System
+
+A short paragraph:
+
+“AutoM8 built Harmony’s connected school platform covering admissions,
+registration, parent access, learner records, fees, attendance, documents and
+administration.”
+
+Buttons:
+
+View Case Study
+View Live System
+
+This gives the buyer proof BEFORE asking them to absorb pricing and technical
+details.
+
+==================================================
+6. CUSTOM SOFTWARE PAGE
+==================================================
+
+The current custom-software page is already substantially shorter than the
+school page.
+
+Do not over-edit it.
+
+Improve its order to:
+
+Hero
+↓
+Common systems AutoM8 builds
+↓
+Real project evidence
+↓
+Starting price / phased builds
+↓
+Simple process
+↓
+FAQ
+↓
+CTA
+
+Insert States Companies or another relevant system as contextual proof.
+
+Do NOT add more long sections.
+
+The visitor should see:
+
+“From R10,000”
+
+without scrolling excessively.
+
+==================================================
+7. BUSINESS AUTOMATION PAGE
+==================================================
+
+Lead with CUSTOMER PAIN, not technology.
+
+Use a visual section:
+
+“Are you still doing these manually?”
+
+Examples:
+
+Sending repetitive emails
+Copying information between tools
+Following up with customers
+Creating repetitive documents
+Sending status updates
+Approval workflows
+Admin reminders
+
+Then:
+
+“What can be automated?”
+
+Then:
+
+Real example / project
+Pricing
+Process
+FAQ
+CTA
+
+Technical implementation details should be secondary.
+
+==================================================
+8. PRICING PAGE — REDUCE COMPARISON FATIGUE
+==================================================
+
+Keep all current prices.
+
+Do not hide important fees.
+
+Organise pricing into four clear groups:
+
+Websites
+Automation
+Custom Software
+School Systems
+
+At first glance show only:
+
+Package
+Price
+Who it is for
+4–6 core inclusions
+
+Use an accessible:
+
+“View full package details”
+
+for longer inclusion/exclusion lists.
+
+A buyer should be able to compare packages without reading dozens of bullets.
+
+==================================================
+9. PORTFOLIO
+==================================================
+
+Keep all genuine projects.
+
+Portfolio grid cards should be extremely scan-friendly.
+
+Each card:
+
+Status
+Project name
+One-sentence explanation
+Maximum 3–4 feature tags
+
+Buttons:
+View Project
+View Live System / Demo where available
+
+No long paragraphs in the grid.
+
+Keep status filtering if already implemented cleanly:
+
+All
+Live Systems
+Client Projects
+Prototypes
+Concepts
+
+==================================================
+10. CASE STUDIES
+==================================================
+
+Do not delete the detailed case studies.
+
+Use progressive disclosure.
+
+Top section of every major case study:
+
+THE PROBLEM
+maximum 2–3 sentences
+
+WHAT AUTOM8 BUILT
+maximum 2–3 sentences
+
+STATUS
+Live / Client Project / etc.
+
+KEY CAPABILITIES
+approximately 4–6 cards
+
+RESULT / CURRENT OUTCOME
+only factual information
+
+CTA
+
+Then:
+“Explore the full system”
+
+and allow the visitor to continue into the detailed feature breakdown.
+
+Harmony should be understandable within approximately 30 seconds.
+
+==================================================
+11. SOLUTIONS HUB
+==================================================
+
+/solutions/ must behave like a problem directory.
+
+Do not turn the hub page into another long service page.
+
+Each solution preview:
+
+Problem-oriented headline
+1–2 sentences
+Explore Solution
+
+Individual solution pages can remain detailed because the visitor arrived with
+a specific problem.
+
+==================================================
+12. INSIGHTS HUB
+==================================================
+
+/insights/ should look like a resource library.
+
+Article card:
+
+Title
+Category
+1–2 sentence excerpt
+Read Article
+
+Do not display substantial article content on the hub itself.
+
+Individual articles may remain comprehensive.
+
+==================================================
+13. ABOUT PAGE
+==================================================
+
+Keep the founder-led positioning.
+
+Do not over-explain every company value.
+
+Use:
+
+Who AutoM8 is
+Why it exists
+How it works
+Capabilities / technologies
+Founder
+CTA
+
+Avoid repeating the homepage sales copy word-for-word.
+
+==================================================
+14. CONTACT PAGE
+==================================================
+
+The current contact page already has useful qualification fields.
+
+Do not make the form longer.
+
+Keep:
+
+Name
+Email
+Service / enquiry type
+Phone optional
+Organisation optional
+Website optional
+Budget optional
+Preferred contact optional
+Project description
+
+Reduce surrounding explanatory content if repetitive.
+
+The form should visually become the obvious main action.
+
+==================================================
+15. GLOBAL FLOATING WHATSAPP BUTTON
+==================================================
+
+Add a polished floating WhatsApp button across all relevant public commercial
+pages.
+
+Phone:
+
++27 68 153 6136
+
+URL:
+
+https://wa.me/27681536136
+
+Use a properly URL-encoded pre-filled message:
+
+“Hi AutoM8, I’d like to discuss a website, custom system or automation for my
+organisation.”
+
+Requirements:
+
+- bottom-right
+- fixed while scrolling
+- desktop and mobile
+- accessible aria-label
+- keyboard accessible
+- visible focus state
+- subtle shadow
+- high enough contrast
+- matches AutoM8’s quality
+- no aggressive pulsing
+- no pop-up opening automatically
+- does not cover cookie notices
+- does not overlap sticky school navigation
+- does not overlap forms or mobile navigation
+- respect mobile safe areas
+
+Desktop:
+A small pill may show:
+“Chat on WhatsApp”
+
+Mobile:
+Prefer a compact circular button/icon.
+
+Do not show it on:
+Privacy
+Terms
+Cookies
+
+unless the existing layout makes it natural.
+
+==================================================
+16. CTA HIERARCHY
+==================================================
+
+Each page should have ONE main conversion objective.
+
+Homepage:
+Discuss Your Project
+
+Websites:
+Get a Website Quote
+
+Custom software:
+Discuss Your System
+
+Automation:
+Request a Workflow Assessment
+
+School systems:
+Book a School System Demo
+
+Portfolio/project pages:
+Build Something Similar
+
+WhatsApp:
+Persistent secondary option.
+
+Do not have multiple equal-primary buttons competing beside one another.
+
+==================================================
+17. COPY EDITING RULES
+==================================================
+
+Audit every commercial page for:
+
+- duplicated statements
+- long paragraphs
+- repeated adjectives
+- unnecessary explanations
+- the same selling point said 3+ times
+
+Use:
+
+SHORT HEADLINE
+1–3 sentence explanation
+VISUAL / CARD / PROOF
+CTA
+
+instead of long paragraphs.
+
+Do not shorten useful search content just for the sake of brevity.
+
+Move secondary detail into:
+
+- accordion
+- tab
+- lower page
+- dedicated article
+- dedicated solution page
+
+==================================================
+18. “SEO DEPTH, HUMAN SIMPLICITY”
+==================================================
+
+This is the key rule.
+
+Do not delete legitimate detailed content that answers search intent.
+
+Instead separate:
+
+SALES JOURNEY
+from
+RESEARCH JOURNEY.
+
+Examples:
+
+A principal who lands on the School page should quickly understand the product.
+
+A principal who wants to research fee reconciliation can expand the detailed
+section or visit the dedicated resource.
+
+A business owner should understand Custom Software quickly.
+
+A user researching “custom software instead of Excel” can read the full
+insight article.
+
+==================================================
+19. NAVIGATION
+==================================================
+
+Audit the current navigation.
+
+Prefer approximately:
+
+Home
+Services
+Solutions
+Work
+Pricing
+About
+Contact
+
+Do NOT add every SEO page to the top navigation.
+
+Insights may live under:
+Resources
+
+or be linked contextually and from the footer.
+
+Ensure no SEO page becomes orphaned.
+
+==================================================
+20. MOBILE-FIRST REVIEW
+==================================================
+
+Review at:
+
+320px
+375px
+390px
+430px
+
+Check:
+
+Hero wrapping
+Navigation
+Cards
+Pricing
+Portfolio
+Sticky menus
+WhatsApp
+Accordions
+Tabs
+Footer
+Contact form
+
+At no point should sticky navigation + WhatsApp + browser chrome leave the
+visitor with very little usable screen space.
+
+==================================================
+21. DO NOT CHANGE SEO INFRASTRUCTURE
+==================================================
+
+Preserve the current:
+
+27 canonical/indexable pages
+sitemap architecture
+robots.txt
+OAI-SearchBot allowance
+Googlebot access
+Bingbot access
+JSON-LD
+metadata
+internal-link architecture
+canonical URLs
+case-study URLs
+insight URLs
+solution URLs
+
+Do not rename URLs merely to improve UX.
+
+==================================================
+22. FINAL “10 / 30 / 60 SECOND” TEST
+==================================================
+
+Review the major pages using this test.
+
+After 10 seconds:
+Can the visitor explain what AutoM8 does?
+
+After 30 seconds:
+Can they identify the service relevant to their problem?
+
+After 60 seconds:
+Have they seen genuine evidence, approximate pricing and a clear next step?
+
+If not, restructure the page.
+
+==================================================
+23. DO NOT DEPLOY AUTOMATICALLY
+==================================================
+
+Make the changes locally first.
+
+I want to review them before publishing again.
+
+==================================================
+24. FINAL REPORT
+==================================================
+
+Report:
+
+- Homepage sections before vs after
+- Repeated homepage content removed
+- Services page simplification
+- School page sections simplified
+- Content moved into accordions/tabs
+- School content deliberately retained
+- Harmony placement changes
+- Custom software changes
+- Automation changes
+- Pricing UX changes
+- Portfolio changes
+- Case-study changes
+- Navigation changes
+- WhatsApp implementation
+- Mobile checks
+- URLs changed (should ideally be none)
+- SEO infrastructure verification
+- Anything you deliberately left long and why

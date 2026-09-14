@@ -144,6 +144,41 @@
         .school-jump .container { display:flex; gap:.5rem; overflow-x:auto; padding-top:.8rem; padding-bottom:.8rem; scrollbar-width:thin; }
         .school-jump a { white-space:nowrap; border:1px solid var(--border); border-radius:999px; padding:.45rem .8rem; color:var(--text-2); text-decoration:none; font-size:.76rem; font-weight:700; }
         .school-jump a:hover, .school-jump a:focus-visible { color:var(--blue); border-color:var(--blue); }
+         /* Page-local hierarchy is assembled in the script below so secondary
+            research lives in native, keyboard-accessible disclosures. */
+         .school-modules .module-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+         .module-detail { border:1px solid var(--border); border-radius:14px; background:var(--bg); padding:1.1rem 1.2rem; }
+         .module-detail summary { cursor:pointer; list-style:none; display:flex; gap:.7rem; align-items:center; color:var(--text); font-weight:800; }
+         .module-detail summary::-webkit-details-marker { display:none; }
+         .module-detail summary:after { content:"+"; margin-left:auto; color:var(--blue); font-size:1.2rem; }
+         .module-detail[open] summary:after { content:"−"; }
+         .module-detail p { margin-top:.7rem; color:var(--text-3); font-size:.84rem; line-height:1.65; }
+         .module-number { color:var(--blue); font-size:.68rem; letter-spacing:1px; font-weight:900; }
+         .proof-panel { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; align-items:center; border:1px solid var(--blue); border-radius:16px; padding:2rem; background:var(--blue-lt); }
+         .proof-panel p { color:var(--text-2); line-height:1.75; font-size:.92rem; }
+         .proof-panel .proof-links { margin-top:1.1rem; display:flex; flex-wrap:wrap; gap:.9rem; }
+         .compact-section { padding-top:58px !important; padding-bottom:58px !important; }
+         .secondary-research { margin-top:1.25rem; border:1px solid var(--border); border-radius:12px; background:var(--bg); padding:1rem 1.25rem; }
+         .secondary-research summary { cursor:pointer; color:var(--blue); font-weight:800; font-size:.86rem; }
+         .secondary-research p { color:var(--text-3); font-size:.84rem; line-height:1.7; margin-top:.7rem; }
+         .sales-stage > .stage-disclosures { max-width:1200px; margin:0 auto; padding:0 28px 3rem; }
+         .stage-disclosure { margin:0 0 1rem; border:1px solid var(--border); border-radius:14px; background:var(--bg); overflow:hidden; }
+         .stage-disclosure > summary { cursor:pointer; padding:1rem 1.25rem; color:var(--text); font-weight:800; list-style:none; }
+         .stage-disclosure > summary::-webkit-details-marker { display:none; }
+         .stage-disclosure > summary:after { content:"+"; float:right; color:var(--blue); font-size:1.2rem; }
+         .stage-disclosure[open] > summary:after { content:"−"; }
+         .stage-disclosure > section { border-top:1px solid var(--border-lt); }
+         .portal-summary-list { list-style:none; display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.8rem; }
+         .portal-summary-list li { color:var(--text-2); font-size:.78rem; border:1px solid var(--border-lt); border-radius:999px; padding:.3rem .6rem; }
+         @media (max-width:768px) {
+             .school-modules .module-grid, .proof-panel, .portal-accordions { grid-template-columns:1fr !important; }
+             .sales-stage > .stage-disclosures { padding-left:20px; padding-right:20px; }
+             .school-modules .module-detail { padding:1rem; }
+         }
+         @media (max-width:380px) {
+             .school-modules .module-grid { gap:.75rem; }
+             .proof-panel { padding:1.25rem; }
+         }
         @media (max-width:1024px) {
             .pricing-grid-4 { grid-template-columns:1fr 1fr; }
             .fee-feature { grid-template-columns:1fr; }
@@ -184,12 +219,12 @@
         <div class="nav-logo"><a href="/" class="logo-text" aria-label="AutoM8 home">AutoM8</a></div>
         <ul class="nav-menu" id="nav-menu">
             <li><a href="/" class="nav-link">Home</a></li>
-            <li><a href="services.html" class="nav-link">Services</a></li>
-            <li><a href="school-management-system.html" class="nav-link active">School Systems</a></li>
-            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="/services.html" class="nav-link">Services</a></li>
+            <li><a href="/solutions/index.html" class="nav-link">Solutions</a></li>
+            <li><a href="/portfolio.html" class="nav-link">Work</a></li>
+            <li><a href="/pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="/about.html" class="nav-link">About</a></li>
+            <li><a href="/contact.html" class="nav-link">Contact</a></li>
         </ul>
         <button type="button" class="nav-toggle" id="mobile-menu" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')!=='true')"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
     </div>
@@ -219,6 +254,8 @@
 <nav class="school-jump" aria-label="School system page sections">
     <div class="container">
         <a href="#problems-solved">Overview</a>
+        <a href="#modules">Modules</a>
+        <a href="#harmony-proof">Live proof</a>
         <a href="#admissions">Admissions</a>
         <a href="#portal-outcomes">Parent Portal</a>
         <a href="#custom-portals">Administration</a>
@@ -260,6 +297,54 @@
             <div class="problem-card">
                 <div class="problem-label">Problem</div><h3>Staff spending time answering repetitive questions?</h3>
                 <div class="solution"><div class="problem-label">Possible solution</div><p>Allow parents and students to access authorised information themselves through dedicated portals.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="modules" class="school-modules section-rule compact-section" style="background:var(--bg);">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Eight practical modules</div>
+            <h2 class="section-title">A clearer school day, module by module.</h2>
+            <p class="section-subtitle">Start with the work that is slowing your team down. Open a module for the fuller detail; every feature is confirmed during discovery.</p>
+        </div>
+        <div class="module-grid fade-in">
+            <details class="module-detail" open><summary><span class="module-number">01</span> Learner records</summary><p>Profiles, classes, subjects, staff permissions and connected school information in one searchable place.</p></details>
+            <details class="module-detail"><summary><span class="module-number">02</span> Attendance</summary><p>Record attendance in a structured system and maintain searchable learner attendance histories for authorised users.</p></details>
+            <details class="module-detail"><summary><span class="module-number">03</span> Admissions</summary><p>Collect applications, supporting documents, statuses, secure links and follow-up actions through a clear review workflow.</p></details>
+            <details class="module-detail"><summary><span class="module-number">04</span> Parent access</summary><p>Let authorised parents view the information the school chooses to publish, including multiple children under one account where required.</p></details>
+            <details class="module-detail"><summary><span class="module-number">05</span> Learning workspace</summary><p>Organise subjects, learning material, assignments, submissions, marks and academic progress through a Student Portal.</p></details>
+            <details class="module-detail"><summary><span class="module-number">06</span> Fees and reconciliation</summary><p>Use learner payment references and uploaded bank statements to support matching, exception review and clearer account balances.</p></details>
+            <details class="module-detail"><summary><span class="module-number">07</span> Documents and notices</summary><p>Keep school documents, announcements and relevant records in controlled areas instead of scattered devices and chat histories.</p></details>
+            <details class="module-detail"><summary><span class="module-number">08</span> Reports and permissions</summary><p>Give management visibility through agreed reports while role-based permissions help each user see the information relevant to their role.</p></details>
+        </div>
+        <details class="secondary-research fade-in">
+            <summary>Explore the wider module and future-feature list</summary>
+            <p>Possible additions include SMS and email notifications, online payments, timetables and report cards, advanced reports and analytics, transport and library management, staff attendance, certificates, multiple campuses and other school workflows. New functionality outside the original agreement is scoped and quoted separately.</p>
+        </details>
+    </div>
+</section>
+
+<section id="harmony-proof" class="harmony-proof section-rule compact-section" style="background:var(--bg-alt);">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-tag">Live proof · Harmony Learning Institute</div>
+            <h2 class="section-title">This approach is already live in a South African school.</h2>
+            <p class="section-subtitle">Harmony’s custom platform connects the public website, admissions, parent access, learner information, attendance, fees, documents and administration.</p>
+        </div>
+        <div class="proof-panel fade-in">
+            <div>
+                <p><strong>A real implementation, not a template promise.</strong> The live private-school platform was designed around Harmony’s own workflows, with structured admissions, secure parent actions, learner records, fee information, document handling and staff notifications.</p>
+                <div class="proof-links">
+                    <a href="projects/harmony-learning-institute.html" class="btn btn-primary">View Case Study</a>
+                    <a href="https://www.harmonylearning.co.za/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Live System</a>
+                </div>
+            </div>
+            <div>
+                <div class="comparison-line"><span>LIVE STATUS</span>Platform used for Harmony Learning Institute’s public and operational school journeys</div>
+                <div class="comparison-line"><span>CONNECTED</span>Admissions, parent communication, records, attendance, fees and documents</div>
+                <div class="comparison-line"><span>APPROACH</span>Custom system design around the way the school actually operates</div>
             </div>
         </div>
     </div>
@@ -376,6 +461,10 @@
                 <div class="comparison-line"><span>ACADEMIC WORKSPACE</span>Organise assignments, resources and submissions through the Student Portal</div>
             </div>
         </div>
+        <details class="secondary-research fade-in">
+            <summary>See the complete WhatsApp comparison</summary>
+            <p>WhatsApp can send a parent a message, receive a proof of payment, ask staff whether a learner attended, send report information manually, search old chats, and mix assignments into group chats. AutoM8 adds structured records, published results, attendance history, fee reconciliation, authorised access and an academic workspace; it is designed to reduce the operational work WhatsApp was never designed to manage.</p>
+        </details>
         <p class="closing-statement fade-in">WhatsApp helps your school communicate. AutoM8 helps your school operate.</p>
         <p style="text-align:center;color:var(--text-3);font-size:.9rem;margin-top:.5rem;" class="fade-in">We are not trying to replace WhatsApp. We are reducing the administrative work WhatsApp was never designed to manage.</p>
     </div>
@@ -388,6 +477,8 @@
             <h2 class="section-title">Choose Only What Your School Actually Needs</h2>
             <p class="section-subtitle">Not every school needs three portals. Start with the functionality that solves your immediate administrative problems and expand later if your requirements grow. Prices below are once-off starting points.</p>
         </div>
+        <details class="secondary-research fade-in">
+            <summary>Reveal custom starting prices and portal scope</summary>
         <div class="pricing-grid-4 fade-in">
             <div class="custom-card">
                 <div class="micro">Custom Option 01</div>
@@ -426,6 +517,7 @@
                 </ul>
             </div>
         </div>
+        </details>
         <div class="scope-note fade-in">Final features depend on the agreed project scope. The displayed amount is a starting price; your final price is agreed before development starts. New functionality requested outside the agreed scope is quoted separately.</div>
         <div class="highlight-strip fade-in"><strong>You do not need every module.</strong> We recommend the simplest system that properly solves your school's requirements.</div>
         <div style="text-align:center;margin-top:1.5rem;" class="fade-in"><a href="contact.html?type=school-demo" class="btn btn-primary">Request a Free School System Demo</a></div>
@@ -456,6 +548,8 @@
             <div><h3>Custom build</h3><p>Built specifically for one school with a larger once-off development fee based on agreed functionality.</p></div>
             <div><h3>Standard school package</h3><p>Existing AutoM8 functionality with a per-learner monthly subscription model.</p></div>
         </div>
+        <details class="secondary-research fade-in">
+            <summary>Reveal the R15, R25 and R35 package pricing</summary>
         <div class="pricing-grid-4 fade-in">
             <div class="custom-card">
                 <div class="package-micro">Base Plan</div><div class="custom-price">R15</div><p>/learner/month</p><p>Essential features for small schools and tutoring centres.</p>
@@ -470,6 +564,7 @@
                 <ul class="package-features"><li><i class="fas fa-circle"></i> Everything in Pro</li><li><i class="fas fa-circle"></i> Payment integration</li><li><i class="fas fa-circle"></i> Custom branding</li><li><i class="fas fa-circle"></i> Priority support</li></ul>
             </div>
         </div>
+        </details>
         <div class="scope-note fade-in">Standard package functionality and availability should be confirmed for your school's requirements. Request a demonstration to discuss the right option.</div>
         <div style="text-align:center;margin-top:1.5rem;" class="fade-in"><a href="contact.html?type=school-demo" class="btn btn-primary">Request a Free School System Demo</a></div>
     </div>
@@ -495,6 +590,11 @@
                 <img class="portal-illustration" src="images/illustrations/source/illus-9.svg" alt="Student accessing a laptop-based digital learning workspace" width="1024" height="768" loading="lazy">
                 <i class="fas fa-user-graduate"></i><h3>Student Portal — One Academic Workspace</h3><p>Give learners a structured place to access their academic information and learning resources.</p><ul><li><i class="fas fa-circle"></i> Assignments and submissions</li><li><i class="fas fa-circle"></i> Subjects and learning material</li><li><i class="fas fa-circle"></i> Results and academic progress</li><li><i class="fas fa-circle"></i> Notices and documents</li></ul>
             </div>
+        </div>
+        <div class="portal-accordions fade-in" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem;">
+            <details class="secondary-research" open><summary>Full Staff Portal detail</summary><p>Secure staff/admin login, learner and staff records, classes and grades, attendance management, marks and results, notices and documents, basic reports, staff permissions, school information and a dashboard.</p></details>
+            <details class="secondary-research"><summary>Full Parent Portal detail</summary><p>Parent accounts, multiple children linked to one parent, attendance and published results, notices, announcements, documents, fee information, child and parent profiles and communication tools where required.</p></details>
+            <details class="secondary-research"><summary>Full Student Portal detail</summary><p>Student login and dashboard, subjects, learning resources, assignments, submissions, marks/results, academic progress, notices and documents, with Learning Management functionality depending on requirements.</p></details>
         </div>
     </div>
 </section>
@@ -582,11 +682,16 @@
             <div class="process-step"><div class="step-no">02 · SYSTEM SELECTION</div><h3>Choose the model</h3><p>Select Staff, Staff + Parent, Staff + Student, Complete, or a standard package.</p></div>
             <div class="process-step"><div class="step-no">03 · SCOPE & QUOTE</div><h3>Confirm the plan</h3><p>AutoM8 confirms exactly what will be built and provides the final price before development.</p></div>
             <div class="process-step"><div class="step-no">04 · AGREEMENT</div><h3>Agree and begin</h3><p>Development begins after the agreed contract and payment requirements are completed.</p></div>
+         </div>
+         <details class="secondary-research fade-in" style="margin-top:1rem;">
+             <summary>Open the detailed build, testing, launch and support process</summary>
+             <div class="process-grid" style="margin-top:1rem;">
             <div class="process-step"><div class="step-no">05 · DEVELOPMENT</div><h3>Build or configure</h3><p>AutoM8 builds or configures the agreed school system.</p></div>
             <div class="process-step"><div class="step-no">06 · TESTING</div><h3>Test functionality</h3><p>The agreed functionality is tested with the relevant school users.</p></div>
             <div class="process-step"><div class="step-no">07 · LAUNCH</div><h3>Train and launch</h3><p>Relevant users are introduced to the system and the production platform is launched.</p></div>
             <div class="process-step"><div class="step-no">08 · SUPPORT</div><h3>Choose ongoing care</h3><p>The school may choose a System Care plan where applicable.</p></div>
-        </div>
+             </div>
+         </details>
     </div>
 </section>
 
@@ -642,12 +747,88 @@
         <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved. · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></p></div>
     </div>
 </footer>
-<script>
-document.getElementById('yr').textContent = new Date().getFullYear();
-const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');
-mm.addEventListener('click',()=>nm.classList.toggle('active'));
-const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:.1});
-document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
-</script>
+ <script src="/scripts/floating-whatsapp.js"></script>
+ <script>
+ document.getElementById('yr').textContent = new Date().getFullYear();
+ const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');
+ mm.addEventListener('click',()=>{const open=nm.classList.toggle('active');mm.setAttribute('aria-expanded',open);});
+ const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:.1});
+ document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+
+ /* Keep the principal's first journey short without deleting the detailed SEO
+    research: secondary sections are moved into labelled native disclosures. */
+ (function organiseSchoolJourney(){
+     const sections=[...document.querySelectorAll('body > section')];
+     const byId=id=>document.getElementById(id);
+     const byTag=label=>sections.find(section=>section.querySelector('.section-tag')?.textContent.trim()===label);
+     const model=sections.find(section=>section.querySelector('.section-tag')?.textContent.trim()==='Two ways to work with AutoM8');
+     const fee=byId('fee-reconciliation'), admissions=byId('admissions'), whatsapp=byId('whatsapp-comparison');
+     const custom=byId('custom-portals'), standard=byId('standard-packages'), portals=byId('portal-outcomes'), before=byId('before-after');
+     const rationale=byTag('Why from pricing?'), customisation=byTag('Custom-first school software');
+     const care=byTag('Optional ongoing support'), providers=byTag('Third-party services');
+     const process=byTag('Project process'), future=byTag('Start small, grow later');
+     const security=byId('security'), faq=byId('faq');
+     const cta=sections.find(section=>section.querySelector('.final-cta-inner'));
+     if(!model || !security || !faq || !cta) return;
+     const securityHeader=document.createElement('div');
+     securityHeader.className='section-header fade-in';
+     securityHeader.innerHTML='<div class="section-tag">Security and ownership</div><h2 class="section-title">Clear ownership. Access shaped around each role.</h2><p class="section-subtitle">The school keeps its data, while the agreed system controls who can access each kind of information.</p>';
+     security.querySelector('.container').prepend(securityHeader);
+
+     const stage=document.createElement('section');
+     stage.className='sales-stage buying-stage';
+     stage.style.background='var(--bg-alt)';
+     stage.innerHTML='<div class="container" style="padding-top:80px;padding-bottom:2rem;"><div class="section-header fade-in"><div class="section-tag">Buying and pricing</div><h2 class="section-title">Choose the school technology model that fits.</h2><p class="section-subtitle">Start with a focused custom build or select an existing AutoM8 school package. The detail is here when you are ready to compare.</p></div></div>';
+     const disclosureArea=document.createElement('div');
+     disclosureArea.className='stage-disclosures';
+     stage.append(disclosureArea);
+
+     const addDisclosure=(label,node)=>{
+         if(!node) return;
+         const details=document.createElement('details');
+         details.className='stage-disclosure';
+         const summary=document.createElement('summary');
+         summary.textContent=label;
+         details.append(summary,node);
+         disclosureArea.append(details);
+     };
+     stage.querySelector('.container').append(model);
+     addDisclosure('Fee reconciliation workflow and admissions depth',fee);
+     addDisclosure('Admissions workflow detail',admissions);
+     addDisclosure('WhatsApp comparison: communication versus operations',whatsapp);
+     addDisclosure('Custom portal pricing and full scope',custom);
+     addDisclosure('Why custom pricing starts from an amount',rationale);
+     addDisclosure('Standard package pricing and plan detail',standard);
+     addDisclosure('Portal detail and role-based access',portals);
+     addDisclosure('Before and after: manual work versus connected workflows',before);
+     addDisclosure('Customisation examples for different schools',customisation);
+     addDisclosure('Optional System Care',care);
+     addDisclosure('Third-party provider costs',providers);
+     addDisclosure('Detailed project process',process);
+     addDisclosure('Future features and expansion options',future);
+
+     /* Keep the page's eight-stage DOM sequence: hero, problems, modules,
+        proof, buying, security, FAQ, CTA. */
+     const footer=document.querySelector('footer');
+     footer.parentNode.insertBefore(stage,security);
+     [security,faq,cta].forEach(node=>footer.parentNode.insertBefore(node,footer));
+
+     /* The cards remain as concise portal summaries; full lists live only in
+        the accessible portal accordions. */
+     portals?.querySelectorAll('.portal-network .portal-card ul').forEach(list=>list.remove());
+     const portalDetails=[...document.querySelectorAll('.portal-accordions details')];
+     portalDetails.forEach(detail=>detail.setAttribute('name','portal-detail'));
+     portalDetails.forEach(detail=>detail.addEventListener('toggle',()=>{
+         if(detail.open) portalDetails.forEach(other=>{if(other!==detail) other.open=false;});
+     }));
+     document.addEventListener('click',event=>{
+         const link=event.target.closest('a[href^="#"]');
+         if(!link) return;
+         const target=document.getElementById(link.getAttribute('href').slice(1));
+         const parent=target?.closest('details');
+         if(parent && !parent.open) parent.open=true;
+     });
+ })();
+ </script>
 </body>
 </html>

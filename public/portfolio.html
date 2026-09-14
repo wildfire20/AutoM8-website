@@ -107,6 +107,9 @@
         .project-link:hover { border-color:var(--blue); color:var(--blue); }
         .project-link-primary { background:var(--blue); border-color:var(--blue); color:#fff; }
         .project-link-primary:hover { background:var(--blue-dk); border-color:var(--blue-dk); color:#fff; }
+        .portfolio-filters { display:flex; gap:.6rem; flex-wrap:wrap; margin-bottom:1.75rem; }
+        .portfolio-filter { border:1px solid var(--border); background:var(--bg); color:var(--text-2); border-radius:100px; padding:8px 14px; font-size:.78rem; font-weight:700; cursor:pointer; }
+        .portfolio-filter[aria-pressed="true"], .portfolio-filter:hover { background:var(--blue); border-color:var(--blue); color:#fff; }
 
         .results-section { background: var(--bg-alt); border-top: 1px solid var(--border-lt); border-bottom: 1px solid var(--border-lt); }
         .results-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
@@ -184,9 +187,9 @@
         <ul class="nav-menu" id="nav-menu">
             <li><a href="/" class="nav-link">Home</a></li>
             <li><a href="services.html" class="nav-link">Services</a></li>
-            <li><a href="school-management-system.html" class="nav-link">School Systems</a></li>
+            <li><a href="solutions/index.html" class="nav-link">Solutions</a></li>
+            <li><a href="portfolio.html" class="nav-link active">Work</a></li>
             <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-            <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
@@ -209,6 +212,12 @@
 
 <section style="background:var(--bg);border-bottom:1px solid var(--border-lt);">
     <div class="container">
+        <div class="portfolio-filters" aria-label="Filter projects">
+            <button class="portfolio-filter" type="button" data-filter="all" aria-pressed="true">All projects</button>
+            <button class="portfolio-filter" type="button" data-filter="live" aria-pressed="false">Live systems</button>
+            <button class="portfolio-filter" type="button" data-filter="client" aria-pressed="false">Client projects</button>
+            <button class="portfolio-filter" type="button" data-filter="showcase" aria-pressed="false">Showcase work</button>
+        </div>
         <div class="portfolio-grid" id="portfolio-projects">
 
             <!-- PROJECT 1: Lephalale Connect -->
@@ -471,6 +480,7 @@
             <p>Let's discuss your requirements and find the most practical approach for your project.</p>
             <div class="cta-buttons">
                 <a href="contact.html" class="btn btn-white">Start a conversation <i class="fas fa-arrow-right"></i></a>
+                <a href="https://wa.me/27681536136?text=Hi%20AutoM8!%20I%27d%20like%20to%20discuss%20a%20similar%20system." class="btn btn-outline" target="_blank" rel="noopener" style="border-color:#fff;color:#fff;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
             </div>
         </div>
     </div>
@@ -487,6 +497,7 @@
         <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved. · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></p></div>
     </div>
 </footer>
+<script src="scripts/floating-whatsapp.js"></script>
 <script src="scripts/portfolio-data.js"></script>
 <script>
 const portfolioGrid=document.getElementById('portfolio-projects');
@@ -505,6 +516,13 @@ portfolioGrid.innerHTML=window.autoM8Projects.map(project=>`
         </div>
     </article>
 `).join('');
+document.querySelectorAll('.portfolio-filter').forEach(button=>button.addEventListener('click',()=>{
+    const selected=button.dataset.filter;
+    document.querySelectorAll('.portfolio-filter').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+    document.querySelectorAll('#portfolio-projects .portfolio-card').forEach(card=>{
+        card.hidden=selected!=='all' && card.dataset.projectType!==selected;
+    });
+}));
 document.getElementById('yr').textContent = new Date().getFullYear();
 const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');
 mm.addEventListener('click',()=>nm.classList.toggle('active'));

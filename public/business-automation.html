@@ -56,9 +56,21 @@
         .faq-item { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; background: var(--bg); }
         .faq-item h3 { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
         .faq-item p { color: var(--text-3); line-height: 1.7; font-size: 0.875rem; }
+        .faq-item summary { cursor:pointer; list-style:none; font-weight:700; color:var(--text); }
+        .faq-item summary::-webkit-details-marker { display:none; }
+        .faq-item summary::after { content:'+'; float:right; color:var(--blue); font-size:1.2rem; }
+        .faq-item[open] summary::after { content:'−'; }
         .breadcrumb { font-size: 0.8rem; color: var(--text-3); margin-bottom: 1rem; }
         .breadcrumb a { color: var(--text-3); text-decoration: none; }
         .breadcrumb a:hover { color: var(--blue); }
+         .pain-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+         .pain-item { border:1px solid var(--border); border-radius:12px; padding:1.25rem; background:var(--bg); color:var(--text-2); font-size:.9rem; line-height:1.55; }
+         .pain-item i { color:var(--blue); margin-right:.5rem; }
+         .proof-callout { border:1px solid var(--blue); background:var(--blue-lt); border-radius:14px; padding:1.5rem; display:grid; grid-template-columns:1fr auto; gap:1.5rem; align-items:center; }
+         .proof-callout h3 { color:var(--text); font-size:1.15rem; margin-bottom:.35rem; }
+         .proof-callout p { color:var(--text-3); line-height:1.65; font-size:.9rem; }
+         .automation-process { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--border); border-radius:14px; overflow:hidden; }
+         @media (max-width:768px) { .pain-grid { grid-template-columns:1fr; } .proof-callout { grid-template-columns:1fr; } .automation-process { grid-template-columns:1fr; } .automation-process > div { border-right:0 !important; border-bottom:1px solid var(--border); } .automation-process > div:last-child { border-bottom:0; } }
         @media (max-width: 1024px) { .examples-grid { grid-template-columns: 1fr 1fr; } .tier-grid { grid-template-columns: 1fr; max-width:420px;margin:0 auto; } .faq-grid { grid-template-columns: 1fr; } }
         @media (max-width: 768px) { .examples-grid { grid-template-columns: 1fr; } }
     </style>
@@ -70,9 +82,9 @@
         <ul class="nav-menu" id="nav-menu">
             <li><a href="/" class="nav-link">Home</a></li>
             <li><a href="services.html" class="nav-link">Services</a></li>
-            <li><a href="school-management-system.html" class="nav-link">School Systems</a></li>
+            <li><a href="solutions/index.html" class="nav-link">Solutions</a></li>
+            <li><a href="portfolio.html" class="nav-link">Work</a></li>
             <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
@@ -100,6 +112,25 @@
     </div>
 </section>
 
+<!-- CUSTOMER PAIN -->
+<section style="background:var(--bg);border-bottom:1px solid var(--border-lt);padding:64px 0;">
+    <div class="container">
+        <div class="section-header fade-in" style="margin-bottom:1.5rem;">
+            <div class="section-tag">Start with the friction</div>
+            <h2 class="section-title">If your team is doing this manually, it may be ready for automation.</h2>
+            <p class="section-subtitle">The best automation brief usually starts with a repeated task, not a technology choice.</p>
+        </div>
+        <div class="pain-grid fade-in">
+            <div class="pain-item"><i class="fas fa-copy"></i> Copying the same information between forms, spreadsheets and email.</div>
+            <div class="pain-item"><i class="fas fa-clock"></i> Chasing approvals, reminders or customer follow-ups by hand.</div>
+            <div class="pain-item"><i class="fas fa-search"></i> Losing visibility because status updates live in different tools.</div>
+            <div class="pain-item"><i class="fas fa-file-alt"></i> Rebuilding the same quote, report, invoice or document repeatedly.</div>
+            <div class="pain-item"><i class="fas fa-bell"></i> Finding out about a new lead, request or exception too late.</div>
+            <div class="pain-item"><i class="fas fa-user-clock"></i> Spending skilled staff time on predictable admin work.</div>
+        </div>
+    </div>
+</section>
+
 <!-- EXAMPLES -->
 <section style="background:var(--bg-alt);border-bottom:1px solid var(--border-lt);padding:80px 0;">
     <div class="container">
@@ -114,6 +145,16 @@
             <div class="example-card"><i class="fas fa-user-clock"></i><h3>Customer Follow-Ups</h3><p>Automatic follow-up messages sent to leads, clients or prospects after a defined trigger or time period.</p></div>
             <div class="example-card"><i class="fas fa-file-alt"></i><h3>Document Generation</h3><p>Automatic generation of quotes, invoices, reports or certificates from data already in your systems.</p></div>
             <div class="example-card"><i class="fas fa-sync-alt"></i><h3>System-to-System Data Transfer</h3><p>Moving data between different tools or platforms automatically, without manual data entry or copy-paste.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- EARLY REAL PROJECT PROOF -->
+<section style="background:var(--bg);border-bottom:1px solid var(--border-lt);padding:64px 0;">
+    <div class="container">
+        <div class="proof-callout fade-in">
+            <div><div class="section-tag">Real project proof</div><h3>Automation becomes useful when it joins the whole workflow.</h3><p>In the live Harmony Learning Institute platform, admissions updates, secure action links, document requests, registration communication and staff notifications move through structured workflows instead of manual chasing.</p></div>
+            <a href="projects/harmony-learning-institute.html" class="btn btn-outline">See the case study <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </section>
@@ -176,6 +217,19 @@
     </div>
 </section>
 
+<!-- PROCESS -->
+<section style="background:var(--bg-alt);border-bottom:1px solid var(--border-lt);padding:64px 0;">
+    <div class="container">
+        <div class="section-header fade-in"><div class="section-tag">How it works</div><h2 class="section-title">From repetitive task to working automation.</h2></div>
+        <div class="automation-process fade-in">
+            <div style="padding:1.5rem;border-right:1px solid var(--border);"><strong style="color:var(--blue);">01 · Identify</strong><p style="color:var(--text-3);font-size:.84rem;margin-top:.4rem;">Map the task, trigger and people involved.</p></div>
+            <div style="padding:1.5rem;border-right:1px solid var(--border);"><strong style="color:var(--blue);">02 · Scope</strong><p style="color:var(--text-3);font-size:.84rem;margin-top:.4rem;">Confirm tools, edge cases and a written price.</p></div>
+            <div style="padding:1.5rem;border-right:1px solid var(--border);"><strong style="color:var(--blue);">03 · Build</strong><p style="color:var(--text-3);font-size:.84rem;margin-top:.4rem;">Connect the steps and test with real examples.</p></div>
+            <div style="padding:1.5rem;"><strong style="color:var(--blue);">04 · Improve</strong><p style="color:var(--text-3);font-size:.84rem;margin-top:.4rem;">Handover, monitor and refine as needed.</p></div>
+        </div>
+    </div>
+</section>
+
 <!-- FAQ -->
 <section style="background:var(--bg-alt);border-bottom:1px solid var(--border-lt);padding:80px 0;">
     <div class="container">
@@ -184,10 +238,10 @@
             <h2 class="section-title">Common questions about business automation.</h2>
         </div>
         <div class="faq-grid fade-in">
-            <div class="faq-item"><h3>How much does business automation cost in South Africa?</h3><p>Simple single-process automations start from R500. Multi-step automations start from R1,500. Advanced and AI-assisted automation is quoted after a free consultation.</p></div>
-            <div class="faq-item"><h3>Are there ongoing subscription fees?</h3><p>Depending on the tools used, third-party platform subscription fees may apply. These are clearly documented during scoping before any commitment is made.</p></div>
-            <div class="faq-item"><h3>What tools do you use for automation?</h3><p>The right tools depend on what you need to automate and what systems you already use. This is discussed during the free discovery conversation.</p></div>
-            <div class="faq-item"><h3>Can you automate WhatsApp messages?</h3><p>Yes, automated WhatsApp notifications and messages are possible using approved business messaging platforms. We discuss the right approach for your use case during scoping.</p></div>
+            <details class="faq-item"><summary>How much does business automation cost in South Africa?</summary><p>Simple single-process automations start from R500. Multi-step automations start from R1,500. Advanced and AI-assisted automation is quoted after a free consultation.</p></details>
+            <details class="faq-item"><summary>Are there ongoing subscription fees?</summary><p>Depending on the tools used, third-party platform subscription fees may apply. These are clearly documented during scoping before any commitment is made.</p></details>
+            <details class="faq-item"><summary>What tools do you use for automation?</summary><p>The right tools depend on what you need to automate and what systems you already use. This is discussed during the free discovery conversation.</p></details>
+            <details class="faq-item"><summary>Can you automate WhatsApp messages?</summary><p>Yes, automated WhatsApp notifications and messages are possible using approved business messaging platforms. We discuss the right approach for your use case during scoping.</p></details>
         </div>
     </div>
 </section>
@@ -215,6 +269,7 @@
         <div class="footer-bottom"><p>&copy; <span id="yr"></span> AutoM8. All rights reserved. · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></p></div>
     </div>
 </footer>
+<script src="scripts/floating-whatsapp.js"></script>
 <script>
 document.getElementById('yr').textContent = new Date().getFullYear();
 const mm=document.getElementById('mobile-menu'),nm=document.getElementById('nav-menu');
