@@ -202,7 +202,7 @@ window.autoM8ProjectLinks = function(project, basePath) {
 
     if (project.liveUrl) {
         links.push(
-            '<a class="project-link project-link-primary" href="' + project.liveUrl + '" target="_blank" rel="noopener noreferrer" ' +
+            '<a class="project-link project-link-primary" data-button-label="' + (project.liveLabel || 'Visit live platform') + '" href="' + project.liveUrl + '" target="_blank" rel="noopener noreferrer" ' +
             'aria-label="' + (project.liveLabel || 'Visit live platform') + ' (opens in a new tab, leaving AutoM8)">' +
             '<span class="project-link-label">' + (project.liveLabel || 'Visit live platform') + '</span>' +
             '<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>'
@@ -210,7 +210,7 @@ window.autoM8ProjectLinks = function(project, basePath) {
     }
     if (project.demoUrl) {
         links.push(
-            '<a class="project-link project-link-primary" href="' + project.demoUrl + '" target="_blank" rel="noopener noreferrer" ' +
+            '<a class="project-link project-link-primary" data-button-label="View Live Demo" href="' + project.demoUrl + '" target="_blank" rel="noopener noreferrer" ' +
             'aria-label="View Live Demo (opens in a new tab, leaving AutoM8)"><span class="project-link-label">View Live Demo</span>' +
             '<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>'
         );
