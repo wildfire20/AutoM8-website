@@ -203,8 +203,8 @@ window.autoM8ProjectLinks = function(project, basePath) {
     if (project.liveUrl) {
         links.push(
             '<a class="project-link project-link-primary" href="' + project.liveUrl + '" target="_blank" rel="noopener noreferrer" ' +
-            'aria-label="' + project.liveLabel + ' (opens in a new tab, leaving AutoM8)">' +
-            project.liveLabel + ' <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>'
+            'aria-label="' + (project.liveLabel || 'Visit live platform') + ' (opens in a new tab, leaving AutoM8)">' +
+            (project.liveLabel || 'Visit live platform') + ' <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>'
         );
     }
     if (project.demoUrl) {

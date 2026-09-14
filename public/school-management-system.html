@@ -162,6 +162,18 @@
          .secondary-research summary { cursor:pointer; color:var(--blue); font-weight:800; font-size:.86rem; }
          .secondary-research p { color:var(--text-3); font-size:.84rem; line-height:1.7; margin-top:.7rem; }
          .sales-stage > .stage-disclosures { max-width:1200px; margin:0 auto; padding:0 28px 3rem; }
+         .buying-stage { padding-top:0 !important; }
+         .buying-stage > .container { padding-top:42px !important; padding-bottom:1.25rem !important; }
+         .buying-stage > .container > section,
+         .buying-stage .stage-disclosure > section { padding-top:0 !important; padding-bottom:0 !important; }
+         .buying-stage .stage-disclosure > section > .container { padding-top:1.5rem !important; padding-bottom:1.5rem !important; }
+         .buying-stage .pricing-grid-4 { margin-top:1rem; }
+         .buying-stage .custom-card { padding:1.5rem; }
+         .buying-stage > .container > #custom-portals { margin-top:0; }
+         .buying-stage > .container > #custom-portals > .container { padding:0; }
+         .buying-stage > .container > #custom-portals > .container > .section-header { margin-bottom:1.25rem; }
+         .buying-stage > .container > #custom-portals > .container > details.secondary-research { display:block; border:0; padding:0; margin:0; }
+         .buying-stage > .container > #custom-portals > .container > details.secondary-research > summary { display:none; }
          .stage-disclosure { margin:0 0 1rem; border:1px solid var(--border); border-radius:14px; background:var(--bg); overflow:hidden; }
          .stage-disclosure > summary { cursor:pointer; padding:1rem 1.25rem; color:var(--text); font-weight:800; list-style:none; }
          .stage-disclosure > summary::-webkit-details-marker { display:none; }
@@ -778,7 +790,7 @@
      const stage=document.createElement('section');
      stage.className='sales-stage buying-stage';
      stage.style.background='var(--bg-alt)';
-     stage.innerHTML='<div class="container" style="padding-top:80px;padding-bottom:2rem;"><div class="section-header fade-in"><div class="section-tag">Buying and pricing</div><h2 class="section-title">Choose the school technology model that fits.</h2><p class="section-subtitle">Start with a focused custom build or select an existing AutoM8 school package. The detail is here when you are ready to compare.</p></div></div>';
+     stage.innerHTML='<div class="container"><div class="section-header fade-in"><div class="section-tag">Buying and pricing</div><h2 class="section-title">Choose the school technology model that fits.</h2><p class="section-subtitle">Start with a focused custom build or select an existing AutoM8 school package. The detail is here when you are ready to compare.</p></div></div>';
      const disclosureArea=document.createElement('div');
      disclosureArea.className='stage-disclosures';
      stage.append(disclosureArea);
@@ -793,10 +805,14 @@
          disclosureArea.append(details);
      };
      stage.querySelector('.container').append(model);
+     /* The four custom options are the primary buying comparison, not a
+        secondary disclosure. Keep their historical copy and feature lists
+        visible while the surrounding detail remains progressively disclosed. */
+     custom.querySelector('details.secondary-research')?.setAttribute('open','');
+     stage.querySelector('.container').append(custom);
      addDisclosure('Fee reconciliation workflow and admissions depth',fee);
      addDisclosure('Admissions workflow detail',admissions);
      addDisclosure('WhatsApp comparison: communication versus operations',whatsapp);
-     addDisclosure('Custom portal pricing and full scope',custom);
      addDisclosure('Why custom pricing starts from an amount',rationale);
      addDisclosure('Standard package pricing and plan detail',standard);
      addDisclosure('Portal detail and role-based access',portals);
