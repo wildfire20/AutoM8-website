@@ -29,7 +29,7 @@
       "mainEntity": [
         { "@type": "Question", "name": "Does every school need all three portals?", "acceptedAnswer": { "@type": "Answer", "text": "No. AutoM8 can build a Staff Portal only, Staff plus Parent, Staff plus Student, or a complete three-portal system." } },
         { "@type": "Question", "name": "Why are custom school systems priced from a starting amount?", "acceptedAnswer": { "@type": "Answer", "text": "Every school's requirements are different. The final quotation depends on the agreed features, user roles, integrations and system complexity." } },
-        { "@type": "Question", "name": "Do custom school systems require monthly payments?", "acceptedAnswer": { "@type": "Answer", "text": "The custom development fee is normally once-off. Schools can select optional System Care where required. Third-party infrastructure charges remain separate." } },
+        { "@type": "Question", "name": "Do custom school systems require monthly payments?", "acceptedAnswer": { "@type": "Answer", "text": "Custom development is once-off. Optional ongoing school system care is a flat monthly learner-band fee based on actively enrolled learners: 1–150 R1,500, 151–300 R2,500, 301–500 R3,500, 501–800 R5,000, and more than 800 by custom quotation. Standard R15/R25/R35 per-learner subscriptions are a separate model. Third-party costs and major new development remain separate." } },
         { "@type": "Question", "name": "What are the R15, R25 and R35 per learner packages?", "acceptedAnswer": { "@type": "Answer", "text": "These are AutoM8's existing standard school-management subscription options and are separate from bespoke custom system development." } },
         { "@type": "Question", "name": "Can we start with only a Staff Portal and add a Parent Portal later?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AutoM8 can scope future expansion when the school is ready." } },
         { "@type": "Question", "name": "Who pays for hosting and SMS?", "acceptedAnswer": { "@type": "Answer", "text": "Hosting, databases, SMS, domains and other third-party provider costs are separate and normally paid by the school." } },
@@ -75,6 +75,9 @@
         .care-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
         .care-card.featured { border:2px solid var(--blue); }
         .care-price { color:var(--text); font-size:1.7rem; font-weight:900; margin:.5rem 0 1rem; letter-spacing:-.04em; }
+        .custom-price small { display:block; font-size:.78rem; font-weight:600; letter-spacing:0; margin-top:.35rem; }
+        #school-system-care { margin-top:4rem; }
+        section[id] { scroll-margin-top:150px; }
         .info-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.25rem; }
         .process-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:1px solid var(--border); border-radius:14px; overflow:hidden; }
         .process-step { padding:1.5rem; border-right:1px solid var(--border); background:var(--bg); }
@@ -174,8 +177,8 @@
          .buying-stage > .container > #custom-portals { margin-top:0; padding-top:.5rem !important; }
          .buying-stage > .container > #custom-portals > .container { padding:0; }
          .buying-stage > .container > #custom-portals > .container > .section-header { max-width:780px; margin:0 auto 2rem; }
-         .buying-stage > .container > #custom-portals > .container > details.secondary-research { display:block; border:0; padding:0; margin:0; }
-         .buying-stage > .container > #custom-portals > .container > details.secondary-research > summary { display:none; }
+         .buying-stage > .container > #custom-portals > .container > details.secondary-research:first-of-type { display:block; border:0; padding:0; margin:0; }
+         .buying-stage > .container > #custom-portals > .container > details.secondary-research:first-of-type > summary { display:none; }
          .stage-disclosure { margin:0 0 1rem; border:1px solid var(--border); border-radius:14px; background:var(--bg); overflow:hidden; }
          .stage-disclosure > summary { cursor:pointer; padding:1rem 1.25rem; color:var(--text); font-weight:800; list-style:none; }
          .stage-disclosure > summary::-webkit-details-marker { display:none; }
@@ -437,15 +440,17 @@
         <div class="intro-grid fade-in">
             <div class="model-card">
                 <i class="fas fa-code"></i>
-                <h3>Custom School Portal Builds</h3>
-                <p>Built specifically for one school, with a once-off development fee based on the portals, features, integrations and workflows agreed for the project.</p>
-                <a href="#custom-portals" class="service-cta">Explore custom portals <i class="fas fa-arrow-right"></i></a>
+                <div class="package-micro">Option 1</div>
+                <h3>Custom School System</h3>
+                <p>Pay once for development, then choose learner-band support. The system is configured or customised around your school's agreed needs.</p>
+                <a href="contact.html?type=school-demo" class="service-cta">Discuss a Custom System <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="model-card standard">
                 <i class="fas fa-layer-group"></i>
-                <h3>Existing AutoM8 School Packages</h3>
-                <p>AutoM8's established school-management functionality offered through an ongoing per-learner monthly subscription model.</p>
-                <a href="#standard-packages" class="service-cta">View standard packages <i class="fas fa-arrow-right"></i></a>
+                <div class="package-micro">Option 2</div>
+                <h3>Standard Subscription</h3>
+                <p>Use AutoM8's standard platform and pay per learner per month. This is a separate product model, not custom development plus learner-band care.</p>
+                <a href="#standard-packages" class="service-cta">View Subscription Packages <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -500,42 +505,53 @@
             <div class="custom-card">
                 <div class="micro">Custom Option 01</div>
                 <h3>Staff Portal</h3>
-                <div class="custom-price">From R6,500</div>
-                <p class="best-for"><strong>Best for:</strong> Internal school administration.</p>
+                <p class="best-for">For schools that primarily need staff and administrative tools without a full parent or learner-facing platform.</p>
+                <div class="custom-price">From R9,500 <small>once-off</small></div>
+                <p class="best-for"><strong>Possible scope:</strong> Exact features are confirmed during consultation.</p>
                 <ul class="package-features">
-                    <li><i class="fas fa-circle"></i> Secure staff/admin login</li><li><i class="fas fa-circle"></i> Learner and staff records</li><li><i class="fas fa-circle"></i> Classes and grades</li><li><i class="fas fa-circle"></i> Attendance management</li><li><i class="fas fa-circle"></i> Marks and results</li><li><i class="fas fa-circle"></i> Notices and documents</li><li><i class="fas fa-circle"></i> Basic reports and staff permissions</li><li><i class="fas fa-circle"></i> School information and dashboard</li>
+                    <li><i class="fas fa-circle"></i> Staff/Admin access</li><li><i class="fas fa-circle"></i> Learner records</li><li><i class="fas fa-circle"></i> Attendance</li><li><i class="fas fa-circle"></i> Basic administration</li><li><i class="fas fa-circle"></i> Notices</li><li><i class="fas fa-circle"></i> Reporting</li><li><i class="fas fa-circle"></i> Role-based access</li>
                 </ul>
             </div>
             <div class="custom-card">
                 <div class="micro">Custom Option 02</div>
                 <h3>Staff + Parent Portal</h3>
-                <div class="custom-price">From R10,500</div>
-                <p class="best-for"><strong>Best for:</strong> Schools wanting administration and parent self-service. A strong option for primary schools where learners may not need their own accounts.</p>
+                <p class="best-for">For schools that want their administration tools connected to a secure parent-facing portal.</p>
+                <div class="custom-price">From R16,500 <small>once-off</small></div>
+                <p class="best-for"><strong>Possible scope:</strong> Final features are agreed before development.</p>
                 <ul class="package-features">
-                    <li><i class="fas fa-circle"></i> Everything appropriate from Staff Portal</li><li><i class="fas fa-circle"></i> Parent accounts</li><li><i class="fas fa-circle"></i> Multiple children linked to one parent</li><li><i class="fas fa-circle"></i> Attendance, results and marks viewing</li><li><i class="fas fa-circle"></i> Notices, announcements and documents</li><li><i class="fas fa-circle"></i> Fee information where required</li><li><i class="fas fa-circle"></i> Child and parent profiles</li><li><i class="fas fa-circle"></i> Communication tools where required</li>
+                    <li><i class="fas fa-circle"></i> Staff/Admin portal</li><li><i class="fas fa-circle"></i> Parent accounts</li><li><i class="fas fa-circle"></i> Multiple children under one parent account</li><li><i class="fas fa-circle"></i> Attendance information</li><li><i class="fas fa-circle"></i> Results/grades where included</li><li><i class="fas fa-circle"></i> Notices and documents</li><li><i class="fas fa-circle"></i> Fee information</li><li><i class="fas fa-circle"></i> Invoices/payment history</li><li><i class="fas fa-circle"></i> Parent communication</li>
                 </ul>
             </div>
             <div class="custom-card">
                 <div class="micro">Custom Option 03</div>
                 <h3>Staff + Student Portal</h3>
-                <div class="custom-price">From R12,500</div>
-                <p class="best-for"><strong>Best for:</strong> Schools wanting administration and digital learning.</p>
+                <p class="best-for">For schools that require staff administration together with learner-facing digital tools.</p>
+                <div class="custom-price">From R19,500 <small>once-off</small></div>
+                <p class="best-for"><strong>Possible scope:</strong> Features depend on the agreed requirements.</p>
                 <ul class="package-features">
-                    <li><i class="fas fa-circle"></i> Everything appropriate from Staff Portal</li><li><i class="fas fa-circle"></i> Student login and dashboard</li><li><i class="fas fa-circle"></i> Subjects and learning resources</li><li><i class="fas fa-circle"></i> Assignments and submissions</li><li><i class="fas fa-circle"></i> Marks/results and academic progress</li><li><i class="fas fa-circle"></i> Notices and documents</li><li><i class="fas fa-circle"></i> Learning Management functionality depending on requirements</li>
+                    <li><i class="fas fa-circle"></i> Staff/Admin access</li><li><i class="fas fa-circle"></i> Student accounts</li><li><i class="fas fa-circle"></i> Learner records and attendance</li><li><i class="fas fa-circle"></i> Results</li><li><i class="fas fa-circle"></i> Assignments/resources where required</li><li><i class="fas fa-circle"></i> Notices and documents</li><li><i class="fas fa-circle"></i> Student communication</li>
                 </ul>
             </div>
             <div class="custom-card complete">
                 <div class="micro">Most Complete</div>
                 <h3>Complete Custom School System</h3>
-                <div class="custom-price">From R18,500</div>
-                <p class="best-for"><strong>Best for:</strong> Schools wanting one connected environment for staff, parents and learners.</p>
+                <p class="best-for">A connected school-management platform designed around the way the school actually operates.</p>
+                <div class="custom-price">From R29,500 <small>once-off</small></div>
+                <p class="best-for"><strong>Possible modules:</strong> A complete system is scoped according to the modules and workflows the school actually requires.</p>
                 <ul class="package-features">
-                    <li><i class="fas fa-circle"></i> Staff, parent and student dashboards</li><li><i class="fas fa-circle"></i> Learner records, attendance and results</li><li><i class="fas fa-circle"></i> Assignments, submissions and learning materials</li><li><i class="fas fa-circle"></i> Notices, documents and fee information</li><li><i class="fas fa-circle"></i> Parent-child linking</li><li><i class="fas fa-circle"></i> Reporting, classes and subjects</li><li><i class="fas fa-circle"></i> User roles, permissions and school communication</li><li><i class="fas fa-circle"></i> Other custom school workflows</li>
+                    <li><i class="fas fa-circle"></i> Public school website</li><li><i class="fas fa-circle"></i> Online admissions and registration</li><li><i class="fas fa-circle"></i> Admin dashboard</li><li><i class="fas fa-circle"></i> Staff, parent and student portals</li><li><i class="fas fa-circle"></i> Learner records and attendance</li><li><i class="fas fa-circle"></i> Fees, invoices and payment history</li><li><i class="fas fa-circle"></i> Document management and notices</li><li><i class="fas fa-circle"></i> Communication and reporting</li><li><i class="fas fa-circle"></i> Operational automation</li>
                 </ul>
             </div>
         </div>
         </details>
-        <div class="scope-note fade-in">Final features depend on the agreed project scope. The displayed amount is a starting price; your final price is agreed before development starts. New functionality requested outside the agreed scope is quoted separately.</div>
+        <div class="scope-note fade-in">Final pricing depends on the number of modules, workflows, user roles, integrations, data migration requirements and custom development required. These are starting prices, not guaranteed fixed prices for every school. AutoM8 confirms the final scope and quotation before development begins.</div>
+        <details class="secondary-research fade-in">
+            <summary>Why starting prices—and how phased development works</summary>
+            <p>Custom school systems vary significantly in scope. A basic staff portal is a very different project from admissions, parent accounts, fee management, document workflows, automation and multiple portals. The prices shown are starting points, not an automatic promise of every possible module.</p>
+            <p>Where appropriate, larger systems can be developed in phases so the school does not need to implement every module at once.</p>
+            <p><a href="projects/harmony-learning-institute.html">Harmony Learning Institute</a> demonstrates the type of connected system AutoM8 can build. It is proof of technical capability, not evidence of these prices or Harmony's commercial agreement.</p>
+        </details>
+        <p class="scope-note fade-in">After launch, choose optional <a href="#school-system-care">learner-band care and support</a>. This is separate from standard subscription pricing.</p>
         <div class="highlight-strip fade-in"><strong>You do not need every module.</strong> We recommend the simplest system that properly solves your school's requirements.</div>
         <div style="text-align:center;margin-top:1.5rem;" class="fade-in"><a href="contact.html?type=school-demo" class="btn btn-primary">Request a Free School System Demo</a></div>
     </div>
@@ -656,19 +672,44 @@
     </div>
 </section>
 
-<section class="section-rule" style="background:var(--bg);padding:80px 0;">
+<section id="school-system-care" class="section-rule" style="background:var(--bg);padding:80px 0;">
     <div class="container">
         <div class="section-header fade-in">
             <div class="section-tag">Optional ongoing support</div>
-            <h2 class="section-title">School System Care</h2>
-            <p class="section-subtitle">Separate from normal Website Care, these plans provide optional technical support for custom school systems.</p>
+            <h2 class="section-title">Ongoing School System Care &amp; Support</h2>
+            <p class="section-subtitle">After launch, custom school-system clients can choose ongoing AutoM8 maintenance and support based on the number of actively enrolled learners.</p>
         </div>
         <div class="care-grid fade-in">
-            <div class="care-card"><div class="care-micro">Self Managed</div><h3>Self Managed</h3><div class="care-price">R0/month</div><p>The school takes responsibility for the system after handover. AutoM8 ongoing maintenance and support are not included.</p></div>
-            <div class="care-card"><div class="care-micro">Essential System Care</div><h3>Essential System Care</h3><div class="care-price">R600/month</div><ul class="care-features"><li><i class="fas fa-circle"></i> Basic technical support</li><li><i class="fas fa-circle"></i> System health checks</li><li><i class="fas fa-circle"></i> Deployment assistance</li><li><i class="fas fa-circle"></i> Backup and security checks</li><li><i class="fas fa-circle"></i> Bug troubleshooting</li><li><i class="fas fa-circle"></i> Minor updates and small agreed changes</li></ul></div>
-            <div class="care-card featured"><div class="care-micro">Managed System Care</div><h3>Managed System Care</h3><div class="care-price">R1,000/month</div><ul class="care-features"><li><i class="fas fa-circle"></i> Priority technical support</li><li><i class="fas fa-circle"></i> More active monitoring</li><li><i class="fas fa-circle"></i> Troubleshooting and deployment support</li><li><i class="fas fa-circle"></i> Backup and security checks</li><li><i class="fas fa-circle"></i> Higher monthly support allowance</li><li><i class="fas fa-circle"></i> More minor changes than Essential</li><li><i class="fas fa-circle"></i> Production assistance</li></ul></div>
+            <div class="care-card"><div class="care-micro">Actively enrolled learners</div><h3>1–150 learners</h3><div class="care-price">R1,500/month</div><p>Flat monthly AutoM8 care fee.</p></div>
+            <div class="care-card"><div class="care-micro">Actively enrolled learners</div><h3>151–300 learners</h3><div class="care-price">R2,500/month</div><p>Flat monthly AutoM8 care fee.</p></div>
+            <div class="care-card"><div class="care-micro">Actively enrolled learners</div><h3>301–500 learners</h3><div class="care-price">R3,500/month</div><p>Flat monthly AutoM8 care fee.</p></div>
+            <div class="care-card"><div class="care-micro">Actively enrolled learners</div><h3>501–800 learners</h3><div class="care-price">R5,000/month</div><p>Flat monthly AutoM8 care fee.</p></div>
+            <div class="care-card"><div class="care-micro">Actively enrolled learners</div><h3>More than 800 learners</h3><div class="care-price">Custom quotation</div><p>Care is quoted for the school's requirements.</p></div>
         </div>
-        <div class="scope-note fade-in">System Care does not include unlimited changes. New modules, major features, integrations, redesigns or significant workflow changes remain separately quoted development.</div>
+        <div class="scope-note fade-in">For once-off custom-system clients only. These are flat learner-band support amounts—not an additional per-learner charge and not added to the separate R15/R25/R35 standard subscription tiers. Support is optional; without it, the school takes responsibility for ongoing care after handover.</div>
+        <details class="secondary-research fade-in">
+            <summary>Active learner count and the 5% grace allowance</summary>
+            <p>The learner count is based on <strong>actively enrolled learners</strong>. Archived, former or withdrawn learners and applicants who have not yet enrolled are excluded. A learner being absent or a parent not using the portal does not reduce the monthly learner count.</p>
+            <p>A school may temporarily exceed its current learner band by up to <strong>5%</strong> during the school term without an immediate price increase. Learner numbers are reviewed before the next school term. If enrolment remains above the band at that review, the next pricing band will apply from the new term.</p>
+            <p>For example, a school in the 1–150 band may temporarily grow to approximately 157 learners during the term before pricing is reviewed.</p>
+        </details>
+        <details class="secondary-research fade-in">
+            <summary>What monthly support includes</summary>
+            <ul class="care-features"><li>Routine system maintenance</li><li>Production monitoring</li><li>Security-related maintenance</li><li>Backup checks where AutoM8 manages the relevant infrastructure</li><li>Deployment support</li><li>Troubleshooting existing functionality</li><li>Support for designated school staff</li><li>Minor content/configuration adjustments</li><li>Technical assistance relating to the existing system</li></ul>
+            <p>This is reasonable ongoing care of the existing system, not unlimited support. Support requests are prioritised according to urgency and service impact. Critical system issues receive priority; routine requests may be handled during normal support hours. No guaranteed response times are promised.</p>
+        </details>
+        <details class="secondary-research fade-in">
+            <summary>New development and third-party costs stay separate</summary>
+            <p>The monthly learner-band fee does not include major new development: a new portal or module, payment system, major workflow redesign, new business process, significant reporting system, large dashboard redesign, major integration, major data migration or new third-party platform integration.</p>
+            <p><strong>New modules and substantial functionality are scoped and quoted separately before development begins.</strong></p>
+            <p>Hosting, cloud storage, SMS, WhatsApp APIs, email providers, payment gateways, domain renewal, AI/API usage and other paid integrations are not automatically included.</p>
+            <p>Third-party service costs are shown separately so the school can clearly see which fees belong to AutoM8 and which belong to external providers.</p>
+        </details>
+        <div class="highlight-strip fade-in" style="margin-top:2rem;">
+            <h3>Example: a private school with 300 actively enrolled learners</h3>
+            <p>A complete custom school system starts from <strong>R29,500 once-off</strong>, with optional ongoing AutoM8 care of <strong>R2,500/month</strong>. Hosting and external services are charged separately according to the actual services used.</p>
+            <p>The R2,500 monthly support fee is a flat learner-band amount. It is not R2,500 plus an additional per-learner charge. This is approximately R8.33 per learner per month, but the school receives one fixed R2,500 monthly AutoM8 support invoice.</p>
+        </div>
     </div>
 </section>
 
@@ -676,7 +717,7 @@
     <div class="container">
         <div class="section-header fade-in"><div class="section-tag">Third-party services</div><h2 class="section-title">External provider costs stay transparent.</h2><p class="section-subtitle">AutoM8 does not hide third-party provider charges inside development or support pricing.</p></div>
         <div class="info-grid fade-in">
-            <div class="info-card"><i class="fas fa-server"></i><h3>Possible external services</h3><ul><li><i class="fas fa-circle"></i> Hosting, databases and cloud storage</li><li><i class="fas fa-circle"></i> Domains and email providers</li><li><i class="fas fa-circle"></i> SMS providers and APIs</li><li><i class="fas fa-circle"></i> Payment gateways and AI services</li><li><i class="fas fa-circle"></i> Other external platforms</li></ul></div>
+            <div class="info-card"><i class="fas fa-server"></i><h3>Possible external services</h3><ul><li><i class="fas fa-circle"></i> Hosting, databases and cloud storage</li><li><i class="fas fa-circle"></i> Domain renewal and email providers</li><li><i class="fas fa-circle"></i> SMS and WhatsApp APIs</li><li><i class="fas fa-circle"></i> Payment gateways and AI/API usage</li><li><i class="fas fa-circle"></i> Other paid integrations</li></ul><p>Third-party service costs are shown separately so the school can clearly see which fees belong to AutoM8 and which belong to external providers.</p></div>
             <div class="info-card"><i class="fas fa-building"></i><h3>School-owned accounts</h3><p>Where possible, the school owns and pays for its third-party accounts directly while AutoM8 assists with configuration and integration. AutoM8 does not normally fund third-party services on behalf of the school.</p><p style="margin-top:.75rem;">Where paid infrastructure is required, deployment may depend on the relevant provider accounts being active and funded.</p></div>
         </div>
     </div>
@@ -725,7 +766,7 @@
         <div class="info-grid fade-in">
             <details class="info-card"><summary><strong>Does every school need all three portals?</strong></summary><p>No. AutoM8 can build a Staff Portal only, Staff + Parent, Staff + Student, or a complete three-portal system.</p></details>
             <details class="info-card"><summary><strong>Why are custom systems priced from a starting amount?</strong></summary><p>Every school's requirements are different. The final quotation depends on the agreed features and complexity.</p></details>
-            <details class="info-card"><summary><strong>Do custom school systems require monthly payments?</strong></summary><p>The custom development fee is normally once-off. Schools can select optional System Care where required. Third-party infrastructure charges remain separate.</p></details>
+            <details class="info-card"><summary><strong>Do custom school systems require monthly payments?</strong></summary><p>Custom development is once-off. Optional <a href="#school-system-care">learner-band care</a> starts at R1,500/month for 1–150 actively enrolled learners: 151–300 R2,500, 301–500 R3,500, 501–800 R5,000, and more than 800 by custom quotation. Standard R15/R25/R35 per-learner subscriptions are a separate model. Third-party costs and major new development remain separate.</p></details>
             <details class="info-card"><summary><strong>What are the R15, R25 and R35 packages?</strong></summary><p>These are AutoM8's existing standard school-management subscription options and are separate from bespoke custom system development.</p></details>
             <details class="info-card"><summary><strong>Can we add a Parent Portal later?</strong></summary><p>Yes. AutoM8 can scope future expansion when the school is ready.</p></details>
             <details class="info-card"><summary><strong>Can the system include assignments?</strong></summary><p>Yes. Student/LMS functionality can include assignments, learning materials and submissions depending on the agreed project scope.</p></details>
@@ -823,13 +864,12 @@
      addDisclosure('Portal detail and role-based access',portals);
      addDisclosure('Before and after: manual work versus connected workflows',before);
      addDisclosure('Customisation examples for different schools',customisation);
-     addDisclosure('Optional System Care',care);
+     stage.querySelector('.container').append(care);
      addDisclosure('Third-party provider costs',providers);
      addDisclosure('Detailed project process',process);
      addDisclosure('Future features and expansion options',future);
 
-     /* Keep the page's eight-stage DOM sequence: hero, problems, modules,
-        proof, buying, security, FAQ, CTA. */
+     /* Keep the concise journey; custom care follows the custom pricing cards. */
      const footer=document.querySelector('footer');
      footer.parentNode.insertBefore(stage,security);
      [security,faq,cta].forEach(node=>footer.parentNode.insertBefore(node,footer));
@@ -842,13 +882,25 @@
      portalDetails.forEach(detail=>detail.addEventListener('toggle',()=>{
          if(detail.open) portalDetails.forEach(other=>{if(other!==detail) other.open=false;});
      }));
+     function revealAnchor(hash){
+         const target=document.getElementById(hash.slice(1));
+         if(!target) return;
+         for(let parent=target.parentElement;parent;parent=parent.parentElement){
+             if(parent.tagName==='DETAILS') parent.open=true;
+         }
+         if(target.id==='standard-packages') target.querySelector('details.secondary-research').open=true;
+         requestAnimationFrame(()=>target.scrollIntoView({block:'start',behavior:'auto'}));
+     }
      document.addEventListener('click',event=>{
          const link=event.target.closest('a[href^="#"]');
          if(!link) return;
-         const target=document.getElementById(link.getAttribute('href').slice(1));
-         const parent=target?.closest('details');
-         if(parent && !parent.open) parent.open=true;
+         if(!document.getElementById(link.hash.slice(1))) return;
+         event.preventDefault();
+         history.pushState(null,'',link.hash);
+         revealAnchor(link.hash);
      });
+     window.addEventListener('hashchange',()=>revealAnchor(location.hash));
+     if(location.hash) revealAnchor(location.hash);
  })();
  </script>
 </body>

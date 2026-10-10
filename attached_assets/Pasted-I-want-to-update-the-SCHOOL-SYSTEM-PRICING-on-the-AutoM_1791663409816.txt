@@ -1,0 +1,645 @@
+I want to update the SCHOOL SYSTEM PRICING on the AutoM8 website.
+
+IMPORTANT:
+
+Do NOT redesign the website.
+
+Do NOT change:
+- current branding
+- colours
+- animations
+- typography
+- layout style
+- navigation
+- SEO architecture
+- URLs
+- metadata strategy
+- case studies
+- unrelated website pricing
+
+This update is specifically about correcting and clarifying the pricing for
+custom school-management systems and their ongoing support.
+
+The purpose is to make AutoM8's school pricing more sustainable while keeping
+it affordable and transparent for private schools.
+
+==================================================
+1. IMPORTANT PRICING MODEL DISTINCTION
+==================================================
+
+AutoM8 offers TWO different school-system models:
+
+MODEL A:
+CUSTOM SCHOOL SYSTEM
+
+The school pays a once-off development/setup price for a system configured or
+customised around its needs.
+
+After launch, the school can choose ongoing maintenance/support using the new
+learner-band pricing described below.
+
+MODEL B:
+STANDARD SUBSCRIPTION SYSTEM
+
+The existing R15 / R25 / R35 per learner per month subscription packages are a
+different product model.
+
+DO NOT automatically replace, combine or add the new learner-band pricing to
+the R15 / R25 / R35 subscription packages.
+
+Keep those standard subscription prices unchanged for now.
+
+Make the distinction between the two models extremely clear.
+
+==================================================
+2. UPDATE CUSTOM SCHOOL DEVELOPMENT PRICES
+==================================================
+
+Replace the existing custom school-system starting prices with:
+
+STAFF PORTAL
+From R9,500 once-off
+
+STAFF + PARENT PORTAL
+From R16,500 once-off
+
+STAFF + STUDENT PORTAL
+From R19,500 once-off
+
+COMPLETE CUSTOM SCHOOL SYSTEM
+From R29,500 once-off
+
+These are STARTING prices.
+
+Do not display them as guaranteed fixed prices for every school.
+
+Use wording such as:
+
+“Final pricing depends on the number of modules, workflows, user roles,
+integrations, data migration requirements and custom development required.”
+
+==================================================
+3. STAFF PORTAL — R9,500
+==================================================
+
+Display:
+
+Staff Portal
+From R9,500 once-off
+
+Positioning:
+
+“For schools that primarily need staff and administrative tools without a
+full parent or learner-facing platform.”
+
+Possible included areas may include existing AutoM8 capabilities such as:
+
+- Staff/Admin access
+- Learner records
+- Attendance
+- Basic administration
+- Notices
+- Reporting
+- Role-based access
+
+Do not promise every possible module automatically.
+
+Make it clear that the exact scope is confirmed during consultation.
+
+==================================================
+4. STAFF + PARENT PORTAL — R16,500
+==================================================
+
+Display:
+
+Staff + Parent Portal
+From R16,500 once-off
+
+Positioning:
+
+“For schools that want their administration tools connected to a secure
+parent-facing portal.”
+
+Possible functionality can include:
+
+- Staff/Admin portal
+- Parent accounts
+- Multiple children under one parent account
+- Attendance information
+- Results/grades where included
+- Notices
+- Documents
+- Fee information
+- Invoices/payment history
+- Parent communication
+
+Again:
+
+Do not imply every feature is automatically included.
+
+The final scope is agreed before development.
+
+==================================================
+5. STAFF + STUDENT PORTAL — R19,500
+==================================================
+
+Display:
+
+Staff + Student Portal
+From R19,500 once-off
+
+Positioning:
+
+“For schools that require staff administration together with learner-facing
+digital tools.”
+
+Possible functionality may include:
+
+- Staff/Admin access
+- Student accounts
+- Learner records
+- Attendance
+- Results
+- Assignments/resources where required
+- Notices
+- Documents
+- Student communication
+
+Keep the description concise.
+
+==================================================
+6. COMPLETE CUSTOM SCHOOL SYSTEM — R29,500
+==================================================
+
+Display prominently:
+
+Complete Custom School System
+From R29,500 once-off
+
+Positioning:
+
+“A connected school-management platform designed around the way the school
+actually operates.”
+
+Possible modules can include:
+
+- Public school website
+- Online admissions
+- Registration
+- Admin dashboard
+- Parent portal
+- Student portal
+- Staff portal
+- Learner records
+- Attendance
+- Fees
+- Invoices
+- Payment history
+- Document management
+- Notices
+- Communication
+- Reporting
+- Operational automation
+
+Use Harmony Learning Institute as contextual proof where appropriate.
+
+Do NOT imply that R29,500 automatically includes every possible module listed.
+
+Use wording such as:
+
+“A complete system is scoped according to the modules and workflows the school
+actually requires.”
+
+==================================================
+7. EXPLAIN WHY THESE ARE STARTING PRICES
+==================================================
+
+Add a concise explanation near the custom-system pricing.
+
+Use wording similar to:
+
+“Custom school systems vary significantly in scope. A school requiring a
+basic staff portal is a very different project from a school requiring
+admissions, parent accounts, fee management, document workflows, automation
+and multiple portals.
+
+The prices shown are starting points. AutoM8 confirms the final scope and
+quotation before development begins.”
+
+Also explain:
+
+“Where appropriate, larger systems can be developed in phases so the school
+does not need to implement every module at once.”
+
+==================================================
+8. ADD LEARNER-BAND SUPPORT PRICING
+==================================================
+
+For schools that have purchased a custom system through the once-off
+development model, replace the existing low-cost R600 / R1,000 school system
+care structure with the following learner-band support model.
+
+Use the heading:
+
+ONGOING SCHOOL SYSTEM CARE & SUPPORT
+
+Explain:
+
+“After launch, custom school-system clients can choose ongoing AutoM8
+maintenance and support based on the number of actively enrolled learners.”
+
+Use these exact prices:
+
+1–150 actively enrolled learners
+R1,500/month
+
+151–300 actively enrolled learners
+R2,500/month
+
+301–500 actively enrolled learners
+R3,500/month
+
+501–800 actively enrolled learners
+R5,000/month
+
+More than 800 learners
+Custom quotation
+
+==================================================
+9. DEFINE WHAT THE LEARNER COUNT MEANS
+==================================================
+
+Clearly state:
+
+The learner count is based on ACTIVELY ENROLLED learners.
+
+Do NOT count:
+
+- archived learners
+- former learners
+- withdrawn learners
+- applicants who have not yet enrolled
+
+A learner being absent or a parent not using the portal does not reduce the
+monthly learner count.
+
+==================================================
+10. ADD A 5% BAND GRACE ALLOWANCE
+==================================================
+
+Avoid an unreasonable jump when a school temporarily moves slightly above a
+band.
+
+Add this rule:
+
+“A school may temporarily exceed its current learner band by up to 5% during
+the school term without an immediate price increase.
+
+Learner numbers are reviewed before the next school term. If enrolment remains
+above the band at that review, the next pricing band will apply from the new
+term.”
+
+Example:
+
+A school in the 1–150 band may temporarily grow to approximately 157 learners
+during the term before pricing is reviewed.
+
+Do not overcomplicate this explanation.
+
+==================================================
+11. DEFINE WHAT MONTHLY SUPPORT INCLUDES
+==================================================
+
+The learner-band monthly fee should include reasonable ongoing care of the
+EXISTING system.
+
+Include:
+
+- Routine system maintenance
+- Production monitoring
+- Security-related maintenance
+- Backup checks where AutoM8 manages the relevant infrastructure
+- Deployment support
+- Troubleshooting existing functionality
+- Support for designated school staff
+- Minor content/configuration adjustments
+- Technical assistance relating to the existing system
+
+Do not describe this as unlimited support.
+
+==================================================
+12. DEFINE WHAT MONTHLY SUPPORT DOES NOT INCLUDE
+==================================================
+
+Clearly state:
+
+The monthly learner-band fee does NOT include major new development.
+
+Examples:
+
+- New portal
+- Completely new module
+- New payment system
+- Major workflow redesign
+- New business process
+- Significant reporting system
+- Large dashboard redesign
+- Major new integration
+- Major data migration
+- New third-party platform integration
+
+Use wording:
+
+“New modules and substantial functionality are scoped and quoted separately
+before development begins.”
+
+==================================================
+13. THIRD-PARTY COSTS REMAIN SEPARATE
+==================================================
+
+Clearly explain that learner-band support does not automatically include
+external provider charges.
+
+Examples:
+
+- Hosting
+- Cloud storage
+- SMS
+- WhatsApp APIs
+- Email providers
+- Payment gateways
+- Domain renewal
+- AI/API usage
+- Other paid integrations
+
+Use wording:
+
+“Third-party service costs are shown separately so the school can clearly see
+which fees belong to AutoM8 and which belong to external providers.”
+
+==================================================
+14. ADD A SIMPLE 300-LEARNER EXAMPLE
+==================================================
+
+Add a simple pricing example.
+
+Example:
+
+A private school with 300 actively enrolled learners purchases a complete
+custom school system.
+
+Development:
+From R29,500 once-off
+
+Ongoing AutoM8 care:
+R2,500/month
+
+Hosting and external services:
+Charged separately according to the actual services used.
+
+Explain:
+
+“The R2,500 monthly support fee is a flat learner-band amount. It is not
+R2,500 plus an additional per-learner charge.”
+
+Optional explanatory text:
+
+“At 300 learners, this is equivalent to approximately R8.33 per learner per
+month, although the school receives one fixed R2,500 monthly AutoM8 support
+invoice.”
+
+==================================================
+15. MAKE THE TWO SCHOOL PRICING MODELS VISUALLY CLEAR
+==================================================
+
+On the School Management page, create a clear choice:
+
+OPTION 1
+Custom School System
+
+“Pay once for development, then choose learner-band support.”
+
+CTA:
+Discuss a Custom System
+
+OPTION 2
+Standard Subscription
+
+“Use AutoM8's standard platform and pay per learner per month.”
+
+CTA:
+View Subscription Packages
+
+Do not show every price at once before the visitor understands the difference.
+
+Use tabs, cards, toggles or another accessible visual structure consistent with
+the existing AutoM8 design.
+
+==================================================
+16. PRESERVE STANDARD SUBSCRIPTION PRICES
+==================================================
+
+For now KEEP:
+
+R15 per learner/month
+R25 per learner/month
+R35 per learner/month
+
+Do not change these in this update.
+
+However, clearly state what each subscription tier includes.
+
+Do not combine:
+
+R15/R25/R35 subscription pricing
+
+with:
+
+R1,500/R2,500/R3,500/R5,000 learner-band support pricing.
+
+They are separate commercial models.
+
+==================================================
+17. REMOVE OLD SCHOOL CARE PRICES WHERE THEY CONFLICT
+==================================================
+
+Search the full website for old school-specific care/support pricing such as:
+
+R600/month
+R1,000/month
+
+If these old amounts specifically refer to ongoing maintenance for a custom
+school-management system, replace them with the new learner-band structure.
+
+IMPORTANT:
+
+Do not remove R600 / R1,000 pricing from unrelated services where those prices
+still legitimately apply.
+
+For example, general website maintenance or unrelated AutoM8 services should
+not be changed accidentally.
+
+==================================================
+18. UPDATE SCHOOL PRICING REFERENCES EVERYWHERE
+==================================================
+
+Search:
+
+- school-management-system.html
+- pricing.html
+- parent-portal.html
+- Harmony case study
+- relevant solution pages
+- FAQs
+- structured data
+- internal pricing snippets
+- CTAs
+- metadata where pricing is mentioned
+
+Ensure there are no contradictory old custom-school prices remaining.
+
+Do not insert full pricing tables into every page.
+
+Use concise references and link visitors to the primary school pricing
+section.
+
+==================================================
+19. KEEP HARMONY AS PROOF
+==================================================
+
+Where appropriate, use Harmony Learning Institute to demonstrate the type of
+system AutoM8 can build.
+
+Do not claim Harmony paid the new prices.
+
+Do not imply the new pricing was Harmony's commercial agreement.
+
+Harmony should remain proof of technical capability, not pricing evidence.
+
+==================================================
+20. SUPPORT RESPONSE EXPECTATIONS
+==================================================
+
+Do not promise unrealistic guaranteed response times.
+
+Use wording such as:
+
+“Support requests are prioritised according to urgency and service impact.”
+
+Critical system issues should receive priority.
+
+Routine requests may be handled during normal support hours.
+
+Do not invent SLA guarantees unless the website already has an approved SLA.
+
+==================================================
+21. PRICE POSITIONING
+==================================================
+
+Do not make AutoM8 appear cheap.
+
+Lead with VALUE first and price second.
+
+Example:
+
+Complete Custom School System
+
+“A connected platform built around your school's actual processes.”
+
+From R29,500
+
+Do not use phrases like:
+
+“Only R29,500”
+
+or:
+
+“Cheap school system”.
+
+The positioning should be:
+
+Accessible custom software with transparent pricing.
+
+==================================================
+22. SEO
+==================================================
+
+Preserve all current SEO work.
+
+Do not change canonical URLs.
+
+Do not create new pricing URLs unless necessary.
+
+Keep relevant search intent around:
+
+- school management system South Africa
+- private school management system
+- school administration software
+- custom school management system
+- school parent portal
+- school admissions system
+
+Do not keyword-stuff pricing sections.
+
+==================================================
+23. FINAL CHECK
+==================================================
+
+After implementing:
+
+Verify that:
+
+- Staff Portal shows R9,500
+- Staff + Parent shows R16,500
+- Staff + Student shows R19,500
+- Complete Custom System shows R29,500
+
+Verify learner-band support:
+
+- 1–150 = R1,500/month
+- 151–300 = R2,500/month
+- 301–500 = R3,500/month
+- 501–800 = R5,000/month
+- 800+ = Custom quotation
+
+Verify:
+
+- 5% grace rule is present
+- learner count definition is clear
+- third-party costs are separate
+- new development is separately quoted
+- standard R15/R25/R35 subscription tiers remain unchanged
+- old conflicting school maintenance prices have been removed
+- Harmony remains factual
+- no unsupported claims were introduced
+- existing AutoM8 design is preserved
+- mobile pricing layout works correctly
+
+==================================================
+24. DO NOT DEPLOY
+==================================================
+
+Make the changes locally first.
+
+Do not automatically deploy or publish.
+
+I want to review the pricing changes before they go live.
+
+==================================================
+25. FINAL REPORT
+==================================================
+
+Provide:
+
+1. Files changed
+2. Custom prices updated
+3. Learner-band support pricing added
+4. Old conflicting school care prices removed
+5. Standard subscription prices preserved
+6. Third-party cost wording added
+7. Grace-band logic added
+8. Example pricing added
+9. Any pages where pricing was unclear
+10. Confirmation that no unrelated pricing was changed
+11. Confirmation that SEO infrastructure was preserved
+12. Confirmation that nothing was deployed
