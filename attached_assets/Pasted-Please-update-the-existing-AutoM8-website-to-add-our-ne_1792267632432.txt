@@ -1,0 +1,270 @@
+Please update the existing AutoM8 website to add our new client project, **TAKOA Transporters**, to the portfolio.
+
+Live client website:
+https://www.takoa.co.za/
+
+IMPORTANT: Do not redesign the AutoM8 website.
+
+Keep the existing AutoM8 design system exactly as it is, including:
+- Current colours
+- Typography
+- Card design
+- Border radius
+- Spacing
+- Animations and hover effects
+- Navigation
+- Buttons
+- Section layouts
+- Responsive behaviour
+- Overall visual hierarchy
+
+The goal is simply to add TAKOA using the same structure and visual style already used for our existing real client projects such as **Harmony Learning Institute** and **Stats Companies**.
+
+## 1. Add TAKOA to the Portfolio Page
+
+Add TAKOA as a **Client Project**, preferably alongside the other real client projects rather than placing it with prototype/concept projects.
+
+Use:
+
+**Status:** Client Project
+
+**Category:** Transport & Travel Website
+
+**Project Name:**  
+TAKOA Transporters — Transport Website & Enquiry Platform
+
+**Description:**  
+A modern responsive transport website developed for TAKOA Transporters, helping customers explore passenger transport services, view vehicle categories and submit structured transport enquiries from one digital platform.
+
+Use approximately four feature tags, matching the style already used on the other portfolio cards:
+
+- Transport & service pages
+- Fleet showcase
+- Quote request workflow
+- WhatsApp integration
+
+Add a button:
+
+**Visit Live Website**
+
+Link:
+https://www.takoa.co.za/
+
+Also add:
+
+**View Project Details**
+
+This should open a dedicated TAKOA project/case-study page using the same design and structure as the existing Harmony Learning Institute and Stats Companies project pages.
+
+## 2. Create the TAKOA Project Details Page
+
+Create a new page inside the existing `/projects/` structure.
+
+Suggested filename:
+
+`/projects/takoa-transporters.html`
+
+Do not invent a new design for this page.
+
+Reuse the existing project-page layout, components, spacing, header, footer, buttons and responsive styling.
+
+Suggested hero content:
+
+**Client Project**
+
+**Transport & Travel Website**
+
+# TAKOA Transporters — Transport Website & Enquiry Platform
+
+**Intro:**  
+A responsive digital transport platform developed for TAKOA Transporters, bringing its passenger services, fleet information and customer enquiry journey together in one professional online experience.
+
+Buttons:
+
+**Visit Live Website**  
+https://www.takoa.co.za/
+
+**Discuss Your Project**
+
+## 3. Project Overview
+
+Suggested heading:
+
+**Transport information and enquiries in one clear customer journey.**
+
+Suggested copy:
+
+AutoM8 developed a modern public website for TAKOA Transporters to give customers a clearer way to understand the company’s transport services, explore suitable vehicle categories and submit transport requests online.
+
+The platform supports TAKOA’s different service areas while giving customers clear routes into quote requests and direct WhatsApp communication.
+
+## 4. Services & Customer Experience
+
+Explain that the website presents TAKOA's different service offerings clearly, including areas such as:
+
+- Scholar Transport
+- Leisure & Tourism
+- Corporate Travel
+- Airport Travel
+- Daily Shuttles
+- Religious Groups
+- Events & Organised Groups
+- Lephalale ↔ Harare Cross-Border Transport
+- Logistics & Courier
+- Training
+- Sound Hire
+
+Do not overcrowd the page. Use the same concise card/component style already used throughout the AutoM8 website.
+
+## 5. Fleet Showcase
+
+Add a section explaining that TAKOA can present different vehicle categories to customers depending on their group and journey requirements.
+
+The live site currently showcases categories such as:
+
+- Minibus Taxi
+- Midibus
+- Commuter Bus
+- Luxury Coach
+
+Suggested heading:
+
+**Different journeys need different vehicles.**
+
+Suggested copy:
+
+The fleet showcase helps customers understand the types of vehicles available for different group sizes and travel requirements before submitting an enquiry.
+
+## 6. Quote & Enquiry Journey
+
+Create a simple section showing the customer flow.
+
+For example:
+
+**01 — Discover**  
+Customer explores TAKOA's services.
+
+**02 — Choose**  
+They identify the transport or travel service that fits their requirements.
+
+**03 — Request**  
+They submit their journey details through the transport enquiry/quotation process.
+
+**04 — Respond**  
+TAKOA receives the request and can continue the conversation with the customer.
+
+Also mention the direct WhatsApp route available throughout the website.
+
+## 7. Other Website Features
+
+Where appropriate, briefly demonstrate:
+
+- Responsive mobile and desktop design
+- Service-specific pages
+- Fleet showcase
+- Gallery
+- FAQ section
+- Contact information
+- Quote/request forms
+- WhatsApp integration
+- Operating-area information
+- Privacy and POPIA information
+- Transport/booking terms
+- Cookie and analytics controls
+
+Do not claim features that are not actually on the live website.
+
+## 8. Add TAKOA to the Homepage Project Showcase
+
+The AutoM8 homepage currently highlights selected projects.
+
+Add TAKOA to the existing project showcase using the same card/component style.
+
+Do not redesign the section.
+
+Suggested homepage entry:
+
+**Client Project**
+
+### TAKOA Transporters — Transport Website & Enquiry Platform
+
+A responsive transport website connecting service discovery, fleet information and structured customer transport enquiries.
+
+Feature tags:
+
+- Transport services
+- Fleet showcase
+- Quote requests
+
+Buttons:
+
+**Visit Live Website**
+
+and, if the existing component supports it:
+
+**View Project Details**
+
+## 9. Update Project Count
+
+The AutoM8 homepage currently displays:
+
+**9 Projects Showcased**
+
+Since TAKOA is being added as another showcased project, update this number to:
+
+**10 Projects Showcased**
+
+Also check anywhere else on the website where the portfolio/project count is hard-coded and update it accordingly.
+
+## 10. Project Positioning
+
+TAKOA must clearly appear as a **real completed client project**, similar to Harmony Learning Institute and Stats Companies.
+
+Do not label it as:
+- Prototype
+- Concept
+- Demo
+- Project Showcase
+
+Use:
+
+**Client Project**
+
+The live website should be directly accessible from AutoM8's portfolio.
+
+## 11. SEO / Metadata
+
+Add appropriate title and description metadata to the TAKOA project details page.
+
+Suggested title:
+
+**TAKOA Transporters Website & Transport Platform | AutoM8**
+
+Suggested description:
+
+**See how AutoM8 developed a responsive transport website for TAKOA Transporters, including service discovery, fleet information, quote requests and customer enquiry workflows.**
+
+Make sure the page is included wherever the website currently manages:
+- Sitemap entries
+- Internal portfolio links
+- Structured project navigation
+- Search-engine metadata
+
+## 12. Final Requirement
+
+Do not make unrelated changes to the AutoM8 website.
+
+The task is to **extend the existing portfolio**, not redesign it.
+
+Before completion, test:
+- Desktop layout
+- Tablet layout
+- Mobile layout
+- TAKOA external link
+- Project details link
+- Navigation back to portfolio
+- Existing project cards
+- Homepage project count
+- No visual regressions on Harmony, Stats Companies or other projects
+
+The finished TAKOA content should look like it has always been part of the existing AutoM8 website rather than something added later.

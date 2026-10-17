@@ -47,6 +47,26 @@ window.autoM8Projects = [
         projectType: 'client'
     },
     {
+        name: 'TAKOA Transporters — Transport Website & Enquiry Platform',
+        category: 'Transport & Travel Website',
+        status: 'Client Project',
+        shortDescription: 'A modern responsive transport website developed for TAKOA Transporters, helping customers explore passenger transport services, view vehicle categories and submit structured transport enquiries from one digital platform.',
+        features: [
+            'Transport & service pages',
+            'Fleet showcase',
+            'Quote request workflow',
+            'WhatsApp integration'
+        ],
+        image: null,
+        icon: 'fa-bus',
+        liveUrl: 'https://www.takoa.co.za/',
+        liveLabel: 'Visit Live Website',
+        demoUrl: null,
+        caseStudyUrl: 'projects/takoa-transporters.html',
+        featured: true,
+        projectType: 'client'
+    },
+    {
         name: 'LPG Gas Stock Control',
         category: 'Fraud Prevention',
         status: 'Project Showcase',
